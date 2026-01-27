@@ -107,7 +107,9 @@ public class _2114TheInsectProblem extends QuestHandler {
 		int targetId = 0;
 		if (env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-		if (qs == null || qs.getStatus() == QuestStatus.START) {
+        if (qs == null || qs.getStatus() != QuestStatus.START) {
+            return false;
+        }
 		int var = qs.getQuestVarById(0);
 		switch (targetId) {
 			case 210734:
@@ -132,7 +134,6 @@ public class _2114TheInsectProblem extends QuestHandler {
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
 					return true;
-				}
             }
 		}
 		return false;

@@ -54,7 +54,7 @@ public class _1163ArachnaAntidote extends QuestHandler {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1011);
 				else
-					return sendQuestStartDialog(env);
+					return sendQuestStartDialog(env, 182200564, 1);
 			}
 		}
 		if (qs == null)
@@ -67,6 +67,7 @@ public class _1163ArachnaAntidote extends QuestHandler {
 							return sendQuestDialog(env, 1352);
 						}
 						case STEP_TO_1: {
+					        removeQuestItem(env, 182200564, 1);
 							qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 							updateQuestStatus(env);
 						    return closeDialogWindow(env);

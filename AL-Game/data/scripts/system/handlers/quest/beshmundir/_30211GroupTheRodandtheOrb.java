@@ -30,7 +30,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _30211GroupTheRodandtheOrb extends QuestHandler {
 
 	private final static int questId = 30211;
-
 	public _30211GroupTheRodandtheOrb() {
 		super(questId);
 	}
@@ -39,20 +38,17 @@ public class _30211GroupTheRodandtheOrb extends QuestHandler {
 	public void register() {
 		qe.registerQuestNpc(798941).addOnQuestStart(questId);
 		qe.registerQuestNpc(798941).addOnTalkEvent(questId);
-		qe.registerQuestNpc(730275).addOnTalkEvent(questId);
+/* 		qe.registerQuestNpc(730275).addOnTalkEvent(questId); */
 	}
 
 	@Override
 	public boolean onDialogEvent(QuestEnv env) {
 		final Player player = env.getPlayer();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-
 		int targetId = env.getTargetId();
-		QuestDialog dialog = env.getDialog();
-			
 		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 798941) {
-				if (dialog == QuestDialog.START_DIALOG) {
+				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 4762);
 				}
 				else {
@@ -60,28 +56,27 @@ public class _30211GroupTheRodandtheOrb extends QuestHandler {
 				}
 			}
 		}
-
 		if (qs == null)
 			return false;
-
-		if (qs.getStatus() == QuestStatus.START) {
+/* 		if (qs.getStatus() == QuestStatus.START) {
 			switch (targetId) {
 				case 730275: {
-					switch (dialog) {
-						case STEP_TO_1: {
-							removeQuestItem(env, 182209614, 1);
-							qs.setStatus(QuestStatus.REWARD);
-							updateQuestStatus(env);
-							return true;
+					switch (env.getDialog()) {
+					    case USE_OBJECT: {
+					         return sendQuestDialog(env, 1011);
+						}
+						case CHECK_COLLECTED_ITEMS: {
+						     return checkQuestItems(env, 0, 1, true, 10000, 10001);
 						}
 					}
 				}
 			}
-		}
+		} */
 		else if (qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 798941) {
-				switch (dialog) {
+				switch (env.getDialog()) {
 					case USE_OBJECT: {
+						removeQuestItem(env, 182209617, 1);
 						return sendQuestDialog(env, 10002);
 					}
 					case SELECT_REWARD: {

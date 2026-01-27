@@ -108,6 +108,11 @@ public class _14024A_Kralling_Suspicion extends QuestHandler {
                             return sendQuestDialog(env, 2035);
                         }
                     }
+                    case SELECT_ACTION_2120: {
+                        if (var == 3) {
+                            return sendQuestDialog(env, 2120);
+                        }
+                    }
                     case CHECK_COLLECTED_ITEMS: {
                         return checkQuestItems(env, 2, 3, false, 2120, 2035);
                     }

@@ -21,6 +21,8 @@ import com.aionemu.gameserver.model.team2.alliance.PlayerAllianceService;
 import com.aionemu.gameserver.model.team2.group.PlayerGroupService;
 import com.aionemu.gameserver.network.aion.AionClientPacket;
 import com.aionemu.gameserver.network.aion.AionConnection.State;
+import com.aionemu.gameserver.network.aion.serverpackets.SM_SHOW_BRAND;
+import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /**
  * @author Sweetkr
@@ -57,11 +59,18 @@ public class CM_SHOW_BRAND extends AionClientPacket {
 	protected void runImpl() {
 		Player player = getConnection().getActivePlayer();
 
-		if (player.isInGroup2() && player.getPlayerGroup2().isLeader(player)) {
-			PlayerGroupService.showBrand(player, targetObjectId, brandId);
+		if (player.isInGroup2()) {
+			if (player.getPlayerGroup2().isLeader(player)) {
+				PlayerGroupService.showBrand(player, targetObjectId, brandId);
+			}
 		}
-		if (player.isInAlliance2() && player.getPlayerAlliance2().isSomeCaptain(player)) {
-			PlayerAllianceService.showBrand(player, targetObjectId, brandId);
+		else if (player.isInAlliance2()) {
+			if (player.getPlayerAlliance2().isSomeCaptain(player)) {
+				PlayerAllianceService.showBrand(player, targetObjectId, brandId);
+			}
+		}
+		else {
+			PacketSendUtility.sendPacket(player, new SM_SHOW_BRAND(brandId, targetObjectId));
 		}
 	}
 }

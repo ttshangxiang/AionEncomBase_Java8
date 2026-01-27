@@ -31,7 +31,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _30301TrackingSupplies extends QuestHandler {
 
 	private final static int questId = 30301;
-
 	public _30301TrackingSupplies() {
 		super(questId);
 	}
@@ -56,14 +55,12 @@ public class _30301TrackingSupplies extends QuestHandler {
 				else
 					return sendQuestStartDialog(env);
 			}
-			else if (qs.getStatus() == QuestStatus.START) {
-				long itemCount;
-				if (env.getDialog() == QuestDialog.START_DIALOG && qs.getQuestVarById(0) == 0) {
+			if (qs == null || qs.getStatus() == QuestStatus.START) {
+				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 2375);
 				}
-				else if (env.getDialogId() == 39 && qs.getQuestVarById(0) == 0) {
-					itemCount = player.getInventory().getItemCountByItemId(182209701);
-					if (itemCount > 0) {
+				else if (env.getDialogId() == 39) {
+					if (player.getInventory().getItemCountByItemId(182209701) == 1) {
 						removeQuestItem(env, 182209701, 1);
 						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
@@ -73,11 +70,9 @@ public class _30301TrackingSupplies extends QuestHandler {
 						return sendQuestDialog(env, 2716);
 					}
 				}
-				else
-					return sendQuestEndDialog(env);
 			}
-			else {
-				return sendQuestEndDialog(env);
+			else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+				 return sendQuestEndDialog(env);
 			}
 		}
 		return false;

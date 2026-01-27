@@ -33,7 +33,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _4966GrowthNinissFirstCharm extends QuestHandler {
 
 	private final static int questId = 4966;
-
 	public _4966GrowthNinissFirstCharm() {
 		super(questId);
 	}
@@ -49,11 +48,9 @@ public class _4966GrowthNinissFirstCharm extends QuestHandler {
 	public boolean onDialogEvent(QuestEnv env) {
 		final Player player = env.getPlayer();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-
 		int targetId = 0;
 		if (env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-
 		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 798385) { // Ninis
 				if (env.getDialog() == QuestDialog.START_DIALOG)
@@ -89,8 +86,6 @@ public class _4966GrowthNinissFirstCharm extends QuestHandler {
 							}
 							else
 								return sendQuestDialog(env, 2716);
-						case FINISH_DIALOG:
-							return defaultCloseDialog(env, 1, 1);
 					}
 					break;
 			}

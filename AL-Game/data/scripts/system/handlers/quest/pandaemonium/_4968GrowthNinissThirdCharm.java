@@ -33,7 +33,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _4968GrowthNinissThirdCharm extends QuestHandler {
 
 	private final static int questId = 4968;
-
 	public _4968GrowthNinissThirdCharm() {
 		super(questId);
 	}
@@ -49,11 +48,9 @@ public class _4968GrowthNinissThirdCharm extends QuestHandler {
 	public boolean onDialogEvent(QuestEnv env) {
 		final Player player = env.getPlayer();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-
 		int targetId = 0;
 		if (env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-
 		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 798385) { // Ninis
 				if (env.getDialog() == QuestDialog.START_DIALOG)
@@ -83,16 +80,14 @@ public class _4968GrowthNinissThirdCharm extends QuestHandler {
 								return sendQuestDialog(env, 2375);
 							}
 						case CHECK_COLLECTED_ITEMS:
-							long itemAmount = player.getInventory().getItemCountByItemId(186000092);
-							if (var == 1 && player.getInventory().tryDecreaseKinah(70000) && itemAmount >= 1) {
+							if (var == 1 && player.getInventory().getItemCountByItemId(186000092) == 1) {
+                                player.getInventory().tryDecreaseKinah(70000);
 								removeQuestItem(env, 186000092, 1);
 								changeQuestStep(env, 1, 1, true); // reward
 								return sendQuestDialog(env, 5);
 							}
 							else
 								return sendQuestDialog(env, 2716);
-						case FINISH_DIALOG:
-							return defaultCloseDialog(env, 1, 1);
 					}
 					break;
 			}

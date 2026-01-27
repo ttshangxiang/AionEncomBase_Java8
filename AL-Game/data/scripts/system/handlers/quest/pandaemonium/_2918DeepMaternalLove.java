@@ -9,8 +9,6 @@ import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.aionemu.gameserver.services.QuestService;
-import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /**
  * @author Hellboy
@@ -18,7 +16,6 @@ import com.aionemu.gameserver.utils.PacketSendUtility;
 public class _2918DeepMaternalLove extends QuestHandler {
 
 	private final static int questId = 2918;
-
 	public _2918DeepMaternalLove() {
 		super(questId);
 	}
@@ -49,22 +46,25 @@ public class _2918DeepMaternalLove extends QuestHandler {
         if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 0) { 
 				if (env.getDialog() == QuestDialog.ACCEPT_QUEST) {
-					QuestService.startQuest(env);
+				    return sendQuestStartDialog(env);
+				}
+				else if (env.getDialog() == QuestDialog.REFUSE_QUEST) {
 					return closeDialogWindow(env);
-				    }
-			    }
-			}
+				}
+		    }
+		}
 		if (targetId == 203574) {
-			if (qs != null) {
-				if (env.getDialog() == QuestDialog.START_DIALOG && qs.getStatus() == QuestStatus.START)
+			if (qs != null && qs.getStatus() == QuestStatus.START) {
+				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 2375);
 				else if (env.getDialogId() == 1009) {
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
 					return sendQuestEndDialog(env);
-				}
-				else
-					return sendQuestEndDialog(env);
+			}
+		}
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+				return sendQuestEndDialog(env);
 			}
 		}
 		return false;

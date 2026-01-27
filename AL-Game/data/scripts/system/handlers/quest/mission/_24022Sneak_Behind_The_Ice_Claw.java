@@ -12,17 +12,14 @@
  */
 package quest.mission;
 
-import com.aionemu.gameserver.model.gameobjects.Item;
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.questEngine.handlers.HandlerResult;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.services.QuestService;
-import com.aionemu.gameserver.world.zone.ZoneName;
 
 /****/
 /** Author Ghostfur & Unknown (Aion-Unique)
@@ -31,7 +28,6 @@ import com.aionemu.gameserver.world.zone.ZoneName;
 public class _24022Sneak_Behind_The_Ice_Claw extends QuestHandler {
 
     private final static int questId = 24022;
-
     public _24022Sneak_Behind_The_Ice_Claw() {
         super(questId);
     }
@@ -43,7 +39,6 @@ public class _24022Sneak_Behind_The_Ice_Claw extends QuestHandler {
 		qe.registerOnEnterZoneMissionEnd(questId);
         qe.registerQuestNpc(204417).addOnKillEvent(questId);
         qe.registerQuestNpc(212877).addOnKillEvent(questId);
-        qe.registerQuestItem(182215364, questId); //Hard Flint.
         for (int npc : npcs) {
             qe.registerQuestNpc(npc).addOnTalkEvent(questId);
         }
@@ -100,21 +95,34 @@ public class _24022Sneak_Behind_The_Ice_Claw extends QuestHandler {
                         case START_DIALOG: {
                             if (var == 2) {
                                 return sendQuestDialog(env, 1693);
+                            } else if (var == 3 && player.getInventory().getItemCountByItemId(182215364) == 1) {
+                                return sendQuestDialog(env, 2375);
+                            } else if (var == 3) {
+                                return sendQuestDialog(env, 2376);
                             }
                         } case STEP_TO_3: {
                             if (var == 2) {
-                                return defaultCloseDialog(env, 2, 3, 182215364, 1, 0, 0);
+                                giveQuestItem(env, 182215364, 1);
+					            qs.setQuestVar(3);
+					            updateQuestStatus(env);
+					            return closeDialogWindow(env);
+                            } else if (var == 3 && player.getInventory().getItemCountByItemId(182215364) == 0) {
+                                giveQuestItem(env, 182215364, 1);
+					            return closeDialogWindow(env);
                             }
                         }
                     }
                 } case 700246: { //Dead Fire.
                     if (dialog == QuestDialog.USE_OBJECT) {
                         if (var == 3) {
-                            if (player.getInventory().getItemCountByItemId(182215365) > 0) {
+                            if (player.getInventory().getItemCountByItemId(182215365) > 0 && player.getInventory().getItemCountByItemId(182215364) > 0) {
                                 Npc npc = (Npc) env.getVisibleObject();
 								QuestService.addNewSpawn(220020000, player.getInstanceId(), 204417, npc.getX(), npc.getY(), npc.getZ(), (byte) 0);
+                                removeQuestItem(env, 182215364, 1);
                                 removeQuestItem(env, 182215365, 1);
-                                return defaultCloseDialog(env, 3, 4);
+					            qs.setQuestVar(4);
+					            updateQuestStatus(env);
+                                return true;
                             }
                         }
                     }
@@ -134,7 +142,6 @@ public class _24022Sneak_Behind_The_Ice_Claw extends QuestHandler {
         } else if (qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 204301) { //Aegir
                 if (dialog == QuestDialog.USE_OBJECT) {
-                    removeQuestItem(env, 182215364, 1);
                     return sendQuestDialog(env, 10002);
                 } else {
                     return sendQuestEndDialog(env);
@@ -142,15 +149,6 @@ public class _24022Sneak_Behind_The_Ice_Claw extends QuestHandler {
             }
         }
         return false;
-    }
-	
-    @Override
-    public HandlerResult onItemUseEvent(QuestEnv env, Item item) {
-        Player player = env.getPlayer();
-        if (player.isInsideZone(ZoneName.get("ALTAR_OF_TRIAL_220020000"))) {
-            return HandlerResult.fromBoolean(useQuestItem(env, item, 3, 4, false));
-        }
-        return HandlerResult.FAILED;
     }
 	
     @Override

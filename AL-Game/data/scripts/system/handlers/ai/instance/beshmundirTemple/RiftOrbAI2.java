@@ -20,8 +20,12 @@ import com.aionemu.gameserver.ai2.AIName;
 import com.aionemu.gameserver.ai2.NpcAI2;
 import com.aionemu.gameserver.ai2.AI2Actions;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
+import com.aionemu.gameserver.model.Race;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
+import com.aionemu.gameserver.network.aion.serverpackets.SM_QUEST_ACTION;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
+import com.aionemu.gameserver.questEngine.model.QuestState;
+import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.utils.*;
 import com.aionemu.gameserver.world.knownlist.Visitor;
 
@@ -33,8 +37,8 @@ import java.util.List;
 /****/
 
 @AIName("riftorb")
-public class RiftOrbAI2 extends NpcAI2
-{
+public class RiftOrbAI2 extends NpcAI2 {
+
     @Override
     protected void handleDialogStart(Player player) {
         PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), 1011));
@@ -52,9 +56,31 @@ public class RiftOrbAI2 extends NpcAI2
 				}
 			});
 			spawn(730276, 1604.6683f, 1606.5886f, 306.8665f, (byte) 90); //Prison Of Ice Entrance.
+		  	forQuest(player);
 			AI2Actions.deleteOwner(this);
         }
 		PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), 0));
         return true;
+    }
+
+    private void forQuest(Player player) {
+    List<Integer> questsToComplete = new ArrayList<>();
+    Race race = player.getCommonData().getRace();
+    
+    if (race == Race.ELYOS) {
+        questsToComplete.add(30211);
+        questsToComplete.add(30213);
+    } else if (race == Race.ASMODIANS) {
+        questsToComplete.add(30311);
+        questsToComplete.add(30313);
+    }
+    
+    for (int questId : questsToComplete) {
+        final QuestState qs = player.getQuestStateList().getQuestState(questId);
+        if (qs != null && qs.getStatus() == QuestStatus.START) {
+            qs.setStatus(QuestStatus.REWARD);
+            PacketSendUtility.sendPacket(player, new SM_QUEST_ACTION(questId, qs.getStatus(), qs.getQuestVars().getQuestVars()));
+            }
+        }
     }
 }

@@ -55,16 +55,8 @@ public class _2271AurtrisLetter extends QuestHandler {
 				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 1011);
 				}
-				else if (env.getDialogId() == 1002) {
-					if (giveQuestItem(env, 182203247, 1)) {
-						return sendQuestStartDialog(env);
-					}
-					else {
-						return true;
-					}
-				}
 				else {
-					return sendQuestStartDialog(env);
+					return sendQuestStartDialog(env, 182203247, 1);
 				}
 			}
 		}
@@ -84,6 +76,7 @@ public class _2271AurtrisLetter extends QuestHandler {
 					return sendQuestDialog(env, 2375);
 				}
 				else if (env.getDialogId() == 1009) {
+					removeQuestItem(env, 182203247, 1);
 					qs.setQuestVar(3);
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);

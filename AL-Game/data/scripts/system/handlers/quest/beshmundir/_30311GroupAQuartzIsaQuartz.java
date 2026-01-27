@@ -39,7 +39,7 @@ public class _30311GroupAQuartzIsaQuartz extends QuestHandler {
 	public void register() {
 		qe.registerQuestNpc(799322).addOnQuestStart(questId);
 		qe.registerQuestNpc(799322).addOnTalkEvent(questId);
-		qe.registerQuestNpc(730275).addOnTalkEvent(questId);
+/* 		qe.registerQuestNpc(730275).addOnTalkEvent(questId); */
 	}
 
 	@Override
@@ -47,11 +47,9 @@ public class _30311GroupAQuartzIsaQuartz extends QuestHandler {
 		final Player player = env.getPlayer();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 		int targetId = env.getTargetId();
-		QuestDialog dialog = env.getDialog();
-			
 		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 799322) {
-				if (dialog == QuestDialog.START_DIALOG) {
+				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 4762);
 				}
 				else {
@@ -59,28 +57,27 @@ public class _30311GroupAQuartzIsaQuartz extends QuestHandler {
 				}
 			}
 		}
-
 		if (qs == null)
 			return false;
-
-		if (qs.getStatus() == QuestStatus.START) {
+/* 		if (qs.getStatus() == QuestStatus.START) {
 			switch (targetId) {
 				case 730275: {
-					switch (dialog) {
-						case STEP_TO_1: {
-							removeQuestItem(env, 182209714, 1);
-							qs.setStatus(QuestStatus.REWARD);
-							updateQuestStatus(env);
-							return true;
+					switch (env.getDialog()) {
+					    case USE_OBJECT: {
+					         return sendQuestDialog(env, 1011);
+						}
+						case CHECK_COLLECTED_ITEMS: {
+						     return checkQuestItems(env, 0, 0, true, 10000, 10001);
 						}
 					}
 				}
 			}
-		}
+		} */
 		else if (qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 799322) {
-				switch (dialog) {
+				switch (env.getDialog()) {
 					case USE_OBJECT: {
+						removeQuestItem(env, 182209714, 1);
 						return sendQuestDialog(env, 10002);
 					}
 					case SELECT_REWARD: {

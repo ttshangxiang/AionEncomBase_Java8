@@ -77,8 +77,7 @@ public class _2004A_Charmed_Cube extends QuestHandler {
 						} case STEP_TO_1: {
 							return defaultCloseDialog(env, 0, 1);
 						} case STEP_TO_2: {
-							giveQuestItem(env, 182203005, 1);
-							return sendQuestSelectionDialog(env);
+				            return closeDialogWindow(env);
 						} case CHECK_COLLECTED_ITEMS: {
 							return checkQuestItems(env, 1, 2, false, 1438, 1353);
 						}

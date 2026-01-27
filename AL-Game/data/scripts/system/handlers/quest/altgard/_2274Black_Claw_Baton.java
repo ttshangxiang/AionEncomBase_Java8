@@ -25,7 +25,6 @@ import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.aionemu.gameserver.services.QuestService;
 
 /****/
 /** Author (Encom)
@@ -62,7 +61,8 @@ public class _2274Black_Claw_Baton extends QuestHandler {
 		final QuestState qs = player.getQuestStateList().getQuestState(questId);
 		if (env.getVisibleObject() instanceof Npc) {
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-		} if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		} 
+        if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 0) { 
 				if (env.getDialog() == QuestDialog.ACCEPT_QUEST) {
 					return sendQuestStartDialog(env);
@@ -71,8 +71,9 @@ public class _2274Black_Claw_Baton extends QuestHandler {
 					return closeDialogWindow(env);
 				}
 			}
-		} else if (qs.getStatus() == QuestStatus.START) {
-			if (targetId == 203560) {
+		}
+        else if (qs.getStatus() == QuestStatus.START) {
+			if (targetId == 203668) {
 				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 1352);
 				} else if (env.getDialog() == QuestDialog.STEP_TO_1) {
@@ -80,7 +81,7 @@ public class _2274Black_Claw_Baton extends QuestHandler {
 					updateQuestStatus(env);
 					return closeDialogWindow(env);
 				}
-			} else if (targetId == 203668) {
+			} else if (targetId == 203560) {
 				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 2375);
 				} else if (env.getDialogId() == 1009) {
@@ -90,7 +91,8 @@ public class _2274Black_Claw_Baton extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 203668) {
+		} 
+        else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 203560) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

@@ -79,8 +79,8 @@ public class _3962GrowthFlorasSecondCharm extends QuestHandler {
 								return sendQuestDialog(env, 2375);
 							}
 						case CHECK_COLLECTED_ITEMS:
-							long itemAmount = player.getInventory().getItemCountByItemId(186000088);
-							if (var == 1 && player.getInventory().tryDecreaseKinah(50000) && itemAmount >= 1) {
+							if (var == 1 && player.getInventory().getItemCountByItemId(186000088) == 1) {
+                                player.getInventory().tryDecreaseKinah(50000);
 								removeQuestItem(env, 186000088, 1);
 								changeQuestStep(env, 1, 1, true); // reward
 								return sendQuestDialog(env, 5);

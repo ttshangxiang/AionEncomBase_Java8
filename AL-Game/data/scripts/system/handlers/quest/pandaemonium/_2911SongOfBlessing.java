@@ -30,7 +30,7 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _2911SongOfBlessing extends QuestHandler {
 
 	private final static int questId = 2911;
-
+	private int rewardId;
 	public _2911SongOfBlessing() {
 		super(questId);
 	}
@@ -49,8 +49,8 @@ public class _2911SongOfBlessing extends QuestHandler {
 		if (env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (targetId == 204079) {
-			if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		    if (targetId == 204079) {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1011);
 				else
@@ -58,21 +58,26 @@ public class _2911SongOfBlessing extends QuestHandler {
 			}
 		}
 		else if (targetId == 204193) {
-			if (qs != null && qs.getStatus() != QuestStatus.COMPLETE && qs.getStatus() != QuestStatus.NONE) {
-				if (env.getDialog() == QuestDialog.START_DIALOG && qs.getStatus() == QuestStatus.START)
+			if (qs != null || qs.getStatus() == QuestStatus.START) {
+				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1352);
 				else if (env.getDialog() == QuestDialog.STEP_TO_1) {
+					rewardId = 0;
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
 					return sendQuestDialog(env, 5);
 				}
 				else if (env.getDialog() == QuestDialog.STEP_TO_2) {
+					rewardId = 1;
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
 					return sendQuestDialog(env, 6);
-				}
-				else
-					return sendQuestEndDialog(env);
+			    }
+			}
+		}
+		if (qs != null || qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 204193) {
+				return sendQuestEndDialog(env, rewardId);
 			}
 		}
 		return false;

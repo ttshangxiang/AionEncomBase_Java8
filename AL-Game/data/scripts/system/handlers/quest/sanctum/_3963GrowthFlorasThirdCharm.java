@@ -79,9 +79,8 @@ public class _3963GrowthFlorasThirdCharm extends QuestHandler {
 								return sendQuestDialog(env, 2375);
 							}
 						case CHECK_COLLECTED_ITEMS:
-							long itemAmount = player.getInventory().getItemCountByItemId(186000089);
-							if (var == 1 && player.getInventory().tryDecreaseKinah(70000) && itemAmount >= 1) {
-								player.getInventory().decreaseKinah(70000);
+							if (var == 1 && player.getInventory().getItemCountByItemId(186000089) == 1) {
+								player.getInventory().tryDecreaseKinah(70000);
 								removeQuestItem(env, 186000089, 1);
 								changeQuestStep(env, 1, 1, true); // reward
 								return sendQuestDialog(env, 5);

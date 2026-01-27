@@ -30,7 +30,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _30310RankandBile extends QuestHandler {
 
 	private final static int questId = 30310;
-
 	public _30310RankandBile() {
 		super(questId);
 	}
@@ -60,7 +59,7 @@ public class _30310RankandBile extends QuestHandler {
 		if (qs == null)
 			return false;
 
-		if (qs != null && qs.getStatus() == QuestStatus.START) {
+		if (qs.getStatus() == QuestStatus.START) {
 			int var = qs.getQuestVarById(0);
 			if (targetId == 204225) {
 				if (dialog == QuestDialog.START_DIALOG)

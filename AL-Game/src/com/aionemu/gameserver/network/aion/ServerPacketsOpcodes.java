@@ -143,7 +143,7 @@ public class ServerPacketsOpcodes {
 		addPacketOpcode(SM_FRIEND_RESPONSE.class, 0xDB, idSet); // 5.8
 		addPacketOpcode(SM_GROUP_INFO.class, 0x5A, idSet); // 5.8
 		addPacketOpcode(SM_GROUP_MEMBER_INFO.class, 0x5b, idSet); // 5.8
-		addPacketOpcode(SM_SHOW_BRAND.class, 0xfa, idSet); // 5.8
+		addPacketOpcode(SM_SHOW_BRAND.class, 0xFB, idSet); // 5.6, 0xfa 5.8 
 		addPacketOpcode(SM_DIE.class, 0xC1, idSet); // 5.8
 		addPacketOpcode(SM_LOOT_ITEMLIST.class, 0xce, idSet); // 5.8
 		addPacketOpcode(SM_LEGION_INFO.class, 0x6E, idSet); // 5.8
@@ -218,7 +218,7 @@ public class ServerPacketsOpcodes {
 		addPacketOpcode(SM_FIND_GROUP.class, 0xA6, idSet); // 5.8
 		addPacketOpcode(SM_ALLIANCE_INFO.class, 0xf7, idSet); // 5.8
 		addPacketOpcode(SM_ALLIANCE_MEMBER_INFO.class, 0xf8, idSet); // 5.8
-		addPacketOpcode(SM_ALLIANCE_READY_CHECK.class, 0xfb, idSet); // 5.8
+		addPacketOpcode(SM_ALLIANCE_READY_CHECK.class, 0xFC, idSet); // 5.8 0xfb check
 		addPacketOpcode(SM_RENAME.class, 0x58, idSet); // 5.8
 		addPacketOpcode(SM_PLASTIC_SURGERY.class, 0x53, idSet); // 5.8
 		addPacketOpcode(SM_PLAYER_REGION.class, 0xD9, idSet); // 5.8
