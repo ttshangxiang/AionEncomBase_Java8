@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="AL-Login" default="dist" basedir=".">
         
-    <description>AL-Login Server Build Script</description>
+    <description></description>
 	
 	<property name="jre" location="${java.home}/lib"/>
     <property name="src" location="src"/>
@@ -20,49 +20,26 @@
 	<target name="clean" description="Removes build directory.">
 		<delete dir="${build}" />
 	</target>
-	
-	<target name="init" description="Create the output directories.">
+	<target name="init" depends="clean" description="Create the output directories.">
 		<mkdir dir="${build}" />
 		<mkdir dir="${build.classes}" />
 	</target>
-	
 	<target name="compile" depends="init" description="Compile the source.">
-		<uptodate property="compile.notneeded" targetfile="${build}/AL-Login.jar">
-			<srcfiles dir="${src}" includes="**/*.java"/>
-		</uptodate>
-		<antcall target="do.compile"/>
-	</target>
-	
-	<target name="do.compile" unless="compile.notneeded">
-		<javac destdir="${build.classes}" 
-               optimize="on" 
-               debug="on"
-			   nowarn="off" 
-               source="1.8" 
-               target="1.8" 
-               includeantruntime="false"
-			   encoding="UTF-8">
+		<javac destdir="${build.classes}" optimize="on" debug="on"
+			nowarn="off" source="1.8" target="1.8" includeantruntime="false">
 			<src path="${src}" />
 			<classpath refid="classpath" />
 		</javac>
-		<echo message="Source compiled successfully."/>
 	</target>
-	
 	<target name="jar" depends="compile" description="Create the jar file">
-		<tstamp>
-			<format property="date" pattern="yyyy-MM-dd-HH:mm"/>
-		</tstamp>
 		<jar destfile="${build}/AL-Login.jar">
             <fileset dir="${build.classes}"/>
             <manifest>
                 <attribute name="Main-Class" value="loginserver.LoginServer"/>
             	<attribute name="Revision" value="${revision}"/>
             	<attribute name="Date" value="${date}"/>
-            	<attribute name="Build-Jdk-Spec" value="1.8"/>
-                <attribute name="Created-By" value="${ant.version} (JDK ${java.version})"/>
             </manifest>
         </jar>
-		<echo message="JAR created: ${build}/AL-Login.jar"/>
 	</target>
  
     <target name="dist" depends="jar">
@@ -73,7 +50,11 @@
     	<mkdir dir="${build.dist.ls}/libs" />
     	<mkdir dir="${build.dist.ls}/sql" />
     	
-		<copy todir="${build.dist.ls}/libs" file="${build}/AL-Login.jar"/>
+		<copy todir="${build.dist.ls}/libs">
+            <fileset dir="${build}">
+				<include name="AL-Login.jar"/>
+			</fileset>
+		</copy>
     	
 		<copy todir="${build.dist.ls}/libs">
 			<fileset dir="${lib}">
@@ -106,15 +87,5 @@
         </copy>
 
 		<zip destfile="${build}/AL-Login.zip" basedir="${build.dist}" />
-		<echo message="Distribution created: ${build}/AL-Login.zip"/>
-	</target>
-	
-	<target name="fast-dist" description="Fast build without cleaning">
-		<property name="skip.clean" value="true"/>
-		<antcall target="dist"/>
-	</target>
-	
-	<target name="build-only" depends="jar" description="Just compile and create JAR">
-		<echo message="Build completed. JAR: ${build}/AL-Login.jar"/>
 	</target>
 </project>

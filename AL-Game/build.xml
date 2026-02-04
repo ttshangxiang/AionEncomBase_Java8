@@ -38,26 +38,16 @@
             <include name="guava-${guava.version}.jar"/>
         </fileset>
     </path>
-    
     <target name="clean" description="Clean build directory.">
         <delete dir="${build}"/>
         <echo message="Build directory has been cleaned."/>
     </target>
-    
-    <target name="init" description="Create output directory.">
+    <target name="init" depends="clean" description="Create output directory.">
         <mkdir dir="${build}"/>
         <mkdir dir="${build.classes}"/>
         <echo message="Output directory has been created."/>
     </target>
-    
     <target name="compile" depends="init" description="Compile source code.">
-        <uptodate property="compile.notneeded" targetfile="${build}/AL-Game.jar">
-            <srcfiles dir="${src}" includes="**/*.java"/>
-        </uptodate>
-        <antcall target="do.compile"/>
-    </target>
-    
-    <target name="do.compile" unless="compile.notneeded">
         <javac destdir="${build.classes}" 
                optimize="on" 
                debug="on" 
@@ -82,7 +72,6 @@
         </javac>
         <echo message="Source code compiled successfully."/>
     </target>
-    
     <target name="jar" depends="compile" description="Create JAR file.">
         <tstamp>
             <format property="date" pattern="yyyy-MM-dd-HH:mm"/>
@@ -99,7 +88,6 @@
         </jar>
         <echo message="JAR file created: ${build}/AL-Game.jar"/>
     </target>
-    
     <target name="dist" depends="jar" description="Create distribution package.">
         <mkdir dir="${build.dist}"/>
         <mkdir dir="${build.dist.gs}"/>
@@ -107,15 +95,16 @@
         <mkdir dir="${build.dist.gs}/data"/>
         <mkdir dir="${build.dist.gs}/libs"/>
         <mkdir dir="${build.dist.gs}/sql"/>
-        
-        <copy todir="${build.dist.gs}/libs" file="${build}/AL-Game.jar"/>
-        
+        <copy todir="${build.dist.gs}/libs">
+            <fileset dir="${build}">
+				<include name="AL-Game.jar"/>
+			</fileset>
+		</copy>
         <copy todir="${build.dist.gs}/libs">
             <fileset dir="${lib}">
                 <include name="*.jar"/>
             </fileset>
         </copy>
-        
         <copy todir="${build.dist.gs}">
             <fileset dir="dist">
                 <include name="*.*"/>
@@ -136,7 +125,6 @@
                 <include name="**/*"/>
             </fileset>
         </copy>
-        
         <zip destfile="${build}/AL-Game.zip" basedir="${build.dist}"/>
     </target>
 </project>
