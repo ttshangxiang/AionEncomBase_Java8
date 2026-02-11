@@ -10,12 +10,6 @@
 			<drop item_id="164000211" chance="4.27" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Courage Water"/>
 			<drop item_id="164000212" chance="5.64" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Ascension Water"/>
 			<drop item_id="164000213" chance="6.11" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Recovery Water"/>
-			<drop item_id="164000208" chance="4.70" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Explosion Water"/>
-			<drop item_id="164000209" chance="3.70" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Restraint Water"/>
-			<drop item_id="164000210" chance="7.79" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Invincibility Water"/>
-			<drop item_id="164000211" chance="8.94" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Courage Water"/>
-			<drop item_id="164000212" chance="6.03" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Ascension Water"/>
-			<drop item_id="164000213" chance="4.29" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Crucible Coliseum Recovery Water"/>
 		</drop_group>
 	</npc_drop>
 </npc_drops>

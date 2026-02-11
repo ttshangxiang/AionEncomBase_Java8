@@ -64,4 +64,14 @@
 			<bomb skillId="19093" cd="1000"/>
 		</bombs>
 	</ai>
+    <ai npcId="281212">
+        <bombs>
+            <bomb skillId="18551"/>
+        </bombs>
+    </ai>
+    <ai npcId="281213">
+        <bombs>
+            <bomb skillId="18551"/>
+        </bombs>
+    </ai>
 </ai_templates>

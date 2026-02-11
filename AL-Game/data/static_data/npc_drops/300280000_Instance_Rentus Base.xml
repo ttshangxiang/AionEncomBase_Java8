@@ -11353,4 +11353,15 @@
 			<drop item_id="100000318" chance="1.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Elder Sword"/>
 		</drop_group>
 	</npc_drop>
+	<!-- Kuhara's Treasure Box -->
+	<npc_drop npc_id="219215">
+		<drop_group name="ARMOR_EPIC" use_category="true" race="PC_ALL">
+			<drop item_id="113101693" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Leggings of Rentus Recovery Squad"/>
+			<drop item_id="113301826" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Legguards of Rentus Recovery Squad"/>
+			<drop item_id="113301827" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Leather Gaiters of Rentus Recovery Squad"/>
+			<drop item_id="113501761" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Chausses of Rentus Recovery Squad"/>
+			<drop item_id="113501762" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Chain Gaiters of Rentus Recovery Squad"/>
+			<drop item_id="113601600" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greaves of Rentus Recovery Squad"/>
+		</drop_group>
+	</npc_drop>
 </npc_drops>

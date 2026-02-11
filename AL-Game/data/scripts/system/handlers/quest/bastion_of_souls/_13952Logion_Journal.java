@@ -57,7 +57,7 @@ public class _13952Logion_Journal extends QuestHandler {
         }
 		if (qs == null || qs.getStatus() == QuestStatus.START) {
 			switch (targetId) {
-				case 806591: {
+				case 806582: {
 				switch (env.getDialog()) {
 					case START_DIALOG:
 						return sendQuestDialog(env, 10002);

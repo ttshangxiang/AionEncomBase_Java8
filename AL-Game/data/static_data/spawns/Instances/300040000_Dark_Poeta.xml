@@ -391,7 +391,7 @@
 		<spawn npc_id="214894">
 			<spot x="237.596" y="420.791" z="103.806" h="24"/>
 		</spawn>
-		<!-- Anuhart Drakan Special Supervisor Commissioned Off -->
+		<!-- Anuhart Proconsul -->
 		<spawn npc_id="215452">
 			<spot x="234.935" y="1088.61" z="135.913" h="93"/>
 			<spot x="238.019" y="1070.11" z="132.379" h="98"/>

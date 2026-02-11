@@ -49,7 +49,7 @@ public class _18739Urgent_Deed_Get_The_Seed extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 1011);
 				    } case CHECK_COLLECTED_ITEMS: {
-                        return checkQuestItems(env, 0, 1, true, 10000, 10001);
+                        return checkQuestItems(env, 0, 1, true, 5, 10001);
                     } 
 				}
 			}

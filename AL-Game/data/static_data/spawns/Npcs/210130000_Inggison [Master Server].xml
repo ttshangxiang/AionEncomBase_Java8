@@ -7408,5 +7408,13 @@
     <spawn npc_id="700610" respawn_time="60">
       <spot x="369.989990" y="558.140015" z="459.60687" entity_id="529" />
     </spawn>
+	<!-- Abyssal Splinter Entrance -->
+	<spawn npc_id="730316" respawn_time="295">
+      <spot h="83" z="595.851" y="251.13286" x="1295.401"/>
+    </spawn>
+	<!-- Unstable Abyssal Splinter Entrance -->
+    <spawn npc_id="730365" respawn_time="295">
+      <spot h="95" z="595.8515" y="251.34036" x="1288.2476"/>
+     </spawn>
   </spawn_map>
 </spawns>

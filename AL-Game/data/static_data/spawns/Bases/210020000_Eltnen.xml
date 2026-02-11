@@ -16,6 +16,14 @@
 				<spawn npc_id="231553" handler="CHIEF">
 					<spot x="1818.2936" y="1107.3915" z="435.90424" h="74"/>
 				</spawn>
+                <!-- Elyos Eltnen Inspector -->
+                <spawn npc_id="231616" handler="SLAYER">
+                    <spot x="1840.2500" y="1064.8750" z="432.3223" h="60"/>
+                </spawn>
+                <!-- Kaidan Assassin -->
+                <spawn npc_id="231607" handler="SLAYER">
+                    <spot x="1816.6250" y="1106.2500" z="435.5107"/>
+                </spawn>
 				<!-- Eltnen Defender -->
 				<spawn npc_id="232062">
 					<spot x="1802.4702" y="1119.9419" z="433.89694" h="47"/>
@@ -49,6 +57,14 @@
 				<spawn npc_id="231554" handler="CHIEF">
 					<spot x="1818.2936" y="1107.3915" z="435.90424" h="74"/>
 				</spawn>
+                <!-- Kaidan Assassin -->
+                <spawn npc_id="231607" handler="SLAYER">
+                    <spot x="1816.6250" y="1106.2500" z="435.5107"/>
+                </spawn>
+                <!-- Asmodian Eltnen Inspector -->
+                <spawn npc_id="231617" handler="SLAYER">
+                    <spot x="1840.2500" y="1064.8750" z="432.3223" h="60"/>
+                </spawn>
 				<!-- Eltnen Infiltrator -->
 				<spawn npc_id="232065">
 					<spot x="1802.4702" y="1119.9419" z="433.89694" h="47"/>
@@ -82,6 +98,10 @@
 				<spawn npc_id="231552" handler="CHIEF">
 					<spot x="1818.2936" y="1107.3915" z="435.90424" h="74"/>
 				</spawn>
+                <!-- Kaidan Vanguard -->
+                <spawn npc_id="231599" handler="SLAYER">
+                    <spot x="1840.2500" y="1064.8750" z="432.3223" h="60"/>
+                </spawn>
 				<!-- Kaidan Protector -->
 				<spawn npc_id="231579">
 					<spot x="1802.4702" y="1119.9419" z="433.89694" h="47"/>
@@ -106,6 +126,14 @@
 				<spawn npc_id="231550" handler="CHIEF">
 					<spot x="1015.8448" y="662.10986" z="310.0" h="47"/>
 				</spawn>
+                <!-- Lepharist Assassin -->
+                <spawn npc_id="231606" handler="SLAYER">
+                    <spot x="1013.875" y="661.875" z="310.75"/>
+                </spawn>
+                <!-- Elyos Eltnen Inspector -->
+                <spawn npc_id="231614" handler="SLAYER">
+                    <spot x="982.7500" y="701.0000" z="302.3125" h="105"/>
+                </spawn>
 				<!-- Eltnen Sentinel -->
 				<spawn npc_id="231581">
 					<spot x="1000.7246" y="664.2904" z="308.2427" h="61"/>
@@ -139,6 +167,14 @@
 				<spawn npc_id="231551" handler="CHIEF">
 					<spot x="1015.8448" y="662.10986" z="310.0" h="47"/>
 				</spawn>
+                <!-- Lepharist Assassin -->
+                <spawn npc_id="231606" handler="SLAYER">
+                    <spot x="1013.875" y="661.875" z="310.75"/>
+                </spawn>
+                <!-- Asmodian Eltnen Inspector -->
+                <spawn npc_id="231615" handler="SLAYER">
+                    <spot x="982.75" y="701" z="304.83594" h="105"/>
+                </spawn>
 				<!-- Eltnen Infiltrator -->
 				<spawn npc_id="231586">
 					<spot x="1000.7246" y="664.2904" z="308.2427" h="61"/>
@@ -172,6 +208,10 @@
 				<spawn npc_id="231549" handler="CHIEF">
 					<spot x="1015.8448" y="662.10986" z="310.0" h="47"/>
 				</spawn>
+                <!-- Lepharist Vanguard -->
+                <spawn npc_id="231598" handler="SLAYER">
+                    <spot x="981.9657" y="702.1578" z="302.24228" h="101"/>
+                </spawn>
 				<!-- Lepharist Protector -->
 				<spawn npc_id="231573">
 					<spot x="1000.7246" y="664.2904" z="308.2427" h="61"/>

@@ -35,6 +35,7 @@ public class _1888In_Need_Of_Goods extends QuestHandler {
 		qe.registerQuestNpc(278591).addOnTalkEvent(questId); //Deidamia.
 		qe.registerQuestNpc(278578).addOnTalkEvent(questId); //Ineias.
 		qe.registerQuestNpc(278651).addOnTalkEvent(questId); //Aurunerk.
+        qe.registerQuestNpc(278592).addOnTalkEvent(questId); // Lamia.
 	}
 	
 	@Override
@@ -52,7 +53,7 @@ public class _1888In_Need_Of_Goods extends QuestHandler {
 				}
 			}
         }
-		if (qs == null || qs.getStatus() == QuestStatus.START) {
+		if (qs != null && qs.getStatus() == QuestStatus.START) {
 		int var = qs.getQuestVarById(0);
 			if (targetId == 278591) { //Deidamia.
 				switch (env.getDialog()) {
@@ -63,7 +64,8 @@ public class _1888In_Need_Of_Goods extends QuestHandler {
 						return closeDialogWindow(env);
                     }
 				}
-			} if (targetId == 278651) { //Aurunerk.
+			} 
+            else if (targetId == 278651) { //Aurunerk.
 				switch (env.getDialog()) {
 					case START_DIALOG: {
 						if (var == 1) {
@@ -83,7 +85,8 @@ public class _1888In_Need_Of_Goods extends QuestHandler {
 						return closeDialogWindow(env);
 					}
 				}
-			} if (targetId == 278578) { //Ineias.
+			} 
+            else if (targetId == 278578) { //Ineias.
 				switch (env.getDialog()) {
 					case START_DIALOG: {
 						if (var == 2) {
@@ -98,7 +101,8 @@ public class _1888In_Need_Of_Goods extends QuestHandler {
 						return closeDialogWindow(env);
 					}
 				}
-			} if (targetId == 278592) { //Lamia.
+			} 
+            else if (targetId == 278592) { //Lamia.
 				switch (env.getDialog()) {
 					case START_DIALOG: {
 						if (var == 4) {
@@ -116,7 +120,8 @@ public class _1888In_Need_Of_Goods extends QuestHandler {
 					}
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} 
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 278651) { //Aurunerk.
                 if (env.getDialog() == QuestDialog.START_DIALOG) {
                     return sendQuestDialog(env, 10002);

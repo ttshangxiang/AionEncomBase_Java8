@@ -37,7 +37,7 @@ public class InstanceEngineManager extends AdminCommand {
 	private static final String COMMAND_STARTKAR = "karma";
 	
 	public InstanceEngineManager() {
-		super("instance");
+		super("instance_manager");
 	}
 	
 	@Override

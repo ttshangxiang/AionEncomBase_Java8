@@ -6,11 +6,8 @@
  -->
 	<item_collecting id="46015" start_npc_ids="0" end_npc_ids="799882 799883" action_item_ids="700781"/>
 	<item_collecting id="46016" start_npc_ids="0" end_npc_ids="799882 799883" action_item_ids="700782"/>
-	<item_collecting id="46017" start_npc_ids="0" end_npc_ids="799882 799883" action_item_ids="700807"/>
 	<item_collecting id="46503" start_npc_ids="0" end_npc_ids="799882 799883"/>
 	<item_collecting id="46509" start_npc_ids="0" end_npc_ids="799882 799883"/>
-	<item_collecting id="46515" start_npc_ids="0" end_npc_ids="799882 799883"/>
-	<item_collecting id="46519" start_npc_ids="0" end_npc_ids="799882 799883"/>
 	<item_collecting id="46521" start_npc_ids="0" end_npc_ids="799882 799883"/>
 	<item_collecting id="46524" start_npc_ids="0" end_npc_ids="799882 799883"/>
 	<item_collecting id="46525" start_npc_ids="0" end_npc_ids="799882 799883"/>
@@ -38,9 +35,6 @@
 	</monster_hunt>
 	<monster_hunt id="46514" start_npc_ids="0" end_npc_ids="799882 799883" reward="true">
 		<monster end_var="1" var="0" npc_ids="216638"/>
-	</monster_hunt>
-	<monster_hunt id="46518" start_npc_ids="0" end_npc_ids="799882 799883" reward="true">
-		<monster end_var="1" var="0" npc_ids="216630"/>
 	</monster_hunt>
 	<monster_hunt id="46520" start_npc_ids="0" end_npc_ids="799882 799883" reward="true">
 		<monster end_var="1" var="0" npc_ids="217016"/>

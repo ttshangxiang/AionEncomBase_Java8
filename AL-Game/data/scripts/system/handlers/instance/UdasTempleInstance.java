@@ -60,10 +60,9 @@ He is located in the area hilighted above.
 Once inside the Chamber of Guidance, you will face Nexus, the final boss of Udas Temple.
 **/
 @InstanceID(300150000)
-public class UdasTempleInstance extends GeneralInstanceHandler
-{
+public class UdasTempleInstance extends GeneralInstanceHandler {
+
 	private Map<Integer, StaticDoor> doors;
-	
 	@Override
     public void onInstanceCreate(WorldMapInstance instance) {
         super.onInstanceCreate(instance);
@@ -113,11 +112,6 @@ public class UdasTempleInstance extends GeneralInstanceHandler
     public void onDie(Npc npc) {
         Player player = npc.getAggroList().getMostPlayerDamage();
 		switch (npc.getObjectTemplate().getTemplateId()) {
-			case 215782: //Vallakhan.
-				//Devoted Anurati has appeared in the Great Chapel.
-				sendMsgByRace(1400442, Race.PC_ALL, 2000);
-				spawn(215793, 636.641f, 439.788f, 138.0f, (byte) 30); //Devoted Anurati.
-			break;
 			case 215783: //Nexus.
 				//sendMsg("[SUCCES]: You have finished <Udas Temple>");
 				spawn(730255, 508.3610f, 362.7170f, 137.0000f, (byte) 31); //Udas Temple Exit.

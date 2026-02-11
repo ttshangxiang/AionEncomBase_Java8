@@ -71,15 +71,8 @@
 	<item_collecting id="21245" start_npc_ids="799317"/>
 	<item_collecting id="21247" start_npc_ids="799416"/>
 	<item_collecting id="21248" start_npc_ids="799416" action_item_ids="700930"/>
-<!-- 	<item_collecting id="21268" start_npc_ids="799323"/>
-    <item_collecting id="21269" start_npc_ids="799323"/>
-	<item_collecting id="21270" start_npc_ids="799323"/>
-	<item_collecting id="21271" start_npc_ids="799323"/>
-	<item_collecting id="21272" start_npc_ids="799323"/> -->
 	<item_collecting id="21273" start_npc_ids="799421"/>
 	<item_collecting id="21274" start_npc_ids="799421"/>
-<!-- 	<item_collecting id="21275" start_npc_ids="799323"/>
-	<item_collecting id="21276" start_npc_ids="799323"/> -->
 	<item_collecting id="21452" start_npc_ids="799240"/>
 	<item_collecting id="21454" start_npc_ids="799404"/>
 	<item_collecting id="21457" start_npc_ids="799249" action_item_ids="700635"/>
@@ -92,13 +85,13 @@
 	<item_collecting id="30128" start_npc_ids="799336"/>
 	<item_collecting id="30130" start_npc_ids="799336"/>
 	<item_collecting id="30132" start_npc_ids="799336"/>
-	<!-- 마력총 복원하기 (Asmodians Only) -->
+	<!-- Releasing the Pistol's Potential (Asmodians Only) -->
 	<item_collecting id="30135" start_npc_ids="799336"/>
-	<!-- 마력포 복원하기 (Asmodians Only) -->
+	<!-- Releasing the Aethercannon's Potential (Asmodians Only) -->
 	<item_collecting id="30137" start_npc_ids="799336"/>
-	<!-- 현악기 복원하기 (Asmodians Only) -->
+	<!-- Releasing the Harp's Potential (Asmodians Only) -->
 	<item_collecting id="30139" start_npc_ids="799336"/>
-	<!-- 기동쇠 복원하기 (Asmodians Only) -->
+	<!-- Restoring Weapons (Asmodians Only) -->
 	<item_collecting id="30141" start_npc_ids="799336"/>
 	<item_collecting id="48502" start_npc_ids="799424"/>
 	<item_collecting id="48503" start_npc_ids="799425"/>
@@ -148,11 +141,6 @@
 	<monster_hunt id="21034" start_npc_ids="799256">
 		<monster var="0" end_var="9" npc_ids="215885 215886"/>
 		<monster var="1" end_var="1" npc_ids="216555"/>
-	</monster_hunt>
-	<monster_hunt id="21040" start_npc_ids="799214">
-		<monster var="0" end_var="329" npc_ids="216139 216140"/>
-		<monster var="2" end_var="231" npc_ids="215464 215465"/>
-		<monster var="4" end_var="77" npc_ids="215454 215455"/>
 	</monster_hunt>
 	<monster_hunt id="21074" start_npc_ids="799409">
 		<monster var="0" end_var="10" npc_ids="215891 215892"/>
@@ -254,7 +242,7 @@
 	<monster_hunt id="21246" start_npc_ids="799320">
 		<monster var="0" end_var="10" npc_ids="217086"/>
 	</monster_hunt>
-	<!-- 티아마트 군단 추적 (Asmodians Only) -->
+	<!-- Clear out the Tiamat Remnants (Asmodians Only) -->
 	<monster_hunt id="21305" start_npc_ids="799322" end_npc_ids="799225">
 		<monster var="0" npc_ids="216263" end_var="1"/>
 	</monster_hunt>

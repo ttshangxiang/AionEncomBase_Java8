@@ -52,8 +52,8 @@ import java.util.concurrent.Future;
 /****/
 
 @InstanceID(300600000)
-public class UnstableAbyssalSplinterInstance extends GeneralInstanceHandler
-{
+public class UnstableAbyssalSplinterInstance extends GeneralInstanceHandler {
+
 	private int hugeAetherFragment;
 	private boolean isInstanceDestroyed;
 	private int unstableLuminousWaterworm;
@@ -66,11 +66,10 @@ public class UnstableAbyssalSplinterInstance extends GeneralInstanceHandler
 		doors = instance.getDoors();
 	}
 	
-	@Override
+    @Override
     public void onEnterInstance(Player player) {
-		super.onInstanceCreate(instance);
-		doors = instance.getDoors();
-		abyssalBlessing();
+        super.onEnterInstance(player);
+        abyssalBlessing();
     }
 	
 	public void onDropRegistered(Npc npc) {
@@ -101,7 +100,10 @@ public class UnstableAbyssalSplinterInstance extends GeneralInstanceHandler
 			    if (isDead(unstableRukril) && isDead(unstableEbonsoul)) {
 					//A treasure chest has appeared.
 					sendMsgByRace(1400636, Race.PC_ALL, 3000);
-					spawn(701574, 401.22794f, 655.66284f, 439.81107f, (byte) 7); //Abyssal Treasure Box.
+		            spawn(701576, 408.10938f, 650.9015f, 439.28332f, (byte) 66); // Genesis Treasure Box
+		            spawn(701576, 402.40375f, 655.55237f, 439.26288f, (byte) 33); // Genesis Treasure Box
+		            spawn(701576, 406.74445f, 655.5914f, 439.2548f, (byte) 100); // Genesis Treasure Box
+		            spawn(701578, 404.891f, 650.2943f, 439.2548f, (byte) 130); // Abyssal Treasure Box
 					sp(700955, npc.getX(), npc.getY(), npc.getZ(), (byte) 0, 3000, 0, null); //Huge Aether Fragment.
 				}
 				despawnNpc(npc);
@@ -110,27 +112,38 @@ public class UnstableAbyssalSplinterInstance extends GeneralInstanceHandler
 			    despawnNpc(npc);
 				//A treasure chest has appeared.
 				sendMsgByRace(1400636, Race.PC_ALL, 3000);
-				spawn(701575, 592.54000f, 585.94570f, 422.85745f, (byte) 106); //Abyssal Treasure Box.
+		        spawn(701576, 601.2931f, 584.66705f, 422.9955f, (byte) 6); // Genesis Treasure Box
+		        spawn(701576, 597.2156f, 583.95416f, 423.3474f, (byte) 66); // Genesis Treasure Box
+		        spawn(701576, 602.9586f, 589.2678f, 422.8296f, (byte) 100); // Genesis Treasure Box
+		        spawn(701577, 598.82776f, 588.25946f, 422.7739f, (byte) 113); // Abyssal Treasure Box
 				sp(700955, npc.getX(), npc.getY(), npc.getZ(), (byte) 0, 3000, 0, null); //Huge Aether Fragment.
 			break;
 			case 219554: //Unstable Pazuzu.
 			    despawnNpc(npc);
 				//A treasure chest has appeared.
 				sendMsgByRace(1400636, Race.PC_ALL, 3000);
-				spawn(701576, 649.09143f, 359.91174f, 466.13498f, (byte) 103); //Abyssal Treasure Box.
-				spawn(700861, 661.16443f, 357.63345f, 465.99103f, (byte) 0, 67); //Unstable Pazuzu's Treasure Box.
+		        spawn(701575, 649.24286f, 361.33755f, 466.0427f, (byte) 33); // Abyssal Treasure Box
+		        spawn(701576, 651.53204f, 357.085f, 466.1315f, (byte) 66); // Genesis Treasure Box
+		        spawn(701576, 647.00446f, 357.2484f, 465.8960f, (byte) 0); // Genesis Treasure Box
+		        spawn(701576, 653.8384f, 360.39508f, 466.4391f, (byte) 100); // Genesis Treasure Box
 				sp(700955, npc.getX(), npc.getY(), npc.getZ(), (byte) 0, 3000, 0, null); //Huge Aether Fragment.
 			break;
 			case 219555: //Durable Yamennes Blindsight.
 			    despawnNpc(npc);
 				//sendMsg("[SUCCES]: You have finished <Unstable Abyssal Splinter>");
-				spawn(701577, 328.41187f, 759.68880f, 197.14168f, (byte) 93); //Abyssal Treasure Box.
+		        spawn(701576, 326.978f, 729.8414f, 197.7078f, (byte) 16); // Genesis Treasure Box
+		        spawn(701576, 326.5296f, 735.13324f, 197.6681f, (byte) 66); // Genesis Treasure Box
+		        spawn(701576, 329.8462f, 738.41095f, 197.7329f, (byte) 3); // Genesis Treasure Box
+		        spawn(701579, 330.891f, 733.2943f, 197.6404f, (byte) 113); // Abyssal Treasure Box
 				spawn(730317, 308.19241f, 756.48370f, 196.75534f, (byte) 0, 123); //Abyssal Splinter Exit.
 			break;
 			case 219563: //Unstable Yamennes Painflare.
 			    despawnNpc(npc);
 				//sendMsg("[SUCCES]: You have finished <Unstable Abyssal Splinter>");
-				spawn(701578, 328.41187f, 759.68880f, 197.14168f, (byte) 93); //Abyssal Treasure Box.
+		        spawn(701576, 326.978f, 729.8414f, 197.7078f, (byte) 16); // Genesis Treasure Box
+		        spawn(701576, 326.5296f, 735.13324f, 197.6681f, (byte) 66); // Genesis Treasure Box
+		        spawn(701576, 329.8462f, 738.41095f, 197.7329f, (byte) 3); // Genesis Treasure Box
+		        spawn(701580, 330.891f, 733.2943f, 197.6404f, (byte) 113); // Abyssal Treasure Box
 				spawn(730317, 308.19241f, 756.48370f, 196.75534f, (byte) 0, 123); //Abyssal Splinter Exit.
 			break;
 			case 700955: //Huge Aether Fragment.

@@ -20,6 +20,9 @@
 				<spawn npc_id="277588" handler="CHIEF">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
+				<spawn npc_id="277589" handler="SLAYER">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
 				<!-- Atasin Master Healer -->
 				<spawn npc_id="277628">
 					<spot x="212.68292" y="179.82774" z="1489.4727" h="36"/>
@@ -137,6 +140,9 @@
 				</spawn>
 				<!-- Atasin Warcaptain -->
 				<spawn npc_id="277589" handler="CHIEF">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
+				<spawn npc_id="277586" handler="SLAYER">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
 				<!-- Atasin Master Healer -->
@@ -258,6 +264,9 @@
 				<spawn npc_id="277590" handler="CHIEF">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
+				<spawn npc_id="277590" handler="SLAYER">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
 				<!-- Atasin Hidestitcher -->
 				<spawn npc_id="277630">
 					<spot x="212.68292" y="179.82774" z="1489.4727" h="36"/>
@@ -342,6 +351,9 @@
 				</spawn>
 				<!-- Atair Warcaptain -->
 				<spawn npc_id="880144" handler="CHIEF">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
+				<spawn npc_id="880145" handler="SLAYER">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
 				<!-- Atair Defender -->
@@ -453,6 +465,9 @@
 				<spawn npc_id="880145" handler="CHIEF">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
+				<spawn npc_id="880142" handler="SLAYER">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
 				<!-- Atair Defender -->
 				<spawn npc_id="880205">
 				    <spot x="201.19867" y="1841.6342" z="1489.1226" h="110"/>
@@ -562,6 +577,9 @@
 				<spawn npc_id="880146" handler="CHIEF">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
+				<spawn npc_id="880146" handler="SLAYER">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
 				<!-- Atair Hidestitcher -->
 				<spawn npc_id="880266">
 				    <spot x="182.10504" y="1835.185" z="1489.4601" h="8"/>
@@ -636,6 +654,9 @@
 				</spawn>
 				<!-- Atangal Warcaptain -->
 				<spawn npc_id="880164" handler="CHIEF">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
+				<spawn npc_id="880165" handler="SLAYER">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
 				<!-- Atangal Defender -->
@@ -763,6 +784,9 @@
 				<spawn npc_id="880165" handler="CHIEF">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
+				<spawn npc_id="880162" handler="SLAYER">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
 				<!-- Atangal Defender -->
 				<spawn npc_id="880225">
 				    <spot x="1822.107" y="1844.1561" z="1489.5107" h="61"/>
@@ -888,6 +912,9 @@
 				<spawn npc_id="880166" handler="CHIEF">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
+				<spawn npc_id="880166" handler="SLAYER">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
 				<!-- Atangal Keeper -->
 				<spawn npc_id="880226">
 				    <spot x="1822.107" y="1844.1561" z="1489.5107" h="61"/>
@@ -978,6 +1005,9 @@
 				</spawn>
 				<!-- Ataj Warcaptain -->
 				<spawn npc_id="880184" handler="CHIEF">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
+				<spawn npc_id="880185" handler="SLAYER">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
 				<!-- Ataj Defender -->
@@ -1105,6 +1135,9 @@
 				<spawn npc_id="880185" handler="CHIEF">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
+				<spawn npc_id="880182" handler="SLAYER">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
 				<!-- Ataj Defender -->
 				<spawn npc_id="880245">
 				    <spot x="1838.9934" y="225.16234" z="1489.387" h="36"/>
@@ -1228,6 +1261,9 @@
 				</spawn>
 				<!-- Ataj Dreadcaptain -->
 				<spawn npc_id="880186" handler="CHIEF">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
+				<spawn npc_id="880186" handler="SLAYER">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
 				<!-- Ataj Keeper -->

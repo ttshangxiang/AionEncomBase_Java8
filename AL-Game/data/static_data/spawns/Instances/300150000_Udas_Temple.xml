@@ -223,6 +223,10 @@
 		<spawn npc_id="215791">
 			<spot x="578.359" y="680.307" z="131" h="86"/>
 		</spawn>
+		<!-- Devoted Anurati -->
+		<spawn npc_id="215793">
+			<spot x="636.641" y="439.788" z="138" h="30"/>
+		</spawn>
 		<!-- Kura Stormgaze -->
 	    <spawn npc_id="216592">
 		    <spot x="561.863" y="188.173" z="135.889" h="30"/>

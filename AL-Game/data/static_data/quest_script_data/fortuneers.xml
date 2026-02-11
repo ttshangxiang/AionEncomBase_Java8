@@ -6,7 +6,6 @@
  -->
 	<item_collecting id="36015" start_npc_ids="0" end_npc_ids="799837 799838" action_item_ids="700768"/>
 	<item_collecting id="36016" start_npc_ids="0" end_npc_ids="799837 799838" action_item_ids="700769"/>
-	<item_collecting id="36017" start_npc_ids="0" end_npc_ids="799837 799838" action_item_ids="700795"/>
 	<item_collecting id="36503" start_npc_ids="0" end_npc_ids="799837 799838"/>
 	<item_collecting id="36509" start_npc_ids="0" end_npc_ids="799837 799838"/>
 	<item_collecting id="36515" start_npc_ids="0" end_npc_ids="799837 799838"/>

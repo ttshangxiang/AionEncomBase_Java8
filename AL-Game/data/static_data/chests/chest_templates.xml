@@ -9,6 +9,9 @@
 	<chest npcid="700860">
         <keyitem id="1" itemid="0" quantity="1"/>
     </chest>
+	<chest npcid="700861">
+        <keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
 	<chest npcid="700935">
         <keyitem id="1" itemid="0" quantity="1"/>
     </chest>
@@ -42,6 +45,10 @@
 	<chest npcid="701580">
         <keyitem id="1" itemid="0" quantity="1"/>
     </chest>
+	<chest npcid="700934">
+		<keyitem id="1" itemid="0" quantity="1"/>
+	</chest>
+
 	
 	<!-- ADMA'S FALL 5.0 CHEST -->
 	<!-- Adma Family Coffers -->

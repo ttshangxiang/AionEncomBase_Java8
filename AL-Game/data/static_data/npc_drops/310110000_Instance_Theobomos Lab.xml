@@ -14330,4 +14330,32 @@
 			<drop item_id="100000590" chance="0.34" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Graceful Sword"/>
 		</drop_group>
 	</npc_drop>
+    <npc_drop npc_id="237118">
+        <drop_group name="ARMOR_RARE" use_category="true" race="PC_ALL">
+            <drop item_id="112100547" chance="10.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sage Pauldrons" />
+        </drop_group>
+        <drop_group name="BALIC_MATERIAL" use_category="true" race="PC_ALL">
+            <drop item_id="152010317" chance="10.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Elemental Stone" />
+        </drop_group>
+        <drop_group name="FLUX_COMMON" use_category="true" race="PC_ALL">
+            <drop item_id="152011008" chance="3.8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Premium Weapon Flux" />
+            <drop item_id="152011028" chance="3.8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Premium Armor Flux" />
+            <drop item_id="152011048" chance="3.8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Premium Accessory Flux" />
+        </drop_group>
+        <drop_group name="MANASTONES" use_category="true" race="PC_ALL">
+            <drop item_id="188054203" chance="0.1" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Manastone Ore" />
+        </drop_group>
+        <drop_group name="POWER_SHARD_COMMON" use_category="true" race="PC_ALL">
+            <drop item_id="169000008" chance="10.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Power Shard" />
+        </drop_group>
+        <drop_group name="KINAH" use_category="true" race="PC_ALL">
+            <drop item_id="182400001" chance="10.00" min_amount="1" max_amount="2474" no_reduce="false" eachmember="false" name="Kinah" />
+        </drop_group>
+        <drop_group name="OTHER_JUNK" use_category="true" race="PC_ALL">
+            <drop item_id="182005276" chance="10.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Huge Titanium Bone" />
+        </drop_group>
+        <drop_group name="OTHER_RARE" use_category="true" race="PC_ALL">
+            <drop item_id="188052205" chance="10.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Traveller's Fine Consumables Bundle" />
+        </drop_group>
+    </npc_drop>
 </npc_drops>

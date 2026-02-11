@@ -14,11 +14,13 @@ package quest.bastion_of_souls;
 
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
+import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.services.QuestService;
+import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /****/
 /** Author Ghostfur & Unknown (Aion-Unique)
@@ -56,6 +58,15 @@ public class _23955Diversion_Tactics extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
+			else { // Bounty Quest made DragonicK?
+				// Selected item is not optional.
+				env.setDialogId(8);
+				env.setExtendedRewardIndex(1);
+				PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(806591, 0));
+				if (QuestService.finishQuest(env)) {
+					return closeDialogWindow(env);
+				}
+			}
 		}
 		return false;
 	}
@@ -80,12 +91,14 @@ public class _23955Diversion_Tactics extends QuestHandler {
         final Player player = env.getPlayer();
         final QuestState qs = player.getQuestStateList().getQuestState(questId);
         int targetId = env.getTargetId();
+        if (qs == null || qs.getStatus() != QuestStatus.START) {
+            return false;
+        }
         int var = qs.getQuestVarById(0);
         int var1 = qs.getQuestVarById(1);
         int var2 = qs.getQuestVarById(2);
 		int[] IDAb1Ere1RoundDrakanFi = {247113, 247133, 247181, 246556, 246855, 246865};
 		int[] IDAb1Ere2RoundDrakanHighFi = {246561};
-		if (qs != null && qs.getStatus() == QuestStatus.START) {
             if (var == 0) {
 				if (var1 + var2 < 6) {
 					if (targetId == 246561) {
@@ -104,7 +117,6 @@ public class _23955Diversion_Tactics extends QuestHandler {
 					return true;
 				}
 			}
-		}
         return false;
     }
 }

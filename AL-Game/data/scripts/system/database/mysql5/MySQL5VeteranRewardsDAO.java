@@ -33,51 +33,56 @@ import org.slf4j.LoggerFactory;
 
 public class MySQL5VeteranRewardsDAO extends VeteranRewardsDAO {
 
-	private static final Logger log = LoggerFactory.getLogger(MySQL5VeteranRewardsDAO.class);
+    private static final Logger log = LoggerFactory.getLogger(MySQL5VeteranRewardsDAO.class);
 
-	public static final String SELECT_QUERY = "SELECT * FROM veteran_rewards ORDER BY id";
-	public static final String DELETE_QUERY = "DELETE FROM veteran_rewards WHERE id = ?";
+    public static final String SELECT_QUERY = "SELECT * FROM veteran_rewards ORDER BY id";
+    public static final String DELETE_QUERY = "DELETE FROM veteran_rewards WHERE id = ?";
 
-	@Override
-	public Set<VeteranRewards> getVeteranReward() {
-		final Set<VeteranRewards> result = new HashSet<VeteranRewards>();
-		Connection con = null;
-		try {
-			con = DatabaseFactory.getConnection();
-			PreparedStatement stmt = con.prepareStatement(SELECT_QUERY);
-			ResultSet rset = stmt.executeQuery();
-			while (rset.next()) {
-				result.add(new VeteranRewards(rset.getInt("id"), rset.getString("player"), rset.getInt("type"), rset.getInt("item"), rset.getInt("count"), rset
-						.getInt("kinah"), rset.getString("sender"), rset.getString("title"), rset.getString("message")));
-			}
-			rset.close();
-			stmt.close();
-		} catch (Exception e) {
-			log.error("[VETERANREWARD] getVeteranReward - > " + e);
-		} finally {
-			DatabaseFactory.close(con);
-		}
-		return result;
-	}
+    @Override
+    public Set<VeteranRewards> getVeteranReward() {
+        final Set<VeteranRewards> result = new HashSet<VeteranRewards>();
+        
+        // Use try-with-resources for automatic resource management
+        try (Connection con = DatabaseFactory.getConnection();
+             PreparedStatement stmt = con.prepareStatement(SELECT_QUERY);
+             ResultSet rset = stmt.executeQuery()) {
+            
+            while (rset.next()) {
+                result.add(new VeteranRewards(
+                    rset.getInt("id"), 
+                    rset.getString("player"), 
+                    rset.getInt("type"), 
+                    rset.getInt("item"), 
+                    rset.getInt("count"), 
+                    rset.getInt("kinah"), 
+                    rset.getString("sender"), 
+                    rset.getString("title"), 
+                    rset.getString("message")
+                ));
+            }
+        } catch (Exception e) {
+            log.error("[VETERANREWARD] Error getting veteran rewards: ", e);
+        }
+        
+        return result;
+    }
 
-	@Override
-	public void delVeteranReward(final int id_veteran_reward) {
-		Connection con = null;
-		try {
-			con = DatabaseFactory.getConnection();
-			PreparedStatement stmt_2;
-			stmt_2 = con.prepareStatement(DELETE_QUERY);
-			stmt_2.setInt(1, id_veteran_reward);
-			stmt_2.execute();
-		} catch (Exception e) {
-			log.error("[VETERANREWARD] - delVeteranReward > " + e);
-		} finally {
-			DatabaseFactory.close(con);
-		}
-	}
+    @Override
+    public void delVeteranReward(final int id_veteran_reward) {
+        // Also use try-with-resources for delete operation
+        try (Connection con = DatabaseFactory.getConnection();
+             PreparedStatement stmt = con.prepareStatement(DELETE_QUERY)) {
+            
+            stmt.setInt(1, id_veteran_reward);
+            stmt.executeUpdate();
+            
+        } catch (Exception e) {
+            log.error("[VETERANREWARD] Error deleting veteran reward with ID {}: ", id_veteran_reward, e);
+        }
+    }
 
-	@Override
-	public boolean supports(String databaseName, int majorVersion, int minorVersion) {
-		return MySQL5DAOUtils.supports(databaseName, majorVersion, minorVersion);
-	}
+    @Override
+    public boolean supports(String databaseName, int majorVersion, int minorVersion) {
+        return MySQL5DAOUtils.supports(databaseName, majorVersion, minorVersion);
+    }
 }

@@ -4581,4 +4581,318 @@
 			<drop item_id="100000844" chance="1.11" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Chaos Edge"/>
 		</drop_group>
 	</npc_drop>
+	<!-- Abyssal Treasure Box -->
+	<npc_drop npc_id="700860">
+		<drop_group name="KINAH" use_category="true" race="PC_ALL">
+			<drop item_id="182400001" chance="100" min_amount="208008" max_amount="624024" no_reduce="false" eachmember="false" name="Kinah"/>
+		</drop_group>
+		<drop_group name="MEDAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000030" chance="15" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Gold Medal"/>
+			<drop item_id="186000096" chance="30" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Platinum Medal"/>
+		</drop_group>
+		<drop_group name="ARMOR" use_category="true" race="PC_ALL">
+			<drop item_id="112101058" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Pauldrons"/>
+			<drop item_id="112301044" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Shoulderguards"/>
+			<drop item_id="112501033" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Spaulders"/>
+			<drop item_id="112601047" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Shoulderplates"/>
+		</drop_group>
+		<drop_group name="ANCIENT_CROWN" use_category="true" race="PC_ALL">
+			<drop item_id="186000051" chance="1" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Crown"/>
+			<drop item_id="186000052" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Crown"/>
+			<drop item_id="186000053" chance="4" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Crown"/>
+			<drop item_id="186000054" chance="8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Crown"/>
+		</drop_group>
+		<drop_group name="ANCIENT_GOBLET" use_category="true" race="PC_ALL">
+			<drop item_id="186000055" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Goblet"/>
+			<drop item_id="186000056" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Goblet"/>
+			<drop item_id="186000057" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Goblet"/>
+			<drop item_id="186000058" chance="20" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Goblet"/>
+		</drop_group>
+		<drop_group name="ANCIENT_SEAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000059" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Seal"/>
+			<drop item_id="186000060" chance="9" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Seal"/>
+			<drop item_id="186000061" chance="15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Seal"/>
+			<drop item_id="186000062" chance="30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Seal"/>
+		</drop_group>
+		<drop_group name="TEMPETING" use_category="true" race="PC_ALL">
+			<drop item_id="188053083" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Tempering Solution Chest"/>
+		</drop_group>
+	</npc_drop>
+	<!-- Pazuzu's Treasure Box -->
+	<npc_drop npc_id="700861">
+		<drop_group name="QUEST_ITEM" use_category="true" race="ELYOS">
+			<drop item_id="182209802" chance="100" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Pazuzu's Necklace"/>
+		</drop_group>
+		<drop_group name="QUEST_ITEM1" use_category="true" race="ASMODIANS">
+			<drop item_id="182209822" chance="15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Pazuzu's Necklace"/>
+		</drop_group>
+	</npc_drop>
+	<!-- Abyssal Treasure Box -->
+	<npc_drop npc_id="700934">
+		<drop_group name="KINAH" use_category="true" race="PC_ALL">
+			<drop item_id="182400001" chance="100" min_amount="208008" max_amount="624024" no_reduce="false" eachmember="false" name="Kinah"/>
+		</drop_group>
+		<drop_group name="MEDAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000030" chance="15" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Gold Medal"/>
+			<drop item_id="186000096" chance="30" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Platinum Medal"/>
+		</drop_group>
+		<drop_group name="ARMOR" use_category="true" race="PC_ALL">
+			<drop item_id="111101098" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Gloves"/>
+			<drop item_id="111301097" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Vambrace"/>
+			<drop item_id="111501082" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Handguards"/>
+			<drop item_id="111601072" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Gauntlets"/>
+		</drop_group>
+		<drop_group name="ANCIENT_CROWN" use_category="true" race="PC_ALL">
+			<drop item_id="186000051" chance="1" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Crown"/>
+			<drop item_id="186000052" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Crown"/>
+			<drop item_id="186000053" chance="4" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Crown"/>
+			<drop item_id="186000054" chance="8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Crown"/>
+		</drop_group>
+		<drop_group name="ANCIENT_GOBLET" use_category="true" race="PC_ALL">
+			<drop item_id="186000055" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Goblet"/>
+			<drop item_id="186000056" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Goblet"/>
+			<drop item_id="186000057" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Goblet"/>
+			<drop item_id="186000058" chance="20" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Goblet"/>
+		</drop_group>
+		<drop_group name="ANCIENT_SEAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000059" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Seal"/>
+			<drop item_id="186000060" chance="9" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Seal"/>
+			<drop item_id="186000061" chance="15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Seal"/>
+			<drop item_id="186000062" chance="30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Seal"/>
+		</drop_group>
+		<drop_group name="TEMPETING" use_category="true" race="PC_ALL">
+			<drop item_id="188053083" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Tempering Solution Chest"/>
+		</drop_group>
+	</npc_drop>
+	<!-- Abyssal Treasure Box -->
+	<npc_drop npc_id="700935">
+		<drop_group name="KINAH" use_category="true" race="PC_ALL">
+			<drop item_id="182400001" chance="100" min_amount="208008" max_amount="624024" no_reduce="false" eachmember="false" name="Kinah"/>
+		</drop_group>
+		<drop_group name="OTHER" use_category="true" race="PC_ALL">
+			<drop item_id="185000104" chance="100" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abyssal Fragment"/>
+		</drop_group>
+		<drop_group name="MEDAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000030" chance="15" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Gold Medal"/>
+			<drop item_id="186000096" chance="30" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Platinum Medal"/>
+		</drop_group>
+		<drop_group name="ARMOR" use_category="true" race="PC_ALL">
+			<drop item_id="111101098" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Gloves"/>
+			<drop item_id="111301097" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Vambrace"/>
+			<drop item_id="111501082" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Handguards"/>
+			<drop item_id="111601072" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Gauntlets"/>
+		</drop_group>
+		<drop_group name="ANCIENT_CROWN" use_category="true" race="PC_ALL">
+			<drop item_id="186000051" chance="1" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Crown"/>
+			<drop item_id="186000052" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Crown"/>
+			<drop item_id="186000053" chance="4" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Crown"/>
+			<drop item_id="186000054" chance="8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Crown"/>
+		</drop_group>
+		<drop_group name="ANCIENT_GOBLET" use_category="true" race="PC_ALL">
+			<drop item_id="186000055" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Goblet"/>
+			<drop item_id="186000056" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Goblet"/>
+			<drop item_id="186000057" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Goblet"/>
+			<drop item_id="186000058" chance="20" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Goblet"/>
+		</drop_group>
+		<drop_group name="ANCIENT_SEAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000059" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Seal"/>
+			<drop item_id="186000060" chance="9" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Seal"/>
+			<drop item_id="186000061" chance="15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Seal"/>
+			<drop item_id="186000062" chance="30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Seal"/>
+		</drop_group>
+		<drop_group name="TEMPETING" use_category="true" race="PC_ALL">
+			<drop item_id="188053083" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Tempering Solution Chest"/>
+		</drop_group>
+	</npc_drop>
+	<!-- Abyssal Treasure Box -->
+	<npc_drop npc_id="700936">
+		<drop_group name="KINAH" use_category="true" race="PC_ALL">
+			<drop item_id="182400001" chance="100" min_amount="208008" max_amount="624024" no_reduce="false" eachmember="false" name="Kinah"/>
+		</drop_group>
+		<drop_group name="MEDAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000030" chance="15" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Gold Medal"/>
+			<drop item_id="186000096" chance="30" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Platinum Medal"/>
+		</drop_group>
+		<drop_group name="ARMOR_1" use_category="true" race="PC_ALL">
+			<drop item_id="114101139" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Shoes"/>
+			<drop item_id="114301149" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Boots"/>
+			<drop item_id="114501098" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Brogans"/>
+			<drop item_id="114601052" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Sabatons"/>
+		</drop_group>
+		<drop_group name="ARMO_2" use_category="true" race="PC_ALL">
+			<drop item_id="113101112" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Leggings"/>
+			<drop item_id="113301115" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Breeches"/>
+			<drop item_id="113501091" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Chausses"/>
+			<drop item_id="113601056" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Greaves"/>
+		</drop_group>
+		<drop_group name="ANCIENT_CROWN" use_category="true" race="PC_ALL">
+			<drop item_id="186000051" chance="1" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Crown"/>
+			<drop item_id="186000052" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Crown"/>
+			<drop item_id="186000053" chance="4" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Crown"/>
+			<drop item_id="186000054" chance="8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Crown"/>
+		</drop_group>
+		<drop_group name="ANCIENT_GOBLET" use_category="true" race="PC_ALL">
+			<drop item_id="186000055" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Goblet"/>
+			<drop item_id="186000056" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Goblet"/>
+			<drop item_id="186000057" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Goblet"/>
+			<drop item_id="186000058" chance="20" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Goblet"/>
+		</drop_group>
+		<drop_group name="ANCIENT_SEAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000059" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Seal"/>
+			<drop item_id="186000060" chance="9" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Seal"/>
+			<drop item_id="186000061" chance="15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Seal"/>
+			<drop item_id="186000062" chance="30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Seal"/>
+		</drop_group>
+		<drop_group name="TEMPETING" use_category="true" race="PC_ALL">
+			<drop item_id="188053083" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Tempering Solution Chest"/>
+		</drop_group>
+	</npc_drop>
+	<!-- Abyssal Treasure Box -->
+	<npc_drop npc_id="700937">
+		<drop_group name="KINAH" use_category="true" race="PC_ALL">
+			<drop item_id="182400001" chance="100" min_amount="208008" max_amount="624024" no_reduce="false" eachmember="false" name="Kinah"/>
+		</drop_group>
+		<drop_group name="MEDAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000030" chance="15" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Gold Medal"/>
+			<drop item_id="186000096" chance="30" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Platinum Medal"/>
+		</drop_group>
+		<drop_group name="WEAPON" use_category="true" race="PC_ALL">
+			<drop item_id="100001060" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Sword"/>
+			<drop item_id="100100805" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Warhammer"/>
+			<drop item_id="100200940" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Dagger"/>
+			<drop item_id="100500826" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Jewel"/>
+			<drop item_id="100600881" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Tome"/>
+			<drop item_id="100900803" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Greatsword"/>
+			<drop item_id="101300775" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Spear"/>
+			<drop item_id="101500831" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Staff"/>
+			<drop item_id="101700848" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Longbow"/>
+			<drop item_id="101800702" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Pistol"/>
+			<drop item_id="101900706" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Aethercannon"/>
+			<drop item_id="102000740" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Harp"/>
+			<drop item_id="102100620" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Cipher-Blade"/>
+			<drop item_id="115001094" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Shield"/>
+		</drop_group>
+		<drop_group name="ARMOR" use_category="true" race="PC_ALL">
+			<drop item_id="110101208" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Tunic"/>
+			<drop item_id="110301143" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Jerkin"/>
+			<drop item_id="110501113" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Hauberk"/>
+			<drop item_id="110601095" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Breastplate"/>
+		</drop_group>
+		<drop_group name="Headband" use_category="true" race="PC_ALL">
+			<drop item_id="125002425" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Headband"/>
+			<drop item_id="125002426" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Hat"/>
+			<drop item_id="125002427" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Chain Hood"/>
+			<drop item_id="125002428" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Helm"/>
+		</drop_group>
+		<drop_group name="ANCIENT_CROWN" use_category="true" race="PC_ALL">
+			<drop item_id="186000051" chance="1" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Crown"/>
+			<drop item_id="186000052" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Crown"/>
+			<drop item_id="186000053" chance="4" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Crown"/>
+			<drop item_id="186000054" chance="8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Crown"/>
+		</drop_group>
+		<drop_group name="ANCIENT_GOBLET" use_category="true" race="PC_ALL">
+			<drop item_id="186000055" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Goblet"/>
+			<drop item_id="186000056" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Goblet"/>
+			<drop item_id="186000057" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Goblet"/>
+			<drop item_id="186000058" chance="20" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Goblet"/>
+		</drop_group>
+		<drop_group name="ANCIENT_SEAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000059" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Seal"/>
+			<drop item_id="186000060" chance="9" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Seal"/>
+			<drop item_id="186000061" chance="15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Seal"/>
+			<drop item_id="186000062" chance="30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Seal"/>
+		</drop_group>
+		<drop_group name="TEMPETING" use_category="true" race="PC_ALL">
+			<drop item_id="188053083" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Tempering Solution Chest"/>
+		</drop_group>
+		<drop_group name="PLUME" use_category="true" race="PC_ALL">
+			<drop item_id="188053295" chance="5" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Empyrean Plume Chest"/>
+		</drop_group>
+		<drop_group name="COURIER" use_category="true" race="PC_ALL">
+			<drop item_id="188950002" chance="5" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Special Courier Pass Fabled/Lv. 50 and lower"/>
+			<drop item_id="188950005" chance="5" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Special Courier Pass Eternal/Lv. 50 and lower"/>
+		</drop_group>
+	</npc_drop>
+	<!-- Abyssal Treasure Box -->
+	<npc_drop npc_id="700938">
+		<drop_group name="KINAH" use_category="true" race="PC_ALL">
+			<drop item_id="182400001" chance="100" min_amount="208008" max_amount="624024" no_reduce="false" eachmember="false" name="Kinah"/>
+		</drop_group>
+		<drop_group name="MEDAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000030" chance="15" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Gold Medal"/>
+			<drop item_id="186000096" chance="30" min_amount="1" max_amount="2" no_reduce="false" eachmember="false" name="Platinum Medal"/>
+		</drop_group>
+		<drop_group name="WEAPON_EPIC" use_category="true" race="PC_ALL">
+			<drop item_id="100200941" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Dagger"/>
+			<drop item_id="100900804" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Greatsword"/>
+			<drop item_id="100500827" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Jewel"/>
+			<drop item_id="101700849" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Longbow"/>
+			<drop item_id="101300776" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Spear"/>
+			<drop item_id="101500832" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Staff"/>
+			<drop item_id="100001061" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Sword"/>
+			<drop item_id="100600882" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Tome"/>
+			<drop item_id="100100806" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Warhammer"/>
+			<drop item_id="101800703" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Pistol"/>
+			<drop item_id="101900707" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Aethercannon"/>
+			<drop item_id="102000741" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Harp"/>
+			<drop item_id="102100621" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Cipher-Blade"/>
+			<drop item_id="115001095" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Yamennes' Shield"/>
+		</drop_group>
+		<drop_group name="WEAPON" use_category="true" race="PC_ALL">
+			<drop item_id="100001060" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Sword"/>
+			<drop item_id="100100805" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Warhammer"/>
+			<drop item_id="100200940" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Dagger"/>
+			<drop item_id="100500826" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Jewel"/>
+			<drop item_id="100600881" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Tome"/>
+			<drop item_id="100900803" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Greatsword"/>
+			<drop item_id="101300775" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Spear"/>
+			<drop item_id="101500831" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Staff"/>
+			<drop item_id="101700848" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Longbow"/>
+			<drop item_id="101800702" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Pistol"/>
+			<drop item_id="101900706" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Aethercannon"/>
+			<drop item_id="102000740" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Harp"/>
+			<drop item_id="102100620" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Cipher-Blade"/>
+			<drop item_id="115001094" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Shield"/>
+		</drop_group>
+		<drop_group name="ARMOR" use_category="true" race="PC_ALL">
+			<drop item_id="110101208" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Tunic"/>
+			<drop item_id="110301143" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Jerkin"/>
+			<drop item_id="110501113" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Hauberk"/>
+			<drop item_id="110601095" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Breastplate"/>
+		</drop_group>
+		<drop_group name="Headband" use_category="true" race="PC_ALL">
+			<drop item_id="125002425" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Headband"/>
+			<drop item_id="125002426" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Hat"/>
+			<drop item_id="125002427" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Chain Hood"/>
+			<drop item_id="125002428" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Forgotten Abyssal Helm"/>
+		</drop_group>
+		<drop_group name="ANCIENT_CROWN" use_category="true" race="PC_ALL">
+			<drop item_id="186000051" chance="1" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Crown"/>
+			<drop item_id="186000052" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Crown"/>
+			<drop item_id="186000053" chance="4" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Crown"/>
+			<drop item_id="186000054" chance="8" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Crown"/>
+		</drop_group>
+		<drop_group name="ANCIENT_GOBLET" use_category="true" race="PC_ALL">
+			<drop item_id="186000055" chance="2" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Goblet"/>
+			<drop item_id="186000056" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Goblet"/>
+			<drop item_id="186000057" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Goblet"/>
+			<drop item_id="186000058" chance="20" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Goblet"/>
+		</drop_group>
+		<drop_group name="ANCIENT_SEAL" use_category="true" race="PC_ALL">
+			<drop item_id="186000059" chance="6" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Major Ancient Seal"/>
+			<drop item_id="186000060" chance="9" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Greater Ancient Seal"/>
+			<drop item_id="186000061" chance="15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Ancient Seal"/>
+			<drop item_id="186000062" chance="30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Lesser Ancient Seal"/>
+		</drop_group>
+		<drop_group name="TEMPETING" use_category="true" race="PC_ALL">
+			<drop item_id="188053083" chance="10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Tempering Solution Chest"/>
+		</drop_group>
+		<drop_group name="PLUME" use_category="true" race="PC_ALL">
+			<drop item_id="188053295" chance="5" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Empyrean Plume Chest"/>
+		</drop_group>
+		<drop_group name="COURIER" use_category="true" race="PC_ALL">
+			<drop item_id="188950002" chance="5" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Special Courier Pass Fabled/Lv. 50 and lower"/>
+			<drop item_id="188950005" chance="5" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Special Courier Pass Eternal/Lv. 50 and lower"/>
+		</drop_group>
+	</npc_drop>
 </npc_drops>

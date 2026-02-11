@@ -16,6 +16,14 @@
 				<spawn npc_id="231562" handler="CHIEF">
 					<spot x="2118.7683" y="1466.9141" z="136.66391" h="39"/>
 				</spawn>
+                <!-- Kishar Assassin -->
+                <spawn npc_id="231610" handler="SLAYER">
+                    <spot x="2118.8901" y="1468.6146" z="138.57967" h="90"/>
+                </spawn>
+                <!-- Elyos Heiron Inspector -->
+                <spawn npc_id="231622" handler="SLAYER">
+                    <spot x="2106.4204" y="1505.787" z="133.4227" h="97"/>
+                </spawn>
 				<!-- Heiron Sentinel -->
 				<spawn npc_id="231583">
 					<spot x="2104.8914" y="1459.429" z="135.58635" h="66"/>
@@ -50,6 +58,14 @@
 				<spawn npc_id="231563" handler="CHIEF">
 					<spot x="2118.7683" y="1466.9141" z="136.66391" h="39"/>
 				</spawn>
+                <!-- Kishar Assassin -->
+                <spawn npc_id="231610" handler="SLAYER">
+                    <spot x="2118.8901" y="1468.6146" z="138.57967" h="90"/>
+                </spawn>
+                <!-- Asmodian Heiron Inspector -->
+                <spawn npc_id="231623" handler="SLAYER">
+                    <spot x="2106.4204" y="1505.787" z="133.4227" h="97"/>
+                </spawn>
 				<!-- Heiron Infiltrator -->
 				<spawn npc_id="231588">
 					<spot x="2104.8914" y="1459.429" z="135.58635" h="66"/>
@@ -84,6 +100,10 @@
 				<spawn npc_id="231561" handler="CHIEF">
 					<spot x="2118.7683" y="1466.9141" z="136.66391" h="39"/>
 				</spawn>
+                <!-- Kishar Vanguard -->
+                <spawn npc_id="231602" handler="SLAYER">
+                    <spot x="2106.4204" y="1505.787" z="133.4227" h="97"/>
+                </spawn>
 				<!-- Kishar Protector -->
 				<spawn npc_id="231580">
 					<spot x="2104.8914" y="1459.429" z="135.58635" h="66"/>
@@ -109,6 +129,14 @@
 				<spawn npc_id="231565" handler="CHIEF">
 					<spot x="416.5205" y="906.30505" z="122.5" h="38"/>
 				</spawn>
+                <!-- Lepharist Assassin -->
+                <spawn npc_id="231611" handler="SLAYER">
+                    <spot x="414.64871" y="906.14154" z="123.28967"/>
+                </spawn>
+                <!-- Elyos Heiron Inspector -->
+                <spawn npc_id="231624" handler="SLAYER">
+                    <spot x="389.71191" y="937.07147" z="122.33408" h="113"/>
+                </spawn>
 				<!-- Heiron Sentinel -->
 				<spawn npc_id="231584">
 					<spot x="407.22968" y="920.74335" z="122.40708" h="42"/>
@@ -147,6 +175,14 @@
 				<spawn npc_id="231566" handler="CHIEF">
 					<spot x="416.5205" y="906.30505" z="122.5" h="38"/>
 				</spawn>
+                <!-- Lepharist Assassin -->
+                <spawn npc_id="231611" handler="SLAYER">
+                    <spot x="414.64871" y="906.14154" z="123.28967"/>
+                </spawn>
+                <!-- Asmodian Heiron Inspector -->
+                <spawn npc_id="231625" handler="SLAYER">
+                    <spot x="389.71191" y="937.07147" z="122.33408" h="113"/>
+                </spawn>
 				<!-- Heiron Infiltrator -->
 				<spawn npc_id="231589">
 					<spot x="407.22968" y="920.74335" z="122.40708" h="42"/>
@@ -185,6 +221,10 @@
 				<spawn npc_id="231564" handler="CHIEF">
 					<spot x="416.5205" y="906.30505" z="122.5" h="38"/>
 				</spawn>
+                <!-- Lepharist Vanguard (Shieldcaptain) -->
+                <spawn npc_id="231603" handler="SLAYER">
+                    <spot x="389.71191" y="937.07147" z="122.33408" h="113"/>
+                </spawn>
 				<!-- Lepharist Protector -->
 				<spawn npc_id="231575">
 					<spot x="407.22968" y="920.74335" z="122.40708" h="42"/>

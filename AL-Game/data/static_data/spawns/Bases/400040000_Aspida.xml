@@ -20,6 +20,9 @@
 				<spawn npc_id="277582" handler="CHIEF">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
+				<spawn npc_id="277705" handler="SLAYER">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
 				<!-- Aspamon Master Healer -->
 				<spawn npc_id="277622">
 					<spot x="212.68292" y="179.82774" z="1489.4727" h="36"/>
@@ -137,6 +140,9 @@
 				</spawn>
 				<!-- Aspamon Warcaptain -->
 				<spawn npc_id="277583" handler="CHIEF">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
+				<spawn npc_id="277581" handler="SLAYER">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
 				<!-- Aspamon Master Healer -->
@@ -258,6 +264,9 @@
 				<spawn npc_id="277585" handler="CHIEF">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
+				<spawn npc_id="277707" handler="SLAYER">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
 				<!-- Aspamon Hidestitcher -->
 				<spawn npc_id="277625">
 					<spot x="212.68292" y="179.82774" z="1489.4727" h="36"/>
@@ -342,6 +351,9 @@
 				</spawn>
 				<!-- Aspatyr Warcaptain -->
 				<spawn npc_id="880138" handler="CHIEF">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
+				<spawn npc_id="880140" handler="SLAYER">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
 				<!-- Aspatyr Defender -->
@@ -453,6 +465,9 @@
 				<spawn npc_id="880139" handler="CHIEF">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
+				<spawn npc_id="880137" handler="SLAYER">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
 				<!-- Aspatyr Defender -->
 				<spawn npc_id="880199">
 				    <spot x="201.19867" y="1841.6342" z="1489.1226" h="110"/>
@@ -562,6 +577,9 @@
 				<spawn npc_id="880141" handler="CHIEF">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
+				<spawn npc_id="880141" handler="SLAYER">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
 				<!-- Aspatyr Hidestitcher -->
 				<spawn npc_id="880261">
 				    <spot x="182.10504" y="1835.185" z="1489.4601" h="8"/>
@@ -636,6 +654,9 @@
 				</spawn>
 				<!-- Aspar Warcaptain -->
 				<spawn npc_id="880158" handler="CHIEF">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
+				<spawn npc_id="880160" handler="SLAYER">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
 				<!-- Aspar Defender -->
@@ -763,6 +784,9 @@
 				<spawn npc_id="880159" handler="CHIEF">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
+				<spawn npc_id="880157" handler="SLAYER">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
 				<!-- Aspar Defender -->
 				<spawn npc_id="880219">
 				    <spot x="1822.107" y="1844.1561" z="1489.5107" h="61"/>
@@ -888,6 +912,9 @@
 				<spawn npc_id="880161" handler="CHIEF">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
+				<spawn npc_id="880161" handler="SLAYER">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
 				<!-- Aspar Keeper -->
 				<spawn npc_id="880221">
 				    <spot x="1822.107" y="1844.1561" z="1489.5107" h="61"/>
@@ -978,6 +1005,9 @@
 				</spawn>
 				<!-- Aspal Warcaptain -->
 				<spawn npc_id="880178" handler="CHIEF">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
+				<spawn npc_id="880180" handler="SLAYER">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
 				<!-- Aspal Defender -->
@@ -1105,6 +1135,9 @@
 				<spawn npc_id="880179" handler="CHIEF">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
+				<spawn npc_id="880177" handler="SLAYER">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
 				<!-- Aspal Defender -->
 				<spawn npc_id="880239">
 				    <spot x="1838.9934" y="225.16234" z="1489.387" h="36"/>
@@ -1228,6 +1261,9 @@
 				</spawn>
 				<!-- Aspal Dreadcaptain -->
 				<spawn npc_id="880181" handler="CHIEF">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
+				<spawn npc_id="880181" handler="SLAYER">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
 				<!-- Aspal Keeper -->

@@ -402,9 +402,11 @@
 			<drop item_id="168000244" chance="1.45" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.14" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="2.42" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="5.29" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="9.35" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="8.30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
@@ -1047,9 +1049,11 @@
 			<drop item_id="168000244" chance="0.77" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.06" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="4.28" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="7.90" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="6.21" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="8.61" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
@@ -1769,8 +1773,10 @@
 			<drop item_id="168000244" chance="1.01" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.39" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="2.49" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="7.77" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 		</drop_group>
 		<drop_group name="RAWHIDE_COMMON" use_category="true" race="PC_ALL">
@@ -2412,9 +2418,11 @@
 			<drop item_id="168000244" chance="0.62" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.64" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="9.69" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="4.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="6.30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="8.40" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
@@ -3057,9 +3065,11 @@
 			<drop item_id="168000244" chance="0.10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.06" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="8.01" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="2.22" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="3.51" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="5.41" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
@@ -3692,9 +3702,11 @@
 			<drop item_id="168000244" chance="1.12" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.57" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="1.90" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="5.91" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="7.67" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="9.33" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
@@ -4327,9 +4339,11 @@
 			<drop item_id="168000244" chance="1.66" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.81" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="7.66" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="9.46" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="8.32" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="9.97" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
@@ -4962,8 +4976,10 @@
 			<drop item_id="168000244" chance="0.54" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.67" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="3.75" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="2.44" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="RAWHIDE_COMMON" use_category="true" race="PC_ALL">
@@ -5595,8 +5611,10 @@
 			<drop item_id="168000244" chance="1.47" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.22" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="1.49" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="8.49" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="8.33" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="SOULSTONE_COMMON" use_category="true" race="PC_ALL">
@@ -6228,9 +6246,11 @@
 			<drop item_id="168000244" chance="0.41" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="9.80" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="5.29" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="9.29" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="SOULSTONE_COMMON" use_category="true" race="PC_ALL">
 			<drop item_id="152010319" chance="6.16" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Elemental Stone"/>
@@ -6871,9 +6891,11 @@
 			<drop item_id="168000244" chance="0.13" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.99" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="9.41" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="6.90" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="9.90" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
 			<drop item_id="186000097" chance="2.42" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Burning Balaur Heart"/>
@@ -7514,9 +7536,11 @@
 			<drop item_id="168000244" chance="1.08" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.20" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="9.16" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="4.13" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="9.13" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
 			<drop item_id="186000097" chance="4.21" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Burning Balaur Heart"/>
@@ -8157,8 +8181,10 @@
 			<drop item_id="168000244" chance="1.79" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.53" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="2.93" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="2.94" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -8803,8 +8829,10 @@
 			<drop item_id="168000244" chance="1.24" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="5.74" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="5.29" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -9528,9 +9556,11 @@
 			<drop item_id="168000244" chance="1.13" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.81" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="8.20" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="5.73" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="8.73" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="SOULSTONE_COMMON" use_category="true" race="PC_ALL">
 			<drop item_id="152010319" chance="9.28" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Elemental Stone"/>
@@ -10161,8 +10191,10 @@
 			<drop item_id="168000244" chance="1.50" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.46" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="1.84" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="8.84" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="8.42" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="RAWHIDE_COMMON" use_category="true" race="PC_ALL">
@@ -10794,8 +10826,10 @@
 			<drop item_id="168000244" chance="0.64" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.38" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="5.05" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="7.05" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="7.65" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="SOULSTONE_COMMON" use_category="true" race="PC_ALL">
@@ -11427,9 +11461,11 @@
 			<drop item_id="168000244" chance="1.11" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.56" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="5.14" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="1.03" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="5.03" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="SOULSTONE_COMMON" use_category="true" race="PC_ALL">
 			<drop item_id="152010319" chance="7.95" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Fine Elemental Stone"/>
@@ -12070,9 +12106,11 @@
 			<drop item_id="168000244" chance="1.66" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.23" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="6.89" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="1.98" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="6.98" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
 			<drop item_id="186000097" chance="8.48" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Burning Balaur Heart"/>
@@ -12713,8 +12751,10 @@
 			<drop item_id="168000244" chance="0.33" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.08" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="2.98" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="7.98" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="7.27" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -13356,8 +13396,10 @@
 			<drop item_id="168000244" chance="1.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.39" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="9.21" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="7.12" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -13999,9 +14041,11 @@
 			<drop item_id="168000244" chance="1.05" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.89" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="4.24" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="1.97" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="4.97" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
 			<drop item_id="186000097" chance="9.77" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Burning Balaur Heart"/>
@@ -14729,9 +14773,11 @@
 			<drop item_id="168000244" chance="1.89" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.82" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="7.70" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="2.72" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="7.72" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="WEAPON_BOW_COMMON" use_category="true" race="PC_ALL">
 			<drop item_id="101700680" chance="1.96" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Chaos Bow"/>
@@ -15359,8 +15405,10 @@
 			<drop item_id="168000244" chance="1.16" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.48" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="5.79" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="8.79" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="8.36" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="SOULSTONE_COMMON" use_category="true" race="PC_ALL">
@@ -16002,8 +16050,10 @@
 			<drop item_id="168000244" chance="0.74" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.86" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="8.94" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="8.53" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -16645,8 +16695,10 @@
 			<drop item_id="168000244" chance="0.75" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.95" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="9.84" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="7.65" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -17288,8 +17340,10 @@
 			<drop item_id="168000244" chance="1.57" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.94" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="6.74" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="5.45" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -17931,9 +17985,11 @@
 			<drop item_id="168000244" chance="0.83" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.61" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="3.12" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="1.74" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="3.74" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
 			<drop item_id="186000097" chance="7.60" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Burning Balaur Heart"/>
@@ -18574,8 +18630,10 @@
 			<drop item_id="168000244" chance="0.99" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.10" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="2.84" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="6.84" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="6.34" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -19217,8 +19275,10 @@
 			<drop item_id="168000244" chance="1.59" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.56" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="3.21" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="5.21" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="5.60" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -19860,8 +19920,10 @@
 			<drop item_id="168000244" chance="1.78" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.24" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="5.68" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="8.68" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="8.94" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -20503,8 +20565,10 @@
 			<drop item_id="168000244" chance="1.71" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.61" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="1.77" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="4.77" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="4.13" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -21146,8 +21210,10 @@
 			<drop item_id="168000244" chance="1.73" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.83" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="8.51" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="8.90" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -21789,8 +21855,10 @@
 			<drop item_id="168000244" chance="1.95" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.99" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="3.70" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="9.70" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="9.25" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -22432,10 +22500,12 @@
 			<drop item_id="168000244" chance="1.64" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.48" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212202" chance="1.62" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212202" chance="7.62" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="7.36" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212209" chance="1.55" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212209" chance="6.55" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="5.44" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -23077,9 +23147,11 @@
 			<drop item_id="168000244" chance="1.55" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.93" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="4.02" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="8.98" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="9.59" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="7.83" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
@@ -23722,11 +23794,13 @@
 			<drop item_id="168000244" chance="1.42" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.77" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="9.73" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="9.11" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212209" chance="2.39" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
-			<drop item_id="182212213" chance="2.23" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212209" chance="9.39" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
+			<drop item_id="182212213" chance="9.23" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
 			<drop item_id="186000097" chance="6.31" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Burning Balaur Heart"/>
@@ -24367,10 +24441,12 @@
 			<drop item_id="168000244" chance="0.83" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.54" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212202" chance="7.76" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
-			<drop item_id="182212206" chance="4.63" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212209" chance="4.12" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
+			<drop item_id="182212206" chance="7.63" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212209" chance="8.12" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212213" chance="8.30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -24613,25 +24689,31 @@
 	</npc_drop>
 	<!-- Vasuki Lifespark -->
 	<npc_drop npc_id="217760">
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212202" chance="5.21" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212202" chance="9.21" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
 			<drop item_id="182212206" chance="9.50" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212209" chance="7.46" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Abandoned Balaur Egg"/>
-			<drop item_id="182212213" chance="5.56" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+			<drop item_id="182212213" chance="7.56" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 	</npc_drop>
 	<!-- Vasuki Lifespark -->
 	<npc_drop npc_id="217761">
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="9.37" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="4.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="9.00" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 	</npc_drop>
 	<!-- Vasuki Lifespark -->
 	<npc_drop npc_id="217764">
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="4.12" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="1.03" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="4.03" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 	</npc_drop>
 	<!-- Raksang Enforcer -->
@@ -25035,8 +25117,10 @@
 			<drop item_id="168000244" chance="1.15" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.49" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="6.86" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="9.86" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="9.90" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -25678,8 +25762,10 @@
 			<drop item_id="168000244" chance="0.93" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="0.34" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="4.95" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="9.95" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="9.32" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -26321,8 +26407,10 @@
 			<drop item_id="168000244" chance="1.66" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.23" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
-			<drop item_id="182212206" chance="1.93" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
+			<drop item_id="182212206" chance="2.93" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
 			<drop item_id="182212213" chance="2.79" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
@@ -26964,9 +27052,11 @@
 			<drop item_id="168000244" chance="1.81" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Fregion's Scheme"/>
 			<drop item_id="168000245" chance="1.30" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Illusion Godstone: Beritra's Plot"/>
 		</drop_group>
-		<drop_group name="QUEST_COMMON" use_category="true" race="PC_ALL">
+		<drop_group name="QUEST_COMMON" use_category="true" race="ELYOS">
 			<drop item_id="182212206" chance="4.09" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
-			<drop item_id="182212213" chance="1.61" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
+		</drop_group>
+		<drop_group name="QUEST_COMMON" use_category="true" race="ASMODIANS">
+			<drop item_id="182212213" chance="4.61" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Sealing Stone"/>
 		</drop_group>
 		<drop_group name="QUEST_RARE" use_category="true" race="PC_ALL">
 			<drop item_id="186000097" chance="5.45" min_amount="1" max_amount="1" no_reduce="false" eachmember="false" name="Burning Balaur Heart"/>

@@ -38,13 +38,13 @@ import com.aionemu.gameserver.utils.chathandlers.PlayerCommand;
 public class cmd_reskin extends PlayerCommand {
 
 	public cmd_reskin() {
-		super("reskin");
+		super("cmd_reskin");
 	}
 
 	@Override
 	public void execute(Player player, String... params) {
 		if (params.length != 2) {
-			PacketSendUtility.sendMessage(player, "syntax .reskin <Old Item> <New Item>");
+			PacketSendUtility.sendMessage(player, "syntax .cmd_reskin <Old Item> <New Item>");
 			return;
 		}
 
@@ -83,17 +83,17 @@ public class cmd_reskin extends PlayerCommand {
 					}
 				}
 				else {
-					PacketSendUtility.sendMessage(player, "syntax .reskin <Old Item> <New Item>");
+					PacketSendUtility.sendMessage(player, "syntax .cmd_reskin <Old Item> <New Item>");
 					return;
 				}
 			}
 			else {
-				PacketSendUtility.sendMessage(player, "syntax .reskin <Old Item> <New Item>");
+				PacketSendUtility.sendMessage(player, "syntax .cmd_reskin <Old Item> <New Item>");
 				return;
 			}
 		}
 		catch (NumberFormatException e) {
-			PacketSendUtility.sendMessage(player, "syntax .reskin <Old Item> <New Item>");
+			PacketSendUtility.sendMessage(player, "syntax .cmd_reskin <Old Item> <New Item>");
 			return;
 		}
 
@@ -161,6 +161,6 @@ public class cmd_reskin extends PlayerCommand {
 
 	@Override
 	public void onFail(Player player, String message) {
-		PacketSendUtility.sendMessage(player, "syntax : .reskin <Old Item> <New Item>");
+		PacketSendUtility.sendMessage(player, "syntax : .cmd_reskin <Old Item> <New Item>");
 	}
 }

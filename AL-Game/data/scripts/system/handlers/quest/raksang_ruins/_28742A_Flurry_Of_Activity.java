@@ -49,7 +49,6 @@ public class _28742A_Flurry_Of_Activity extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 4762);
 					}
-					case ACCEPT_QUEST:
 					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
 					case REFUSE_QUEST_SIMPLE:
@@ -63,7 +62,7 @@ public class _28742A_Flurry_Of_Activity extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 1011);
 				    } case CHECK_COLLECTED_ITEMS: {
-                        return checkQuestItems(env, 0, 1, true, 10000, 10001);
+                        return checkQuestItems(env, 0, 1, true, 5, 10001);
                     }
 				}
 			}

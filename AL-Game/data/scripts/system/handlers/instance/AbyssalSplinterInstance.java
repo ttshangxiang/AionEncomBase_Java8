@@ -16,6 +16,7 @@
  */
 package instance;
 
+import com.aionemu.commons.utils.Rnd;
 import com.aionemu.gameserver.ai2.NpcAI2;
 import com.aionemu.gameserver.ai2.manager.WalkManager;
 import com.aionemu.gameserver.controllers.effect.PlayerEffectController;
@@ -51,8 +52,8 @@ import java.util.concurrent.Future;
 /****/
 
 @InstanceID(300220000)
-public class AbyssalSplinterInstance extends GeneralInstanceHandler
-{
+public class AbyssalSplinterInstance extends GeneralInstanceHandler {
+
 	private int luminousWaterworm;
 	private int hugeAetherFragment;
 	private boolean isInstanceDestroyed;
@@ -65,11 +66,10 @@ public class AbyssalSplinterInstance extends GeneralInstanceHandler
 		doors = instance.getDoors();
 	}
 	
-	@Override
+    @Override
     public void onEnterInstance(Player player) {
-		super.onInstanceCreate(instance);
-		doors = instance.getDoors();
-		abyssalBlessing();
+        super.onEnterInstance(player);
+        abyssalBlessing();
     }
 	
 	public void onDropRegistered(Npc npc) {
@@ -100,7 +100,10 @@ public class AbyssalSplinterInstance extends GeneralInstanceHandler
 			    if (isDead(rukril) && isDead(ebonsoul)) {
 					//A treasure chest has appeared.
 					sendMsgByRace(1400636, Race.PC_ALL, 3000);
-					spawn(700860, 401.22794f, 655.66284f, 439.81107f, (byte) 7); //Abyssal Treasure Box.
+		            spawn(700934, 408.10938f, 650.9015f, 439.28332f, (byte) 66); // Genesis Treasure Box
+		            spawn(700934, 402.40375f, 655.55237f, 439.26288f, (byte) 33); // Genesis Treasure Box
+		            spawn(700934, 406.74445f, 655.5914f, 439.2548f, (byte) 100); // Genesis Treasure Box
+		            spawn(700936, 404.891f, 650.2943f, 439.2548f, (byte) 130); // Abyssal Treasure Box
 					sp(700955, npc.getX(), npc.getY(), npc.getZ(), (byte) 0, 3000, 0, null); //Huge Aether Fragment.
 				}
 				despawnNpc(npc);
@@ -109,27 +112,40 @@ public class AbyssalSplinterInstance extends GeneralInstanceHandler
 			    despawnNpc(npc);
 				//A treasure chest has appeared.
 				sendMsgByRace(1400636, Race.PC_ALL, 3000);
-				spawn(700935, 592.54000f, 585.94570f, 422.85745f, (byte) 106); //Abyssal Treasure Box.
+		        spawn(700934, 601.2931f, 584.66705f, 422.9955f, (byte) 6); // Genesis Treasure Box
+		        spawn(700934, 597.2156f, 583.95416f, 423.3474f, (byte) 66); // Genesis Treasure Box
+		        spawn(700934, 602.9586f, 589.2678f, 422.8296f, (byte) 100); // Genesis Treasure Box
+		        spawn(700935, 598.82776f, 588.25946f, 422.7739f, (byte) 113); // Abyssal Treasure Box
 				sp(700955, npc.getX(), npc.getY(), npc.getZ(), (byte) 0, 3000, 0, null); //Huge Aether Fragment.
 			break;
 			case 216951: //Pazuzu.
 			    despawnNpc(npc);
 				//A treasure chest has appeared.
 				sendMsgByRace(1400636, Race.PC_ALL, 3000);
-				spawn(700936, 649.09143f, 359.91174f, 466.13498f, (byte) 103); //Abyssal Treasure Box.
-				spawn(700861, 661.16443f, 357.63345f, 465.99103f, (byte) 0, 67); //Pazuzu's Treasure Box.
+		        spawn(700934, 651.53204f, 357.085f, 466.1315f, (byte) 66); // Genesis Treasure Box
+		        spawn(700934, 647.00446f, 357.2484f, 465.8960f, (byte) 0); // Genesis Treasure Box
+		        spawn(700934, 653.8384f, 360.39508f, 466.4391f, (byte) 100); // Genesis Treasure Box
+		        spawn(700860, 649.24286f, 361.33755f, 466.0427f, (byte) 33); // Abyssal Treasure Box
+                if (Rnd.chance(12))
+			    spawn(700861, 661.061f, 357.587f, 465.991f, (byte) 100, 67); // Pazuzu's Treasure Box
 				sp(700955, npc.getX(), npc.getY(), npc.getZ(), (byte) 0, 3000, 0, null); //Huge Aether Fragment.
 			break;
 			case 216952: //Yamennes Blindsight.
 			    despawnNpc(npc);
 				////sendMsg("[SUCCES]: You have finished <Abyssal Splinter>");
-				spawn(700937, 328.41187f, 759.68880f, 197.14168f, (byte) 93); //Abyssal Treasure Box.
+		        spawn(700934, 326.978f, 729.8414f, 197.7078f, (byte) 16); // Genesis Treasure Box
+		        spawn(700934, 326.5296f, 735.13324f, 197.6681f, (byte) 66); // Genesis Treasure Box
+		        spawn(700934, 329.8462f, 738.41095f, 197.7329f, (byte) 3); // Genesis Treasure Box
+		        spawn(700937, 330.891f, 733.2943f, 197.6404f, (byte) 113); // Abyssal Treasure Box
 				spawn(730317, 308.19241f, 756.48370f, 196.75534f, (byte) 0, 123); //Abyssal Splinter Exit.
 			break;
 			case 216960: //Yamennes Painflare.
 			    despawnNpc(npc);
 				////sendMsg("[SUCCES]: You have finished <Abyssal Splinter>");
-				spawn(700938, 328.41187f, 759.68880f, 197.14168f, (byte) 93); //Abyssal Treasure Box.
+		        spawn(700934, 326.978f, 729.8414f, 197.7078f, (byte) 16); // Genesis Treasure Box
+		        spawn(700934, 326.5296f, 735.13324f, 197.6681f, (byte) 66); // Genesis Treasure Box
+		        spawn(700934, 329.8462f, 738.41095f, 197.7329f, (byte) 3); // Genesis Treasure Box
+		        spawn(700938, 330.891f, 733.2943f, 197.6404f, (byte) 113); // Abyssal Treasure Box
 				spawn(730317, 308.19241f, 756.48370f, 196.75534f, (byte) 0, 123); //Abyssal Splinter Exit.
 			break;
 			case 700955: //Huge Aether Fragment.

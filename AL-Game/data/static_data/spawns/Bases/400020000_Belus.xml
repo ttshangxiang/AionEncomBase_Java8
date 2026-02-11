@@ -20,6 +20,9 @@
 				<spawn npc_id="277576" handler="CHIEF">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
+				<spawn npc_id="277579" handler="SLAYER">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
 				<!-- Belani Master Healer -->
 				<spawn npc_id="277616">
 					<spot x="212.68292" y="179.82774" z="1489.4727" h="36"/>
@@ -137,6 +140,9 @@
 				</spawn>
 				<!-- Belani Warcaptain -->
 				<spawn npc_id="277577" handler="CHIEF">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
+				<spawn npc_id="277576" handler="SLAYER">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
 				<!-- Belani Master Healer -->
@@ -258,6 +264,9 @@
 				<spawn npc_id="277580" handler="CHIEF">
 				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
 				</spawn>
+				<spawn npc_id="277580" handler="SLAYER">
+				    <spot x="164.18071" y="195.96909" z="1491.0844" h="4"/>
+				</spawn>
 				<!-- Belani Hidestitcher -->
 				<spawn npc_id="277620">
 					<spot x="212.68292" y="179.82774" z="1489.4727" h="36"/>
@@ -342,6 +351,9 @@
 				</spawn>
 				<!-- Belfarth Warcaptain -->
 				<spawn npc_id="880132" handler="CHIEF">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
+				<spawn npc_id="880135" handler="SLAYER">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
 				<!-- Belfarth Defender -->
@@ -453,6 +465,9 @@
 				<spawn npc_id="880133" handler="CHIEF">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
+				<spawn npc_id="880132" handler="SLAYER">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
 				<!-- Belfarth Defender -->
 				<spawn npc_id="880193">
 				    <spot x="201.19867" y="1841.6342" z="1489.1226" h="110"/>
@@ -562,6 +577,9 @@
 				<spawn npc_id="880136" handler="CHIEF">
 				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
 				</spawn>
+				<spawn npc_id="880136" handler="SLAYER">
+				    <spot x="198.2275" y="1884.1561" z="1491.0851" h="95"/>
+				</spawn>
 				<!-- Belfarth Hidestitcher -->
 				<spawn npc_id="880256">
 				    <spot x="182.10504" y="1835.185" z="1489.4601" h="8"/>
@@ -636,6 +654,9 @@
 				</spawn>
 				<!-- Beling Warcaptain -->
 				<spawn npc_id="880152" handler="CHIEF">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
+				<spawn npc_id="880155" handler="SLAYER">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
 				<!-- Beling Defender -->
@@ -763,6 +784,9 @@
 				<spawn npc_id="880153" handler="CHIEF">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
+				<spawn npc_id="880152" handler="SLAYER">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
 				<!-- Beling Defender -->
 				<spawn npc_id="880213">
 				    <spot x="1822.107" y="1844.1561" z="1489.5107" h="61"/>
@@ -888,6 +912,9 @@
 				<spawn npc_id="880156" handler="CHIEF">
 				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
 				</spawn>
+				<spawn npc_id="880156" handler="SLAYER">
+				    <spot x="1889.7548" y="1847.154" z="1491.0796" h="64"/>
+				</spawn>
 				<!-- Beling Keeper -->
 				<spawn npc_id="880216">
 				    <spot x="1822.107" y="1844.1561" z="1489.5107" h="61"/>
@@ -978,6 +1005,9 @@
 				</spawn>
 				<!-- Belsal Warcaptain -->
 				<spawn npc_id="880172" handler="CHIEF">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
+				<spawn npc_id="880175" handler="SLAYER">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
 				<!-- Belsal Defender -->
@@ -1105,6 +1135,9 @@
 				<spawn npc_id="880173" handler="CHIEF">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
+				<spawn npc_id="880172" handler="SLAYER">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
 				<!-- Belsal Defender -->
 				<spawn npc_id="880233">
 				    <spot x="1838.9934" y="225.16234" z="1489.387" h="36"/>
@@ -1228,6 +1261,9 @@
 				</spawn>
 				<!-- Belsal Dreadcaptain -->
 				<spawn npc_id="880176" handler="CHIEF">
+				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
+				</spawn>
+				<spawn npc_id="880176" handler="SLAYER">
 				    <spot x="1854.2219" y="159.1715" z="1491.0875" h="33"/>
 				</spawn>
 				<!-- Belsal Keeper -->

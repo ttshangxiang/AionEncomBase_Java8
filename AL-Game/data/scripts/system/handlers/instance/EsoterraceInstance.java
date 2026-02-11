@@ -73,9 +73,6 @@ public class EsoterraceInstance extends GeneralInstanceHandler
 				    }
 				}
 			break;
-			case 217185: //Dalia Charlands.
-				dropItems.add(DropRegistrationService.getInstance().regDropItem(1, 0, npcId, 185000111, 1)); //Dalia Key.
-			break;
 			case 701025: //Esoterrace Sundries Box.
 				switch (Rnd.get(1, 6)) {
 				    case 1:

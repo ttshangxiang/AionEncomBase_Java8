@@ -16,6 +16,14 @@
 				<spawn npc_id="231556" handler="CHIEF">
 					<spot x="1591.6177" y="1670.656" z="214.75" h="69"/>
 				</spawn>
+                <!-- Lepharist Assassin -->
+                <spawn npc_id="231608" handler="SLAYER">
+                    <spot x="1583.0913" y="1676.093" z="217.84393" h="30"/>
+                </spawn>
+                <!-- Elyos Morheim Inspector -->
+                <spawn npc_id="231618" handler="SLAYER">
+                    <spot x="1529.5321" y="1661.5712" z="217.01698"/>
+                </spawn>
 				<!-- Morheim Infiltrator -->
 				<spawn npc_id="232063">
 					<spot x="1559.2819" y="1665.5533" z="214.86404" h="78"/>
@@ -51,6 +59,14 @@
 				<spawn npc_id="231557" handler="CHIEF">
 					<spot x="1591.6177" y="1670.656" z="214.75" h="69"/>
 				</spawn>
+                <!-- Lepharist Assassin -->
+                <spawn npc_id="231608" handler="SLAYER">
+                    <spot x="1583.0913" y="1676.093" z="217.84393" h="30"/>
+                </spawn>
+                <!-- Asmodian Morheim Inspector -->
+                <spawn npc_id="231619" handler="SLAYER">
+                    <spot x="1529.5321" y="1661.5712" z="217.01698"/>
+                </spawn>
 				<!-- Morheim Defender -->
 				<spawn npc_id="232066">
 					<spot x="1559.2819" y="1665.5533" z="214.86404" h="78"/>
@@ -86,6 +102,10 @@
 				<spawn npc_id="231555" handler="CHIEF">
 					<spot x="1591.6177" y="1670.656" z="214.75" h="69"/>
 				</spawn>
+                <!-- Lepharist Vanguard -->
+                <spawn npc_id="231600" handler="SLAYER">
+                    <spot x="1529.5321" y="1661.5712" z="217.01698"/>
+                </spawn>
 				<!-- Lepharist Protector -->
 				<spawn npc_id="231576">
 					<spot x="1559.2819" y="1665.5533" z="214.86404" h="78"/>
@@ -112,6 +132,14 @@
 				<spawn npc_id="231559" handler="CHIEF">
 					<spot x="2031.0299" y="724.32764" z="246.0" h="9"/>
 				</spawn>
+                <!-- Mist Mane Assassin -->
+                <spawn npc_id="231609" handler="SLAYER">
+                    <spot x="2031.8993" y="722.44824" z="246.84393" h="30"/>
+                </spawn>
+                <!-- Elyos Morheim Inspector -->
+                <spawn npc_id="231620" handler="SLAYER">
+                    <spot x="2091.5439" y="725.64075" z="247.51697" h="60"/>
+                </spawn>
 				<!-- Morheim Infiltrator -->
 				<spawn npc_id="232064">
 					<spot x="2040.7861" y="705.14746" z="247.05328" h="106"/>
@@ -149,6 +177,14 @@
 				<spawn npc_id="231560" handler="CHIEF">
 					<spot x="2031.0299" y="724.32764" z="246.0" h="9"/>
 				</spawn>
+                <!-- Mist Mane Assassin -->
+                <spawn npc_id="231609" handler="SLAYER">
+                    <spot x="2031.8993" y="722.44824" z="246.84393" h="30"/>
+                </spawn>
+                <!-- Asmodian Morheim Inspector -->
+                <spawn npc_id="231621" handler="SLAYER">
+                    <spot x="2091.5439" y="725.64075" z="247.51697" h="60"/>
+                </spawn>
 				<!-- Morheim Defender -->
 				<spawn npc_id="232067">
 					<spot x="2040.7861" y="705.14746" z="247.05328" h="106"/>
@@ -186,6 +222,10 @@
 				<spawn npc_id="231558" handler="CHIEF">
 					<spot x="2031.0299" y="724.32764" z="246.0" h="9"/>
 				</spawn>
+                <!-- Mist Mane Vanguard -->
+                <spawn npc_id="231601" handler="SLAYER">
+                    <spot x="2091.5439" y="725.64075" z="247.51697" h="60"/>
+                </spawn>
 				<!-- Mist Mane Protector -->
 				<spawn npc_id="231577">
 					<spot x="2040.7861" y="705.14746" z="247.05328" h="106"/>

@@ -35,6 +35,7 @@ public class _2888Trade_Goods_Needed extends QuestHandler {
 		qe.registerQuestNpc(278086).addOnTalkEvent(questId); //Sinjah.
 		qe.registerQuestNpc(278085).addOnTalkEvent(questId); //Durin.
 		qe.registerQuestNpc(278151).addOnTalkEvent(questId); //Ickulnerk.
+		qe.registerQuestNpc(278087).addOnTalkEvent(questId); //Gagrad.
 	}
 	
 	@Override
@@ -52,7 +53,7 @@ public class _2888Trade_Goods_Needed extends QuestHandler {
 				}
 			}
         }
-		if (qs == null || qs.getStatus() == QuestStatus.START) {
+		if (qs != null && qs.getStatus() == QuestStatus.START) {
 		int var = qs.getQuestVarById(0);
 			if (targetId == 278086) { //Sinjah.
 				switch (env.getDialog()) {
@@ -63,7 +64,8 @@ public class _2888Trade_Goods_Needed extends QuestHandler {
 						return closeDialogWindow(env);
                     }
 				}
-			} if (targetId == 278151) { //Ickulnerk.
+			} 
+            else if (targetId == 278151) { //Ickulnerk.
 				switch (env.getDialog()) {
 					case START_DIALOG: {
 						if (var == 1) {
@@ -83,7 +85,8 @@ public class _2888Trade_Goods_Needed extends QuestHandler {
 						return closeDialogWindow(env);
 					}
 				}
-			} if (targetId == 278085) { //Durin.
+			} 
+            else if (targetId == 278085) { //Durin.
 				switch (env.getDialog()) {
 					case START_DIALOG: {
 						if (var == 2) {
@@ -98,7 +101,8 @@ public class _2888Trade_Goods_Needed extends QuestHandler {
 						return closeDialogWindow(env);
 					}
 				}
-			} if (targetId == 278087) { //Gagrad.
+			} 
+            else if (targetId == 278087) { //Gagrad.
 				switch (env.getDialog()) {
 					case START_DIALOG: {
 						if (var == 4) {
@@ -117,7 +121,7 @@ public class _2888Trade_Goods_Needed extends QuestHandler {
 				}
 			}
 		} 
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 278151) { //Ickulnerk.
                 if (env.getDialog() == QuestDialog.START_DIALOG) {
                     return sendQuestDialog(env, 10002);

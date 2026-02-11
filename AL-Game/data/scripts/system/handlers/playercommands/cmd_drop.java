@@ -33,7 +33,7 @@ import com.aionemu.gameserver.utils.chathandlers.PlayerCommand;
 public class cmd_drop extends PlayerCommand {
 
 	public cmd_drop() {
-		super("drop");
+		super("cmd_drop");
 	}
 
 	@Override

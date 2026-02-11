@@ -225,6 +225,10 @@
 				<spawn npc_id="882980" handler="CHIEF">
 				    <spot h="64" z="2970.8394" y="1077.9393" x="1451.1776"/>
 				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v01Ctrl_Eresh_Fi_BossKiller_65_Ae1 -->
+				<spawn npc_id="883326" handler="SLAYER">
+					<spot x="1455.6238" y="1087.8514" z="2970.53" h="88"/>
+				</spawn>
 				<!-- 제50 점령군 전투장교 -->
 				<spawn npc_id="882981">
 				    <spot h="25" z="2963.9917" y="1101.1082" x="1479.7139"/>
@@ -476,6 +480,10 @@
 				<spawn npc_id="882986" handler="CHIEF">
 				    <spot h="55" z="3017.5261" y="803.74603" x="1558.2885"/>
 				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v02Ctrl_Eresh_Fi_BossKiller_65_Ae -->
+				<spawn npc_id="883345" handler="SLAYER">
+					<spot x="1556.4519" y="811.01807" z="3019.7317" h="119"/>
+				</spawn>
 				<!-- 제51 점령군 전투장교 -->
 				<spawn npc_id="882987">
 				    <spot h="79" z="3010.9062" y="788.26355" x="1533.1094"/>
@@ -719,6 +727,10 @@
 				<!-- 제52 점령군 전투지휘관 -->
 				<spawn npc_id="882992" handler="CHIEF">
 				    <spot h="26" z="2949.5027" y="1777.7355" x="1097.3542"/>
+				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v03Ctrl_Eresh_Fi_BossKiller_65_Ae3 -->
+				<spawn npc_id="883364" handler="SLAYER">
+					<spot x="1096.368" y="1784.2717" z="2949.0815" h="119"/>
 				</spawn>
 				<!-- 제52 점령군 전투장교 -->
 				<spawn npc_id="882993">
@@ -965,6 +977,10 @@
 				<!-- Ab1_v04_Eresh_Fi_Boss_65_Ae -->
 				<spawn npc_id="882998" handler="CHIEF">
 				    <spot h="91" z="2942.2583" y="2068.8767" x="1121.8959"/>
+				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v04Ctrl_Eresh_Fi_BossKiller_65_Ae5 -->
+				<spawn npc_id="883383" handler="SLAYER">
+					<spot x="1122.7302" y="2062.6226" z="2944.978" h="119"/>
 				</spawn>
 				<!-- Ab1_v04_Eresh_Fi_65_Ae -->
 				<spawn npc_id="882999">
@@ -1217,6 +1233,10 @@
 				<spawn npc_id="883004" handler="CHIEF">
 				    <spot h="27" z="3086.6768" y="1854.4535" x="1801.0598"/>
 				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v05Ctrl_Eresh_Fi_BossKiller_65_Ae7 -->
+				<spawn npc_id="883402" handler="SLAYER">
+					<spot x="1796.3206" y="1843.5647" z="3086.1558" h="119"/>
+				</spawn>
 				<!-- Ab1_v05_Eresh_Fi_65_Ae -->
 				<spawn npc_id="883005">
 				    <spot h="18" z="3080.6104" y="1862.0083" x="1830.4362"/>
@@ -1466,6 +1486,10 @@
 				<!-- Ab1_v06_Eresh_Fi_Boss_65_Ae -->
 				<spawn npc_id="883010" handler="CHIEF">
 				    <spot h="94" z="3086.8208" y="1643.9135" x="1996.9557"/>
+				</spawn>
+				<!-- Balaur Assassin Officer ||| Ab1_v06Ctrl_Eresh_Fi_BossKiller_65_Ae -->
+				<spawn npc_id="883421" handler="SLAYER">
+					<spot x="1992.56" y="1655.1201" z="3086.4277" h="0"/>
 				</spawn>
 				<!-- Ab1_v06_Eresh_Fi_65_Ae -->
 				<spawn npc_id="883011">
@@ -1719,6 +1743,10 @@
 				<!-- Ab1_v07_Vritra_Fi_Boss_65_Ae -->
 				<spawn npc_id="883016" handler="CHIEF">
 				    <spot h="21" z="2897.9946" y="502.43137" x="2084.5364"/>
+				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v07Ctrl_Vritra_Fi_BossKiller_65_Ae -->
+				<spawn npc_id="883440" handler="SLAYER">
+					<spot x="2089.2241" y="507.03918" z="2898.3293" h="119"/>
 				</spawn>
 				<!-- Ab1_v07_Vritra_Fi_65_Ae -->
 				<spawn npc_id="883017">
@@ -1980,6 +2008,10 @@
 				<spawn npc_id="883022" handler="CHIEF">
 				    <spot h="19" z="2893.323" y="218.9224" x="2426.4019"/>
 				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v08Ctrl_Vritra_Fi_BossKiller_65_Ae1 -->
+				<spawn npc_id="883459" handler="SLAYER">
+					<spot x="2417.8145" y="210.1604" z="2893.5574" h="119"/>
+				</spawn>
 				<!-- Ab1_v08_Vritra_Fi_65_Ae -->
 				<spawn npc_id="883023">
 				    <spot h="56" z="2885.9878" y="240.29044" x="2402.2756"/>
@@ -2236,6 +2268,10 @@
 				<!-- Ab1_v09_Vritra_Fi_Boss_65_Ae -->
 				<spawn npc_id="883028" handler="CHIEF">
 				    <spot h="52" z="2849.292" y="557.11395" x="2491.648"/>
+				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v09Ctrl_Vritra_Fi_BossKiller_65_Ae3 -->
+				<spawn npc_id="883478" handler="SLAYER">
+					<spot x="2486.5078" y="560.17499" z="2849.5842" h="119"/>
 				</spawn>
 				<!-- Ab1_v09_Vritra_Fi_65_Ae -->
 				<spawn npc_id="883029">
@@ -2502,6 +2538,10 @@
 				<spawn npc_id="883034" handler="CHIEF">
 				    <spot h="6" z="2693.5938" y="2401.3445" x="375.31033"/>
 				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v10Ctrl_Vritra_Fi_BossKiller_65_Ae5 -->
+				<spawn npc_id="883497" handler="SLAYER">
+					<spot x="381.63779" y="2403.4368" z="2693.8987" h="119"/>
+				</spawn>
 				<!-- Ab1_v10_Vritra_Fi_65_Ae -->
 				<spawn npc_id="883035">
 				    <spot h="5" z="2686.921" y="2386.7168" x="401.6596"/>
@@ -2765,6 +2805,10 @@
 				<spawn npc_id="883040" handler="CHIEF">
 				    <spot h="105" z="2915.6604" y="2710.5525" x="445.91257"/>
 				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v11Ctrl_Vritra_Fi_BossKiller_65_Ae7 -->
+				<spawn npc_id="883516" handler="SLAYER">
+					<spot x="448.65305" y="2704.5435" z="2916.3457" h="119"/>
+				</spawn>
 				<!-- Ab1_v11_Vritra_Fi_65_Ae -->
 				<spawn npc_id="883041">
 				    <spot h="2" z="2908.828" y="2698.7205" x="473.74664"/>
@@ -3022,6 +3066,10 @@
 				<!-- Ab1_v12_Vritra_Fi_Boss_65_Ae -->
 				<spawn npc_id="883046" handler="CHIEF">
 				    <spot h="1" z="3052.5986" y="2559.685" x="575.494"/>
+				</spawn>
+				<!-- Balaur Assassin Officer / Ab1_v12Ctrl_Vritra_Fi_BossKiller_65_Ae9 -->
+				<spawn npc_id="883535" handler="SLAYER">
+					<spot x="563.78412" y="2559.4963" z="3052.9053" h="119"/>
 				</spawn>
 				<!-- Ab1_v12_Vritra_Fi_65_Ae -->
 				<spawn npc_id="883047">

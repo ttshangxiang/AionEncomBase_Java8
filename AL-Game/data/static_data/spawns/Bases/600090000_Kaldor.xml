@@ -16,6 +16,9 @@
 				<spawn npc_id="251880" handler="CHIEF">
 					<spot h="30" z="151.75" y="995.2444" x="743.159"/>
 				</spawn>
+				<spawn npc_id="251880" handler="SLAYER">
+					<spot x="743.6812" y="975.341" z="153.08237" h="31"/>
+				</spawn>
 				<!-- Elyos Hero's Fall Defense Guard Knight -->
 				<spawn npc_id="251841">
 					<spot h="30" z="150.17636" y="1031.9103" x="749.7752"/>
@@ -62,6 +65,9 @@
 				<spawn npc_id="251960" handler="CHIEF">
 					<spot h="30" z="151.75" y="995.2444" x="743.159"/>
 				</spawn>
+				<spawn npc_id="251960" handler="SLAYER">
+					<spot x="743.6812" y="975.341" z="153.08237" h="31"/>
+				</spawn>
 				<!-- Asmodians Hero's Fall Defense Guard Knight -->
 				<spawn npc_id="251921">
 					<spot h="30" z="150.17636" y="1031.9103" x="749.7752"/>
@@ -107,6 +113,9 @@
 				<!-- Balaur Hero's Fall Defense Chief -->
 				<spawn npc_id="252040" handler="CHIEF">
 					<spot h="30" z="151.75" y="995.2444" x="743.159"/>
+				</spawn>
+				<spawn npc_id="252040" handler="SLAYER">
+					<spot x="743.6812" y="975.341" z="153.08237" h="31"/>
 				</spawn>
 				<!-- Balaur Hero's Fall Defense Guard Knight -->
 				<spawn npc_id="252001">
@@ -156,6 +165,9 @@
 				<!-- Elyos Ashen Glade Defense Chief -->
 				<spawn npc_id="251881" handler="CHIEF">
 					<spot h="35" z="153.3822" y="684.1153" x="555.90704"/>
+				</spawn>
+				<spawn npc_id="251881" handler="SLAYER">
+					<spot x="560.67114" y="658.60504" z="151.36345" h="34"/>
 				</spawn>
 				<!-- Elyos Ashen Glade Defense Guard Knight -->
 				<spawn npc_id="251842">
@@ -210,6 +222,9 @@
 				<spawn npc_id="251961" handler="CHIEF">
 					<spot h="35" z="153.3822" y="684.1153" x="555.90704"/>
 				</spawn>
+				<spawn npc_id="251961" handler="SLAYER">
+					<spot x="560.67114" y="658.60504" z="151.36345" h="34"/>
+				</spawn>
 				<!-- Asmodians Ashen Glade Defense Guard Knight -->
 				<spawn npc_id="251922">
 					<spot h="31" z="154.55182" y="694.86273" x="559.98315"/>
@@ -263,6 +278,9 @@
 				<spawn npc_id="252041" handler="CHIEF">
 					<spot h="35" z="153.3822" y="684.1153" x="555.90704"/>
 				</spawn>
+				<spawn npc_id="252041" handler="SLAYER">
+					<spot x="560.67114" y="658.60504" z="151.36345" h="34"/>
+				</spawn>
 				<!-- Balaur Ashen Glade Defense Guard Knight -->
 				<spawn npc_id="252002">
 					<spot h="31" z="154.55182" y="694.86273" x="559.98315"/>
@@ -310,6 +328,9 @@
 				<!-- Elyos Smoldering Crag Defense Chief -->
 				<spawn npc_id="251882" handler="CHIEF">
 					<spot h="25" z="185.16162" y="709.8997" x="1077.5144"/>
+				</spawn>
+				<spawn npc_id="251882" handler="SLAYER">
+					<spot x="1074.0819" y="692.9082" z="185.31311" h="27"/>
 				</spawn>
 				<!-- Elyos Smoldering Crag Defense Guard Knight -->
 				<spawn npc_id="251843">
@@ -359,6 +380,9 @@
 				<spawn npc_id="251962" handler="CHIEF">
 					<spot h="25" z="185.16162" y="709.8997" x="1077.5144"/>
 				</spawn>
+				<spawn npc_id="251962" handler="SLAYER">
+					<spot x="1074.0819" y="692.9082" z="185.31311" h="27"/>
+				</spawn>
 				<!-- Asmodians Smoldering Crag Defense Guard Knight -->
 				<spawn npc_id="251923">
 					<spot h="29" z="183.06561" y="728.54846" x="1087.9279"/>
@@ -406,6 +430,9 @@
 				<!-- Balaur Smoldering Crag Defense Chief -->
 				<spawn npc_id="252042" handler="CHIEF">
 					<spot h="25" z="185.16162" y="709.8997" x="1077.5144"/>
+				</spawn>
+				<spawn npc_id="252042" handler="SLAYER">
+					<spot x="1074.0819" y="692.9082" z="185.31311" h="27"/>
 				</spawn>
 				<!-- Balaur Smoldering Crag Defense Guard Knight -->
 				<spawn npc_id="252003">

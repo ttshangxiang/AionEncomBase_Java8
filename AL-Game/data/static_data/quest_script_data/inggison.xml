@@ -19,13 +19,13 @@
 	<report_to id="30027" start_npc_ids="798903" end_npc_ids="799032"/>
 	<report_to id="30029" start_npc_ids="798903" end_npc_ids="799032"/>
 	<report_to id="30031" start_npc_ids="798903" end_npc_ids="799032"/>
-	<!-- 훼손된 마력총 (Elyos Only) -->
+	<!-- Shameful Display (Elyos Only) -->
 	<report_to id="30034" start_npc_ids="798903" end_npc_ids="799032"/>
-	<!-- 훼손된 마력포 (Elyos Only) -->
+	<!-- The Saddest Aethercannon (Elyos Only) -->
 	<report_to id="30036" start_npc_ids="798903" end_npc_ids="799032"/>
-	<!-- 훼손된 현악기 (Elyos Only) -->
+	<!-- Restoration Referral (Elyos Only) -->
 	<report_to id="30038" start_npc_ids="798903" end_npc_ids="799032"/>
-	<!-- 훼손된 기동쇠 (Elyos Only) -->
+	<!-- Tampering with the Weapon (Elyos Only) -->
 	<report_to id="30040" start_npc_ids="798903" end_npc_ids="799032"/>
 	<item_collecting id="11004" start_npc_ids="798933" action_item_ids="700609"/>
 	<item_collecting id="11011" start_npc_ids="799071" action_item_ids="700908"/>
@@ -68,13 +68,6 @@
 	<item_collecting id="11230" start_npc_ids="799077"/>
 	<item_collecting id="11231" start_npc_ids="799077"/>
 	<item_collecting id="11232" start_npc_ids="799077"/>
-<!-- 	<item_collecting id="11268" start_npc_ids="798958"/>
-	<item_collecting id="11269" start_npc_ids="798958"/>
-	<item_collecting id="11270" start_npc_ids="798958"/>
-	<item_collecting id="11271" start_npc_ids="798958"/>
-	<item_collecting id="11272" start_npc_ids="798958"/>
-	<item_collecting id="11273" start_npc_ids="798958"/>
-	<item_collecting id="11274" start_npc_ids="798958"/> -->
 	<item_collecting id="11452" start_npc_ids="798933"/>
 	<item_collecting id="11454" start_npc_ids="799070"/>
 	<item_collecting id="11457" start_npc_ids="798953" action_item_ids="700635"/>
@@ -93,13 +86,13 @@
 	<item_collecting id="30028" start_npc_ids="799032"/>
 	<item_collecting id="30030" start_npc_ids="799032"/>
 	<item_collecting id="30032" start_npc_ids="799032"/>
-	<!-- 마력총 복원 (Elyos Only) -->
+	<!-- Shameless (Elyos Only) -->
 	<item_collecting id="30035" start_npc_ids="799032"/>
-	<!-- 마력포 복원 (Elyos Only) -->
+	<!-- Restoring Former Glory (Elyos Only) -->
 	<item_collecting id="30037" start_npc_ids="799032"/>
-	<!-- 현악기 복원 (Elyos Only) -->
+	<!-- Resoration Project (Elyos Only) -->
 	<item_collecting id="30039" start_npc_ids="799032"/>
-	<!-- 기동쇠 복원 (Elyos Only) -->
+	<!-- Restorations (Elyos Only) -->
 	<item_collecting id="30041" start_npc_ids="799032"/>
 	<item_collecting id="38502" start_npc_ids="799085"/>
 	<item_collecting id="38503" start_npc_ids="799086"/>
