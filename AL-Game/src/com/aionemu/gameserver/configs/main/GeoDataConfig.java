@@ -87,4 +87,7 @@ public class GeoDataConfig {
 	public static boolean GEO_MONONO2_IN_USE;
 	@Property(key = "gameserver.geo.nav.pathfinding.enable", defaultValue = "false")
 	public static boolean GEO_NAV_ENABLE;
+
+    @Property(key = "gameserver.geo.nav.softcache.enable", defaultValue = "false")
+    public static boolean GEO_NAV_SOFT_CACHE;
 }

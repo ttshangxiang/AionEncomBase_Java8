@@ -199,7 +199,8 @@ public class Effects {
 			@XmlElement(name = "targetchange", type = TargetChangeEffect.class),
 			@XmlElement(name = "absoluteexppointhealinstant", type = AbsoluteEXPPointHealInstantEffect.class),
 			@XmlElement(name = "absoluteappointhealinstant", type = AbsoluteAPPointHealInstantEffect.class),
-			@XmlElement(name = "summonkisk", type = SummonKiskEffect.class) })
+			@XmlElement(name = "summonkisk", type = SummonKiskEffect.class),
+			@XmlElement(name = "temperingprotection", type = TemperingProtectionEffect.class) })
 
 	protected List<EffectTemplate> effects;
 	@XmlTransient

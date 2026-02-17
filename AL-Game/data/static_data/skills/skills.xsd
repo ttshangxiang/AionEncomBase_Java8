@@ -233,6 +233,7 @@
 			<xs:element name="absoluteexppointhealinstant" type="AbsoluteEXPPointHealInstantEffect" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="absoluteappointhealinstant" type="AbsoluteAPPointHealInstantEffect" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="summonkisk" type="SummonKiskEffect" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="temperingprotection" type="TemperingProtectionEffect" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="Properties">
@@ -1776,4 +1777,12 @@
 			<xs:enumeration value="SEARCH10"/>
 		</xs:restriction>
 	</xs:simpleType>
+
+    <xs:complexType name="TemperingProtectionEffect">
+    <xs:complexContent>
+        <xs:extension base="Effect">
+        </xs:extension>
+    </xs:complexContent>
+    </xs:complexType>
+
 </xs:schema>

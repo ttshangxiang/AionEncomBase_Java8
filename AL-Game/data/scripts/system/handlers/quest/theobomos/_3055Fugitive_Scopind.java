@@ -26,7 +26,6 @@ import com.aionemu.gameserver.services.QuestService;
 public class _3055Fugitive_Scopind extends QuestHandler {
 
 	private final static int questId = 3055;
-	
 	public _3055Fugitive_Scopind() {
 		super(questId);
 	}
@@ -67,13 +66,14 @@ public class _3055Fugitive_Scopind extends QuestHandler {
 							return sendQuestDialog(env, 1011);
 						}
                         case CHECK_COLLECTED_ITEMS: {
-                            return checkQuestItems(env, 0, 1, true, 5, 2716);
+                            return checkQuestItems(env, 0, 1, true, 5, 10001);
                         } 
                     }
 				}
 			}
         }
 		else if (qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 798195)
 			return sendQuestEndDialog(env);
 		}
 		return false;

@@ -58,6 +58,7 @@ public class _3732General_Mania extends QuestHandler {
 		} else if (qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 800518) { //Brunto.
 				if (dialog == QuestDialog.USE_OBJECT) {
+					removeQuestItem(env, 182202179, 1);
 					return sendQuestDialog(env, 10002);
 				} else {
 					return sendQuestEndDialog(env);

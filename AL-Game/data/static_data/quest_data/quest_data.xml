@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
-	Quest Data 5.8 [KOR442] MADE: Encom
-	Cleaned MATTY (ADev.Team)
+	Quest Data 5.8 [KOR442] MADE: Encom Cleaned MATTY (ADev.Team)
  -->
 <quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_data.xsd">
   <quest id="1000" name="Prologue" nameId="1102000" minlevel_permitted="1" max_repeat_count="1" cannot_share="true" cannot_giveup="true" race_permitted="ELYOS" category="QUEST">
@@ -5007,6 +5006,18 @@
     <quest_drop npc_id="252545" item_id="182202106" chance="100" drop_each_member="1" />
     <quest_drop npc_id="252546" item_id="182202106" chance="100" drop_each_member="1" />
   </quest>
+  <quest id="1751" name="Nemea's Research Sample" nameId="1104551" minlevel_permitted="45" max_repeat_count="1" race_permitted="ELYOS" category="QUEST">
+    <collect_items>
+       <collect_item item_id="182202109" count="5"/>
+       <collect_item item_id="182202110" count="7"/>
+    </collect_items>
+    <rewards gold="154080" exp="2193283" ap="100"/>
+      <quest_drop npc_id="253682" item_id="182202109"/>
+      <quest_drop npc_id="253684" item_id="182202109"/>
+      <quest_drop npc_id="253685" item_id="182202109"/>
+      <quest_drop npc_id="253720" item_id="182202110"/>
+      <quest_drop npc_id="253721" item_id="182202110"/>
+  </quest>
   <quest id="1752" name="Daeva Of Flame's Request" nameId="1104552" minlevel_permitted="45" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="QUEST">
     <rewards gold="154080" exp="2193283" ap="150" />
     <bonus level="40" type="MEDICINE" />
@@ -6652,6 +6663,15 @@
       <selectable_reward_item item_id="111300768" count="1" />
       <selectable_reward_item item_id="111500751" count="1" />
     </rewards>
+  </quest>
+  <quest id="2131" name="A Delivery of Leather" nameId="1103231" minlevel_permitted="5" max_repeat_count="1" race_permitted="ASMODIANS" category="QUEST">
+    <rewards gold="2680" exp="1573"/>
+    <start_conditions>
+      <finished quest_id="2115"/>
+    </start_conditions>
+    <quest_work_items>
+      <quest_work_item item_id="182203129" count="1"/>
+    </quest_work_items>
   </quest>
   <quest id="2132" name="A New Skill" nameId="1103232" minlevel_permitted="3" max_repeat_count="1" cannot_share="true" cannot_giveup="true" race_permitted="ASMODIANS" category="IMPORTANT">
     <rewards exp="275" />
@@ -29494,9 +29514,6 @@
   <quest id="15097" name="Risen Relic" nameId="1800809" minlevel_permitted="10" max_repeat_count="1" race_permitted="PC_ALL" category="NON_COUNT">
     <rewards />
   </quest>
-  <quest id="15098" name="What the ship?" nameId="1800810" minlevel_permitted="10" max_repeat_count="1" race_permitted="ELYOS" category="SIGNIFICANT">
-    <rewards exp="30721" />
-  </quest>
   <quest id="15100" name="Desert Vermin" nameId="1800812" minlevel_permitted="64" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
     <rewards gold="150660" exp="9981788">
       <selectable_reward_item item_id="160003584" count="12" />
@@ -39905,9 +39922,6 @@
       <reward_item item_id="186000237" count="30" />
     </rewards>
     <quest_drop npc_id="702768" item_id="182215736" chance="100" drop_each_member="1" />
-  </quest>
-  <quest id="25099" name="How the Ship?" nameId="1801116" minlevel_permitted="10" maxlevel_permitted="999" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="SIGNIFICANT">
-    <rewards exp="30721" />
   </quest>
   <quest id="25200" name="Break Elyos, Take Token" nameId="1801240" minlevel_permitted="65" maxlevel_permitted="999" max_repeat_count="255" cannot_share="true" race_permitted="ASMODIANS" category="QUEST">
     <collect_items>
@@ -56171,9 +56185,6 @@
       <finished quest_id="80314" />
     </start_conditions>
   </quest>
-  <quest id="80315" name="The Reason Why the Hero of Guardians Shines" nameId="1199914" minlevel_permitted="25" maxlevel_permitted="35" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="EVENT">
-    <rewards gold="10000" exp="540340" ap="14650" />
-  </quest>
   <quest id="80316" name="Befitting the Hero of the Guardians (for damage dealers)" nameId="1199915" minlevel_permitted="25" maxlevel_permitted="35" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="EVENT">
     <collect_items>
       <collect_item item_id="122000906" count="1" />
@@ -56220,9 +56231,6 @@
     <start_conditions>
       <finished quest_id="80319" />
     </start_conditions>
-  </quest>
-  <quest id="80321" name="The Reason Why the Hero of Archons Shines" nameId="1199920" minlevel_permitted="25" maxlevel_permitted="35" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="EVENT">
-    <rewards gold="10000" exp="540340" ap="14650" />
   </quest>
   <quest id="80322" name="Befitting the Hero of Archons (for damage dealers)" nameId="1199921" minlevel_permitted="25" maxlevel_permitted="35" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="EVENT">
     <collect_items>

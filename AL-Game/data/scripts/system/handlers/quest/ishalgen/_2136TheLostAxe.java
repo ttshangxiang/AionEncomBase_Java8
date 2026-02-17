@@ -35,7 +35,7 @@ import com.aionemu.gameserver.utils.ThreadPoolManager;
 public class _2136TheLostAxe extends QuestHandler {
 
 	private final static int questId = 2136;
-	private final static int[] npc_ids = {700146, 790009};
+	private int rewardId;
 	public _2136TheLostAxe() {
 		super(questId);
 	}
@@ -43,8 +43,8 @@ public class _2136TheLostAxe extends QuestHandler {
 	@Override
 	public void register() {
 		qe.registerQuestItem(182203130, questId);
-		for (int npc_id : npc_ids)
-			qe.registerQuestNpc(npc_id).addOnTalkEvent(questId);
+		qe.registerQuestNpc(700146).addOnTalkEvent(questId);
+		qe.registerQuestNpc(790009).addOnTalkEvent(questId);
 	}
 
 	@Override
@@ -86,16 +86,18 @@ public class _2136TheLostAxe extends QuestHandler {
                 } 
 				case STEP_TO_1:
 					if (var == 1)
-						qs.setStatus(QuestStatus.REWARD);
-						updateQuestStatus(env);
-						removeQuestItem(env, 182203130, 1);
-						return sendQuestDialog(env, 6);
-				case STEP_TO_2:
-					if (var == 1)
+					    rewardId = 0;
 						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
 						removeQuestItem(env, 182203130, 1);
 						return sendQuestDialog(env, 5);
+				case STEP_TO_2:
+					if (var == 1)
+					    rewardId = 1;
+						qs.setStatus(QuestStatus.REWARD);
+						updateQuestStatus(env);
+						removeQuestItem(env, 182203130, 1);
+						return sendQuestDialog(env, 6);
 			        }
 		        }
 			}
@@ -109,7 +111,7 @@ public class _2136TheLostAxe extends QuestHandler {
 						npc.getController().onDelete();
 					}
 				}, 10000);
-				return sendQuestEndDialog(env);
+				return sendQuestEndDialog(env, rewardId);
 			}
 		}
 		return false;

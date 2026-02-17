@@ -1,5 +1,4 @@
 /*
-
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -102,6 +101,9 @@ public class SimpleAttackManager {
     }
     
     try {
+        if (npc.getTarget() == null) {
+            return false;
+        }
         if (!GeoService.getInstance().canSee(npc, npc.getTarget())) {
             return false;
         }

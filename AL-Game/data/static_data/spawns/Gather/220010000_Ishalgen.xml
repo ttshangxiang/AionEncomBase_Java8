@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Ishalgen 5.5
-	Spawn By (Encom)
+	Ishalgen 5.5 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="220010000">
-		<!-- Impure Iron Ore
-		Collection (15) -->
+		<!-- Impure Iron Ore Collection (15) -->
 		<spawn npc_id="400251" respawn_time="295">
 			<spot h="0" z="297.13892" y="1357.8707" x="666.02356"/>
             <spot h="0" z="314.40027" y="1022.3526" x="668.8905"/>
@@ -19,8 +17,7 @@
             <spot h="0" z="322.669" y="1568.696" x="509.04156"/>
             <spot h="0" z="298.61862" y="1565.7997" x="717.43304"/>
 		</spawn>
-		<!-- Young Azpha
-		Collection (1) -->
+		<!-- Young Azpha Collection (1) -->
 		<spawn npc_id="400651" respawn_time="295">
 			<spot h="0" z="303.42688" y="2859.5015" x="555.1756"/>
             <spot h="0" z="257.75525" y="2325.6716" x="433.25943"/>
@@ -86,8 +83,7 @@
             <spot h="0" z="260.1234" y="1766.6763" x="1058.6637"/>
 			<spot h="29" z="267.40234" y="1678.4374" x="895.18567"/>
 		</spawn>
-		<!-- Raydam Sapling
-		Collection (10) -->
+		<!-- Raydam Sapling Collection (10) -->
 		<spawn npc_id="400751" respawn_time="295">
             <spot h="19" z="260.75" y="1950.5929" x="938.78754"/>
             <spot h="0" z="262.3718" y="1754.243" x="816.19183"/>

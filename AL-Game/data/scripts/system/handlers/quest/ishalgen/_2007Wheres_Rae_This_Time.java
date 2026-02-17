@@ -183,14 +183,19 @@ public class _2007Wheres_Rae_This_Time extends QuestHandler {
 				}
 				break;
 			}
-		} else if (qs.getStatus() == QuestStatus.REWARD) {
+		}
+		else if (qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203516) {
-				if (env.getDialog() == QuestDialog.USE_OBJECT) {
-					playQuestMovie(env, 58);
-					return sendQuestDialog(env, 3057);
-				} else {
-					return sendQuestEndDialog(env);
+				switch (env.getDialog()) {
+					case USE_OBJECT: {
+						return sendQuestDialog(env, 3057);
+                    }
+				    case SELECT_REWARD: {
+				        playQuestMovie(env, 58);
+				       return sendQuestEndDialog(env);
+				    }
 				}
+				return sendQuestEndDialog(env);
 			}
 		}
 		return false;

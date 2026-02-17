@@ -124,92 +124,55 @@ public class QuestEngine implements GameEngine {
     Player player = env.getPlayer();
     try {
         QuestHandler questHandler = null;
-        
         if (env.getQuestId() != 0) {
             questHandler = getQuestHandlerByQuestId(env.getQuestId());
-            if (questHandler != null) {
-                return questHandler.onDialogEvent(env);
-            }
-            return false;
-        } 
-        else {
+            if (questHandler != null)
+                if (questHandler.onDialogEvent(env))
+                    return true;
+                else {
+                    QuestTemplate qt = DataManager.QUEST_DATA.getQuestById(env.getQuestId());
+                    if (qt != null && qt.getCategory() == QuestCategory.CHALLENGE_TASK && player.getAccessLevel() > 0) {
+                        PacketSendUtility.sendMessage(player, "You're GM! So system won't apply countNextRepeatTime()");
+                        return true;
+                    } else if (qt != null && qt.getCategory() == QuestCategory.CHALLENGE_TASK && player.getAccessLevel() == 0) {
+                        PacketSendUtility.sendPacket(env.getPlayer(), new SM_SYSTEM_MESSAGE(1400855, 9));
+                    }
+                }
+        } else {
             Npc npc = (Npc) env.getVisibleObject();
-            if (npc == null) {
-                return false;
-            }
-            
-            QuestNpc questNpc = getQuestNpc(npc.getNpcId());
-            List<Integer> onTalkEvents = questNpc.getOnTalkEvent();
-            
+            List<Integer> onTalkEvents = getQuestNpc(npc == null ? 0 : npc.getNpcId()).getOnTalkEvent();
             if (onTalkEvents == null || onTalkEvents.isEmpty()) {
                 log.debug("No quests registered for NPC: {}", npc.getNpcId());
                 return false;
             }
-            
             for (int questId : onTalkEvents) {
-                QuestState qs = player.getQuestStateList().getQuestState(questId);
                 QuestTemplate qt = DataManager.QUEST_DATA.getQuestById(questId);
-                
                 if (qt == null) {
                     log.warn("Quest template not found for ID: {}", questId);
                     continue;
                 }
-                
-                if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
-                    questHandler = getQuestHandlerByQuestId(questId);
-                    if (questHandler != null) {
-                        env.setQuestId(questId);
-                        if (questHandler.onDialogEvent(env)) {
-                            return true;
-                        }
+                QuestState qs = player.getQuestStateList().getQuestState(questId);
+                if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+                   QuestEnv checkEnv = new QuestEnv(env.getVisibleObject(), player, questId, env.getDialogId());
+                if (!QuestService.checkStartConditions(checkEnv, false)) {
+                      continue;
                     }
                 }
-                else if (qs != null && qs.getStatus() == QuestStatus.START) {
-                    questHandler = getQuestHandlerByQuestId(questId);
-                    if (questHandler != null) {
-                        env.setQuestId(questId);
-                        if (questHandler.onDialogEvent(env)) {
-                            return true;
-                        }
-                    }
-                }
-                else if (qs == null || qs.getStatus() == QuestStatus.NONE) {
-                    int playerLevel = player.getLevel();
-                    int minLevel = qt.getMinlevelPermitted();
-                    int maxLevel = qt.getMaxlevelPermitted();
-                    
-                    if (minLevel != 999) {
-                        int levelDiff = minLevel - playerLevel;
-                        if (levelDiff > 0) {
-                            continue;
-                        }
-                    }
-                    
-                    if (maxLevel != 0 && playerLevel > maxLevel) {
-                        continue;
-                    }
-                    
-                    QuestEnv tempEnv = new QuestEnv(env.getVisibleObject(), player, questId, env.getDialogId());
-                    
-                    if (QuestService.checkStartConditions(tempEnv, false)) {
-                        questHandler = getQuestHandlerByQuestId(questId);
-                        if (questHandler != null) {
-                            env.setQuestId(questId);
-                            if (questHandler.onDialogEvent(env)) {
-                                return true;
-                            }
-                        }
+                questHandler = getQuestHandlerByQuestId(questId);
+                if (questHandler != null) {
+                    env.setQuestId(questId);
+                    if (questHandler.onDialogEvent(env)) {
+                        return true;
                     }
                 }
             }
-
             env.setQuestId(0);
-            return false;
         }
     } catch (Exception ex) {
-        log.error("QE: exception in onDialog for player: {}, NPC: {}, Quest: {}", player.getName(), env.getVisibleObject() != null ? ((Npc)env.getVisibleObject()).getNpcId() : "null", env.getQuestId(), ex);
+        log.error("QE: exception in onDialog", ex);
         return false;
-       }
+        }
+       return false;
     }
 
 	public boolean onKill(QuestEnv env) {

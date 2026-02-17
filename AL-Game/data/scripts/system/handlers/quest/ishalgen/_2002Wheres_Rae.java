@@ -167,8 +167,8 @@ public class _2002Wheres_Rae extends QuestHandler {
                         PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
                         QuestService.addNewSpawn(player.getWorldId(), player.getInstanceId(), 203553, npc.getX(), npc.getY(), npc.getZ(), npc.getHeading());
                         npc.getController().onDie(npc);
-                        //playQuestMovie(env, 256);
-                        return true;
+                        playQuestMovie(env, 256);
+				        return closeDialogWindow(env);
                     }
                     break;
                 case 203553:

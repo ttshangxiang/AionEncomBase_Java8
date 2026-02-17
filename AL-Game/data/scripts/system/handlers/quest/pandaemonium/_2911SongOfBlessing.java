@@ -58,7 +58,7 @@ public class _2911SongOfBlessing extends QuestHandler {
 			}
 		}
 		else if (targetId == 204193) {
-			if (qs != null || qs.getStatus() == QuestStatus.START) {
+			if (qs != null && qs.getStatus() == QuestStatus.START) {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1352);
 				else if (env.getDialog() == QuestDialog.STEP_TO_1) {
@@ -75,7 +75,7 @@ public class _2911SongOfBlessing extends QuestHandler {
 			    }
 			}
 		}
-		if (qs != null || qs.getStatus() == QuestStatus.REWARD) {
+		if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204193) {
 				return sendQuestEndDialog(env, rewardId);
 			}

@@ -25,8 +25,7 @@ import com.aionemu.gameserver.utils.chathandlers.AdminCommand;
 import com.aionemu.gameserver.world.World;
 
 /**
- * @author Sarynth Simple admin assistance command for adding kinah to self, named player or target player. Based on
- *         //add command. Kinah Item Id - 182400001 (Using ItemId.KINAH.value())
+ * @author Sarynth Simple admin assistance command for adding kinah to self, named player or target player. Based on //add command. Kinah Item Id - 182400001 (Using ItemId.KINAH.value())
  */
 public class Kinah extends AdminCommand {
 
@@ -38,6 +37,11 @@ public class Kinah extends AdminCommand {
 	public void execute(Player admin, String... params) {
 		long kinahCount;
 		Player receiver;
+
+        if (params.length == 0) {
+            onFail(admin, null);
+            return;
+        }
 
 		if (params.length == 1) {
 			receiver = admin;

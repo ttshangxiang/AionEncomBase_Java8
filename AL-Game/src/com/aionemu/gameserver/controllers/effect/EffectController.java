@@ -302,6 +302,19 @@ public class EffectController {
 		return false;
 	}
 
+    public boolean hasEffectById(int effectId) {
+        Collection<Effect> allEffects = new ArrayList<>();
+        allEffects.addAll(abnormalEffectMap.values());
+        allEffects.addAll(noshowEffects.values());
+        allEffects.addAll(passiveEffectMap.values());
+        for (Effect effect : allEffects) {
+        if (effect.containsEffectId(effectId)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 	public void broadCastEffects() {
 		owner.addPacketBroadcastMask(BroadcastMode.BROAD_CAST_EFFECTS);
 	}

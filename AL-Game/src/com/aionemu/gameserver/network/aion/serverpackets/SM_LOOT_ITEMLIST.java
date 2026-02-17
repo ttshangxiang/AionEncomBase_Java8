@@ -63,7 +63,8 @@ public class SM_LOOT_ITEMLIST extends AionServerPacket {
 			writeC(0);
 			writeC(0);
 			ItemTemplate template = drop.getItemTemplate();
-			writeC(!template.getCategory().equals(ItemCategory.QUEST) && !template.isTradeable() ? 1 : 0);
+			//writeC(!template.getCategory().equals(ItemCategory.QUEST) && !template.isTradeable() ? 1 : 0); //Calls up a window when selecting loot that meets the criteria. Do we need this?
+            writeC(0); //No windows, no freedom of loot.
 		}
 		FastList.recycle(dropItems);
 	}

@@ -69,11 +69,11 @@ public class _3018Fork_Ear_Rokes extends QuestHandler {
                             return sendQuestDialog(env, 1011);
                         }
 				    } case CHECK_COLLECTED_ITEMS: {
-                        return checkQuestItems(env, 0, 1, true, 5, 2716);
+                        return checkQuestItems(env, 0, 1, true, 5, 10001);
                     } 
                 }
             }
-        } else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        } else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 798150) {
                 return sendQuestEndDialog(env);
             }

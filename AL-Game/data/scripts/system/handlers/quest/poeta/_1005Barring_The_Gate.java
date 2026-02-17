@@ -161,10 +161,18 @@ public class _1005Barring_The_Gate extends QuestHandler {
                     return false;
 				}
 			}
-		} else if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 203067) {
-				if (env.getDialog() == QuestDialog.USE_OBJECT)
-					return sendQuestDialog(env, 2716);
+		} 
+		else if (qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 203067) { // Kalio
+				switch (env.getDialog()) {
+					case USE_OBJECT: {
+						return sendQuestDialog(env, 2716);
+                    }
+					case SELECT_REWARD: {
+						playQuestMovie(env, 171);
+						return sendQuestDialog(env, 5);
+					}
+				}
 				return sendQuestEndDialog(env);
 			}
 		}

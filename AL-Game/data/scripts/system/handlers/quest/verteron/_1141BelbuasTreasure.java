@@ -78,7 +78,7 @@ public class _1141BelbuasTreasure extends QuestHandler {
 		QuestState qs = player.getQuestStateList().getQuestState(env.getQuestId());
 		int targetId = env.getTargetId();
 		if (targetId == 700122) {
-			if (qs == null || qs.getStatus() != QuestStatus.REWARD) {
+			if (qs == null && (qs.getStatus() == QuestStatus.START || qs.getStatus() == QuestStatus.REWARD)) {
 				return false;
 			}
 		}

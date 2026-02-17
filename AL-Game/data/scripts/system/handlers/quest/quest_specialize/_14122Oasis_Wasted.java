@@ -69,6 +69,7 @@ public class _14122Oasis_Wasted extends QuestHandler {
 				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 2375);
 				} else if (env.getDialog() == QuestDialog.SELECT_REWARD) {
+					removeQuestItem(env, 182215480, 1);
 					return checkQuestItems(env, 2, 2, true, 5, 2716);
 				}
 			}

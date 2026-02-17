@@ -1,5 +1,4 @@
 /*
-
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -37,6 +36,8 @@ import com.aionemu.gameserver.utils.ThreadPoolManager;
 
 /**
  * Created by Wnkrz on 25/08/2017.
+ * Modified to support Event Stigma Preservation (skill_id=4714, effectid=900003)
+ * When this effect is active, failed stigma enchanting reduces level by 1 instead of resetting to 0
  */
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -66,8 +67,7 @@ public class EnchantStigmaAction extends AbstractItemAction {
 		}
 		if (targetItem.getEnchantLevel() >= 10) {
 			// You cannot enchant %0 any further.
-			PacketSendUtility.sendPacket(player,
-					SM_SYSTEM_MESSAGE.STR_ENCHANT_ITEM_IT_CAN_NOT_BE_ENCHANTED_MORE_TIME(targetItem.getNameId()));
+			PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_ENCHANT_ITEM_IT_CAN_NOT_BE_ENCHANTED_MORE_TIME(targetItem.getNameId()));
 			return false;
 		}
 		if (targetItem.isEquipped()) {
@@ -91,21 +91,16 @@ public class EnchantStigmaAction extends AbstractItemAction {
 		final int parntObjectId = parentItem.getObjectId();
 		final int parentNameId = parentItem.getNameId();
 		final int nameId = targetItem.getNameId();
-		PacketSendUtility.broadcastPacket(player,
-				new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parentItem.getObjectId(), parentItemId, 3000, 0, 0),
-				true);
+		PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parentItem.getObjectId(), parentItemId, 3000, 0, 0), true);
 		final ItemUseObserver observer = new ItemUseObserver() {
 			@Override
 			public void abort() {
 				player.getController().cancelTask(TaskId.ITEM_USE);
 				player.removeItemCoolDown(parentItem.getItemTemplate().getUseLimits().getDelayId());
-				PacketSendUtility.sendPacket(player,
-						SM_SYSTEM_MESSAGE.STR_ITEM_CANCELED(new DescriptionId(parentNameId)));
+				PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_ITEM_CANCELED(new DescriptionId(parentNameId)));
 				// Stigma enchantment of %0 has been cancelled.
-				PacketSendUtility.sendPacket(player,
-						SM_SYSTEM_MESSAGE.STR_MSG_STIGMA_ENCHANT_CANCEL(new DescriptionId(parentNameId)));
-				PacketSendUtility.broadcastPacket(player,
-						new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parntObjectId, parentItemId, 0, 2, 0), true);
+				PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_MSG_STIGMA_ENCHANT_CANCEL(new DescriptionId(parentNameId)));
+				PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parntObjectId, parentItemId, 0, 2, 0), true);
 				player.getObserveController().removeObserver(this);
 			}
 		};
@@ -116,11 +111,8 @@ public class EnchantStigmaAction extends AbstractItemAction {
 				if (isSuccess) {
 					player.getObserveController().removeObserver(observer);
 					player.getInventory().decreaseKinah(getStigmaByQuality(parentItem));
-					PacketSendUtility.broadcastPacket(player,
-							new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parntObjectId, parentItemId, 0, 1, 1),
-							true);
-					PacketSendUtility.sendPacket(player,
-							SM_SYSTEM_MESSAGE.STR_MSG_STIGMA_ENCHANT_SUCCESS(new DescriptionId(parentNameId)));
+					PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parntObjectId, parentItemId, 0, 1, 1), true);
+					PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_MSG_STIGMA_ENCHANT_SUCCESS(new DescriptionId(parentNameId)));
 					player.getInventory().decreaseByObjectId(parentItem.getObjectId(), 1);
 					targetItem.setEnchantLevel(targetItem.getEnchantLevel() + 1);
 					targetItem.setPersistentState(PersistentState.UPDATE_REQUIRED);
@@ -129,14 +121,29 @@ public class EnchantStigmaAction extends AbstractItemAction {
 				} else {
 					player.getObserveController().removeObserver(observer);
 					player.getInventory().decreaseKinah(getStigmaByQuality(parentItem));
-					PacketSendUtility.broadcastPacket(player,
-							new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parntObjectId, parentItemId, 0, 2, 1),
-							true);
-					PacketSendUtility.sendPacket(player,
-							SM_SYSTEM_MESSAGE.STR_MSG_STIGMA_ENCHANT_FAIL(new DescriptionId(parentNameId)));
-					targetItem.setEnchantLevel(0);
+					PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parntObjectId, parentItemId, 0, 2, 1), true);
+					
+					boolean hasStigmaProtection = false;
+					if (player.getEffectController() != null) {
+						hasStigmaProtection = player.getEffectController().hasEffectById(900003);
+					}
+
+					if (hasStigmaProtection) {
+						int currentLevel = targetItem.getEnchantLevel();
+						int newLevel = Math.max(0, currentLevel - 1);
+						targetItem.setEnchantLevel(newLevel);
+						
+						PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_MSG_ITEM_AUTHORIZE_FAILED_NO_PENALTY(targetItem.getNameId()));
+						
+						PacketSendUtility.sendPacket(player, new SM_INVENTORY_UPDATE_ITEM(player, targetItem));
+					} else {
+						targetItem.setEnchantLevel(0);
+						PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_MSG_STIGMA_ENCHANT_FAIL(new DescriptionId(parentNameId)));
+						PacketSendUtility.sendPacket(player, new SM_INVENTORY_UPDATE_ITEM(player, targetItem));
+					}
+					
 					targetItem.setPersistentState(PersistentState.UPDATE_REQUIRED);
-					PacketSendUtility.sendPacket(player, new SM_INVENTORY_UPDATE_ITEM(player, targetItem));
+					player.getInventory().setPersistentState(PersistentState.UPDATE_REQUIRED);
 				}
 			}
 		}, 3000));

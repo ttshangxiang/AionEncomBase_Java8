@@ -16,7 +16,6 @@
  */
 package quest.pandaemonium;
 
-import com.aionemu.gameserver.model.gameobjects.LetterType;
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
@@ -24,17 +23,14 @@ import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.aionemu.gameserver.services.mail.SystemMailService;
-import com.aionemu.gameserver.world.zone.ZoneName;
 
 /****/
 /** Author Ghostfur & Unknown (Aion-Unique)
 /****/
 
-public class _2948Huron_Letter extends QuestHandler
-{
+public class _2948Huron_Letter extends QuestHandler {
+
 	private final static int questId = 2948;
-	
 	public _2948Huron_Letter() {
 		super(questId);
 	}
@@ -48,25 +44,6 @@ public class _2948Huron_Letter extends QuestHandler
 	public void register() {
 		qe.registerOnLevelUp(questId);
 		qe.registerQuestNpc(204274).addOnTalkEvent(questId); //Huron.
-		qe.registerOnEnterZone(ZoneName.get("VIFROST_BRIDGE_120010000"), questId);
-	}
-	
-	@Override
-    public boolean onEnterZoneEvent(QuestEnv env, ZoneName zoneName) {
-        final Player player = env.getPlayer();
-        final QuestState qs = player.getQuestStateList().getQuestState(questId);
-        if (qs != null && qs.getStatus() == QuestStatus.START) {
-            int var = qs.getQuestVarById(0);
-			int instanceId = player.getInstanceId();
-			//if (zoneName == ZoneName.get("VIFROST_BRIDGE_120010000")) {
-			//	if (var == 0) {
-			//		SystemMailService.getInstance().sendMail("Huron", player.getName(), "[Wing Feather Tuner]",
-			//		"I'am Huron and I expect you at Pandaemonium. Come join me.", 0, 0, 0, 0, LetterType.NORMAL);
-			//		return true;
-			//	}
-			//}
-		}
-		return false;
 	}
 	
 	@Override

@@ -523,9 +523,9 @@ public final class PlayerEnterWorldService {
 				serviceBuff = new ServiceBuff(2);
 				serviceBuff.applyEffect(player, 2);
 				// Homerun Energy.
-				// SkillEngine.getInstance().applyEffectDirectly(323, player, player, 0);
+				SkillEngine.getInstance().applyEffectDirectly(323, player, player, 0);
                 // [Event] Stigma Preservation.
-				// SkillEngine.getInstance().applyEffectDirectly(4714, player, player, 0);
+				SkillEngine.getInstance().applyEffectDirectly(4714, player, player, 0);
 				// [Event] Accessory Ascension
 				SkillEngine.getInstance().applyEffectDirectly(4843, player, player, 0); 
 			}
@@ -534,9 +534,9 @@ public final class PlayerEnterWorldService {
 				serviceBuff = new ServiceBuff(220599);
 				serviceBuff.applyEffect(player, 220599);
 				// Homerun Energy.
-				// SkillEngine.getInstance().applyEffectDirectly(323, player, player, 0);
+				SkillEngine.getInstance().applyEffectDirectly(323, player, player, 0);
                 // [Event] Stigma Preservation.
-				// SkillEngine.getInstance().applyEffectDirectly(4714, player, player, 0);
+				SkillEngine.getInstance().applyEffectDirectly(4714, player, player, 0);
 				// [Event] Accessory Ascension
 				SkillEngine.getInstance().applyEffectDirectly(4843, player, player, 0);
 			}
@@ -545,9 +545,9 @@ public final class PlayerEnterWorldService {
 				serviceBuff = new ServiceBuff(230599);
 				serviceBuff.applyEffect(player, 230599);
 				// Homerun Energy.
-				// SkillEngine.getInstance().applyEffectDirectly(323, player, player, 0);
+				SkillEngine.getInstance().applyEffectDirectly(323, player, player, 0);
                 // [Event] Stigma Preservation.
-				// SkillEngine.getInstance().applyEffectDirectly(4714, player, player, 0);
+				SkillEngine.getInstance().applyEffectDirectly(4714, player, player, 0);
 				// [Event] Accessory Ascension
 				SkillEngine.getInstance().applyEffectDirectly(4843, player, player, 0);
 			}

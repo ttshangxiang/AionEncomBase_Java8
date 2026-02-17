@@ -44,6 +44,8 @@ public class _3023TheSpiceMustFlow extends QuestHandler {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1693);
 				else if (env.getDialog() == QuestDialog.STEP_TO_2) {
+					removeQuestItem(env, 182208078, 1);
+					giveQuestItem(env, 182208079, 1);
 					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 					updateQuestStatus(env);
 				    return closeDialogWindow(env);
@@ -67,6 +69,7 @@ public class _3023TheSpiceMustFlow extends QuestHandler {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1352);
 				else if (env.getDialog() == QuestDialog.STEP_TO_1) {
+					giveQuestItem(env, 182208078, 1);
 					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 					updateQuestStatus(env);
 				    return closeDialogWindow(env);
@@ -78,6 +81,7 @@ public class _3023TheSpiceMustFlow extends QuestHandler {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 2034);
 				else if (env.getDialog() == QuestDialog.STEP_TO_3) {
+					removeQuestItem(env, 182208079, 1);
 					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 					updateQuestStatus(env);
 				    return closeDialogWindow(env);
