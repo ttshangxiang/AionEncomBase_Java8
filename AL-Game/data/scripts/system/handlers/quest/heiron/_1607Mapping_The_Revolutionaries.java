@@ -69,7 +69,7 @@ public class _1607Mapping_The_Revolutionaries extends QuestHandler {
 				}
 			}
 		} 
-        else if (qs == null || qs.getStatus() == QuestStatus.START) {
+        else if (qs == null && qs.getStatus() == QuestStatus.START) {
 			int var = qs.getQuestVarById(0);
 			int var1 = qs.getQuestVarById(1);
 			int var2 = qs.getQuestVarById(2);
@@ -94,7 +94,7 @@ public class _1607Mapping_The_Revolutionaries extends QuestHandler {
 				}
 			}
 		} 
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204574) { //Finn.
 				return sendQuestEndDialog(env);
 			}

@@ -67,7 +67,7 @@ public class _2106VanarsFlattery extends QuestHandler {
 						return closeDialogWindow(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203517) {
 				return sendQuestEndDialog(env);
 			}

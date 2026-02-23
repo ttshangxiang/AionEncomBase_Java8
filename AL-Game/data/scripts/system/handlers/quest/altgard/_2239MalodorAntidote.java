@@ -18,14 +18,12 @@ package quest.altgard;
 
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.services.QuestService;
-import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /**
  * @author Ritsu
@@ -88,8 +86,7 @@ public class _2239MalodorAntidote extends QuestHandler {
 							}
 							qs.setQuestVarById(0, qs.getQuestVarById(0) + 2);
 							updateQuestStatus(env);
-							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-							return true;
+							return sendQuestDialog(env, 1779);
 						}
 						else {
 							return sendQuestDialog(env, 1694);
@@ -112,7 +109,7 @@ public class _2239MalodorAntidote extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203613) {
 				return sendQuestEndDialog(env);
 			}

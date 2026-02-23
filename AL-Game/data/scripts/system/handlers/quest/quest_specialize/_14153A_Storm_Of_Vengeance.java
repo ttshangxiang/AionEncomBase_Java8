@@ -64,7 +64,7 @@ public class _14153A_Storm_Of_Vengeance extends QuestHandler {
                 }
             }
         }  
-        else if (qs == null || qs.getStatus() == QuestStatus.START) {
+        else if (qs != null && qs.getStatus() == QuestStatus.START) {
             int var = qs.getQuestVarById(0);
             if (targetId == 204505) {
             switch (env.getDialog()) {
@@ -121,7 +121,7 @@ public class _14153A_Storm_Of_Vengeance extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 204505) { //Sofne.
                 return sendQuestEndDialog(env);
             }

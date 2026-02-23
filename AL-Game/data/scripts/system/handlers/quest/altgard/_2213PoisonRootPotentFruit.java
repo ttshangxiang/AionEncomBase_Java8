@@ -84,7 +84,7 @@ public class _2213PoisonRootPotentFruit extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203604) {
 				return sendQuestEndDialog(env);
 			}

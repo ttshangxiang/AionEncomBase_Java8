@@ -94,11 +94,11 @@ public class _1361FindingDrinkingWater extends QuestHandler {
 			    }
 			}
 		}
-		else if (qs != null && qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 1) {
+		else if (qs != null && qs.getStatus() == QuestStatus.START) {
 			switch (targetId) {
 				case 700173: { // Water Tank
-					if (qs.getQuestVarById(0) == 1 && env.getDialog() == QuestDialog.USE_OBJECT) {
-						return useQuestObject(env, 1, 1, true, 0, 0, 0, 182201327, 1); // reward
+					if (player.getInventory().getItemCountByItemId(182201327) > 0 && env.getDialog() == QuestDialog.USE_OBJECT) {
+						return useQuestObject(env, 0, 0, true, 182201327, 1); // reward
 					}
 				}
 			}

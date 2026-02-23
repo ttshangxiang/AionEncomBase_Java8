@@ -15,15 +15,12 @@ package quest.brusthonin;
 import com.aionemu.gameserver.model.gameobjects.Item;
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import com.aionemu.gameserver.questEngine.handlers.HandlerResult;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.aionemu.gameserver.services.QuestService;
-import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /****/
 /** Author Ghostfur & Unknown (Aion-Unique)
@@ -61,17 +58,18 @@ public class _4042Message_In_A_Bottle extends QuestHandler {
 		final QuestState qs = player.getQuestStateList().getQuestState(questId);
 		if (env.getVisibleObject() instanceof Npc) {
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-		} if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		} 
+        if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 0) { 
 				if (env.getDialog() == QuestDialog.ACCEPT_QUEST) {
-					QuestService.startQuest(env);
-					return closeDialogWindow(env);
+					return sendQuestStartDialog(env);
 				}
 				if (env.getDialog() == QuestDialog.REFUSE_QUEST) {
 					return closeDialogWindow(env);
 				}
 			}
-		} else if (qs.getStatus() == QuestStatus.START) {
+		} 
+        else if (qs != null && qs.getStatus() == QuestStatus.START) {
 			if (targetId == 205192) { //Sahnu.
 				if (qs.getQuestVarById(0) == 0) {
 					if (env.getDialog() == QuestDialog.START_DIALOG) {
@@ -81,10 +79,7 @@ public class _4042Message_In_A_Bottle extends QuestHandler {
 						giveQuestItem(env, 182209025, 1); //A letter From Ntuamu To Sahnu.
 						qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 						updateQuestStatus(env);
-						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-						return true;
-					} else {
-						return sendQuestStartDialog(env);
+						return closeDialogWindow(env);
 					}
 				} else if (qs.getQuestVarById(0) == 2) {
 					if (env.getDialog() == QuestDialog.START_DIALOG) {
@@ -92,10 +87,11 @@ public class _4042Message_In_A_Bottle extends QuestHandler {
 					} else if (env.getDialog() == QuestDialog.SELECT_REWARD) {
 						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
-						return closeDialogWindow(env);
+				        return sendQuestEndDialog(env);
 					}
 				}
-			} if (targetId == 204225) { //Gunter.
+			} 
+            if (targetId == 204225) { //Gunter.
 				if (qs.getQuestVarById(0) == 1) {
 					if (env.getDialog() == QuestDialog.START_DIALOG) {
 						return sendQuestDialog(env, 1693);
@@ -103,21 +99,14 @@ public class _4042Message_In_A_Bottle extends QuestHandler {
 						removeQuestItem(env, 182209025, 1); //A letter From Ntuamu To Sahnu.
 						qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 						updateQuestStatus(env);
-						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-						return true;
-					} else {
-						return sendQuestStartDialog(env);
+						return closeDialogWindow(env);
 					}
 				}
 			}
-		} else if (qs.getStatus() == QuestStatus.REWARD) {
+		} 
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 205192) { //Sahnu.
-				switch (env.getDialog()) {
-					case SELECT_REWARD: {
-						return sendQuestDialog(env, 5);
-					} default:
-						return sendQuestEndDialog(env);
-				}
+				return sendQuestEndDialog(env);
 			}
 		}
 		return false;

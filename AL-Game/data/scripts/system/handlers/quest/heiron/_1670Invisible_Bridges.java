@@ -56,7 +56,7 @@ public class _1670Invisible_Bridges extends QuestHandler {
 				}
 			}
 		} 
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203837) {
 				if (dialog == QuestDialog.USE_OBJECT) {
 				    removeQuestItem(env, 182201770, 1);

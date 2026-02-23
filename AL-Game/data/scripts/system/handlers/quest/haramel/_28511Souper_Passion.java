@@ -74,7 +74,7 @@ public class _28511Souper_Passion extends QuestHandler {
 					}
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 798031) {
 				if (dialog == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 10002);

@@ -84,7 +84,7 @@ public class _26905Occupiers_All_Over_The_Place extends QuestHandler {
 				}
 			}
 		}
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204372) {
 				switch (env.getDialog()) {
 				case SELECT_REWARD:

@@ -76,20 +76,23 @@ public class _2423ThereAndBackAgain extends QuestHandler {
 						case STEP_TO_3: {
 							TeleportService2.teleportTo(player, 210020000, 1, 370.13f, 2682.59f, 171, (byte) 30, TeleportAnimation.BEAM_ANIMATION);
 							qs.setQuestVar(3);
-							return defaultCloseDialog(env, 3, 3, true, false);
+							qs.setStatus(QuestStatus.REWARD);
+							updateQuestStatus(env);
+					        return closeDialogWindow(env);
 						}
 						case SELECT_ACTION_1779: {
 							return sendQuestDialog(env, 1779);
 						}
 						case STEP_TO_1: {
 							TeleportService2.teleportTo(player, 210020000, 1, 370.13f, 2682.59f, 171, (byte) 30, TeleportAnimation.BEAM_ANIMATION);
-							return defaultCloseDialog(env, 0, 1);
+							qs.setQuestVar(1);
+					        return closeDialogWindow(env);
 						}
 					}
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204375) { 
 				if (env.getDialog() == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 10002);

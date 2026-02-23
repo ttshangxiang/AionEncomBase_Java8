@@ -59,7 +59,7 @@ public class _2288PutYourMoneyWhereYourMouthIs extends QuestHandler {
 		if (env.getVisibleObject() instanceof Npc) {
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
 		}
-		if (qs == null || qs.getStatus() == QuestStatus.START) {
+		if (qs == null && qs.getStatus() == QuestStatus.START) {
 		int var = qs.getQuestVarById(0);
 		if (targetId == 210564 || targetId == 210584 || targetId == 210581 || targetId == 210436 || targetId == 201047 || targetId == 210437 || targetId == 210440) {
 			if (var > 0 && var < 3) {
@@ -119,7 +119,7 @@ public class _2288PutYourMoneyWhereYourMouthIs extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203621) {
 				return sendQuestEndDialog(env);
 			}

@@ -52,7 +52,6 @@ public class _28738Bombs_For_Everyone extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 4762);
 					}
-					case ACCEPT_QUEST:
 					case ACCEPT_QUEST_SIMPLE:
 					    giveQuestItem(env, 164000342, 10); //Improved Life Drain Bomb.
 						return sendQuestStartDialog(env);
@@ -61,7 +60,7 @@ public class _28738Bombs_For_Everyone extends QuestHandler {
 				}
 			}
 		}
-		if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804966) {
 				if (env.getDialog() == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 10002);

@@ -51,8 +51,7 @@ public class _16942Foundry_Finds extends QuestHandler {
 						return sendQuestDialog(env, 4762);
 					} case SELECT_ACTION_4763: {
 						return sendQuestDialog(env, 4763);
-					} case ACCEPT_QUEST:
-					case ACCEPT_QUEST_SIMPLE: {
+					} case ACCEPT_QUEST_SIMPLE: {
 						return sendQuestStartDialog(env);
 					} case REFUSE_QUEST_SIMPLE: {
 				        return closeDialogWindow(env);

@@ -32,6 +32,7 @@ import com.aionemu.gameserver.services.QuestService;
 public class _2332MeatyTreats extends QuestHandler {
 
 	private final static int questId = 2332;
+	private int rewardId;
 	public _2332MeatyTreats() {
 		super(questId);
 	}
@@ -65,25 +66,35 @@ public class _2332MeatyTreats extends QuestHandler {
 					else
 						return sendQuestDialog(env, 1693);
 				}
-				else if (env.getDialogId() >= 10000 && env.getDialogId() <= 10002) {
-					qs.setQuestVarById(0, qs.getQuestVarById(0) + (env.getDialogId() - 10000));
+				else if (env.getDialogId() == 10000) {
+					rewardId = 0;
+					qs.setQuestVar(1);
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
-					return sendQuestDialog(env, env.getDialogId() - 9995);
+                    return sendQuestDialog(env, 5);
+
+				}
+				else if (env.getDialogId() == 10001) {
+					rewardId = 1;
+					qs.setQuestVar(1);
+					qs.setStatus(QuestStatus.REWARD);
+					updateQuestStatus(env);
+                    return sendQuestDialog(env, 6);
+
+				}
+				else if (env.getDialogId() == 10002) {
+					rewardId = 2;
+					qs.setQuestVar(1);
+					qs.setStatus(QuestStatus.REWARD);
+					updateQuestStatus(env);
+                    return sendQuestDialog(env, 7);
 
 				}
 			}
 		}
-		else if (env.getDialogId() == 23 && qs.getStatus() == QuestStatus.REWARD && targetId == 798084) {
-			QuestService.finishQuest(env, qs.getQuestVarById(0));
-			return sendQuestDialog(env, 1008);
-		}
-		else if (qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 798084) {
-				return sendQuestDialog(env, 1008);
-			}
-				else {
-				return sendQuestEndDialog(env);
+				return sendQuestEndDialog(env, rewardId);
 			}	
 		}
 		return false;

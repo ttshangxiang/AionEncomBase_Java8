@@ -76,7 +76,7 @@ public class _2493BringingUpTayga extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204325) { // Ipoderr
 				if (dialog == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 10002);

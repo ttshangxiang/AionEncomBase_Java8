@@ -88,7 +88,7 @@ public class _2232TheBrokenHoneyJar extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203613) { // Gilungk
 				return sendQuestEndDialog(env);
 			}

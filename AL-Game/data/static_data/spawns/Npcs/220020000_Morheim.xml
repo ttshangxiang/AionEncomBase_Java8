@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Parsed By Angry Catster
-
  -->
 <spawns>
   <spawn_map map_id="220020000">
@@ -6922,7 +6921,6 @@
     </spawn>
     <spawn npc_id="800510" respawn_time="300">
       <spot x="264.218719" y="2370.760986" z="445.12222" h="86" />
-      <spot x="264.235107" y="2370.791748" z="445.12222" h="86" />
     </spawn>
     <spawn npc_id="798084" respawn_time="100">
       <spot x="639.000000" y="914.000000" z="360.625" h="40" />

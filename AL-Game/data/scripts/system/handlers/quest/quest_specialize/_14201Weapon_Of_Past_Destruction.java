@@ -52,7 +52,7 @@ public class _14201Weapon_Of_Past_Destruction extends QuestHandler {
                     return sendQuestStartDialog(env);
                 }
             }
-		} else if (qs == null || qs.getStatus() == QuestStatus.START) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.START) {
 			int var = qs.getQuestVarById(0);
 			if (targetId == 800407) { //Hongras.
 				switch (dialog) {
@@ -95,7 +95,7 @@ public class _14201Weapon_Of_Past_Destruction extends QuestHandler {
 					}
 				}
 			}
-        } else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        } else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 798155) { //Atropos.
                 return sendQuestEndDialog(env);
 			}

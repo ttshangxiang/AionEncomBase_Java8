@@ -67,7 +67,7 @@ public class _16904Lepharist_Mark extends QuestHandler {
              } 
           }   
        }
-       else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+       else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 801189) {
 				return sendQuestEndDialog(env);
 			}

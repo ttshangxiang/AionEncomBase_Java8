@@ -49,7 +49,7 @@ public class _14121Splitting_Stones extends QuestHandler {
 				   return sendQuestStartDialog(env);
 			    }
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.START) {
+		} else if (qs.getStatus() == QuestStatus.START) {
             int var = qs.getQuestVarById(0);
 			if (targetId == 204032) { //Lakaias
 				switch (env.getDialog()) {
@@ -66,7 +66,7 @@ public class _14121Splitting_Stones extends QuestHandler {
 					}
 				}
 			}
-        } else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        } else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204032) { //Lakaias
                 return sendQuestEndDialog(env);
 			}

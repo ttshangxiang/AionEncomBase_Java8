@@ -57,7 +57,7 @@ public class _24152Through_The_Looking_Glass extends QuestHandler {
         			}
 				}
         	}
-        } else if (qs == null || qs.getStatus() == QuestStatus.START) {
+        } else if (qs != null && qs.getStatus() == QuestStatus.START) {
             switch (targetId) {
             	case 204739: {	//Baugi
             		switch (env.getDialog()) {
@@ -87,7 +87,7 @@ public class _24152Through_The_Looking_Glass extends QuestHandler {
             		}
             	}
             }
-        } else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        } else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 802364) { //Dojer
             	if (env.getDialog() == QuestDialog.SELECT_REWARD) {
             		return sendQuestDialog(env, 5);

@@ -101,7 +101,7 @@ public class _1323Lost_Jewel_Box extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null ||  qs.getStatus() == QuestStatus.REWARD && targetId == 203939) {
+		} else if (qs != null &&  qs.getStatus() == QuestStatus.REWARD && targetId == 203939) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

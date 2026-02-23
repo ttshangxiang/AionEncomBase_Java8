@@ -30,7 +30,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _4015TheMissingLaborers extends QuestHandler {
 
 	private final static int questId = 4015;
-
 	public _4015TheMissingLaborers() {
 		super(questId);
 	}
@@ -50,7 +49,7 @@ public class _4015TheMissingLaborers extends QuestHandler {
 		if (env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
 		final QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (qs == null) {
+		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 205130) {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1011);
@@ -58,12 +57,17 @@ public class _4015TheMissingLaborers extends QuestHandler {
 					return sendQuestStartDialog(env);
 			}
 		}
-		else if (qs.getStatus() == QuestStatus.START) {
+		else if (qs != null && qs.getStatus() == QuestStatus.START) {
 			switch (targetId) {
 				case 730107: {
 					if (qs.getQuestVarById(0) == 0 && env.getDialog() == QuestDialog.USE_OBJECT) {
-						return useQuestObject(env, 0, 1, false, false); // 1
+					    return sendQuestDialog(env, 1352);
 					}
+				    else if (env.getDialog() == QuestDialog.STEP_TO_1) {
+					    qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
+					    updateQuestStatus(env);
+				        return closeDialogWindow(env);
+				    }
 				}
 				case 205130: {
 					if (qs.getQuestVarById(0) == 1) {
@@ -74,13 +78,11 @@ public class _4015TheMissingLaborers extends QuestHandler {
 							updateQuestStatus(env);
 							return sendQuestEndDialog(env);
 						}
-						else
-							return sendQuestEndDialog(env);
 					}
 				}
 			}
 		}
-		else if (qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 205130)
 				return sendQuestEndDialog(env);
 		}

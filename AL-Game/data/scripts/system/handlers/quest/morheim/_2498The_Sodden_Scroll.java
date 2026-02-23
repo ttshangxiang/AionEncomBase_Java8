@@ -78,7 +78,7 @@ public class _2498The_Sodden_Scroll extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 798125) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 798125) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

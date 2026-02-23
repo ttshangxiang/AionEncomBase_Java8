@@ -80,7 +80,7 @@ public class _2216Knot_Your_Average_Message extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 203606) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 203606) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

@@ -52,7 +52,7 @@ public class _14120The_Bucket_List extends QuestHandler {
                     return sendQuestStartDialog(env);
                 }
             }
-        } else if (qs == null || qs.getStatus() == QuestStatus.START) {
+        } else if (qs.getStatus() == QuestStatus.START) {
 			int var = qs.getQuestVarById(0);
             if (targetId == 730019) { //Lodas
                 switch (env.getDialog()) {
@@ -77,7 +77,7 @@ public class _14120The_Bucket_List extends QuestHandler {
                     return defaultCloseDialog(env, 0, 1);
                 }
             }
-        } else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        } else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 730019) { //Lodas.
                 return sendQuestEndDialog(env);
             }

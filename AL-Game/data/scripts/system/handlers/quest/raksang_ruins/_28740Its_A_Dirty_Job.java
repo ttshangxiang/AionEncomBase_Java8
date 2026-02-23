@@ -52,7 +52,7 @@ public class _28740Its_A_Dirty_Job extends QuestHandler {
                     } 
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804732) {
 				return sendQuestEndDialog(env);
 			}

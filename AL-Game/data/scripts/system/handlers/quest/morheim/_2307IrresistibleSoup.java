@@ -18,20 +18,18 @@ package quest.morheim;
 
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /**
  * @author MrPoke remod By Nephis
  */
 public class _2307IrresistibleSoup extends QuestHandler {
 
-	private final static int questId = 2307; // INGREDIENT CHECK NEED TO SCRIPT
+	private final static int questId = 2307;
 	public _2307IrresistibleSoup() {
 		super(questId);
 	}
@@ -75,27 +73,22 @@ public class _2307IrresistibleSoup extends QuestHandler {
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
 					removeQuestItem(env, 182204106, 1);
-					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-					return true;
+					return closeDialogWindow(env);
 				}
 				else if (env.getDialogId() == 1182) {
 					qs.setQuestVar(1);
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
 					removeQuestItem(env, 182204107, 1);
-					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-					return true;
+					return closeDialogWindow(env);
 				}
 				else if (env.getDialogId() == 1267) {
 					qs.setQuestVar(1);
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
 					removeQuestItem(env, 182204108, 1);
-					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-					return true;
+					return closeDialogWindow(env);
 				}
-				else
-					return sendQuestStartDialog(env);
 			}
 		}
 		else if (qs != null && qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 0) {

@@ -84,7 +84,7 @@ public class _26908Blast_It_Neritra_Im_A_Researcher extends QuestHandler {
 				}
 			}
 		}
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204817) {
 				switch (env.getDialog()) {
 				case SELECT_REWARD: {

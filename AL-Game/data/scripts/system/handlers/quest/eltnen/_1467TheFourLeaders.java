@@ -104,7 +104,7 @@ public class _1467TheFourLeaders extends QuestHandler {
                 }
             }
         }
-		if (qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204045)
                return sendQuestEndDialog(env, reward);
 		}

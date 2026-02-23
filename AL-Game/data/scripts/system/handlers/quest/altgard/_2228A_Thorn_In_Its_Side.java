@@ -80,7 +80,7 @@ public class _2228A_Thorn_In_Its_Side extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 203619) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 203619) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

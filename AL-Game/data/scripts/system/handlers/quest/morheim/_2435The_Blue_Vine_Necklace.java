@@ -66,7 +66,7 @@ public class _2435The_Blue_Vine_Necklace extends QuestHandler {
 					return closeDialogWindow(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.START) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.START) {
 			if (targetId == 204387) {
 				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 1352);
@@ -86,7 +86,7 @@ public class _2435The_Blue_Vine_Necklace extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 204390) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 204390) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

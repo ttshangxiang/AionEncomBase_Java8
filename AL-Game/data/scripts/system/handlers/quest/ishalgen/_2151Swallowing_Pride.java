@@ -47,7 +47,6 @@ public class _2151Swallowing_Pride extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 1011);
 					}
-					case ACCEPT_QUEST:
 					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
 				}
@@ -66,7 +65,7 @@ public class _2151Swallowing_Pride extends QuestHandler {
 					}
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 		    if (targetId == 801034) { //Rian.
 			    return sendQuestEndDialog(env);
 		    }

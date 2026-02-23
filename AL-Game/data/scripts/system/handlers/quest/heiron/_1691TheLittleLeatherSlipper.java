@@ -114,7 +114,7 @@ public class _1691TheLittleLeatherSlipper extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 798386) {
 				if (env.getDialogId() == 1009)
 					return sendQuestDialog(env, 5);

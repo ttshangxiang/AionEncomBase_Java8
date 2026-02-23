@@ -14,13 +14,11 @@ package quest.brusthonin;
 
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /****/
 /** Author Ghostfur & Unknown (Aion-Unique)
@@ -65,8 +63,6 @@ public class _4051Bukmir_Worry extends QuestHandler {
 					return sendQuestDialog(env, 1011);
 				} else if (env.getDialog() == QuestDialog.STEP_TO_1) {
 					return defaultStartFollowEvent(env, (Npc) env.getVisibleObject(), 476.097f, 1650.99f, 219.875f, 0, 1);
-				} else {
-					return sendQuestStartDialog(env);
 				}
 			}
 		}

@@ -89,7 +89,7 @@ public class _2208MauInTenMinutesADay extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203591) {
 				return sendQuestEndDialog(env);
 			}

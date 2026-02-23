@@ -71,7 +71,7 @@ public class _14152_Spoiler_Alert extends QuestHandler {
         if (qs == null) {
 		    return false;
 		} 
-        else if (qs == null || qs.getStatus() == QuestStatus.START) {
+        else if (qs.getStatus() == QuestStatus.START) {
             if (targetId == 204574) { //Finn.
                 switch (dialog) {
                     case START_DIALOG:

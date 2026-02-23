@@ -78,8 +78,10 @@ public class _24154Better_Than_Last_Time extends QuestHandler {
 		    return false;
 		} 
         else if (qs.getStatus() == QuestStatus.START) {
+           int var = qs.getQuestVarById(0); 
             switch (targetId) {
             	case 204809: { //Stua
+                if (var == 1) {
             		switch (env.getDialog()) {
             			case START_DIALOG: {
             				return sendQuestDialog(env, 1352);
@@ -94,16 +96,18 @@ public class _24154Better_Than_Last_Time extends QuestHandler {
             				updateQuestStatus(env);
             				SkillEngine.getInstance().applyEffectDirectly(267, player, player, (350 * 1000));
             				return closeDialogWindow(env);
+                            }
             			}
             		}
-            	} case 700359: { //Secret Port Entrance
-                    int var = qs.getQuestVarById(0); 
+                    return false;
+            	}
+                case 700359: { //Secret Port Entrance
             		if (env.getDialog() == QuestDialog.USE_OBJECT && var == 2) {
             			return playQuestMovie(env, 250);
             		}
             	}
             }
-        } 
+        }
         else if (qs.getStatus() == QuestStatus.REWARD) {
         	if (targetId == 204774) { // Tristran
     			if (env.getDialog() == QuestDialog.USE_OBJECT) {

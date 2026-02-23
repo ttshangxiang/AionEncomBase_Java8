@@ -205,7 +205,7 @@ public class _2430SecretInformation extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			int var = qs.getQuestVarById(0);
 			switch (targetId) {
 				case 204377: { // Grall

@@ -49,8 +49,6 @@ public class _2501FallingFragments extends QuestHandler {
 					updateQuestStatus(env);
 					return sendQuestEndDialog(env);
 				}
-				else
-					return sendQuestEndDialog(env);
 			}
 			else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 				return sendQuestEndDialog(env);

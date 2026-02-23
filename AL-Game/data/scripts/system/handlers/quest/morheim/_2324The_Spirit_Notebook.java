@@ -76,7 +76,7 @@ public class _2324The_Spirit_Notebook extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 204373) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 204373) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

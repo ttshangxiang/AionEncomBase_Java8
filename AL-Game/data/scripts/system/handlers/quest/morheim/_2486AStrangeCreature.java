@@ -85,7 +85,7 @@ public class _2486AStrangeCreature extends QuestHandler {
 			  }
 		   }
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204342) {
 				if (dialog == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 2375);

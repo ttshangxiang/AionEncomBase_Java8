@@ -52,7 +52,7 @@ public class _14203Enraged_Excavating extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 798201) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

@@ -30,7 +30,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _4012TroublesomePromise extends QuestHandler {
 
 	private final static int questId = 4012;
-
 	public _4012TroublesomePromise() {
 		super(questId);
 	}
@@ -76,8 +75,6 @@ public class _4012TroublesomePromise extends QuestHandler {
 						updateQuestStatus(env);
 						return sendQuestDialog(env, 5);
 					}
-					else
-					return sendQuestEndDialog(env);
 				}
 			}
 		}

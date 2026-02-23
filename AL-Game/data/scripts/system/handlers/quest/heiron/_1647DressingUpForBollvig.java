@@ -72,7 +72,7 @@ public class _1647DressingUpForBollvig extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 790019) { // Zetus
 				switch (dialog) {
 					case START_DIALOG: {

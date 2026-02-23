@@ -104,7 +104,7 @@ public class _2279SolidProof extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD){
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD){
 			if (targetId == 203557){//Suthran
 				return sendQuestEndDialog(env);
 			}

@@ -75,7 +75,7 @@ public class _2911SongOfBlessing extends QuestHandler {
 			    }
 			}
 		}
-		if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204193) {
 				return sendQuestEndDialog(env, rewardId);
 			}

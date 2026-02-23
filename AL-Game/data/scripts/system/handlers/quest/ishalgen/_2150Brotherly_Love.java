@@ -47,7 +47,6 @@ public class _2150Brotherly_Love extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 1011);
 					}
-					case ACCEPT_QUEST:
 					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
 				}
@@ -65,7 +64,7 @@ public class _2150Brotherly_Love extends QuestHandler {
 					}
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 		    if (targetId == 801035) { //Nowlan.
 			    return sendQuestEndDialog(env);
 		    }

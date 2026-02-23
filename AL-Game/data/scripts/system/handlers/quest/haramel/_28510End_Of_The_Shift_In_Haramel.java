@@ -23,21 +23,18 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 /** Remake Rinzler (Encom)
 /****/
 
-public class _28510End_Of_The_Shift_In_Haramel extends QuestHandler
-{
+public class _28510End_Of_The_Shift_In_Haramel extends QuestHandler {
+
 	private final static int questId = 28510;
-	
 	public _28510End_Of_The_Shift_In_Haramel() {
 		super(questId);
 	}
 	
 	@Override
 	public void register() {
-		int[] npcs = {804605, 700953};
 		qe.registerQuestNpc(804605).addOnQuestStart(questId);
-		for (int npc: npcs) {
-			qe.registerQuestNpc(npc).addOnTalkEvent(questId);
-		}
+		qe.registerQuestNpc(700953).addOnTalkEvent(questId);
+		qe.registerQuestNpc(203560).addOnTalkEvent(questId);
 		qe.registerQuestNpc(700950).addOnKillEvent(questId);
 	}
 	
@@ -60,7 +57,7 @@ public class _28510End_Of_The_Shift_In_Haramel extends QuestHandler
 					return sendQuestStartDialog(env, 182212021, 1);
 				}
 			}
-		} else if (qs != null && qs.getStatus() == QuestStatus.START) {
+		} else if (qs.getStatus() == QuestStatus.START) {
 			int var = qs.getQuestVarById(0);
 			switch (targetId) {
 				case 700953: { //Processed Odella.
@@ -75,8 +72,8 @@ public class _28510End_Of_The_Shift_In_Haramel extends QuestHandler
 					}
 				}
 			}
-		} else if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 804605) { //Shezen.
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 203560) { //Morn.
 				switch (dialog) {
 					case USE_OBJECT: {
 						return sendQuestDialog(env, 10002);

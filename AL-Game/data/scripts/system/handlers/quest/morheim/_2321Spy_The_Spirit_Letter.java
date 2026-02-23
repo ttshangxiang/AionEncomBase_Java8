@@ -86,7 +86,7 @@ public class _2321Spy_The_Spirit_Letter extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 790018) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 790018) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

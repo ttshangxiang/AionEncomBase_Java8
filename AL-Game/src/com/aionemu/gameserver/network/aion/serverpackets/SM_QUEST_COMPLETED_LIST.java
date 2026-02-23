@@ -1,5 +1,4 @@
 /*
-
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -31,14 +30,12 @@ public class SM_QUEST_COMPLETED_LIST extends AionServerPacket {
 
 	@Override
 	protected void writeImpl(AionConnection con) {
-		writeH(0x01);
+		writeH(0x01); // 2.1
 		writeH(-questState.size() & 0xFFFF);
 		for (QuestState qs : questState) {
 			writeD(qs.getQuestId());
-			writeC(qs.getCompleteCount());
-			writeC(0x01);
-			writeH(0x01);// unk 5.3
-			writeD(0x01);// unk 5.3
+			writeD(qs.getCompleteCount());
+			writeD(1); // unk 5.6
 		}
 		FastList.recycle(questState);
 		questState = null;

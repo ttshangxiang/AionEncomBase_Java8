@@ -56,7 +56,7 @@ public class _28742A_Flurry_Of_Activity extends QuestHandler {
 				}
 			}
 		}
-		if (qs == null || qs.getStatus() == QuestStatus.START) {
+		else if (qs.getStatus() == QuestStatus.START) {
 			if (targetId == 804732) {
 				switch (env.getDialog()) {
 					case START_DIALOG: {
@@ -66,7 +66,7 @@ public class _28742A_Flurry_Of_Activity extends QuestHandler {
                     }
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804732) {
 				return sendQuestEndDialog(env);
 			}

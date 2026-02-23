@@ -662,12 +662,14 @@
 	<xs:complexType name="PolymorphEffect">
 		<xs:complexContent>
 			<xs:extension base="TransformEffect">
+                <xs:attribute name="neutral_to_npc" type="xs:boolean" use="optional" default="false"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="ShapeChangeEffect">
 		<xs:complexContent>
 			<xs:extension base="TransformEffect">
+                <xs:attribute name="neutral_to_npc" type="xs:boolean" use="optional" default="false"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>

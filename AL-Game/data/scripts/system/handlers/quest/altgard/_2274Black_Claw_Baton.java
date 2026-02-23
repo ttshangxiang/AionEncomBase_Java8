@@ -92,7 +92,7 @@ public class _2274Black_Claw_Baton extends QuestHandler {
 				}
 			}
 		} 
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 203560) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 203560) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

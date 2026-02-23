@@ -23,7 +23,6 @@ import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.aionemu.gameserver.services.QuestService;
 
 public class _2284Escaping_Asmodae extends QuestHandler {
 
@@ -67,7 +66,6 @@ public class _2284Escaping_Asmodae extends QuestHandler {
 							targetId = ((Npc) env.getVisibleObject()).getNpcId();
 							Npc npc = (Npc) env.getVisibleObject();
 							npc.getController().onDelete();
-							QuestService.addNewSpawn(npc.getWorldId(), npc.getInstanceId(), 798041, 2553.9f, 916.9f, 311.8f, (byte) 82);
 						    return defaultCloseDialog(env, 0, 1);
 						}
 					}

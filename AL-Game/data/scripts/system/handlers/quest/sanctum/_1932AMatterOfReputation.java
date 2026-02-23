@@ -58,9 +58,8 @@ public class _1932AMatterOfReputation extends QuestHandler  {
                     case ASK_ACCEPTION:
                        return sendQuestDialog(env, 4);
 					case ACCEPT_QUEST:
-					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
-					case REFUSE_QUEST_SIMPLE:
+					case REFUSE_QUEST:
 				        return closeDialogWindow(env);
                  }
 			}

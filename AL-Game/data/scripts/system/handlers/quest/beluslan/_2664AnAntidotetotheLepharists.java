@@ -30,8 +30,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _2664AnAntidotetotheLepharists extends QuestHandler {
 
 	private final static int questId = 2664;
-	private final static int[] npc_ids = { 204777, 700324 };
-
 	public _2664AnAntidotetotheLepharists() {
 		super(questId);
 	}
@@ -39,8 +37,8 @@ public class _2664AnAntidotetotheLepharists extends QuestHandler {
 	@Override
 	public void register() {
 		qe.registerQuestNpc(204777).addOnQuestStart(questId);
-		for (int npc_id : npc_ids)
-			qe.registerQuestNpc(npc_id).addOnTalkEvent(questId);
+		qe.registerQuestNpc(204777).addOnTalkEvent(questId);
+		qe.registerQuestNpc(700324).addOnTalkEvent(questId);
 	}
 
 	@Override
@@ -50,31 +48,16 @@ public class _2664AnAntidotetotheLepharists extends QuestHandler {
 		if (env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (targetId == 204777) {
-			if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		    if (targetId == 204777) {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 4762);
 				else
 					return sendQuestStartDialog(env);
 			}
 		}
-		if (qs == null)
-			return false;
-
+		else if (qs.getStatus() == QuestStatus.START) {
 		int var = qs.getQuestVarById(0);
-		if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 204777) {
-				if (env.getDialog() == QuestDialog.USE_OBJECT)
-					return sendQuestDialog(env, 10002);
-				else if (env.getDialogId() == 1009)
-					return sendQuestDialog(env, 5);
-				else
-					return sendQuestEndDialog(env);
-			}
-		}
-		else if (qs.getStatus() != QuestStatus.START) {
-			return false;
-		}
 		if (targetId == 700324) {
 			switch (env.getDialog()) {
 				case USE_OBJECT:
@@ -91,6 +74,17 @@ public class _2664AnAntidotetotheLepharists extends QuestHandler {
 						return true;
 					}
 					return false;
+               }
+			}
+		}
+		else if (qs == null && qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 204777) {
+				if (env.getDialog() == QuestDialog.USE_OBJECT)
+					return sendQuestDialog(env, 10002);
+				else if (env.getDialogId() == 1009)
+					return sendQuestDialog(env, 5);
+				else
+					return sendQuestEndDialog(env);
 			}
 		}
 		return false;

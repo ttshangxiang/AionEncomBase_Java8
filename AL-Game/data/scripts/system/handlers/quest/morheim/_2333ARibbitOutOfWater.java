@@ -97,7 +97,7 @@ public class _2333ARibbitOutOfWater extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 798084) {
 				return sendQuestEndDialog(env);
 			}

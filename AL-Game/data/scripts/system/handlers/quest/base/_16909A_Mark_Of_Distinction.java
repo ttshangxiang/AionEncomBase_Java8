@@ -66,7 +66,7 @@ public class _16909A_Mark_Of_Distinction extends QuestHandler {
              } 
           }   
        }
-       else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+       else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 801203) {
 				return sendQuestEndDialog(env);
 			}

@@ -67,7 +67,7 @@ public class _2488PretorsInBeluslan extends QuestHandler {
 			}
 		}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204702) {
 				if (dialog == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 2375);

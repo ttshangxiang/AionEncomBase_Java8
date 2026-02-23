@@ -30,7 +30,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _2505LetCookingExpertsCook extends QuestHandler {
 
 	private final static int questId = 2505;
-	private final static int[] npc_ids = { 204720, 204731 };
 	public _2505LetCookingExpertsCook() {
 		super(questId);
 	}
@@ -38,8 +37,8 @@ public class _2505LetCookingExpertsCook extends QuestHandler {
 	@Override
 	public void register() {
 		qe.registerQuestNpc(204720).addOnQuestStart(questId);
-		for (int npc_id : npc_ids)
-			qe.registerQuestNpc(npc_id).addOnTalkEvent(questId);
+		qe.registerQuestNpc(204720).addOnTalkEvent(questId);
+		qe.registerQuestNpc(204731).addOnTalkEvent(questId);
 	}
 
 	@Override
@@ -49,36 +48,17 @@ public class _2505LetCookingExpertsCook extends QuestHandler {
 		if (env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (targetId == 204720) {
-			if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		    if (targetId == 204720) {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1011);
-				else if (env.getDialogId() == 1002) {
-					if (giveQuestItem(env, 182204404, 1))
-						return sendQuestStartDialog(env);
-					else
-						return true;
+				else {
+					return sendQuestStartDialog(env, 182204404, 1);
 				}
-				else
-					return sendQuestStartDialog(env);
 			}
 		}
-		if (qs == null)
-			return false;
+		else if (qs.getStatus() == QuestStatus.START) {
 		int var = qs.getQuestVarById(0);
-		if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 204720) {
-				if (env.getDialog() == QuestDialog.USE_OBJECT)
-					return sendQuestDialog(env, 2375);
-				else if (env.getDialogId() == 1009)
-					return sendQuestDialog(env, 5);
-				else
-					return sendQuestEndDialog(env);
-			}
-		}
-		else if (qs.getStatus() != QuestStatus.START) {
-			return false;
-		}
 		if (targetId == 204731) {
 			switch (env.getDialog()) {
 				case START_DIALOG:
@@ -89,11 +69,30 @@ public class _2505LetCookingExpertsCook extends QuestHandler {
 						removeQuestItem(env, 182204404, 1);
 						giveQuestItem(env, 182204405, 1);
                         qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
-						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
                         return closeDialogWindow(env);
 					}
-					return false;
+			    }
+			}
+		if (targetId == 204720) {
+			switch (env.getDialog()) {
+				case START_DIALOG:
+					if (var == 1)
+						return sendQuestDialog(env, 2375);
+				case SELECT_REWARD:
+					if (var == 1) {
+						removeQuestItem(env, 182204405, 1);
+                        qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
+						qs.setStatus(QuestStatus.REWARD);
+						updateQuestStatus(env);
+					    return sendQuestEndDialog(env);
+					}
+			    }
+			}
+		}
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 204720) {
+				return sendQuestEndDialog(env);
 			}
 		}
 		return false;

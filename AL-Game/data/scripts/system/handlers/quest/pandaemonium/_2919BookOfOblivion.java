@@ -31,7 +31,6 @@ import com.aionemu.gameserver.questEngine.model.QuestStatus;
 public class _2919BookOfOblivion extends QuestHandler {
 
 	private final static int questId = 2919;
-
 	public _2919BookOfOblivion() {
 		super(questId);
 	}
@@ -65,7 +64,7 @@ public class _2919BookOfOblivion extends QuestHandler {
 		else if (qs.getStatus() == QuestStatus.START) {
 			if (targetId == 204215) {
 				if (dialog == QuestDialog.START_DIALOG) {
-					if(qs.getQuestVarById(0) == 0)
+					if (qs.getQuestVarById(0) == 0)
 						return sendQuestDialog(env, 1352);
 				}
 				else if (dialog == QuestDialog.STEP_TO_2) {
@@ -74,7 +73,7 @@ public class _2919BookOfOblivion extends QuestHandler {
 			}
 			else if (targetId == 204192) {
 				if (dialog == QuestDialog.START_DIALOG) {
-					if(qs.getQuestVarById(0) == 1)
+					if (qs.getQuestVarById(0) == 1)
 						return sendQuestDialog(env, 1693);
 				}
 				else if (dialog == QuestDialog.STEP_TO_3) {
@@ -83,17 +82,21 @@ public class _2919BookOfOblivion extends QuestHandler {
 			}
 			else if (targetId == 700212) {
 				if (dialog == QuestDialog.USE_OBJECT) {
-					if(qs.getQuestVarById(0) == 2)
+					if (qs.getQuestVarById(0) == 2)
 						return sendQuestDialog(env, 2034);
-					else if(qs.getQuestVarById(0) == 6)
+					else if (qs.getQuestVarById(0) == 6)
 						return sendQuestDialog(env, 3057);
 				}
 				else if (dialog == QuestDialog.STEP_TO_4) {
-				  return defaultCloseDialog(env, 2, 3);
+					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
+					updateQuestStatus(env);
+					return closeDialogWindow(env);
 				}
 				else if (dialog == QuestDialog.STEP_TO_7) {
 					giveQuestItem(env, 182207013, 1);
-				  return defaultCloseDialog(env, 6, 7);
+					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
+					updateQuestStatus(env);
+					return closeDialogWindow(env);
 				}
 			}
 			else if (targetId == 204206) {
@@ -103,7 +106,7 @@ public class _2919BookOfOblivion extends QuestHandler {
 					}
 				}
 				if (dialog == QuestDialog.START_DIALOG) {
-					if(qs.getQuestVarById(0) == 3)
+					if (qs.getQuestVarById(0) == 3)
 						return sendQuestDialog(env, 2375);
 				}
 				else if (dialog == QuestDialog.STEP_TO_5) {
@@ -116,7 +119,7 @@ public class _2919BookOfOblivion extends QuestHandler {
 			}
 			else if (targetId == 204224) {
 				if (dialog == QuestDialog.START_DIALOG) {
-					if(qs.getQuestVarById(0) == 4)
+					if (qs.getQuestVarById(0) == 4)
 						return sendQuestDialog(env, 2716);
 				}
 				else if (dialog == QuestDialog.CHECK_COLLECTED_ITEMS) {

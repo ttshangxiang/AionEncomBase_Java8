@@ -49,7 +49,6 @@ public class _18743Not_So_Fast_Nasto extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 4762);
 					}
-					case ACCEPT_QUEST:
 					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
 					case REFUSE_QUEST_SIMPLE:
@@ -57,7 +56,7 @@ public class _18743Not_So_Fast_Nasto extends QuestHandler {
 				}
 			}
 		}
-        if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804707) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

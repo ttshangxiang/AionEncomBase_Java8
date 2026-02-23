@@ -54,7 +54,7 @@ public class _3076Bolstering_The_Aetheric_Field extends QuestHandler {
 					    return sendQuestDialog(env, 4);
 					} case ACCEPT_QUEST: {
 						return sendQuestStartDialog(env);
-					} case REFUSE_QUEST_SIMPLE: {
+					} case REFUSE_QUEST: {
 				        return closeDialogWindow(env);
 					}
                 }
@@ -107,7 +107,7 @@ public class _3076Bolstering_The_Aetheric_Field extends QuestHandler {
 					}
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 		    if (targetId == 798155) { //Atropos.
 			    switch (env.getDialog()) {
 					case SELECT_REWARD: {

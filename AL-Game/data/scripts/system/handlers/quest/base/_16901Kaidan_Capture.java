@@ -84,7 +84,7 @@ public class _16901Kaidan_Capture extends QuestHandler {
 				}
 			}
 		}
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203989) {
 				switch (env.getDialog()) {
 				case SELECT_REWARD:

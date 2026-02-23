@@ -71,7 +71,7 @@ public class _18745Steal_From_The_Stealers extends QuestHandler {
 					}
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804707) {
 				return sendQuestEndDialog(env);
 			}

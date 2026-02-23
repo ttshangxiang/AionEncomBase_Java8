@@ -56,7 +56,7 @@ public class _18742Import_The_Report extends QuestHandler {
 				}
 			}
 		}
-		if (qs == null || qs.getStatus() == QuestStatus.START) {
+		else if (qs.getStatus() == QuestStatus.START) {
 			if (targetId == 804707) {
 				switch (env.getDialog()) {
 					case START_DIALOG: {
@@ -67,7 +67,7 @@ public class _18742Import_The_Report extends QuestHandler {
 				}
 			}
 		} 
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804707) {
 				return sendQuestEndDialog(env);
 			}

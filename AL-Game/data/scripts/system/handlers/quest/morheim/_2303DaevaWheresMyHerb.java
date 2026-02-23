@@ -116,7 +116,7 @@ public class _2303DaevaWheresMyHerb extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			int var = qs.getQuestVarById(0);
 			if (targetId == 204378) { // Bicorunerk
 				switch (dialog) {

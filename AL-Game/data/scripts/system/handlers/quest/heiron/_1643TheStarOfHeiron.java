@@ -108,7 +108,7 @@ public class _1643TheStarOfHeiron extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204545) {
 				if (env.getDialogId() == 1009)
 					return sendQuestDialog(env, 5);

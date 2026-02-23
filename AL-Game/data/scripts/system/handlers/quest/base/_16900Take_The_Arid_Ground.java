@@ -84,7 +84,7 @@ public class _16900Take_The_Arid_Ground extends QuestHandler {
 				}
 			}
 		}
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203965) {
 				switch (env.getDialog()) {
 				case SELECT_REWARD:

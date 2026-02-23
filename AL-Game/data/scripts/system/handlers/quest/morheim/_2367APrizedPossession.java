@@ -60,7 +60,7 @@ public class _2367APrizedPossession extends QuestHandler {
 		else if (qs.getStatus() == QuestStatus.START) {
 			if (targetId == 204339) { 
 				if (dialog == QuestDialog.START_DIALOG) {
-						return sendQuestDialog(env, 1003);
+					return sendQuestDialog(env, 1003);
 				}
 				else if (dialog == QuestDialog.SELECT_ACTION_1012) {
 					giveQuestItem(env, 182204147 , 1);
@@ -70,13 +70,13 @@ public class _2367APrizedPossession extends QuestHandler {
 					giveQuestItem(env, 182204147 , 1);
 					return sendQuestDialog(env, 1097);
 				}
-				else if(dialog == QuestDialog.STEP_TO_10) {
+				else if (dialog == QuestDialog.STEP_TO_10) {
 					changeQuestStep(env, 0, 10, false);
 					qs.setStatus(QuestStatus.REWARD);
 					updateQuestStatus(env);
 					return closeDialogWindow(env);
 				}
-				else if(dialog == QuestDialog.STEP_TO_20) {
+				else if (dialog == QuestDialog.STEP_TO_20) {
 					rewardIndex = 1;
 					changeQuestStep(env, 0, 20, false);
 					qs.setStatus(QuestStatus.REWARD);
@@ -85,12 +85,12 @@ public class _2367APrizedPossession extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 798079) {
 				if (dialog == QuestDialog.USE_OBJECT) {
-						return sendQuestDialog(env, 1352);
-					}
+					return sendQuestDialog(env, 1352);
 				}
+			}
 			else if(targetId == 798080) {
 				if (dialog == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 1693);

@@ -83,7 +83,7 @@ public class _2411EarthSpiritWaterSpirit extends QuestHandler {
 			}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204366 && qs.getQuestVarById(0) == 1) {
 				if (dialog == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 1352);

@@ -18,14 +18,12 @@ package quest.brusthonin;
 
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.services.QuestService;
-import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /**
  * @author Nephis
@@ -33,7 +31,6 @@ import com.aionemu.gameserver.utils.PacketSendUtility;
 public class _4033ABloominBrusthonin extends QuestHandler {
 
 	private final static int questId = 4033;
-
 	public _4033ABloominBrusthonin() {
 		super(questId);
 	}
@@ -64,35 +61,35 @@ public class _4033ABloominBrusthonin extends QuestHandler {
 					return sendQuestDialog(env, 1352);
 				else if (env.getDialogId() == 39) {
 					if (QuestService.collectItemCheck(env, true)) {
-						qs.setQuestVarById(0, qs.getQuestVarById(0) + 2);
-						updateQuestStatus(env);
-						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-						return true;
+						return sendQuestDialog(env, 1353);
 					}
-					else
+					else {
 						return sendQuestDialog(env, 1438);
+					}
 				}
-				else
-					return sendQuestStartDialog(env);
+				else if (env.getDialogId() == 10000) {
+				    giveQuestItem(env, 182209042, 1);
+					qs.setQuestVarById(0, qs.getQuestVarById(0) + 2);
+					updateQuestStatus(env);
+					return closeDialogWindow(env);
+				}
 			}
 			else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
-				if (env.getDialog() == QuestDialog.START_DIALOG)
-					return sendQuestDialog(env, 2034);
-				else if (env.getDialogId() == 1009) {
-					qs.setStatus(QuestStatus.REWARD);
-					updateQuestStatus(env);
-					return sendQuestEndDialog(env);
-				}
-				else
-					return sendQuestEndDialog(env);
+				return sendQuestEndDialog(env);
 			}
 		}
-		else if (qs != null && qs.getStatus() == QuestStatus.START) {
+		else if (qs != null && qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 2) {
 			switch (targetId) {
 				case 700379: { // Portaro's Tomb
-					if (qs.getQuestVarById(0) == 2 && env.getDialog() == QuestDialog.USE_OBJECT) {
-						return useQuestObject(env, 2, 2, true, false); // reward
+					if (env.getDialog() == QuestDialog.USE_OBJECT) {
+					    return sendQuestDialog(env, 1693);
 					}
+				    else if (env.getDialog() == QuestDialog.SELECT_ACTION_1694) {
+						removeQuestItem(env, 182209042, 1);
+					    qs.setStatus(QuestStatus.REWARD);
+					    updateQuestStatus(env);
+				        return closeDialogWindow(env);
+				    }
 				}
 			}
 		}

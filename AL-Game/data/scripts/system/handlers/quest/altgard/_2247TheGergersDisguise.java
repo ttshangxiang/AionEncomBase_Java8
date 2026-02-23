@@ -75,22 +75,21 @@ public class _2247TheGergersDisguise extends QuestHandler {
 				switch (env.getDialog()) {
 				case START_DIALOG:
 					if (var == 1) {
-						qs.setQuestVar(2);
-						qs.setStatus(QuestStatus.REWARD);
-						updateQuestStatus(env);
 						return sendQuestDialog(env, 2375);
 					}
 				case SELECT_REWARD:
 					if (var == 2) {
 						removeQuestItem(env, 182203231, 1);
+						qs.setQuestVar(2);
+						qs.setStatus(QuestStatus.REWARD);
+						updateQuestStatus(env);
 						return sendQuestEndDialog(env);
 					}
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (env.getTargetId() == 203645) {
-				removeQuestItem(env, 182203231, 1);
 				return sendQuestEndDialog(env);
 			}
 		}

@@ -71,13 +71,13 @@ public class _2237AFertileField extends QuestHandler {
 							return sendQuestDialog(env, 2375);
 						}
 						case CHECK_COLLECTED_ITEMS_SIMPLE: {
-							return checkQuestItems(env, 0, 0, true, 5, 2716);
+							return checkQuestItems(env, 0, 0, true, 5, 0);
 						}
 					}
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 832822) { // Anmurnerk
 				return sendQuestEndDialog(env);
 			}

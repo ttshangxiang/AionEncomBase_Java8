@@ -50,7 +50,6 @@ public class _3921Shoshinerk_Reward extends QuestHandler {
                     case ASK_ACCEPTION:
                         return sendQuestDialog(env, 4);
 					case ACCEPT_QUEST:
-					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
 				}
 			}

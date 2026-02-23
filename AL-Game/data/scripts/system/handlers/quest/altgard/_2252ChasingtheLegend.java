@@ -121,7 +121,7 @@ public class _2252ChasingtheLegend extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203646)
 		    return sendQuestEndDialog(env);
 		}

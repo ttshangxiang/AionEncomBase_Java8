@@ -90,7 +90,7 @@ public class _1309Manduri_Diary extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 203830) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 203830) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

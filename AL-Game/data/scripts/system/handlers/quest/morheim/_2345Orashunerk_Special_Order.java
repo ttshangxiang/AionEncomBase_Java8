@@ -83,7 +83,7 @@ public class _2345Orashunerk_Special_Order extends QuestHandler {
 			} else if (targetId == 700238 && player.getInventory().getItemCountByItemId(182204136) < 3) {
 				return true;
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204304) {
 				if (dialog == QuestDialog.START_DIALOG) {
 					if (qs.getQuestVarById(0) == 10) {

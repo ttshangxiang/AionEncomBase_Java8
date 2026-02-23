@@ -63,22 +63,8 @@ public class _2564WiththePowerofFlame extends QuestHandler {
 					return sendQuestStartDialog(env);
 			}
 		}
-		if (qs == null)
-			return false;
+		else if (qs.getStatus() == QuestStatus.START) {
 		int var = qs.getQuestVarById(0);
-		if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 204753) {
-				if (env.getDialog() == QuestDialog.USE_OBJECT)
-					return sendQuestDialog(env, 10002);
-				else if (env.getDialogId() == 1009)
-					return sendQuestDialog(env, 5);
-				else
-					return sendQuestEndDialog(env);
-			}
-		}
-		else if (qs.getStatus() != QuestStatus.START) {
-			return false;
-		}
 		if (targetId == 204821) {
 			switch (env.getDialog()) {
 				case START_DIALOG:
@@ -117,6 +103,17 @@ public class _2564WiththePowerofFlame extends QuestHandler {
 						updateQuestStatus(env);
                         return closeDialogWindow(env);
 					}
+				}
+			}
+		}
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 204753) {
+				if (env.getDialog() == QuestDialog.USE_OBJECT)
+					return sendQuestDialog(env, 10002);
+				else if (env.getDialogId() == 1009)
+					return sendQuestDialog(env, 5);
+				else
+					return sendQuestEndDialog(env);
 			}
 		}
 		return false;

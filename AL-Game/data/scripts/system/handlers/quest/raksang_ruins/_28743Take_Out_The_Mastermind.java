@@ -49,7 +49,6 @@ public class _28743Take_Out_The_Mastermind extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 4762);
 					}
-					case ACCEPT_QUEST:
 					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
 					case REFUSE_QUEST_SIMPLE:
@@ -57,7 +56,7 @@ public class _28743Take_Out_The_Mastermind extends QuestHandler {
 				}
 			}
 		}
-        if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804732) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

@@ -49,8 +49,8 @@ public class _2693KrallGoneMad extends QuestHandler {
 		if (env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (targetId == 204763) {
-			if (qs == null) {
+		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		    if (targetId == 204763) {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
 					return sendQuestDialog(env, 1011);
 				else
@@ -78,6 +78,9 @@ public class _2693KrallGoneMad extends QuestHandler {
 					updateQuestStatus(env);
 					return sendQuestEndDialog(env);
 				}
+			}
+			else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+				return sendQuestEndDialog(env);
 			}
 		}
 		return false;

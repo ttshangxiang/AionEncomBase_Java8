@@ -36,10 +36,9 @@ public class _2630TheDutifulSpy extends QuestHandler {
 
 	@Override
 	public void register() {
-		int[] npcs = {204799, 204777};
-		for (int npc : npcs)
-			qe.registerQuestNpc(npc).addOnTalkEvent(questId);
 		qe.registerQuestNpc(204799).addOnQuestStart(questId);
+		qe.registerQuestNpc(204799).addOnTalkEvent(questId);
+		qe.registerQuestNpc(204777).addOnTalkEvent(questId);
 	}
 
 	@Override

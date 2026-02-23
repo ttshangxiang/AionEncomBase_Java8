@@ -110,7 +110,7 @@ public class _24013Poison_In_The_Waters extends QuestHandler {
     public boolean onKillEvent(QuestEnv env) {
         Player player = env.getPlayer();
         QuestState qs = player.getQuestStateList().getQuestState(questId);
-        if (qs == null) {
+        if (qs == null && qs.getStatus() != QuestStatus.START) {
             return false;
         }
         int var = qs.getQuestVarById(0);

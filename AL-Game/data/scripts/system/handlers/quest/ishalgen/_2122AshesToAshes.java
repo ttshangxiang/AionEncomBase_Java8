@@ -107,7 +107,7 @@ public class _2122AshesToAshes extends QuestHandler {
 				return true; // just give quest drop on use
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203551) {
 				if (env.getDialog() == QuestDialog.USE_OBJECT) {
 					return sendQuestDialog(env, 2375);

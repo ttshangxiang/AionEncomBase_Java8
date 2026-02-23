@@ -84,7 +84,7 @@ public class _26906Bloodscent_Of_Violent_Death extends QuestHandler {
 				}
 			}
 		}
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204369) {
 				switch (env.getDialog()) {
 				case SELECT_REWARD:

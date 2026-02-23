@@ -54,7 +54,7 @@ public class _14240Desert_Encroachment extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 203998) {
                 if (env.getDialog() == QuestDialog.START_DIALOG) {
                     return sendQuestDialog(env, 10002);

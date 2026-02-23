@@ -1,5 +1,4 @@
 /*
-
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -19,6 +18,7 @@ package com.aionemu.gameserver.skillengine.effect;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAttribute; 
 
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.skillengine.model.Effect;
@@ -30,11 +30,17 @@ import com.aionemu.gameserver.skillengine.model.Effect;
 @XmlType(name = "ShapeChangeEffect")
 public class ShapeChangeEffect extends TransformEffect {
 
+    @XmlAttribute(name = "neutral_to_npc")
+    private boolean neutralToNpc = false;
+
+	/**
+	* Remove HideEffect
+	*/
 	@Override
 	public void startEffect(Effect effect) {
-		/**
-		 * Remove HideEffect
-		 */
+        if (neutralToNpc && effect.getEffected() instanceof Player) {
+            ((Player) effect.getEffected()).setAdminNeutral(1);
+        }
 		if ((effect.getEffector() instanceof Player)) {
 			if (effect.getEffector().getEffectController().isAbnormalSet(AbnormalState.HIDE)) {
 				effect.getEffector().getEffectController().removeHideEffects();
@@ -45,6 +51,9 @@ public class ShapeChangeEffect extends TransformEffect {
 
 	@Override
 	public void endEffect(Effect effect) {
+        if (neutralToNpc && effect.getEffected() instanceof Player) {
+            ((Player) effect.getEffected()).setAdminNeutral(0);
+        }
 		super.endEffect(effect, null);
 	}
 }

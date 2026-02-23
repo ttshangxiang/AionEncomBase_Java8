@@ -58,59 +58,53 @@ public class _2600HumongousMalek extends QuestHandler {
 					return sendQuestStartDialog(env);
 			}
 		}
-		if (qs == null)
-			return false;
-		int var = qs.getQuestVarById(0);
-		if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 204734) {
-				return sendQuestEndDialog(env);
-			}
-		}
-		else if (qs.getStatus() != QuestStatus.START) {
-			return false;
-		}
+		else if (qs.getStatus() == QuestStatus.START) {
 		if (targetId == 798119) {
 			switch (env.getDialog()) {
 				case START_DIALOG:
-					if (var == 0)
-						return sendQuestDialog(env, 1352);
+                if (qs.getQuestVarById(0) == 0)
+					return sendQuestDialog(env, 1352);
+                else {
+					return sendQuestDialog(env, 1693);
+				}
 				case STEP_TO_1:
-					if (var == 0) {
-						giveQuestItem(env, 182204528, 1);
-						qs.setQuestVarById(0, var + 1);
-						updateQuestStatus(env);
-                        return closeDialogWindow(env);
-					}
-					return false;
+                if (qs.getQuestVarById(0) == 0)
+					giveQuestItem(env, 182204528, 1);
+					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
+					updateQuestStatus(env);
+                    return closeDialogWindow(env);
 			}
 		}
 		else if (targetId == 700512) {
 			switch (env.getDialog()) {
 				case USE_OBJECT:
-					if (var == 1) {
-						if (player.getInventory().getItemCountByItemId(182204528) == 1) {
-							removeQuestItem(env, 182204528, 1);
-							QuestService.addNewSpawn(220040000, 1, 215383, (float) 1140.78, (float) 432.85, (float) 341.0825, (byte) 0);
-							return true;
-						}
-					}
-					return false;
+				if (player.getInventory().getItemCountByItemId(182204528) == 1) {
+					removeQuestItem(env, 182204528, 1);
+					QuestService.addNewSpawn(220040000, 1, 215383, (float) 1140.78, (float) 432.85, (float) 341.0825, (byte) 0);
+					return true;
+				}
 			}
 		}
 		else if (targetId == 204734) {
 			switch (env.getDialog()) {
 				case START_DIALOG:
-					if (var == 1)
-						return sendQuestDialog(env, 2375);
+                if (qs.getQuestVarById(0) == 1 && player.getInventory().getItemCountByItemId(182204529) == 1)
+					return sendQuestDialog(env, 2375);
+                else {
+					return sendQuestDialog(env, 2716);
+				}
 				case SELECT_REWARD:
-					if (var == 1) {
-						removeQuestItem(env, 182204529, 1);
-						qs.setQuestVarById(0, var + 1);
-						qs.setStatus(QuestStatus.REWARD);
-						updateQuestStatus(env);
-						return sendQuestDialog(env, 5);
-					}
-					return false;
+                if (qs.getQuestVarById(0) == 1)
+					removeQuestItem(env, 182204529, 1);
+					qs.setStatus(QuestStatus.REWARD);
+					updateQuestStatus(env);
+				    return sendQuestEndDialog(env);
+                }
+			}
+		}
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 204734) {
+				return sendQuestEndDialog(env);
 			}
 		}
 		return false;

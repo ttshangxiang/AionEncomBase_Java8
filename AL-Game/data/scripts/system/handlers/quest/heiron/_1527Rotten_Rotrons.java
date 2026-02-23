@@ -87,7 +87,7 @@ public class _1527Rotten_Rotrons extends QuestHandler {
 				}
 			}
 		}
-		if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 205229) {
 				return sendQuestEndDialog(env);
 			}

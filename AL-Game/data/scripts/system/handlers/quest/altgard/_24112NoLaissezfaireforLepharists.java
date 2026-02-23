@@ -68,7 +68,7 @@ public class _24112NoLaissezfaireforLepharists extends QuestHandler {
 				}
 			}
 		}
-		if (qs == null || qs.getStatus() == QuestStatus.START) {
+		else if (qs.getStatus() == QuestStatus.START) {
 	        if (targetId == 832821) { // Brodir
 				switch (env.getDialog()) {
 					case START_DIALOG:
@@ -90,7 +90,7 @@ public class _24112NoLaissezfaireforLepharists extends QuestHandler {
                     }
 				}
 			}
-            if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+            else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 	            if (targetId == 832821) { // Brodir
 				    return sendQuestEndDialog(env);
 			}

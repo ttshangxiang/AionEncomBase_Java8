@@ -58,7 +58,6 @@ public class _19631Coastal_Crush extends QuestHandler {
 				switch (dialog) {
 					case START_DIALOG:
 						return sendQuestDialog(env, 4762);
-					case ACCEPT_QUEST:
 					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
 					case REFUSE_QUEST_SIMPLE:
@@ -66,7 +65,7 @@ public class _19631Coastal_Crush extends QuestHandler {
 				}
 			}
 		}
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 		    if (targetId == 800411) {
 			    switch (dialog) {
 					case SELECT_REWARD: {

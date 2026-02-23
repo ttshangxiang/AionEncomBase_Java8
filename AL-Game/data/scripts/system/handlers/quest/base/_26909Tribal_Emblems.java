@@ -66,7 +66,7 @@ public class _26909Tribal_Emblems extends QuestHandler {
              } 
           }   
        }
-       else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+       else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 801207) {
 				return sendQuestEndDialog(env);
 			}

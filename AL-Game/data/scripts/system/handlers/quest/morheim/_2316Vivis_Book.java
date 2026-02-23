@@ -72,7 +72,7 @@ public class _2316Vivis_Book extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 204386) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD && targetId == 204386) {
 			return sendQuestEndDialog(env);
 		}
 		return false;

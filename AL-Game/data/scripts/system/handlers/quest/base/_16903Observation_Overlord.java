@@ -84,7 +84,7 @@ public class _16903Observation_Overlord extends QuestHandler {
 				}
 			}
 		}
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 204656) {
 				switch (env.getDialog()) {
 				case SELECT_REWARD:

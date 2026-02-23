@@ -98,7 +98,7 @@ public class _2223AMythicalMonster extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203616) { // Gefion
 				return sendQuestEndDialog(env);
 			}

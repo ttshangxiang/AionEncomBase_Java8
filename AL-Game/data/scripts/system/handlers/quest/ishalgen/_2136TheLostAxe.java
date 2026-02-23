@@ -102,7 +102,7 @@ public class _2136TheLostAxe extends QuestHandler {
 		        }
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 790009) {
 				final Npc npc = (Npc) env.getVisibleObject();
 				ThreadPoolManager.getInstance().schedule(new Runnable() {

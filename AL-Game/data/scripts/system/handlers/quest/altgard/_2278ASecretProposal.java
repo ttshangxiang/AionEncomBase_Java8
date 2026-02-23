@@ -67,22 +67,23 @@ public class _2278ASecretProposal extends QuestHandler {
 			if (targetId == 203557){//Suthran
 				switch (env.getDialog()){
 					case START_DIALOG:
-						if (var == 1) {
+						if (var == 0) {
 							return sendQuestDialog(env, 1352);
-						}
-						if (var == 3) {
+						} else if (var == 3) {
 							return sendQuestDialog(env, 2375);
 						}
 					case STEP_TO_1:
-						if (var == 0) {
-							qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
-							updateQuestStatus(env);
-					        return closeDialogWindow(env);
-						}
+					if (var == 0) {
+						qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
+						updateQuestStatus(env);
+					    return closeDialogWindow(env);
+					}
 					case SELECT_REWARD:
+					if (var == 3) {
 						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
 						return sendQuestEndDialog(env);
+					}
 				}
 			}
 			if (targetId == 204206) {//Cavalorn
@@ -114,7 +115,7 @@ public class _2278ASecretProposal extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD){
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD){
 			if (targetId == 203557) {
 				return sendQuestEndDialog(env);
 			}

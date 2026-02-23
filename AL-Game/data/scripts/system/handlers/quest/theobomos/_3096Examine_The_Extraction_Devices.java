@@ -47,7 +47,7 @@ public class _3096Examine_The_Extraction_Devices extends QuestHandler {
 		int targetId = 0;
 		if (env.getVisibleObject() instanceof Npc) {
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-		} if (qs == null || qs.getStatus() == QuestStatus.NONE || qs.getStatus() == QuestStatus.COMPLETE) {
+		} if (qs == null || qs.getStatus() == QuestStatus.NONE || qs.canRepeat()) {
 			if (targetId == 798225) {
 				switch (env.getDialog()) {
 					case START_DIALOG: {
