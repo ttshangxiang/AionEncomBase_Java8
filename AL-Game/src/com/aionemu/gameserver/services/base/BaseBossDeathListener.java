@@ -1,4 +1,5 @@
 /*
+
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -54,52 +55,30 @@ public class BaseBossDeathListener extends OnDieEventCallback {
         Race race = null;
         Npc boss = base.getBoss();
         AionObject winner = base.getBoss().getAggroList().getMostDamage();
-        
         if (winner instanceof Creature) {
             final Creature kill = (Creature) winner;
             applyBaseBuff();
-            
-            // Check if race is player race (Elyos or Asmodians)
+            // 检查kill是否为Player类型 Check if kill is of Player type
+            if (CustomConfig.ENABLE_BASE_REWARDS && kill instanceof Player) {
+                giveBaseRewardsToPlayers((Player) kill); // 确保kill是Player类型 Ensure kill is of Player type
+            }
             if (kill.getRace().isPlayerRace()) {
                 base.setRace(kill.getRace());
                 race = kill.getRace();
-                
-                if (CustomConfig.ENABLE_BASE_REWARDS && kill instanceof Player) {
-                    giveBaseRewardsToPlayers((Player) kill);
-                }
-                
-                // Send announcement only for player races
-                announceCapture(null, kill, race);
-            } else {
-                // NPC races cannot capture bases - keep current race
-                base.setRace(boss.getRace());
-                race = boss.getRace();
-                // No announcement for NPC races
             }
-        } 
-        else if (winner instanceof TemporaryPlayerTeam) {
+            announceCapture(null, kill);
+        } else if (winner instanceof TemporaryPlayerTeam) {
             final TemporaryPlayerTeam team = (TemporaryPlayerTeam) winner;
             applyBaseBuff();
-            
             if (team.getRace().isPlayerRace()) {
                 base.setRace(team.getRace());
                 race = team.getRace();
-                
-                // Send announcement only for player races
-                announceCapture(team, null, race);
-            } else {
-                // NPC team cannot capture bases - keep current race
-                base.setRace(boss.getRace());
-                race = boss.getRace();
-                // No announcement for NPC races
             }
+            announceCapture(team, null);
         } else {
-            // No valid winner - keep current race
-            base.setRace(boss.getRace());
-            race = boss.getRace();
+            // 处理其他类型的winner对象 Handle other types of winner objects
+            base.setRace(Race.NPC);
         }
-        
-        // Process Abyss Landing only for player races
         if (base.getBaseLocation().getWorldId() == 400010000) {
             if (race == Race.ASMODIANS && boss.getRace() == Race.ELYOS) {
                 AbyssLandingService.getInstance().updateRedemptionLanding(6000, LandingPointsEnum.BASE, false);
@@ -107,42 +86,42 @@ public class BaseBossDeathListener extends OnDieEventCallback {
             if (race == Race.ELYOS && boss.getRace() == Race.ASMODIANS) {
                 AbyssLandingService.getInstance().updateHarbingerLanding(6000, LandingPointsEnum.BASE, false);
             }
-            
-            if (race == Race.ASMODIANS || race == Race.ELYOS) {
-                landingWinBase(race);
-            }
+            landingWinBase(race);
         }
-        
-        // Always update base state
-        BaseService.getInstance().capture(base.getId(), race);
+        BaseService.getInstance().capture(base.getId(), base.getRace());
     }
 
 	@Override
 	public void onAfterDie(AbstractAI obj) {
 	}
 
-	public void announceCapture(final TemporaryPlayerTeam team, final Creature kill, final Race race) {
+	public void announceCapture(final TemporaryPlayerTeam team, final Creature kill) {
 		final String baseName = base.getBaseLocation().getName();
 		World.getInstance().doOnAllPlayers(new Visitor<Player>() {
 			@Override
 			public void visit(Player player) {
 				if (team != null && kill == null) {
 					// %0 succeeded in conquering %1.
-					PacketSendUtility.sendPacket(player, new SM_SYSTEM_MESSAGE(1301039, team.getRace().getRaceDescriptionId(), baseName));
-				} 
-				else if (kill != null) {
+					PacketSendUtility.sendPacket(player,
+							new SM_SYSTEM_MESSAGE(1301039, team.getRace().getRaceDescriptionId(), baseName));
+				} else {
 					// %0 succeeded in conquering %1.
-					PacketSendUtility.sendPacket(player, new SM_SYSTEM_MESSAGE(1301039, kill.getRace().getRaceDescriptionId(), baseName));
+					PacketSendUtility.sendPacket(player,
+							new SM_SYSTEM_MESSAGE(1301039, kill.getRace().getRaceDescriptionId(), baseName));
 				}
-				
 				// Abyss Landing 4.9.1
 				switch (player.getWorldId()) {
-					case 400010000: // Reshanta.
-						if (race == Race.ELYOS || race == Race.ASMODIANS) {
-							// %0 has occupied %1 Base and the Landing is now enhanced.
-							PacketSendUtility.sendPacket(player, new SM_SYSTEM_MESSAGE(1403186, race.getRaceDescriptionId(), baseName));
-						}
-						break;
+				case 400010000: // Reshanta.
+					if (team != null && kill == null) {
+						// %0 has occupied %1 Base and the Landing is now enhanced.
+						PacketSendUtility.sendPacket(player,
+								new SM_SYSTEM_MESSAGE(1403186, team.getRace().getRaceDescriptionId(), baseName));
+					} else {
+						// %0 has occupied %1 Base and the Landing is now enhanced.
+						PacketSendUtility.sendPacket(player,
+								new SM_SYSTEM_MESSAGE(1403186, kill.getRace().getRaceDescriptionId(), baseName));
+					}
+					break;
 				}
 			}
 		});
@@ -155,15 +134,19 @@ public class BaseBossDeathListener extends OnDieEventCallback {
 				if (player.getCommonData().getRace() == Race.ELYOS) {
 					SkillEngine.getInstance().applyEffectDirectly(12115, player, player, 0); // Kaisinel's Bane.
 					// The power of Kaisinel's Protection surrounds you.
-					PacketSendUtility.playerSendPacketTime(player, SM_SYSTEM_MESSAGE.STR_MSG_WEAK_RACE_BUFF_LIGHT_GAIN, 5000);
+					PacketSendUtility.playerSendPacketTime(player, SM_SYSTEM_MESSAGE.STR_MSG_WEAK_RACE_BUFF_LIGHT_GAIN,
+							5000);
 					// Marchutan's Protection has strengthened the opposing faction.
-					PacketSendUtility.playerSendPacketTime(player, SM_SYSTEM_MESSAGE.STR_MSG_WEAK_RACE_BUFF_DARK_WARNING, 10000);
+					PacketSendUtility.playerSendPacketTime(player,
+							SM_SYSTEM_MESSAGE.STR_MSG_WEAK_RACE_BUFF_DARK_WARNING, 10000);
 				} else if (player.getCommonData().getRace() == Race.ASMODIANS) {
 					SkillEngine.getInstance().applyEffectDirectly(12117, player, player, 0); // Marchutan's Bane.
 					// The power of Marchutan's Protection surrounds you.
-					PacketSendUtility.playerSendPacketTime(player, SM_SYSTEM_MESSAGE.STR_MSG_WEAK_RACE_BUFF_DARK_GAIN, 5000);
+					PacketSendUtility.playerSendPacketTime(player, SM_SYSTEM_MESSAGE.STR_MSG_WEAK_RACE_BUFF_DARK_GAIN,
+							5000);
 					// Kaisinel's Protection has strengthened the opposing faction.
-					PacketSendUtility.playerSendPacketTime(player, SM_SYSTEM_MESSAGE.STR_MSG_WEAK_RACE_BUFF_LIGHT_WARNING, 10000);
+					PacketSendUtility.playerSendPacketTime(player,
+							SM_SYSTEM_MESSAGE.STR_MSG_WEAK_RACE_BUFF_LIGHT_WARNING, 10000);
 				}
 			}
 		});

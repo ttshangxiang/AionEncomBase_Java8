@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
 <!--
-    Quest Altgard
-	Make By (Encom)
+    Quest Altgard Make By (Encom)
  -->
 	<report_to id="2146" start_npc_ids="203664" end_npc_ids="203659"/>
 	<report_to id="2210" start_npc_ids="203603" end_npc_ids="203605"/>
@@ -21,7 +20,7 @@
 	<report_to id="2286" start_npc_ids="203557" end_npc_ids="203560" item_id="182203259"/>
 	<report_to id="2287" start_npc_ids="203557" end_npc_ids="203558" item_id="182203260"/>
 	<report_to id="2291" start_npc_ids="203639" end_npc_ids="203617"/>
-    <!-- COLLECTING QUESTS -->
+
     <item_collecting id="2147" start_npc_ids="203659"/>
     <item_collecting id="2203" start_npc_ids="203556" action_item_ids="700055"/>
     <item_collecting id="2204" start_npc_ids="203576"/>
@@ -54,8 +53,11 @@
     <item_collecting id="2277" start_npc_ids="203556"/>
     <item_collecting id="2292" start_npc_ids="832822"/>
     <item_collecting id="2297" start_npc_ids="798105"/>
+	<item_collecting id="24111" start_npc_ids="203606" end_npc_ids="203631" action_item_ids="700136"/>
+	<item_collecting id="24113" start_npc_ids="203654"/>
+	<item_collecting id="24231" start_npc_ids="832821"/>
     <item_collecting id="80005" start_npc_ids="799789"/>
-    <!-- HUNTING QUESTS -->
+
 	<monster_hunt id="2201" start_npc_ids="203563">
 		<monster var="0" end_var="10" npc_ids="210414 210415"/>
 	</monster_hunt>

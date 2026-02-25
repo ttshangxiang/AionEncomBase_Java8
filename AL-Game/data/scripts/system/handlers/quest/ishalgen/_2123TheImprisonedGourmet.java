@@ -62,16 +62,17 @@ public class _2123TheImprisonedGourmet extends QuestHandler {
 				case 203550: {
 					switch (env.getDialog()) {
 						case START_DIALOG: {
+			                boolean itemCount = player.getInventory().getItemCountByItemId(182203121) >= 1;
+			                boolean itemCount1 = player.getInventory().getItemCountByItemId(182203122) >= 1;
+			                boolean itemCount2 = player.getInventory().getItemCountByItemId(182203123) >= 1;
 							return sendQuestDialog(env, 1352);
 						}
 						case STEP_TO_1: {
 							if (player.getInventory().getItemCountByItemId(182203121) >= 1) {
 					            rewardId = 0;
+                                deleteQuestItems(player, new int[]{182203121, 182203122, 182203123});
 								qs.setStatus(QuestStatus.REWARD);
 								updateQuestStatus(env);
-								removeQuestItem(env, 182203121, 1);
-								removeQuestItem(env, 182203122, 1);
-								removeQuestItem(env, 182203123, 1);
 								return sendQuestDialog(env, 5);
 							}
 							else {
@@ -81,11 +82,9 @@ public class _2123TheImprisonedGourmet extends QuestHandler {
 						case STEP_TO_2: {
 							if (player.getInventory().getItemCountByItemId(182203122) >= 1) {
 					            rewardId = 1;
+                                deleteQuestItems(player, new int[]{182203121, 182203122, 182203123});
 								qs.setStatus(QuestStatus.REWARD);
 								updateQuestStatus(env);
-								removeQuestItem(env, 182203121, 1);
-								removeQuestItem(env, 182203122, 1);
-								removeQuestItem(env, 182203123, 1);
 								return sendQuestDialog(env, 6);
 							}
 							else {
@@ -95,11 +94,9 @@ public class _2123TheImprisonedGourmet extends QuestHandler {
 						case STEP_TO_3: {
 							if (player.getInventory().getItemCountByItemId(182203123) >= 1) {
 					            rewardId = 2;
+                                deleteQuestItems(player, new int[]{182203121, 182203122, 182203123});
 								qs.setStatus(QuestStatus.REWARD);
 								updateQuestStatus(env);
-								removeQuestItem(env, 182203121, 1);
-								removeQuestItem(env, 182203122, 1);
-								removeQuestItem(env, 182203123, 1);
 								return sendQuestDialog(env, 7);
 							}
 							else {
@@ -121,4 +118,13 @@ public class _2123TheImprisonedGourmet extends QuestHandler {
 		}
 		return false;
 	}
+
+    private void deleteQuestItems(Player player, int... itemIds) {
+        for (int itemId : itemIds) {
+            long count = player.getInventory().getItemCountByItemId(itemId);
+            if (count > 0) {
+                player.getInventory().decreaseByItemId(itemId, count);
+            }
+        }
+    }
 }

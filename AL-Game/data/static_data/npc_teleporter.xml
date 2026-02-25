@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Npc Teleporter
-	Made By (Encom)
+	Npc Teleporter Made By (Encom)
  -->
 <npc_teleporter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="npc_teleporter.xsd">
 	<teleporter_template npc_ids="203726" teleportId="1">
@@ -22,7 +21,7 @@
 	<teleporter_template npc_ids="203194" teleportId="2">
 		<locations>
 			<telelocation loc_id="2" price="100" pricePvp="100" requiredQuest="1006" type="REGULAR"/>
-			<telelocation loc_id="4" price="800" pricePvp="800" type="REGULAR"/>
+			<telelocation loc_id="4" price="800" pricePvp="800" requiredQuest="1007" type="REGULAR"/>
 		</locations>
 	</teleporter_template>
 	<teleporter_template npc_ids="203091" teleportId="3">
@@ -177,7 +176,7 @@
 	<teleporter_template npc_ids="203679" teleportId="51">
 		<locations>
 			<telelocation loc_id="7" price="100" pricePvp="100" requiredQuest="2008" type="REGULAR"/>
-			<telelocation loc_id="9" price="800" pricePvp="800" type="REGULAR"/>
+			<telelocation loc_id="9" price="800" pricePvp="800" requiredQuest="2009" type="REGULAR"/>
 		</locations>
 	</teleporter_template>
 	<teleporter_template npc_ids="203581" teleportId="52">

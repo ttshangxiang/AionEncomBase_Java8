@@ -10,6 +10,7 @@
 	<report_to id="4088" start_npc_ids="798063" end_npc_ids="205203" item_id="182209047"/>
 	<report_to id="4097" start_npc_ids="205158" end_npc_ids="730104"/>
 	<report_to id="4104" start_npc_ids="205193" end_npc_ids="205159"/>
+	<report_to id="24200" start_npc_ids="204702" end_npc_ids="205150"/>
 	
 	<item_collecting id="4002" start_npc_ids="205126"/>
 	<item_collecting id="4006" start_npc_ids="205121" action_item_ids="700341"/>
@@ -46,6 +47,9 @@
 	<item_collecting id="4099" start_npc_ids="205149" action_item_ids="700451"/>
 	<item_collecting id="4100" start_npc_ids="205149"/>
 	<item_collecting id="4105" start_npc_ids="205146"/>
+	<item_collecting id="24201" start_npc_ids="205150"/>
+	<item_collecting id="24202" start_npc_ids="205150"/>
+	<item_collecting id="24203" start_npc_ids="205150"/>
 	
 	<monster_hunt id="4003" start_npc_ids="205131">
 		<monster var="0" end_var="5" npc_ids="213849 213850"/>

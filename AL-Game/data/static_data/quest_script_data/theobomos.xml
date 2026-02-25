@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
 <!--
-    Quest Theobomos
-	Make By (Encom)
- -->	
+    Quest Theobomos Make By (Encom)
+ -->
+	<report_to id="14202" start_npc_ids="204500" end_npc_ids="798155"/>
+
 	<item_collecting id="3003" start_npc_ids="798137"/>
 	<item_collecting id="3004" start_npc_ids="798136" action_item_ids="700338"/>
 	<item_collecting id="3007" start_npc_ids="798141"/>
@@ -101,14 +102,6 @@
 	<monster_hunt id="3094" start_npc_ids="798215">
 		<monster var="0" end_var="10" npc_ids="214545 214546"/>
 	</monster_hunt>
-	<!-- Berserk Silikor -->
-	<monster_hunt id="3097" start_npc_ids="798225">
-		<monster var="0" end_var="1" npc_ids="237248"/>
-	</monster_hunt>
-	<!-- The Theobomos Syndrome -->
-	<monster_hunt id="3098" start_npc_ids="798225">
-		<monster var="0" end_var="1" npc_ids="237110"/>
-	</monster_hunt>
 	<monster_hunt id="3105" start_npc_ids="798158">
 		<monster var="0" end_var="8" npc_ids="214202 214203"/>
 		<monster var="1" end_var="8" npc_ids="214194 214195"/>
@@ -121,11 +114,6 @@
 		<monster var="0" end_var="8" npc_ids="214173 214174"/>
 		<monster var="1" end_var="7" npc_ids="214182 214183"/>
 	</monster_hunt>
-	<!-- [Coin/Group] Triroan In The Lab -->
-	<monster_hunt id="3113" start_npc_ids="798225">
-		<monster var="0" end_var="1" npc_ids="237250"/>
-	</monster_hunt>
-	<!-- Archaeologist Pyrrha -->
 	<monster_hunt id="3121" start_npc_ids="798155" end_npc_ids="798225">
         <monster var="0" npc_ids="214615" end_var="1"/>
         <monster var="1" npc_ids="214616" end_var="1"/>

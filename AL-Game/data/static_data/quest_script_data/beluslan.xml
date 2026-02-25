@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
 <!--
-    Quest Beluslan
-	Make By (Encom)
+    Quest Beluslan Make By (Encom)
  -->
 	<report_to id="2507" start_npc_ids="204702" end_npc_ids="204801" item_id="182204406"/>
 	<report_to id="2508" start_npc_ids="204734" end_npc_ids="204802"/>
@@ -27,9 +26,9 @@
 	<report_to id="2690" start_npc_ids="204763" end_npc_ids="204777"/>
 	<report_to id="2695" start_npc_ids="204777" end_npc_ids="204208"/>
 	<report_to id="2697" start_npc_ids="204777" end_npc_ids="204814"/>
-	
 	<report_to id="4521" start_npc_ids="204725" end_npc_ids="205143" item_id="182204554"/>
 	<report_to id="4538" start_npc_ids="204701" end_npc_ids="204768" item_id="182204558"/>
+	<report_to id="24250" start_npc_ids="802053" end_npc_ids="832820"/>
 	
 	<item_collecting id="2502" start_npc_ids="204701"/>
 	<item_collecting id="2503" start_npc_ids="204733" action_item_ids="700327"/>

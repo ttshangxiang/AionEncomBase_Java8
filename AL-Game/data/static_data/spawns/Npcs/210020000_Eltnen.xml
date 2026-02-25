@@ -5897,8 +5897,8 @@
     <spawn npc_id="700021" respawn_time="60">
       <spot x="283.405457" y="2748.106689" z="271.13574" entity_id="293" />
     </spawn>
-    <spawn npc_id="790004" respawn_time="60">
-      <spot x="1934.692261" y="2015.012329" z="361.45673" h="26" />
+    <spawn npc_id="790004" respawn_time="295">
+	  <spot x="1338.955" y="343.50073" z="348.6672"/>
     </spawn>
     <spawn npc_id="205240" respawn_time="120">
       <spot x="323.065186" y="2791.107666" z="263.49344" h="45" />
@@ -6045,9 +6045,6 @@
     </spawn>
     <spawn npc_id="210833" respawn_time="240">
       <spot x="1621.183350" y="2084.381348" z="276.75" h="60" random_walk="0" />
-    </spawn>
-    <spawn npc_id="204036" respawn_time="180">
-      <spot x="1521.904663" y="1778.154419" z="302.97842" h="63" />
     </spawn>
     <spawn npc_id="700180" respawn_time="60">
       <spot x="1358.785889" y="2560.802246" z="278.82452" entity_id="41" />

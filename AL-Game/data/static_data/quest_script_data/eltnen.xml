@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
 <!--
-    Quest Eltnen
-	Make By (Encom)
+    Quest Eltnen Make By (Encom)
  -->
 	<report_to id="1302" start_npc_ids="203921" end_npc_ids="203932"/>
 	<report_to id="1310" start_npc_ids="203932" end_npc_ids="203997"/>
@@ -32,6 +31,7 @@
 	<report_to id="1479" start_npc_ids="730020" end_npc_ids="203912"/>
 	<report_to id="3330" start_npc_ids="203956" end_npc_ids="203949"/>
 	<report_to id="3337" start_npc_ids="203954" end_npc_ids="790006" item_id="182201439"/>
+	<report_to id="14241" start_npc_ids="203996" end_npc_ids="203900"/>
 	
 	<item_collecting id="1301" start_npc_ids="203918"/>
 	<item_collecting id="1303" start_npc_ids="203917"/>
@@ -104,7 +104,6 @@
 	<item_collecting id="1493" start_npc_ids="798151"/>
 	<item_collecting id="1494" start_npc_ids="798151"/>
 	<item_collecting id="1495" start_npc_ids="798151"/>
-	<!-- [Group] Enemy In The Kaidan Mine -->
 	<item_collecting id="1496" start_npc_ids="204045" end_npc_ids="204004"/>
 	<item_collecting id="1498" start_npc_ids="204004"/>
 	<item_collecting id="3303" start_npc_ids="203994"/>
@@ -246,7 +245,6 @@
 	<monster_hunt id="1407" start_npc_ids="203990">
 		<monster var="0" end_var="1" npc_ids="210999"/>
 	</monster_hunt>
-	<!-- Mamaki Patrol -->
 	<monster_hunt id="1409" start_npc_ids="203990">
 		<monster var="0" end_var="9" npc_ids="211004 211005 211006 211009 211010 211772"/>
 		<monster var="0" end_var="9" npc_ids="211773 211806 211807 211809 211810 212016 212017"/>
@@ -348,15 +346,11 @@
 		<monster var="0" end_var="7" npc_ids="210981 210994"/>
 		<monster var="1" end_var="3" npc_ids="210983 210995"/>
 	</monster_hunt>
-	<!-- New Nochsana Orders (Elyos Only) -->
-	<report_to id="3731" start_npc_ids="203901" end_npc_ids="800518"/>
-	<!-- [Group] Instruction Destruction (Elyos Only) -->
-	<monster_hunt id="3733" start_npc_ids="800518">
-		<monster var="0" end_var="1" npc_ids="256690"/>
-		<monster var="1" end_var="1" npc_ids="256689"/>
-		<monster var="2" end_var="1" npc_ids="256692"/>
-		<monster var="3" end_var="1" npc_ids="256691"/>
+	<monster_hunt id="14124" start_npc_ids="203946">
+		<monster var="0" npc_ids="210946 210968" end_var="3"/>
+		<monster var="1" npc_ids="210947 210969" end_var="3"/>
 	</monster_hunt>
-	<!-- [Group] Pilfering Prototypes (Elyos Only) -->
-	<item_collecting id="3734" start_npc_ids="800518" action_item_ids="700415"/>
+	<monster_hunt id="14242" start_npc_ids="204004">
+		<monster var="0" npc_ids="235466 235467 235464 235465 235468 235469" end_var="9"/>
+	</monster_hunt>
 </quest_scripts>

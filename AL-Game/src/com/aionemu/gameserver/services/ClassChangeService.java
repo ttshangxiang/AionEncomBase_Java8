@@ -1,5 +1,4 @@
 /*
-
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -20,7 +19,6 @@ import java.sql.Timestamp;
 import java.util.Calendar;
 
 import com.aionemu.gameserver.configs.main.CustomConfig;
-import com.aionemu.gameserver.configs.main.MembershipConfig;
 import com.aionemu.gameserver.model.PlayerClass;
 import com.aionemu.gameserver.model.Race;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
@@ -126,12 +124,10 @@ public class ClassChangeService {
 					setClass(player, PlayerClass.getPlayerClassById(Byte.parseByte("16")));
 					break;
 				}
+				
+				player.getCommonData().addExp(73200, null);
 				completeQuest(player, 1006);
                 /* completeQuest(player, 1007); */
-				if (player.havePermission(MembershipConfig.STIGMA_SLOT_QUEST)) {
-					completeQuest(player, 1929);
-					player.getController().upgradePlayer();
-				}
 			} else if (playerRace == Race.ASMODIANS) {
 				switch (dialogId) {
 				case 3058:
@@ -168,12 +164,10 @@ public class ClassChangeService {
 					setClass(player, PlayerClass.getPlayerClassById(Byte.parseByte("16")));
 					break;
 				}
+				
+				player.getCommonData().addExp(73200, null);
 				completeQuest(player, 2008);
                 /* completeQuest(player, 2009); */
-				if (player.havePermission(MembershipConfig.STIGMA_SLOT_QUEST)) {
-					completeQuest(player, 2900);
-					player.getController().upgradePlayer();
-				} 
 			}
 		}
 	}

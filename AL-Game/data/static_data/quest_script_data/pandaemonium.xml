@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
 <!--
-    Quest Pandaemonium 5.1
-	Make By (Encom)
+    Quest Pandaemonium 5.1 Make By (Encom)
  -->
 	<report_to id="2939" start_npc_ids="204104" end_npc_ids="278010" item_id="182207027"/>
 	<report_to id="2940" start_npc_ids="204106" end_npc_ids="278011" item_id="182207028"/>
@@ -23,11 +22,6 @@
 	<report_to id="29044" start_npc_ids="798443" end_npc_ids="798441"/>
 	<report_to id="29045" start_npc_ids="798441" end_npc_ids="798442"/>
 	<report_to id="29065" start_npc_ids="204075" end_npc_ids="204053"/>
-	
-	<report_to_many id="4914" start_item_id="182207127" end_npc_ids="203385">
-		<npc_infos npc_id="204182" var="0" quest_dialog="1352"/>
-		<npc_infos npc_id="203385" var="1" quest_dialog="2375" close_dialog="1009"/>
-	</report_to_many>
 	
 	<item_collecting id="2905" start_npc_ids="204104"/>
 	<item_collecting id="2906" start_npc_ids="204106"/>
@@ -50,16 +44,7 @@
 	<item_collecting id="4975" start_npc_ids="204283"/>
 	<item_collecting id="29042" start_npc_ids="204286" end_npc_ids="204286"/>
 	<item_collecting id="29043" start_npc_ids="798445"/>
-	<monster_hunt id="4977" start_npc_ids="203385">
-		<monster var="0" end_var="8" npc_ids="214850 214851 214849 215389 214880 215388 214894 214896 214897 214895"/>
-	</monster_hunt>
-	<monster_hunt id="4978" start_npc_ids="204286">
-		<monster var="0" end_var="1" npc_ids="215079"/>
-	</monster_hunt>
-	<monster_hunt id="4979" start_npc_ids="204283">
-		<monster var="0" end_var="1" npc_ids="215081"/>
-	</monster_hunt>
-	
+
 	<item_order start_item_id="182207044" end_npc_id="278055" id="2966"/>
 	<item_order start_item_id="182207045" end_npc_id="278055" id="2967"/>
 	<item_order start_item_id="182207046" end_npc_id="278055" id="2968"/>

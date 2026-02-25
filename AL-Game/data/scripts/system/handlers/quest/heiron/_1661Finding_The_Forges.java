@@ -27,120 +27,127 @@ import com.aionemu.gameserver.world.zone.ZoneName;
 
 public class _1661Finding_The_Forges extends QuestHandler {
 
-	private final static int questId = 1661;
-	public _1661Finding_The_Forges() {
-		super(questId);
-	}
-	
-	@Override
-	public void register() {
-		qe.registerQuestNpc(204600).addOnQuestStart(questId);
-		qe.registerQuestNpc(204600).addOnTalkEvent(questId);
-		qe.registerOnEnterZone(ZoneName.get("LF3_SENSORY_AREA_Q1661_A_210040000"), questId);
-		qe.registerOnEnterZone(ZoneName.get("LF3_SENSORY_AREA_Q1661_B_210040000"), questId);
-		qe.registerOnEnterZone(ZoneName.get("LF3_SENSORY_AREA_Q1661_C_210040000"), questId);
-	}
-	
-	@Override
-	public boolean onDialogEvent(QuestEnv env) {
-		Player player = env.getPlayer();
-		int targetId = 0;
-		if(env.getVisibleObject() instanceof Npc)
-			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
-			if (targetId == 204600) { 
-				if (env.getDialog() == QuestDialog.START_DIALOG) {
-					return sendQuestDialog(env, 1011);
+    private final static int questId = 1661;
+    
+    private static final int ZONE_A_MASK = 16;
+    private static final int ZONE_B_MASK = 32;
+    private static final int ZONE_C_MASK = 64;
+    private static final int ALL_ZONES_MASK = 112;
+
+    public _1661Finding_The_Forges() {
+        super(questId);
+    }
+    
+    @Override
+    public void register() {
+        qe.registerQuestNpc(204600).addOnQuestStart(questId);
+        qe.registerQuestNpc(204600).addOnTalkEvent(questId);
+        qe.registerOnEnterZone(ZoneName.get("LF3_SENSORY_AREA_Q1661_A_210040000"), questId);
+        qe.registerOnEnterZone(ZoneName.get("LF3_SENSORY_AREA_Q1661_B_210040000"), questId);
+        qe.registerOnEnterZone(ZoneName.get("LF3_SENSORY_AREA_Q1661_C_210040000"), questId);
+    }
+    
+    @Override
+    public boolean onDialogEvent(QuestEnv env) {
+        Player player = env.getPlayer();
+        int targetId = 0;
+        if(env.getVisibleObject() instanceof Npc)
+            targetId = ((Npc) env.getVisibleObject()).getNpcId();
+        QuestState qs = player.getQuestStateList().getQuestState(questId);
+        
+        if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+            if (targetId == 204600) { 
+                if (env.getDialog() == QuestDialog.START_DIALOG) {
+                    return sendQuestDialog(env, 1011);
                 }  
-			    if (env.getDialog() == QuestDialog.SELECT_ACTION_1012) {
+                if (env.getDialog() == QuestDialog.SELECT_ACTION_1012) {
                     return sendQuestDialog(env, 1012);
-			    }
-			    if (env.getDialog() == QuestDialog.ASK_ACCEPTION) {
+                }
+                if (env.getDialog() == QuestDialog.ASK_ACCEPTION) {
                     return sendQuestDialog(env, 4);
                 }
-			    if (env.getDialog() == QuestDialog.ACCEPT_QUEST) {
+                if (env.getDialog() == QuestDialog.ACCEPT_QUEST) {
                     playQuestMovie(env, 200);
                     return sendQuestStartDialog(env);
                 }
-			    if (env.getDialog() == QuestDialog.REFUSE_QUEST) {
+                if (env.getDialog() == QuestDialog.REFUSE_QUEST) {
                     return sendQuestStartDialog(env);
                 }
-		    }
-	   } 
-       else if (qs.getStatus() == QuestStatus.START) {
-			if (targetId == 204600) {
-			  if (env.getDialog() == QuestDialog.START_DIALOG) {
-				  return sendQuestDialog(env, 1352);
-              } 
-              if (env.getDialog() == QuestDialog.SELECT_REWARD) {
-                  qs.setStatus(QuestStatus.REWARD);
-                  updateQuestStatus(env);
-                  return sendQuestEndDialog(env); 
+            }
+        } 
+        else if (qs.getStatus() == QuestStatus.START) {
+            if (targetId == 204600) {
+                if (env.getDialog() == QuestDialog.START_DIALOG) {
+                    return sendQuestDialog(env, 1352);
+                } 
+                if (env.getDialog() == QuestDialog.SELECT_REWARD) {
+                    qs.setStatus(QuestStatus.REWARD);
+                    updateQuestStatus(env);
+                    return sendQuestEndDialog(env); 
                 }
-			}
+            }
         }
         else if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 204600) {
-				if (env.getDialog() == QuestDialog.USE_OBJECT)
-					return sendQuestDialog(env, 1352);
-				else if (env.getDialogId() == 1009)
-					return sendQuestDialog(env, 5);
-				else
-					return sendQuestEndDialog(env);
-			}
-		}
-		return false;
-	}
-	
-	@Override
-	public boolean onEnterZoneEvent(QuestEnv env, ZoneName zoneName) {
-		Player player = env.getPlayer();
-		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (qs != null && qs.getStatus() == QuestStatus.START) {
-			if (zoneName == ZoneName.get("LF3_SENSORY_AREA_Q1661_A_210040000")) {
-                if (qs.getQuestVarById(1) == 0) {
- 			        qs.setQuestVarById(0, qs.getQuestVarById(0) + 16);
-                    updateQuestStatus(env); 
-		        if (qs.getQuestVarById(0) == 112) {
-                    qs.setQuestVarById(1,0);
-                    qs.setQuestVarById(2,0);
-                    qs.setQuestVarById(3,0);
-			        changeQuestStep(env, 0, 1, false);		    	
-			        updateQuestStatus(env);
-                    return true;
+            if (targetId == 204600) {
+                if (env.getDialog() == QuestDialog.USE_OBJECT)
+                    return sendQuestDialog(env, 1352);
+                else if (env.getDialogId() == 1009)
+                    return sendQuestDialog(env, 5);
+                else
+                    return sendQuestEndDialog(env);
+            }
+        }
+        return false;
+    }
+    
+    @Override
+    public boolean onEnterZoneEvent(QuestEnv env, ZoneName zoneName) {
+        Player player = env.getPlayer();
+        QuestState qs = player.getQuestStateList().getQuestState(questId);
+        
+        if (qs != null && qs.getStatus() == QuestStatus.START) {
+            int currentMask = qs.getQuestVarById(0);
+            
+            if (zoneName == ZoneName.get("LF3_SENSORY_AREA_Q1661_A_210040000")) {
+                if ((currentMask & ZONE_A_MASK) == 0) {
+                    int newMask = currentMask | ZONE_A_MASK;
+                    qs.setQuestVarById(0, newMask);
+                    updateQuestStatus(env);
+                    
+                    if (newMask == ALL_ZONES_MASK) {
+			            changeQuestStep(env, 0, 1, false);		    	
+			            updateQuestStatus(env);
                     }
-				}
-			} 
+                    return true;
+                }
+            } 
             else if (zoneName == ZoneName.get("LF3_SENSORY_AREA_Q1661_B_210040000")) {
-                 if (qs.getQuestVarById(2) == 0) {
- 			        qs.setQuestVarById(0, qs.getQuestVarById(0) + 32);
-                    updateQuestStatus(env); 
-		         if (qs.getQuestVarById(0) == 112) {
-                    qs.setQuestVarById(1,0);
-                    qs.setQuestVarById(2,0);
-                    qs.setQuestVarById(3,0);
-			        changeQuestStep(env, 0, 1, false);		    	
-			        updateQuestStatus(env);
-                    return true;
+                if ((currentMask & ZONE_B_MASK) == 0) {
+                    int newMask = currentMask | ZONE_B_MASK;
+                    qs.setQuestVarById(0, newMask);
+                    updateQuestStatus(env);
+                    
+                    if (newMask == ALL_ZONES_MASK) {
+			            changeQuestStep(env, 0, 1, false);		    	
+			            updateQuestStatus(env);
                     }
-				}
-			} 
+                    return true;
+                }
+            } 
             else if (zoneName == ZoneName.get("LF3_SENSORY_AREA_Q1661_C_210040000")) {
-                 if (qs.getQuestVarById(3) == 0) {
- 			        qs.setQuestVarById(0, qs.getQuestVarById(0) + 64);
-                    updateQuestStatus(env); 
-		         if (qs.getQuestVarById(0) == 112) {
-                    qs.setQuestVarById(1,0);
-                    qs.setQuestVarById(2,0);
-                    qs.setQuestVarById(3,0);
-			        changeQuestStep(env, 0, 1, false);		    	
-			        updateQuestStatus(env);
-                    return true;
+                if ((currentMask & ZONE_C_MASK) == 0) {
+                    int newMask = currentMask | ZONE_C_MASK;
+                    qs.setQuestVarById(0, newMask);
+                    updateQuestStatus(env);
+                    
+                    if (newMask == ALL_ZONES_MASK) {
+			            changeQuestStep(env, 0, 1, false);		    	
+			            updateQuestStatus(env);
                     }
-				}
-			}
-		}
-		return false;
-	}
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

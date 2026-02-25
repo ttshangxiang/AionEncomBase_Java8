@@ -18,13 +18,11 @@ package quest.heiron;
 
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.aionemu.gameserver.utils.PacketSendUtility;
 
 /**
  * @author Rolandas
@@ -32,6 +30,7 @@ import com.aionemu.gameserver.utils.PacketSendUtility;
 public class _1535TheColdColdGround extends QuestHandler {
 
 	private final static int questId = 1535;
+	private int rewardId;
 	public _1535TheColdColdGround() {
 		super(questId);
 	}
@@ -58,16 +57,18 @@ public class _1535TheColdColdGround extends QuestHandler {
 				return sendQuestStartDialog(env);
 		}
 		if (qs.getStatus() == QuestStatus.START) {
-			boolean abexSkins = player.getInventory().getItemCountByItemId(182201818) > 4;
-			boolean worgSkins = player.getInventory().getItemCountByItemId(182201819) > 2;
-			boolean karnifSkins = player.getInventory().getItemCountByItemId(182201820) > 0;
+			boolean itemCount = player.getInventory().getItemCountByItemId(182201818) > 4;
+			boolean itemCount1 = player.getInventory().getItemCountByItemId(182201819) > 2;
+			boolean itemCount2 = player.getInventory().getItemCountByItemId(182201820) > 0;
 			switch (env.getDialog()) {
 				case USE_OBJECT:
 				case START_DIALOG:
-					if (abexSkins || worgSkins || karnifSkins)
+					if (itemCount || itemCount1 || itemCount2)
 						return sendQuestDialog(env, 1352);
 				case STEP_TO_1:
-					if (abexSkins) {
+					if (itemCount) {
+                        deleteQuestItems(player, new int[]{182201818, 182201819, 182201820});
+					    rewardId = 0;
 						qs.setQuestVarById(0, 1);
 						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
@@ -75,16 +76,20 @@ public class _1535TheColdColdGround extends QuestHandler {
 					}
 					break;
 				case STEP_TO_2:
-					if (worgSkins) {
-						qs.setQuestVarById(0, 2);
+					if (itemCount1) {
+                        deleteQuestItems(player, new int[]{182201818, 182201819, 182201820});
+					    rewardId = 1;
+						qs.setQuestVarById(0, 1);
 						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
 						return sendQuestDialog(env, 6);
 					}
 					break;
 				case STEP_TO_3:
-					if (karnifSkins) {
-						qs.setQuestVarById(0, 3);
+					if (itemCount2) {
+                        deleteQuestItems(player, new int[]{182201818, 182201819, 182201820});
+					    rewardId = 2;
+						qs.setQuestVarById(0, 1);
 						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
 						return sendQuestDialog(env, 7);
@@ -94,39 +99,17 @@ public class _1535TheColdColdGround extends QuestHandler {
 			return sendQuestDialog(env, 1693);
 		}
 		else if (qs.getStatus() == QuestStatus.REWARD) {
-			int var = qs.getQuestVarById(0);
-			if (var == 1) {
-				removeQuestItem(env, 182201818, 5);
-				return sendQuestEndDialog(env);
-			}
-			else if (var == 2) {
-				// add Greater Mana Potion x 5
-				if (!giveQuestItem(env, 162000010, 5)) {
-					// check later
-					qs.setStatus(QuestStatus.START);
-					updateQuestStatus(env);
-				}
-				else {
-					removeQuestItem(env, 182201819, 3);
-				}
-				sendQuestEndDialog(env);
-				return true;
-			}
-			else if (var == 3) {
-				// add Greater Life Serum x 5
-				if (!giveQuestItem(env, 162000015, 5)) {
-					// check later
-					qs.setStatus(QuestStatus.START);
-					updateQuestStatus(env);
-				}
-				else {
-					removeQuestItem(env, 182201820, 1);
-				}
-				sendQuestEndDialog(env);
-				return true;
-			}
-			PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+			return sendQuestEndDialog(env, rewardId);
 		}
 		return false;
 	}
+
+    private void deleteQuestItems(Player player, int... itemIds) {
+        for (int itemId : itemIds) {
+            long count = player.getInventory().getItemCountByItemId(itemId);
+            if (count > 0) {
+                player.getInventory().decreaseByItemId(itemId, count);
+            }
+        }
+    }
 }

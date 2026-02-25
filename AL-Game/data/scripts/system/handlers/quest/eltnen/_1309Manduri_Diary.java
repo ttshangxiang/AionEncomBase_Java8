@@ -52,12 +52,10 @@ public class _1309Manduri_Diary extends QuestHandler {
 	
 	@Override
 	public boolean onDialogEvent(QuestEnv env) {
-		int targetId = 0;
+		int targetId = env.getTargetId();
 		final Player player = env.getPlayer();
 		final QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (env.getVisibleObject() instanceof Npc) {
-			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-		} if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 0) { 
 				if (env.getDialog() == QuestDialog.ACCEPT_QUEST) {
 					return sendQuestStartDialog(env);

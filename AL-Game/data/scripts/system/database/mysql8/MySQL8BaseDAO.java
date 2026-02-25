@@ -21,7 +21,7 @@ public class MySQL8BaseDAO extends BaseDAO {
     private static final Logger log = LoggerFactory.getLogger(MySQL8BaseDAO.class);
 
     private static final String SELECT_QUERY = "SELECT `id`, `race` FROM `base_location` ORDER BY `id`";
-    private static final String UPDATE_QUERY = "UPDATE `base_location` SET `race` = ?, `last_update` = CURRENT_TIMESTAMP WHERE `id` = ?";
+    private static final String UPDATE_QUERY = "UPDATE `base_location` SET `race` = ? WHERE `id` = ?";
     private static final String INSERT_QUERY = "INSERT INTO `base_location` (`id`, `race`) VALUES (?, ?) ON DUPLICATE KEY UPDATE `race` = VALUES(`race`)";
     private static final String SELECT_BY_RACE_QUERY = "SELECT `id`, `race` FROM `base_location` WHERE `race` = ?";
 

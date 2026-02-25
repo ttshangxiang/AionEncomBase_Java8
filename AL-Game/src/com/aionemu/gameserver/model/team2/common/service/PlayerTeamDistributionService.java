@@ -1,5 +1,4 @@
 /*
-
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -59,8 +58,7 @@ public class PlayerTeamDistributionService {
 		} else {
 			expReward = (long) (StatFunctions.calculateGroupExperienceReward(filteredStats.highestLevel, owner));
 		}
-		// Party Bonus:
-		// 2 Members 10%
+		// Party Bonus: 2 Members 10%
 		int size = filteredStats.players.size();
 		int bonus = 100;
 		if (size > 1) {
@@ -70,15 +68,6 @@ public class PlayerTeamDistributionService {
 			if (member.isMentor() || member.getLifeStats().isAlreadyDead()) {
 				continue;
 			}
-			// Reward InGameShop.
-			/* switch (member.getWorldId()) {
-			// Idian Depths.
-			case 210090000:
-			case 220100000:
-				InGameShopEn.getInstance().addToll(member, (long) (0 * member.getRates().getTollRewardRate()));
-				PacketSendUtility.sendSys1Message(member, "\uE083", "Kamu Jangan Ngepet ya");
-				break;
-			} */
 			// Berdin's Star.
 			if (owner.getLevel() >= 10) {
 				member.getCommonData().addBerdinStar(1575000); // 0.14%
@@ -138,8 +127,8 @@ public class PlayerTeamDistributionService {
 						kinahCount = 1000;
 					}
 					break;
-				case 210050000: // Inggison.
-				case 220070000: // Gelkmaros.
+				case 210130000: // Inggison [Master Server].
+				case 220140000: // Gelkmaros [Master Server].
 					if (member.getLevel() < owner.getLevel() + 5) {
 						kinahCount = Rnd.get(100, 3500) * member.getLevel();
 					} else if (member.getLevel() > owner.getLevel() + 5) {

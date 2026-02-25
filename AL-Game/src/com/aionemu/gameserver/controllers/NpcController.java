@@ -190,8 +190,7 @@ public class NpcController extends CreatureController<Npc> {
 			owner.getSpawn().setUse(false);
 		}
 
-		PacketSendUtility.broadcastPacket(owner, new SM_EMOTION(owner, EmotionType.DIE, 0, 
-			owner.equals(lastAttacker) ? 0 : lastAttacker.getObjectId()));
+		PacketSendUtility.broadcastPacket(owner, new SM_EMOTION(owner, EmotionType.DIE, 0, owner.equals(lastAttacker) ? 0 : lastAttacker.getObjectId()));
 
 		try {
 			if (owner.getAi2().poll(AIQuestion.SHOULD_REWARD)) {
@@ -354,8 +353,8 @@ public class NpcController extends CreatureController<Npc> {
 								kinahCount = 1000;
 							}
 							break;
-						case 210050000: // Inggison.
-						case 220070000: // Gelkmaros.
+						case 210130000: // Inggison [Master Server].
+						case 220140000: // Gelkmaros [Master Server].
 							if (player.getLevel() < getOwner().getLevel() + 5) {
 								kinahCount = Rnd.get(100, 3500) * player.getLevel();
 							} else if (player.getLevel() > getOwner().getLevel() + 5) {

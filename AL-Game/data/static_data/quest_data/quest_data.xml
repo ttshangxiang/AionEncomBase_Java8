@@ -9481,7 +9481,7 @@
     <quest_drop npc_id="213799" item_id="182204225" chance="100" drop_each_member="1" />
     <quest_drop npc_id="213800" item_id="182204226" chance="100" drop_each_member="1" />
   </quest>
-  <quest id="2495" name="Sprigg Nightlights" nameId="1103695" minlevel_permitted="24" max_repeat_count="1" cannot_share="true" race_permitted="PC_ALL" category="IMPORTANT">
+  <quest id="2495" name="Sprigg Nightlights" nameId="1103695" minlevel_permitted="24" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="IMPORTANT">
     <collect_items>
       <collect_item item_id="182204227" count="3" />
       <collect_item item_id="182204228" count="3" />
@@ -27673,9 +27673,6 @@
       <selectable_reward_item item_id="167000555" count="1" />
     </rewards>
   </quest>
-  <quest id="12999" name="Katalam" nameId="1141523" minlevel_permitted="10" max_repeat_count="1" cannot_share="true" cannot_giveup="true" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="1" />
-  </quest>
   <quest id="13305" name="Meet Stifas the Stiff" nameId="1140323" minlevel_permitted="65" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
     <rewards gold="75330" exp="1723277" />
   </quest>
@@ -29099,9 +29096,6 @@
   <quest id="14204" name="Veritable Treasure" nameId="1802351" minlevel_permitted="49" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
     <rewards gold="108110" exp="7667186" />
   </quest>
-  <quest id="14210" name="Bring Down the Dragon" nameId="1111700" minlevel_permitted="66" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
-    <rewards gold="155160" exp="8868125" />
-  </quest>
   <quest id="14211" name="Empyrean Scribe" nameId="1800565" minlevel_permitted="66" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT" repeat_cycle="WED">
     <rewards gp="100" />
   </quest>
@@ -29519,9 +29513,6 @@
       <reward_item item_id="186000231" count="12" />
       <reward_item item_id="186000237" count="30" />
     </rewards>
-  </quest>
-  <quest id="15097" name="Risen Relic" nameId="1800809" minlevel_permitted="10" max_repeat_count="1" race_permitted="PC_ALL" category="NON_COUNT">
-    <rewards />
   </quest>
   <quest id="15100" name="Desert Vermin" nameId="1800812" minlevel_permitted="64" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
     <rewards gold="150660" exp="9981788">
@@ -32849,7 +32840,7 @@
       <finished quest_id="18222" />
     </start_conditions>
   </quest>
-  <quest id="18224" name="Fight Another Day" nameId="1199937" minlevel_permitted="61" max_repeat_count="255" cannot_share="true" race_permitted="PC_ALL" category="SEEN_MARKER">
+  <quest id="18224" name="Fight Another Day" nameId="1199937" minlevel_permitted="61" max_repeat_count="255" cannot_share="true" race_permitted="ELYOS" category="SEEN_MARKER">
     <rewards exp="4825175">
       <selectable_reward_item item_id="164000154" count="7" />
       <selectable_reward_item item_id="164000158" count="7" />
@@ -39411,9 +39402,6 @@
     <start_conditions>
       <finished quest_id="24202" />
     </start_conditions>
-  </quest>
-  <quest id="24210" name="Burning the Dragon" nameId="1111701" minlevel_permitted="66" max_repeat_count="1" race_permitted="ASMODIANS" category="IMPORTANT">
-    <rewards gold="155160" exp="8868125" />
   </quest>
   <quest id="24211" name="Agent's Appreciation" nameId="1800566" minlevel_permitted="66" max_repeat_count="1" race_permitted="ASMODIANS" category="IMPORTANT" repeat_cycle="WED">
     <rewards gp="100" />
@@ -50293,121 +50281,6 @@
     <rewards exp="3251515">
       <reward_item item_id="186000234" count="3" />
       <reward_item item_id="188052288" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41600" name="Going On A Monster Hunt" nameId="1136010" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="852603">
-      <reward_item item_id="186000143" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41601" name="Picking A Mark" nameId="1136011" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="852603">
-      <reward_item item_id="186000143" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41602" name="Besieged by Peril" nameId="1136012" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="852603">
-      <reward_item item_id="186000143" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41603" name="Stay On Target" nameId="1136013" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="852603">
-      <reward_item item_id="186000143" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41604" name="Not For Teacher!" nameId="1136014" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="852603">
-      <reward_item item_id="188051587" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41605" name="Headhunting" nameId="1136015" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="852603">
-      <reward_item item_id="188051587" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41606" name="Kill The Head, Kill The Body" nameId="1136016" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="852603">
-      <reward_item item_id="188051587" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41607" name="Getting A Head" nameId="1136017" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="852603">
-      <reward_item item_id="188051587" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41608" name="[Group] The Kill List" nameId="1136018" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="3552512">
-      <reward_item item_id="188051587" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41609" name="[Group] A Helping Hand" nameId="1136019" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="3552512">
-      <reward_item item_id="188051587" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41610" name="[Group] Balaur's Greatest Hits" nameId="1136020" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="3552512">
-      <reward_item item_id="188051589" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41611" name="[Group] High Command" nameId="1136021" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards exp="3552512">
-      <reward_item item_id="188051589" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41612" name="[Alliance] Morale Booster" nameId="1136022" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST" target_type="FORCE">
-    <rewards exp="5257717">
-      <reward_item item_id="188051610" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41613" name="[Alliance] Colossal Chaos" nameId="1136023" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST" target_type="FORCE">
-    <rewards exp="5257717">
-      <reward_item item_id="188051610" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41614" name="[Alliance] Personal Incarnation" nameId="1136024" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST" target_type="FORCE">
-    <rewards exp="5257717">
-      <reward_item item_id="188051611" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41615" name="[Daily] Target Acquisition" nameId="1136991" minlevel_permitted="58" max_repeat_count="255" race_permitted="PC_ALL" category="QUEST" repeat_cycle="ALL">
-    <rewards gold="31292" exp="852603">
-      <reward_item item_id="188051794" count="1" />
-    </rewards>
-  </quest>
-  <quest id="41616" name="[Daily] Target Offense" nameId="1136992" minlevel_permitted="58" max_repeat_count="255" race_permitted="PC_ALL" category="QUEST" repeat_cycle="ALL">
-    <rewards gold="31292" exp="852603">
-      <reward_item item_id="186000143" count="20" />
-    </rewards>
-  </quest>
-  <quest id="41617" name="[Weekly] Cavalry Charge" nameId="1136993" minlevel_permitted="58" max_repeat_count="255" race_permitted="PC_ALL" category="QUEST" repeat_cycle="WED">
-    <rewards gold="31292" exp="852603">
-      <reward_item item_id="186000143" count="20" />
-    </rewards>
-  </quest>
-  <quest id="41618" name="Aides, de-Camped" nameId="1136994" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST">
-    <rewards gold="31292" exp="852603">
-      <reward_item item_id="186000143" count="8" />
-    </rewards>
-  </quest>
-  <quest id="41619" name="[Daily/Group] Target Practice" nameId="1136995" minlevel_permitted="58" max_repeat_count="255" race_permitted="PC_ALL" category="QUEST" repeat_cycle="ALL">
-    <rewards gold="62584" exp="3552512">
-      <reward_item item_id="186000143" count="30" />
-    </rewards>
-  </quest>
-  <quest id="41620" name="[Weekly/Group] The Protectorate" nameId="1136996" minlevel_permitted="58" max_repeat_count="255" race_permitted="PC_ALL" category="QUEST" repeat_cycle="WED">
-    <rewards gold="62584" exp="3552512">
-      <reward_item item_id="186000143" count="30" />
-    </rewards>
-  </quest>
-  <quest id="41621" name="[Weekly/Alliance] Monstrous Problems" nameId="1136997" minlevel_permitted="58" max_repeat_count="255" race_permitted="PC_ALL" category="QUEST" repeat_cycle="WED" target_type="FORCE">
-    <rewards gold="93876" exp="5257717">
-      <reward_item item_id="186000143" count="40" />
-    </rewards>
-  </quest>
-  <quest id="41622" name="[Alliance] Target Incarnatet" nameId="1136998" minlevel_permitted="58" max_repeat_count="1" race_permitted="PC_ALL" category="QUEST" target_type="FORCE">
-    <rewards gold="93876" exp="5257717">
-      <reward_item item_id="186000143" count="24" />
     </rewards>
   </quest>
   <quest id="42000" name="[Event/Daily] Challenge! Destruction of Gegares in the Rift of Oblivionn" nameId="1803826" minlevel_permitted="66" max_repeat_count="255" repeat_cycle="ALL" race_permitted="ELYOS" category="EVENT">
@@ -61368,7 +61241,6 @@
       <reward_item item_id="164002111" count="1" />
     </rewards>
     <extended_rewards exp="1">
-      <!-- repeat_count="5" -->
       <reward_item item_id="188058635" count="1" />
     </extended_rewards>
     <start_conditions>
@@ -61402,21 +61274,5 @@
     <rewards exp="1400000000" abyssOp="50000">
       <reward_item item_id="186000454" count="1" />
     </rewards>
-  </quest>
-  <quest id="99000" name="[Test] Dimensional Vortex" nameId="1140020" minlevel_permitted="60" max_repeat_count="255" race_permitted="PC_ALL" category="PUBLIC" target_type="AREA">
-    <rewards gold="99000" exp="99000" />
-  </quest>
-  <quest id="99001" name="[Test] Score Reward" nameId="1140023" minlevel_permitted="1" max_repeat_count="5" race_permitted="PC_ALL" category="QUEST">
-    <rewards gold="99001" exp="99001" />
-  </quest>
-  <quest id="99002" name="[Test] Inventory Item Check" nameId="1141533" minlevel_permitted="60" max_repeat_count="255" cannot_share="true" race_permitted="ELYOS" category="QUEST">
-    <collect_items>
-      <collect_item item_id="186000469" count="300" />
-    </collect_items>
-    <inventory_items>
-      <inventory_item item_id="186000469" />
-    </inventory_items>
-    <rewards />
-    <bonus level="5" type="MEDAL" />
   </quest>
 </quests>

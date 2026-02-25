@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
 <!--
-    Quest Sanctum 5.1
-	Make By (Encom)
+    Quest Sanctum 5.1 Make By (Encom)
  -->
 	<report_to id="1950" start_npc_ids="203755" end_npc_ids="204424" item_id="182206023"/>
 	<report_to id="1951" start_npc_ids="203788" end_npc_ids="278510" item_id="182206024"/>
@@ -11,6 +10,7 @@
 	<report_to id="1954" start_npc_ids="203784" end_npc_ids="278507" item_id="182206027"/>
 	<report_to id="1955" start_npc_ids="203786" end_npc_ids="278510" item_id="182206028"/>
 	<report_to id="1956" start_npc_ids="203793" end_npc_ids="278511" item_id="182206029"/>
+    <report_to id="1986" start_npc_ids="798009" end_npc_ids="203810"/> 
 	<report_to id="3917" start_npc_ids="204656" end_npc_ids="804603"/>
 	<report_to id="3960" start_npc_ids="798322" end_npc_ids="203711"/>
 	<report_to id="3971" start_npc_ids="798386" end_npc_ids="203893" item_id="182206135"/>
@@ -20,13 +20,34 @@
 	<report_to id="19041" start_npc_ids="203711" end_npc_ids="798322"/>
 	<report_to id="19044" start_npc_ids="798440" end_npc_ids="798438"/>
 	<report_to id="19045" start_npc_ids="798438" end_npc_ids="798439"/>
+    <report_to id="19051" start_npc_ids="798450" end_npc_ids="832975" item_id="182212225"/>
 	<report_to id="19065" start_npc_ids="203752" end_npc_ids="203701"/>
 	
-	<report_to_many id="3914" start_item_id="182206084" end_npc_ids="203384">
-		<npc_infos npc_id="203752" var="0" quest_dialog="1352"/>
-		<npc_infos npc_id="203384" var="1" quest_dialog="2375" close_dialog="1009"/>
+	<report_to_many id="1971" start_npc_ids="203812" end_npc_ids="203812">
+		<npc_infos npc_id="203820" var="0" quest_dialog="1352"/>
+		<npc_infos npc_id="203812" var="1" quest_dialog="2375" close_dialog="1009"/>
 	</report_to_many>
+
+	<monster_hunt id="1939" start_npc_ids="203703">
+		<monster var="0" npc_ids="700265" end_var="3"/>
+	</monster_hunt>
 	
+	<item_order start_item_id="182206034" end_npc_id="278555" id="1965"/>
+	<item_order start_item_id="182206035" end_npc_id="278555" id="1966"/>
+	<item_order start_item_id="182206036" end_npc_id="278555" id="1967"/>
+	<item_order start_item_id="182206037" end_npc_id="278556" id="1968"/>
+	<item_order start_item_id="182206038" end_npc_id="278556" id="1969"/>
+	<item_order start_item_id="182206039" end_npc_id="278556" id="1970"/>
+	
+    <item_collecting id="1902" start_npc_ids="203788"/>
+    <item_collecting id="1903" start_npc_ids="203790"/>
+    <item_collecting id="1904" start_npc_ids="203784"/>
+    <item_collecting id="1905" start_npc_ids="203792"/>
+    <item_collecting id="1906" start_npc_ids="203786"/>
+    <item_collecting id="1907" start_npc_ids="203793"/>
+    <item_collecting id="1910" start_npc_ids="203833"/>
+    <item_collecting id="1911" start_npc_ids="203864"/>
+    <item_collecting id="1912" start_npc_ids="203864"/>
 	<item_collecting id="1930" start_npc_ids="203767"/>
 	<item_collecting id="1931" start_npc_ids="203837" action_item_ids="700230"/>
 	<item_collecting id="1933" start_npc_ids="203833"/>
@@ -38,25 +59,6 @@
 	<item_collecting id="3975" start_npc_ids="798321"/>
 	<item_collecting id="19042" start_npc_ids="798322" end_npc_ids="798322"/>
 	<item_collecting id="19043" start_npc_ids="798444"/>
-	
-	<monster_hunt id="1939" start_npc_ids="203703">
-		<monster var="0" npc_ids="700265" end_var="3"/>
-	</monster_hunt>
-	<monster_hunt id="3978" start_npc_ids="798319">
-		<monster var="0" npc_ids="215079" end_var="1"/>
-	</monster_hunt>
-	<monster_hunt id="3979" start_npc_ids="798322">
-		<monster var="0" npc_ids="215081" end_var="1"/>
-	</monster_hunt>
-	
-	<item_order start_item_id="182206034" end_npc_id="278555" id="1965"/>
-	<item_order start_item_id="182206035" end_npc_id="278555" id="1966"/>
-	<item_order start_item_id="182206036" end_npc_id="278555" id="1967"/>
-	<item_order start_item_id="182206037" end_npc_id="278556" id="1968"/>
-	<item_order start_item_id="182206038" end_npc_id="278556" id="1969"/>
-	<item_order start_item_id="182206039" end_npc_id="278556" id="1970"/>
-	
-	<!-- CRAFT QUEST -->
 	<!-- [Expert] Zest For Weaponsmithing -->
 	<item_collecting id="3941" start_npc_ids="203788"/>
 	<!-- [Expert] Weaponsmith's Craft -->
@@ -102,7 +104,6 @@
 	<!-- [Expert] Construction Expert -->
 	<report_to id="19056" start_npc_ids="798450" end_npc_ids="203700" item_id="182212226"/>
 	
-	<!-- SKILL USE QUEST -->
 	<!-- Meaning Of Life -->
 	<skill_use id="3910" start_npc_id="203707">
 		<skill end_var="100" ids="9912"/>

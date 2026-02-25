@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
 <!--
-    Quest Morheim
-	Make By (Encom)
+    Quest Morheim Make By (Encom)
  -->
 	<report_to id="2306" start_npc_ids="204303" end_npc_ids="204378"/>
 	<report_to id="2310" start_npc_ids="730038" end_npc_ids="204392" item_id="182204109"/>
@@ -22,6 +21,7 @@
 	<report_to id="4300" start_npc_ids="204323" end_npc_ids="205126" item_id="182204263"/>
 	<report_to id="4329" start_npc_ids="204344" end_npc_ids="204341" item_id="182204270"/>
 	<report_to id="4330" start_npc_ids="204344" end_npc_ids="204342" item_id="182204271"/>
+	<report_to id="24240" start_npc_ids="204392" end_npc_ids="204379"/>
 	
 	<item_collecting id="2301" start_npc_ids="204399" action_item_ids="296439"/>
 	<item_collecting id="2302" start_npc_ids="204324"/>
@@ -123,6 +123,9 @@
 	<item_collecting id="4332" start_npc_ids="204363"/>
 	<item_collecting id="4333" start_npc_ids="204357"/>
 	<item_collecting id="4334" start_npc_ids="204342"/>
+	<item_collecting id="24120" start_npc_ids="204304"/>
+	<item_collecting id="24122" start_npc_ids="204342"/>
+	<item_collecting id="24123" start_npc_ids="204345"/>
 	<item_collecting id="80006" start_npc_ids="799790"/>
 	
 	<monster_hunt id="2304" start_npc_ids="204302">
@@ -380,15 +383,4 @@
 		<monster var="0" end_var="5" npc_ids="212533 212534"/>
 		<monster var="1" end_var="5" npc_ids="212535 212536"/>
 	</monster_hunt>
-	<!-- Nochsana Calls (Asmodians Only) -->
-	<report_to id="4731" start_npc_ids="204301" end_npc_ids="800519"/>
-	<!-- [Group] Training Terminated (Asmodians Only) -->
-	<monster_hunt id="4733" start_npc_ids="800519">
-		<monster var="0" end_var="1" npc_ids="256690"/>
-		<monster var="1" end_var="1" npc_ids="256689"/>
-		<monster var="2" end_var="1" npc_ids="256692"/>
-		<monster var="3" end_var="1" npc_ids="256691"/>
-	</monster_hunt>
-	<!-- [Group] Weapons Wanted (Asmodians Only) -->
-	<item_collecting id="4734" start_npc_ids="800519" action_item_ids="700415"/>
 </quest_scripts>

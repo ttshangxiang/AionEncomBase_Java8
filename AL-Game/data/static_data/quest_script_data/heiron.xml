@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
 <!--
-    Quest Heiron
-	Make By (Encom)
+    Quest Heiron Make By (Encom)
  -->
 	<report_to id="1504" start_npc_ids="204500" end_npc_ids="278502" item_id="182201703"/>
 	<report_to id="1505" start_npc_ids="204502" end_npc_ids="204582"/>
@@ -18,6 +17,7 @@
 	<report_to id="1671" start_npc_ids="798095" end_npc_ids="798027" item_id="182201771"/>
 	<report_to id="1686" start_npc_ids="204500" end_npc_ids="278501" item_id="182201808"/>
 	<report_to id="3528" start_npc_ids="204536" end_npc_ids="798165" item_id="182201836"/>
+	<report_to id="14251" start_npc_ids="204602" end_npc_ids="832824"/>
 	
 	<item_collecting id="1502" start_npc_ids="204525"/>
 	<item_collecting id="1503" start_npc_ids="204505" action_item_ids="700189"/>
@@ -351,10 +351,6 @@
 	<monster_hunt id="3531" start_npc_ids="204530">
 		<monster var="0" end_var="1" npc_ids="214159"/>
 	</monster_hunt>
-	<!-- [Coin/Group] Commander Bakarma (Elyos Only) -->
-	<monster_hunt id="3532" start_npc_ids="832824">
-		<monster var="0" end_var="1" npc_ids="213780"/>
-	</monster_hunt>
 	<monster_hunt id="3533" start_npc_ids="204573">
 		<monster var="0" end_var="1" npc_ids="212211"/>
 	</monster_hunt>
@@ -371,5 +367,11 @@
 	</monster_hunt>
 	<monster_hunt id="3543" start_npc_ids="204552">
 		<monster var="0" end_var="10" npc_ids="211926 211927"/>
+	</monster_hunt>
+	<monster_hunt id="14250" start_npc_ids="800413" end_npc_ids="800413">
+		<monster var="0" npc_ids="235504 235505 235506 235507 235508 235509" end_var="10"/>
+	</monster_hunt>
+	<monster_hunt id="14151" start_npc_ids="204583" end_npc_ids="204502">
+		<monster var="0" npc_ids="212120" end_var="1"/>
 	</monster_hunt>
 </quest_scripts>

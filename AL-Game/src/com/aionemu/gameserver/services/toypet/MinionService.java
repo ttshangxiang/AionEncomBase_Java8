@@ -29,6 +29,7 @@ import com.aionemu.commons.utils.Rnd;
 import com.aionemu.gameserver.controllers.MinionController;
 import com.aionemu.gameserver.controllers.observer.ItemUseObserver;
 import com.aionemu.gameserver.dao.PlayerMinionsDAO;
+import com.aionemu.gameserver.dao.PlayerSkillListDAO;
 import com.aionemu.gameserver.dataholders.DataManager;
 import com.aionemu.gameserver.model.DescriptionId;
 import com.aionemu.gameserver.model.TaskId;
@@ -62,6 +63,7 @@ import com.aionemu.gameserver.world.knownlist.PlayerAwareKnownList;
  */
 
 public class MinionService {
+
 	private static List<Integer> minions;
 	private MinionBuff minionbuff;
 	private Logger log = LoggerFactory.getLogger(MinionService.class);
@@ -86,8 +88,7 @@ public class MinionService {
 		}
 
 		final Item item = player.getInventory().getItemByObjId(itemObjId);
-		PacketSendUtility.broadcastPacket(player,
-				new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), itemObjId, item.getItemId(), 1500, 0), true);
+		PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), itemObjId, item.getItemId(), 1500, 0), true);
 
 		final ItemUseObserver itemUseObserver = new ItemUseObserver() {
 
@@ -259,16 +260,35 @@ public class MinionService {
 
 	public void spawnMinion(Player player, int minionObjId) {
 		MinionCommonData minionCommonData = player.getMinionList().getMinion(minionObjId);
+		if (minionCommonData == null) {
+			log.warn("MinionCommonData is null for minionObjId: " + minionObjId);
+			return;
+		}
+		
 		MinionTemplate minionTemplate = DataManager.MINION_DATA.getMinionTemplate(minionCommonData.getMinionId());
+		if (minionTemplate == null) {
+			log.warn("MinionTemplate is null for minionId: " + minionCommonData.getMinionId());
+			return;
+		}
+		
 		MinionController controller = new MinionController();
 		Minion minion = new Minion(minionTemplate, controller, minionCommonData, player);
-		Iterator<MinionSkill> iterator = minionTemplate.getAction().getSkillsCollections().iterator();
-		while (iterator.hasNext()) {
-			player.getSkillList().addSkill(player, iterator.next().getSkillId(), 1);
-		}
+		
 		if (player.getMinion() != null) {
 			despawnMinion(player, player.getMinionList().getLastUsed());
 		}
+		
+		Iterator<MinionSkill> iterator = minionTemplate.getAction().getSkillsCollections().iterator();
+		while (iterator.hasNext()) {
+			int skillId = iterator.next().getSkillId();
+			if (!player.getSkillList().isSkillPresent(skillId)) {
+				player.getSkillList().addSkill(player, skillId, 1);
+				log.debug("Added skill " + skillId + " to player " + player.getName());
+			} else {
+				log.debug("Skill " + skillId + " already present for player " + player.getName());
+			}
+		}
+		
 		minion.setKnownlist(new PlayerAwareKnownList(minion));
 		player.setMinion(minion);
 		player.getMinionList().setLastUsed(minionObjId);
@@ -278,21 +298,42 @@ public class MinionService {
 
 	public void despawnMinion(Player player, int minionObjId) {
 		Minion minion = player.getMinion();
-		int despawnMinionObjId = 0;
-		if (minionObjId == 0) {
-			despawnMinionObjId = minion.getObjectId();
-		} else {
-			despawnMinionObjId = minionObjId;
+		if (minion == null && minionObjId == 0) {
+			log.debug("No active minion to despawn");
+			return;
 		}
+		
+		int despawnMinionObjId = minionObjId == 0 ? minion.getObjectId() : minionObjId;
 		MinionCommonData minionCommonData = player.getMinionList().getMinion(despawnMinionObjId);
-		Iterator<MinionSkill> iterator = DataManager.MINION_DATA.getMinionTemplate(minionCommonData.getMinionId()).getAction().getSkillsCollections().iterator();
-		while (iterator.hasNext()) {
-			SkillLearnService.removeSkill(player, iterator.next().getSkillId());
+		if (minionCommonData == null) {
+			log.warn("MinionCommonData is null for minionObjId: " + despawnMinionObjId);
+			return;
 		}
+		
+		MinionTemplate minionTemplate = DataManager.MINION_DATA.getMinionTemplate(minionCommonData.getMinionId());
+		if (minionTemplate == null) {
+			log.warn("MinionTemplate is null for minionId: " + minionCommonData.getMinionId());
+			return;
+		}
+		
+		Iterator<MinionSkill> iterator = minionTemplate.getAction().getSkillsCollections().iterator();
+		while (iterator.hasNext()) {
+			int skillId = iterator.next().getSkillId();
+			if (player.getSkillList().isSkillPresent(skillId)) {
+				SkillLearnService.removeSkill(player, skillId);
+				log.debug("Removed skill " + skillId + " from player " + player.getName());
+			}
+		}
+		
+        DAOManager.getDAO(PlayerSkillListDAO.class).storeSkills(player);
 		minionCommonData.setIsLooting(false);
 		minionCommonData.setIsBuffing(false);
-		player.getMinion().getController().delete();
-		player.setMinion(null);
+		
+		if (player.getMinion() != null) {
+			player.getMinion().getController().delete();
+			player.setMinion(null);
+		}
+		
 		minionbuff.end(player);
 		PacketSendUtility.broadcastPacketAndReceive(player, new SM_MINIONS(6, minionCommonData));
 	}
