@@ -15,9 +15,10 @@
  */
 package com.aionemu.gameserver.network.aion.serverpackets;
 
+import java.time.Instant;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.time.Instant;
 
 import com.aionemu.commons.network.IPRange;
 import com.aionemu.gameserver.configs.main.GSConfig;
@@ -99,28 +100,27 @@ public class SM_VERSION_CHECK extends AionServerPacket {
 		}
 		if (version == 213) {
 			log.info("Authentication with Client Version 5.8");
+		} else if (version < 213) {
+			log.info("Authentication with Client Version lower than 5.8");
 		}
 		
 		int utcTimeSeconds = (int) (System.currentTimeMillis() / 1000);
-		int timezoneOffset = DateTimeUtil.getZone().getRules().getOffset(Instant.now()).getTotalSeconds();
-		
-		int localTimeSeconds = utcTimeSeconds + timezoneOffset;
-		
+		int offset = DateTimeUtil.getZone().getRules().getOffset(Instant.now()).getTotalSeconds();
+		int negativeOffset = -offset;
+
 		writeC(0x00);
 		writeC(NetworkConfig.GAMESERVER_ID);
 		writeD(180205);
 		writeD(171201);
 		writeD(0x00);
 		writeD(180205);
-		writeD(localTimeSeconds);
+		writeD(utcTimeSeconds);
 		writeC(0x00);
 		writeC(GSConfig.SERVER_COUNTRY_CODE);
 		int serverMode = (characterLimitCount * 0x10) | characterFactionsMode;
 		writeC(serverMode | characterCreateMode);
-		writeD(localTimeSeconds);
-		
-		writeD(0);
-		
+		writeD(utcTimeSeconds);
+		writeD(negativeOffset);
 		writeD(40014200);
 		writeD(0);
 		writeD(68536);

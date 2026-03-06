@@ -16,7 +16,12 @@
  */
 package com.aionemu.gameserver.ai2.manager;
 
+import java.awt.Point;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Future;
 
 import com.aionemu.commons.utils.Rnd;
 import com.aionemu.gameserver.ai2.AIState;
@@ -25,13 +30,19 @@ import com.aionemu.gameserver.ai2.NpcAI2;
 import com.aionemu.gameserver.configs.main.AIConfig;
 import com.aionemu.gameserver.configs.main.GeoDataConfig;
 import com.aionemu.gameserver.dataholders.DataManager;
+import com.aionemu.gameserver.geoEngine.bounding.BoundingBox;
 import com.aionemu.gameserver.geoEngine.collision.CollisionIntention;
 import com.aionemu.gameserver.geoEngine.math.Vector3f;
 import com.aionemu.gameserver.model.gameobjects.Npc;
+import com.aionemu.gameserver.model.templates.BoundRadius;
 import com.aionemu.gameserver.model.templates.walker.RouteStep;
 import com.aionemu.gameserver.model.templates.walker.WalkerTemplate;
+import com.aionemu.gameserver.network.aion.serverpackets.SM_MOVE;
+import com.aionemu.gameserver.utils.PacketSendUtility;
+import com.aionemu.gameserver.utils.PositionUtil;
 import com.aionemu.gameserver.utils.MathUtil;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
+import com.aionemu.gameserver.world.WorldMapInstance;
 import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
@@ -40,6 +51,35 @@ import com.aionemu.gameserver.world.geo.GeoService;
 public class WalkManager {
 
 	private static final int WALK_RANDOM_RANGE = 5;
+	
+	private static final int MAX_WALK_ATTEMPTS = 10;
+	private static final Map<Integer, Integer> walkAttemptCounts = new ConcurrentHashMap<Integer, Integer>();
+
+	// ========== Z值检查相关常量 ==========
+	// Z值检查间隔（毫秒）：每10秒检查一次
+	private static final int Z_CHECK_INTERVAL = 10000;
+	// Z值容差：超过1码的差异需要修正
+	private static final float Z_TOLERANCE = 1.0f;
+	// 卡住判断的距离阈值：移动距离小于此值视为可能卡住
+	private static final float STUCK_DISTANCE_THRESHOLD = 0.5f;
+	// 连续卡住次数阈值：超过此次数则瞬移回刷新点
+	private static final int STUCK_CHECK_COUNT = 3;
+	
+	// ========== Z值检查相关集合 ==========
+	// 随机游走NPC集合：只追踪随机游走的NPC
+	private static final Map<Integer, Npc> randomWalkingNpcs = new ConcurrentHashMap<Integer, Npc>();
+	// 上次检查位置：用于判断NPC是否卡住
+	private static final Map<Integer, Float> lastCheckPositions = new ConcurrentHashMap<Integer, Float>();
+	// 卡住计数器：记录连续卡住的次数
+	private static final Map<Integer, Integer> stuckCounters = new ConcurrentHashMap<Integer, Integer>();
+	
+	// Z值检查定时任务
+	private static Future<?> zCheckTask = null;
+	
+	// 静态初始化块：类加载时启动Z值检查任务
+	static {
+		startZCheckTask();
+	}
 
 	/**
 	 * @param npcAI
@@ -70,6 +110,8 @@ public class WalkManager {
 			return false;
 		}
 		if (npcAI.setSubStateIfNot(AISubState.WALK_RANDOM)) {
+			// 将NPC添加到随机游走集合，用于Z值检查
+			randomWalkingNpcs.put(owner.getObjectId(), owner);
 			EmoteManager.emoteStartWalking(npcAI.getOwner());
 			chooseNextRandomPoint(npcAI);
 			return true;
@@ -123,7 +165,6 @@ public class WalkManager {
 		float z = owner.getZ();
 
 		if (owner.getWalkerGroup() != null) {
-			// always choose the 1st step, not the last which is close enough
 			if (owner.getWalkerGroup().getGroupStep() < 2) {
 				nextStep = route.get(0);
 			} else {
@@ -180,6 +221,9 @@ public class WalkManager {
 	 * @param npcAI
 	 */
 	public static void targetReached(final NpcAI2 npcAI) {
+		int npcObjectId = npcAI.getOwner().getObjectId();
+		walkAttemptCounts.remove(npcObjectId);
+		
 		if (npcAI.isInState(AIState.WALKING)) {
 			switch (npcAI.getSubState()) {
 			case WALK_PATH:
@@ -210,6 +254,21 @@ public class WalkManager {
 	 * @param npcAI
 	 */
 	protected static void chooseNextRouteStep(final NpcAI2 npcAI) {
+		int npcObjectId = npcAI.getOwner().getObjectId();
+		
+		Integer attemptCount = walkAttemptCounts.get(npcObjectId);
+		if (attemptCount == null) {
+			attemptCount = 0;
+		}
+		
+		if (attemptCount >= MAX_WALK_ATTEMPTS) {
+			stopWalking(npcAI);
+			walkAttemptCounts.remove(npcObjectId);
+			return;
+		}
+		
+		walkAttemptCounts.put(npcObjectId, attemptCount + 1);
+		
 		int walkPause = npcAI.getOwner().getMoveController().getWalkPause();
 		if (walkPause == 0) {
 			npcAI.getOwner().getMoveController().resetMove();
@@ -236,30 +295,76 @@ public class WalkManager {
 	private static void chooseNextRandomPoint(final NpcAI2 npcAI) {
 		final Npc owner = npcAI.getOwner();
 		owner.getMoveController().abortMove();
+		
 		int randomWalkNr = owner.getSpawn().getRandomWalk();
 		final int walkRange = Math.max(randomWalkNr, WALK_RANDOM_RANGE);
+		
 		final float distToSpawn = (float) owner.getDistanceToSpawnLocation();
-
+		
 		ThreadPoolManager.getInstance().schedule(new Runnable() {
-
+			
 			@Override
 			public void run() {
 				if (npcAI.isInState(AIState.WALKING)) {
 					if (distToSpawn > walkRange) {
 						owner.getMoveController().moveToPoint(owner.getSpawn().getX(), owner.getSpawn().getY(),
-								owner.getSpawn().getZ());
+							owner.getSpawn().getZ());
 					} else {
-						int nextX = Rnd.nextInt(walkRange * 2) - walkRange;
-						int nextY = Rnd.nextInt(walkRange * 2) - walkRange;
-						if (GeoDataConfig.GEO_ENABLE && GeoDataConfig.GEO_NPC_MOVE) {
-							byte flags = (byte) (CollisionIntention.PHYSICAL.getId() | CollisionIntention.DOOR.getId()
+						int maxAttempts = 5;
+						int attempts = 0;
+						
+						while (attempts < maxAttempts) {
+							Point randomPoint = MathUtil.get2DPointInsideCircle(owner.getSpawn().getX(), owner.getSpawn().getY(), walkRange);
+							float targetX = randomPoint.x;
+							float targetY = randomPoint.y;
+							
+							if (!isTargetPointValid(owner, targetX, targetY, owner.getSpawn().getZ())) {
+								attempts++;
+								continue;
+							}
+							
+							float targetZ = owner.getSpawn().getZ();
+							
+							if (GeoDataConfig.GEO_ENABLE && GeoDataConfig.GEO_NPC_MOVE && !owner.isFlying()) {
+								targetZ = GeoService.getInstance().getZ(
+									owner.getWorldId(), 
+									targetX, 
+									targetY, 
+									owner.getSpawn().getZ(),
+									0.5F,
+									owner.getInstanceId()
+								);
+							}
+							
+							if (GeoDataConfig.GEO_ENABLE && GeoDataConfig.GEO_NPC_MOVE) {
+								BoundRadius radius = owner.getObjectTemplate().getBoundRadius();
+								
+								Vector3f targetPos = new Vector3f(targetX, targetY, targetZ);
+								BoundingBox collisionBox = new BoundingBox(targetPos, 
+									radius.getCollision(), radius.getCollision(), radius.getUpper());
+								
+								byte flags = (byte) (CollisionIntention.PHYSICAL.getId() | CollisionIntention.DOOR.getId()
 									| CollisionIntention.WALK.getId());
-							Vector3f loc = GeoService.getInstance().getClosestCollision(owner, owner.getX() + nextX,
-									owner.getY() + nextY, owner.getZ(), true, flags);
-							owner.getMoveController().moveToPoint(loc.x, loc.y, loc.z);
-						} else {
-							owner.getMoveController().moveToPoint(owner.getX() + nextX, owner.getY() + nextY,
-									owner.getZ());
+								
+								Vector3f loc = GeoService.getInstance().getClosestCollision(owner, targetX, targetY, targetZ, true, flags);
+								
+								if (loc != null && (Math.abs(loc.x - targetX) > 0.5f || Math.abs(loc.y - targetY) > 0.5f)) {
+									owner.getMoveController().moveToPoint(loc.x, loc.y, loc.z);
+									break;
+								} else if (loc != null) {
+									owner.getMoveController().moveToPoint(targetX, targetY, targetZ);
+									break;
+								}
+							} else {
+								owner.getMoveController().moveToPoint(targetX, targetY, targetZ);
+								break;
+							}
+							
+							attempts++;
+						}
+						
+						if (attempts >= maxAttempts) {
+							owner.getMoveController().moveToPoint(owner.getSpawn().getX(), owner.getSpawn().getY(), owner.getSpawn().getZ());
 						}
 					}
 				}
@@ -271,6 +376,13 @@ public class WalkManager {
 	 * @param npcAI
 	 */
 	public static void stopWalking(NpcAI2 npcAI) {
+		int npcObjectId = npcAI.getOwner().getObjectId();
+		walkAttemptCounts.remove(npcObjectId);
+		// 从随机游走集合中移除NPC，并清理相关数据
+		randomWalkingNpcs.remove(npcObjectId);
+		lastCheckPositions.remove(npcObjectId);
+		stuckCounters.remove(npcObjectId);
+		
 		npcAI.getOwner().getMoveController().abortMove();
 		npcAI.setStateIfNot(AIState.IDLE);
 		npcAI.setSubStateIfNot(AISubState.NONE);
@@ -279,9 +391,271 @@ public class WalkManager {
 
 	/**
 	 * @param owner
+	 * @param x
+	 * @param y
+	 * @param currentZ
+	 * @param targetZ
 	 * @return
+	 */
+	private static boolean isTerrainReachableByAngle(Npc owner, float x, float y, float currentZ, float targetZ) {
+		float deltaX = x - owner.getX();
+		float deltaY = y - owner.getY();
+		float horizontalDistance = (float) Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+		
+		float verticalDistance = Math.abs(targetZ - currentZ);
+		
+		if (horizontalDistance <= 0.1f) {
+			return true;
+		}
+		
+		double angleRadians = Math.atan(verticalDistance / horizontalDistance);
+		
+		double angleDegrees = Math.toDegrees(angleRadians);
+		
+		return angleDegrees <= 45.0;
+	}
+
+	/**
+	 * @param owner
+	 * @param x
+	 * @param y
+	 * @param z
+	 * @return
+	 */
+	private static boolean isTargetPointValid(Npc owner, float x, float y, float z) {
+		if (GeoDataConfig.GEO_ENABLE && GeoDataConfig.GEO_NPC_MOVE) {
+			try {
+				float actualZ = GeoService.getInstance().getZ(
+					owner.getWorldId(), x, y, z, 0.5F, owner.getInstanceId());
+				
+				if (!isTerrainReachableByAngle(owner, x, y, owner.getZ(), actualZ)) {
+					return false;
+				}
+				
+				byte flags = (byte) (CollisionIntention.PHYSICAL.getId() | CollisionIntention.WALK.getId());
+				Vector3f loc = GeoService.getInstance().getClosestCollision(
+					owner, x, y, actualZ, true, flags);
+					
+				if (loc != null && 
+					(Math.abs(loc.x - x) > 1.0f || Math.abs(loc.y - y) > 1.0f)) {
+					return false;
+				}
+			} catch (Exception e) {
+				return false;
+			}
+		}
+		
+		return true;
+	}
+
+	/**
+	 * @param npcAI
 	 */
 	public static boolean isArrivedAtPoint(NpcAI2 npcAI) {
 		return npcAI.getOwner().getMoveController().isReachedPoint();
+	}
+
+	/**
+	 * 启动Z值检查定时任务
+	 * 在类加载时自动启动，每10秒执行一次检查
+	 */
+	private static void startZCheckTask() {
+		if (zCheckTask != null && !zCheckTask.isDone()) {
+			return;
+		}
+		
+		zCheckTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new Runnable() {
+			@Override
+			public void run() {
+				performZCheck();
+			}
+		}, Z_CHECK_INTERVAL, Z_CHECK_INTERVAL);
+	}
+
+	/**
+	 * 执行Z值检查主逻辑
+	 * 检查条件：1.Geo启用 2.地图有玩家 3.NPC正在移动
+	 * 处理方式：Z值差异>1码则修正，GeoZ无效或卡住则瞬移回刷新点
+	 */
+	private static void performZCheck() {
+		// 检查Geo配置是否启用
+		if (!GeoDataConfig.GEO_ENABLE || !GeoDataConfig.GEO_NPC_MOVE) {
+			return;
+		}
+		
+		// 没有随机游走的NPC则跳过
+		if (randomWalkingNpcs.isEmpty()) {
+			return;
+		}
+		
+		// 遍历所有随机游走的NPC
+		Iterator<Map.Entry<Integer, Npc>> iterator = randomWalkingNpcs.entrySet().iterator();
+		while (iterator.hasNext()) {
+			Map.Entry<Integer, Npc> entry = iterator.next();
+			Npc npc = entry.getValue();
+			
+			try {
+				// NPC无效或未生成，从集合中移除
+				if (npc == null || !npc.isSpawned()) {
+					iterator.remove();
+					cleanupNpcData(entry.getKey());
+					continue;
+				}
+				
+				// 只检查有玩家存在的地图
+				WorldMapInstance instance = npc.getPosition().getWorldMapInstance();
+				if (instance == null || instance.playersCount() == 0) {
+					continue;
+				}
+				
+				// 只检查正在移动的NPC
+				if (!npc.getMoveController().isInMove()) {
+					continue;
+				}
+				
+				float currentX = npc.getX();
+				float currentY = npc.getY();
+				float currentZ = npc.getZ();
+				
+				// 检查NPC是否卡住
+				checkNpcStuck(npc, currentX, currentY);
+				
+				// 获取当前位置的GeoZ值
+				float geoZ = getValidGeoZ(npc, currentX, currentY, currentZ);
+				
+				// GeoZ无效，瞬移回刷新点
+				if (Float.isNaN(geoZ) || geoZ < -1000f) {
+					teleportToSpawnPoint(npc);
+					iterator.remove();
+					cleanupNpcData(entry.getKey());
+					continue;
+				}
+				
+				// Z值差异超过容差，修正Z值
+				float zDiff = Math.abs(currentZ - geoZ);
+				if (zDiff > Z_TOLERANCE) {
+					correctNpcZ(npc, currentX, currentY, geoZ);
+				}
+				
+			} catch (Exception e) {
+				// 忽略异常，继续检查下一个NPC
+			}
+		}
+	}
+
+	/**
+	 * 获取有效的GeoZ值
+	 * @param npc NPC对象
+	 * @param x X坐标
+	 * @param y Y坐标
+	 * @param currentZ 当前Z值
+	 * @return GeoZ值，获取失败返回NaN
+	 */
+	private static float getValidGeoZ(Npc npc, float x, float y, float currentZ) {
+		try {
+			return GeoService.getInstance().getZ(
+				npc.getWorldId(), 
+				x, 
+				y, 
+				currentZ,
+				0.5F,
+				npc.getInstanceId()
+			);
+		} catch (Exception e) {
+			return Float.NaN;
+		}
+	}
+
+	/**
+	 * 检查NPC是否卡住
+	 * 连续3次检查位置几乎不变则判定为卡住，瞬移回刷新点
+	 * @param npc NPC对象
+	 * @param currentX 当前X坐标
+	 * @param currentY 当前Y坐标
+	 */
+	private static void checkNpcStuck(Npc npc, float currentX, float currentY) {
+		int npcId = npc.getObjectId();
+		
+		Float lastPosX = lastCheckPositions.get(npcId);
+		if (lastPosX != null) {
+			float lastX = lastPosX;
+			float lastY = lastCheckPositions.get(npcId + 1000000);
+			
+			// 计算移动距离
+			float distance = (float) Math.sqrt(
+				(currentX - lastX) * (currentX - lastX) + 
+				(currentY - lastY) * (currentY - lastY)
+			);
+			
+			// 移动距离小于阈值，可能卡住
+			if (distance < STUCK_DISTANCE_THRESHOLD) {
+				Integer stuckCount = stuckCounters.get(npcId);
+				if (stuckCount == null) {
+					stuckCount = 0;
+				}
+				stuckCount++;
+				
+				// 连续卡住次数超过阈值，瞬移回刷新点
+				if (stuckCount >= STUCK_CHECK_COUNT) {
+					teleportToSpawnPoint(npc);
+					randomWalkingNpcs.remove(npcId);
+					cleanupNpcData(npcId);
+					return;
+				}
+				stuckCounters.put(npcId, stuckCount);
+			} else {
+				// NPC正常移动，重置卡住计数
+				stuckCounters.remove(npcId);
+			}
+		}
+		
+		// 记录当前位置（X和Y分开存储）
+		lastCheckPositions.put(npcId, currentX);
+		lastCheckPositions.put(npcId + 1000000, currentY);
+	}
+
+	/**
+	 * 修正NPC的Z值
+	 * @param npc NPC对象
+	 * @param x X坐标
+	 * @param y Y坐标
+	 * @param correctZ 正确的Z值
+	 */
+	private static void correctNpcZ(Npc npc, float x, float y, float correctZ) {
+		npc.getPosition().setZ(correctZ);
+		// 广播移动包，同步客户端位置
+		PacketSendUtility.broadcastPacket(npc, new SM_MOVE(npc));
+	}
+
+	/**
+	 * 瞬移NPC回刷新点
+	 * 当Z值无效或NPC卡住时调用
+	 * @param npc NPC对象
+	 */
+	private static void teleportToSpawnPoint(Npc npc) {
+		if (npc == null || npc.getSpawn() == null) {
+			return;
+		}
+		
+		float spawnX = npc.getSpawn().getX();
+		float spawnY = npc.getSpawn().getY();
+		float spawnZ = npc.getSpawn().getZ();
+		
+		// 停止移动并设置位置
+		npc.getMoveController().abortMove();
+		npc.getPosition().setXYZH(spawnX, spawnY, spawnZ, npc.getSpawn().getHeading());
+		// 广播移动包，同步客户端位置
+		PacketSendUtility.broadcastPacket(npc, new SM_MOVE(npc));
+	}
+
+	/**
+	 * 清理NPC相关的检查数据
+	 * @param npcId NPC对象ID
+	 */
+	private static void cleanupNpcData(int npcId) {
+		lastCheckPositions.remove(npcId);
+		lastCheckPositions.remove(npcId + 1000000);
+		stuckCounters.remove(npcId);
+		walkAttemptCounts.remove(npcId);
 	}
 }

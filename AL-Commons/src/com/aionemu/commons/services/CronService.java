@@ -101,12 +101,17 @@ public final class CronService {
             this.runnableRunner = runnableRunner;
             Properties properties = new Properties();
             properties.setProperty("org.quartz.threadPool.threadCount", "1");
+            ch.qos.logback.classic.Logger quartzLogger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger("org.quartz");
+            ch.qos.logback.classic.Level oldLevel = quartzLogger.getLevel();
+            quartzLogger.setLevel(ch.qos.logback.classic.Level.WARN);
 
             try {
                this.scheduler = (new StdSchedulerFactory(properties)).getScheduler();
                this.scheduler.start();
             } catch (SchedulerException var4) {
                throw new CronServiceException("Failed to initialize CronService", var4);
+            } finally {
+                quartzLogger.setLevel(oldLevel);
             }
          }
       }
