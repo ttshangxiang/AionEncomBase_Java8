@@ -23,6 +23,10 @@ import com.aionemu.gameserver.network.aion.AionServerPacket;
 
 //import com.aionemu.gameserver.model.items.ManaStone;
 
+/**
+ * 鉴定结果数据包
+ * 用于向客户端发送鉴定后的物品信息
+ */
 public class SM_TUNE_RESULT extends AionServerPacket {
 	private final Player player;
 	private int itemObjectId;

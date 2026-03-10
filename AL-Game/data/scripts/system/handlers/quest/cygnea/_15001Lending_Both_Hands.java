@@ -54,7 +54,7 @@ public class _15001Lending_Both_Hands extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804698) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

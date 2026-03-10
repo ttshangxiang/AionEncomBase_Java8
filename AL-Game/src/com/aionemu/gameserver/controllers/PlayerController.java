@@ -1136,27 +1136,30 @@ public class PlayerController extends CreatureController<Player> {
 			if (SecurityConfig.ENABLE_FLYPATH_VALIDATOR) {
 				long diff = (System.currentTimeMillis() - player.getFlyStartTime());
 				FlyPathEntry path = player.getCurrentFlyPath();
+				
+				// 防止空指针异常
+				if (path != null) {
+					if (player.getWorldId() != path.getEndWorldId()) {
+						AuditLogger.info(player,
+								"Player tried to use flyPath #" + path.getId() + " from not native start world "
+										+ player.getWorldId() + ". expected " + path.getEndWorldId());
+					}
 
-				if (player.getWorldId() != path.getEndWorldId()) {
-					AuditLogger.info(player,
-							"Player tried to use flyPath #" + path.getId() + " from not native start world "
-									+ player.getWorldId() + ". expected " + path.getEndWorldId());
-				}
+					if (diff < path.getTimeInMs()) {
+						AuditLogger.info(player, "Player " + player.getName() + " used flypath bug " + diff + " instead of "
+								+ path.getTimeInMs());
+					}
+					//FIX no anime for fly pass that is changed in client:D
+					if (diff < 5000) { // to check x_flipath file in client
+						AuditLogger.info(player, "Flypath: " + path.getId() + " bug, time: " + (diff / 1000)
+								+ " Fly teleport less than 5 sec; Kick-");
+						player.getClientConnection().close(new SM_QUIT_RESPONSE(), false);
 
-				if (diff < path.getTimeInMs()) {
-					AuditLogger.info(player, "Player " + player.getName() + " used flypath bug " + diff + " instead of "
-							+ path.getTimeInMs());
-				}
-				//FIX no anime for fly pass that is changed in client:D
-				if (diff < 5000) { // to check x_flipath file in client
-					AuditLogger.info(player, "Flypath: " + path.getId() + " bug, time: " + (diff / 1000)
-							+ " Fly teleport less than 5 sec; Kick-");
-					player.getClientConnection().close(new SM_QUIT_RESPONSE(), false);
+						/*
+						 * todo if works teleport player to start_* xyz, or even ban
+						 */
 
-					/*
-					 * todo if works teleport player to start_* xyz, or even ban
-					 */
-
+					}
 				}
 				
 				player.setCurrentFlypath(null);
@@ -1165,6 +1168,13 @@ public class PlayerController extends CreatureController<Player> {
 			player.setFlightDistance(0);
 			player.setState(CreatureState.ACTIVE);
 			updateZone();
+			// 飞行传送结束后更新knownlist
+			player.updateKnownlist();
+			// 飞行传送结束后触发当前区域激活
+			MapRegion currentRegion = player.getActiveRegion();
+			if (currentRegion != null) {
+				currentRegion.checkActiveness(true);
+			}
 		}
 	}
 
@@ -1225,6 +1235,14 @@ public class PlayerController extends CreatureController<Player> {
 	public boolean isInCombat() {
 		return (((System.currentTimeMillis() - lastAttackedMilis) <= 10000)
 				|| ((System.currentTimeMillis() - lastAttackMilis) <= 10000));
+	}
+
+	/**
+	 * 重置普攻攻击计时器
+	 * 切换目标时调用，确保可以立即对新目标发起攻击
+	 */
+	public void resetAttackTimer() {
+		lastAttackMilis = 0;
 	}
 
 	public boolean isNoDeathPenaltyInEffect() {

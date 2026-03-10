@@ -37,6 +37,7 @@ import com.aionemu.gameserver.utils.ThreadPoolManager;
 
 /**
  * @author Ranastic
+ * @reworked 修复鉴定动画播放问题，使用固定动画ID让客户端正确显示动画
  */
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -59,7 +60,8 @@ public class RetuningAction extends AbstractItemAction {
 
 	@Override
 	public void act(final Player player, final Item parentItem, final Item targetItem) {
-		final int parentItemId = parentItem.getItemId();
+		// 修复：使用固定的动画ID（166200022 神话装备鉴定卷轴）让客户端正确播放鉴定动画
+		final int parentItemId = 166200022;
 		final int parntObjectId = parentItem.getObjectId();
 		final int nameId = parentItem.getNameId();
 		PacketSendUtility.broadcastPacket(player,
@@ -71,8 +73,9 @@ public class RetuningAction extends AbstractItemAction {
 				player.getController().cancelTask(TaskId.ITEM_USE);
 				player.removeItemCoolDown(parentItem.getItemTemplate().getUseLimits().getDelayId());
 				PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_ITEM_CANCELED(new DescriptionId(nameId)));
+				// 修复：取消时使用 endState = 3（取消）而不是 2（失败）
 				PacketSendUtility.broadcastPacket(player,
-						new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parntObjectId, parentItemId, 0, 2, 0), true);
+						new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), parntObjectId, parentItemId, 0, 3, 0), true);
 				player.getObserveController().removeObserver(this);
 			}
 		};

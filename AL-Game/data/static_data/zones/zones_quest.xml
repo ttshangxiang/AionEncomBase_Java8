@@ -73,10 +73,10 @@
 		<sphere x="800.03" y="1412.66" z="196.0" r="10.0"/>
 	</zone>
 	<zone mapid="210130000" name="LF4_SENSORY_AREA_Q11149_B_210130000" area_type="SPHERE" zone_type="SUB">
-		<sphere x="1010.8538" y="1681.884" z="196.0" r="10.0"/>
+		<sphere x="1010.8538" y="1696.61" z="182.8" r="10.0"/>
 	</zone>
 	<zone mapid="210130000" name="LF4_SENSORY_AREA_Q11149_C_210130000" area_type="SPHERE" zone_type="SUB">
-		<sphere x="1109.1493" y="1688.0824" z="196.0" r="10.0"/>
+		<sphere x="1109.1493" y="1692.0824" z="184.5" r="10.0"/>
 	</zone>
 	<!-- Inggison [Normal Server] -->
 <!-- 	<zone mapid="210050000" name="LF4_SENSORY_AREA_Q11147_210050000" area_type="SPHERE" zone_type="SUB">

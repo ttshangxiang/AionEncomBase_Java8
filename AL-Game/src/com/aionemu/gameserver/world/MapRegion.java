@@ -39,6 +39,7 @@ import com.aionemu.gameserver.model.gameobjects.VisibleObject;
 import com.aionemu.gameserver.model.gameobjects.base.BaseNpc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.model.gameobjects.siege.SiegeNpc;
+import com.aionemu.gameserver.model.gameobjects.state.CreatureState;
 import com.aionemu.gameserver.model.templates.zone.ZoneClassName;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
 import com.aionemu.gameserver.world.zone.ZoneInstance;
@@ -177,7 +178,12 @@ public class MapRegion {
 	void add(VisibleObject object) {
 		if (objects.put(object.getObjectId(), object) == null) {
 			if (object instanceof Player) {
-				checkActiveness(playerCount.incrementAndGet() > 0);
+				Player player = (Player) object;
+				playerCount.incrementAndGet();
+				// 飞行传送中的玩家不触发区域激活，避免唤醒大量NPC导致CPU占用过高
+				if (!player.isInState(CreatureState.FLIGHT_TELEPORT)) {
+					checkActiveness(true);
+				}
 			} else if (DeveloperConfig.SPAWN_CHECK) {
 				Iterator<TreeSet<ZoneInstance>> zoneIter = zoneMap.values().iterator();
 				while (zoneIter.hasNext()) {
@@ -205,12 +211,17 @@ public class MapRegion {
 	void remove(VisibleObject object) {
 		if (objects.remove(object.getObjectId()) != null) {
 			if (object instanceof Player) {
-				checkActiveness(playerCount.decrementAndGet() > 0);
+				Player player = (Player) object;
+				playerCount.decrementAndGet();
+				// 飞行传送中的玩家不触发区域停用，因为没有激活过
+				if (!player.isInState(CreatureState.FLIGHT_TELEPORT)) {
+					checkActiveness(playerCount.get() > 0);
+				}
 			}
 		}
 	}
 
-	final void checkActiveness(boolean active) {
+	public final void checkActiveness(boolean active) {
 		if (active && regionActive.compareAndSet(false, true)) {
 			startActivation();
 		} else if (!active) {

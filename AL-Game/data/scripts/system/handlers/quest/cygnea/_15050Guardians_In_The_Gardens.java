@@ -52,7 +52,7 @@ public class _15050Guardians_In_The_Gardens extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804706) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

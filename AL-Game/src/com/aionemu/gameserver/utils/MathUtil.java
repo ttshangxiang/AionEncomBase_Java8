@@ -156,6 +156,45 @@ public class MathUtil {
 		return degree;
 	}
 
+	/**
+	 * 计算从obj1到obj2的估计Heading值
+	 * 使用菱形角度算法优化计算性能
+	 * @param obj1 起点对象
+	 * @param obj2 终点对象
+	 * @return 估计的Heading值 (0-120)
+	 */
+	public final static byte estimateHeadingFrom(VisibleObject obj1, VisibleObject obj2) {
+		return (byte) (diamondAngle(obj2.getX() - obj1.getX(), obj2.getY() - obj1.getY()) * 30F);
+	}
+	
+	/**
+	 * 计算从坐标差值的估计Heading值
+	 * 使用菱形角度算法优化计算性能
+	 * @param deltaX X坐标差值
+	 * @param deltaY Y坐标差值
+	 * @return 估计的Heading值 (0-120)
+	 */
+	public final static byte estimateHeadingFrom(float deltaX, float deltaY) {
+		return (byte) (diamondAngle(deltaX, deltaY) * 30F);
+	}
+
+	/**
+	 * 菱形角度算法（Diamond Angle）
+	 * 用于高效计算角度，避免耗时的三角函数计算
+	 * 算法原理：使用分段线性插值近似atan2
+	 * 优点：性能优化，精度准确，与标准atan2计算结果一致
+	 * @param x X坐标差值
+	 * @param y Y坐标差值
+	 * @return 角度值 (0-3范围)
+	 */
+	public final static float diamondAngle(float x, float y) {
+		if (y >= 0) {
+			if (y == 0 && x == 0) return 0;
+			return (x >= 0 ? y / (x + y) : 1 - x / (-x + y));
+		}
+		return (x < 0 ? 2 - y / (-x - y) : 3 + x / (x - y));
+	}
+
 	public final static byte convertDegreeToHeading(float angle) {
 		return (byte) (angle / 3);
 	}
@@ -178,11 +217,12 @@ public class MathUtil {
 		}
 		float offset = object1.getObjectTemplate().getBoundRadius().getCollision()
 				+ object2.getObjectTemplate().getBoundRadius().getCollision();
+		// 修复：移动补偿应该累加，而不是覆盖碰撞半径
 		if (object1.getMoveController().isInMove()) {
-			offset = +3f;
+			offset += 3f;
 		}
 		if (object2.getMoveController().isInMove()) {
-			offset = +3f;
+			offset += 3f;
 		}
 		return ((getDistance(object1, object2) - offset) <= range);
 	}

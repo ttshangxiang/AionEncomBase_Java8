@@ -24,10 +24,9 @@ import com.aionemu.gameserver.world.zone.ZoneName;
 /** Author Ghostfur & Unknown (Aion-Unique)
 /****/
 
-public class _11149The_Lady_Layout extends QuestHandler
-{
-	private final static int questId = 11149;
+public class _11149The_Lady_Layout extends QuestHandler {
 
+	private final static int questId = 11149;
 	public _11149The_Lady_Layout() {
 		super(questId);
 	}
@@ -72,42 +71,38 @@ public class _11149The_Lady_Layout extends QuestHandler
 			return false;
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 		if (qs != null && qs.getStatus() == QuestStatus.START) {
-  		    int var = qs.getQuestVarById(0);
-			int var1 = qs.getQuestVarById(1);
+  		    int var1 = qs.getQuestVarById(1);
 			int var2 = qs.getQuestVarById(2);
-			if (zoneName == ZoneName.get("LF4_SENSORY_AREA_Q11149_A_210130000")) {
-				if (var == 0) {
-					qs.setQuestVarById(1, 1);
-					updateQuestStatus(env);
-					cheakReward(env);
-					return true;
-				}
-			} else if (zoneName == ZoneName.get("LF4_SENSORY_AREA_Q11149_B_210130000")) {
-				if (var1 == 0) {
-					qs.setQuestVarById(2, 1);
-					updateQuestStatus(env);
-					cheakReward(env);
-					return true;
-				}
-			} else if (zoneName == ZoneName.get("LF4_SENSORY_AREA_Q11149_C_210130000")) {
-				if (var2 == 0) {
-					qs.setQuestVarById(3, 1);
-					updateQuestStatus(env);
-					cheakReward(env);
-					return true;
-				}
+			int var3 = qs.getQuestVarById(3);
+			if (zoneName == ZoneName.get("LF4_SENSORY_AREA_Q11149_A_210130000") && var1 == 0) {
+				qs.setQuestVarById(1, 1);
+				updateQuestStatus(env);
+				checkReward(env);
+				return true;
+			}
+			if (zoneName == ZoneName.get("LF4_SENSORY_AREA_Q11149_B_210130000") && var2 == 0) {
+				qs.setQuestVarById(2, 1);
+				updateQuestStatus(env);
+				checkReward(env);
+				return true;
+			}
+			if (zoneName == ZoneName.get("LF4_SENSORY_AREA_Q11149_C_210130000") && var3 == 0) {
+				qs.setQuestVarById(3, 1);
+				updateQuestStatus(env);
+				checkReward(env);
+				return true;
 			}
 		}
 		return false;
 	}
 	
-	private void cheakReward(QuestEnv env) {
+	private void checkReward(QuestEnv env) {
 		Player player = env.getPlayer();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		int var = qs.getQuestVarById(1);
-		int var1 = qs.getQuestVarById(2);
-		int var2 = qs.getQuestVarById(3);
-		if (var == 1 && var1 == 1 && var2 == 1) {
+		int var1 = qs.getQuestVarById(1);
+		int var2 = qs.getQuestVarById(2);
+		int var3 = qs.getQuestVarById(3);
+		if (var1 == 1 && var2 == 1 && var3 == 1) {
 			qs.setStatus(QuestStatus.REWARD);
 			updateQuestStatus(env);
 		}

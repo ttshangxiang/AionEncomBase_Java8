@@ -26,7 +26,7 @@ public class MySQL8PlayerStigmasEquippedDAO extends PlayerStigmasEquippedDAO {
     
     private static final String INSERT_QUERY = "INSERT INTO `player_stigmas_equipped` (`player_id`, `item_id`, `item_name`) VALUES (?,?,?)";
     
-    private static final String UPDATE_QUERY = "UPDATE `player_stigmas_equipped` SET item_id=?, item_name=? WHERE player_id=?";
+    private static final String UPDATE_QUERY = "UPDATE `player_stigmas_equipped` SET item_id=?, item_name=? WHERE player_id=? AND item_id=?";
     
     private static final String DELETE_QUERY = "DELETE FROM `player_stigmas_equipped` WHERE `player_id`=? AND item_id=? AND item_name=?";
     

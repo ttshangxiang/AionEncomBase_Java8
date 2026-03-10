@@ -58,7 +58,14 @@ public class CM_TUNE extends AionClientPacket {
 		if (player == null)
 			return;
 		Storage inventory = player.getInventory();
-		final Item item = inventory.getItemByObjId(itemObjectId);
+		Item fitem = inventory.getItemByObjId(itemObjectId);
+		// 修复：支持已装备物品的鉴定
+		if (fitem == null && tuningScrollId != 0) {
+			fitem = player.getEquipment().getEquippedItemByObjId(itemObjectId);
+			if (fitem == null)
+				return;
+		}
+		final Item item = fitem;
 		if (item == null) {
 			return;
 		}
@@ -76,19 +83,22 @@ public class CM_TUNE extends AionClientPacket {
 		if (item.getOptionalSocket() != -1) {
 			return;
 		}
-		final int itemId = item.getItemId();
+		// 修复：使用固定的动画ID（166200022 神话装备鉴定卷轴）让客户端正确播放鉴定动画
+		// 直接使用物品本身的ID可能没有对应的动画定义
+		final int itemId = 166200022;
 		final ItemTemplate template = item.getItemTemplate();
 		final int nameId = template.getNameId();
 		PacketSendUtility.broadcastPacket(player,
-				new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), item.getObjectId(), itemId, 5000, 0, 0), true);
+				new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), item.getObjectId(), itemId, 3000, 0, 0), true);
 		final ItemUseObserver observer = new ItemUseObserver() {
 			@Override
 			public void abort() {
 				player.getController().cancelTask(TaskId.ITEM_USE);
 				player.removeItemCoolDown(template.getUseLimits().getDelayId());
 				PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_ITEM_CANCELED(new DescriptionId(nameId)));
+				// 修复：取消时使用 endState = 3（取消）而不是 2（失败）
 				PacketSendUtility.broadcastPacket(player,
-						new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), itemObjectId, itemId, 0, 2, 0), true);
+						new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), itemObjectId, itemId, 0, 3, 0), true);
 				player.getObserveController().removeObserver(this);
 			}
 		};
@@ -113,6 +123,6 @@ public class CM_TUNE extends AionClientPacket {
 				PacketSendUtility.sendPacket(player, new SM_INVENTORY_UPDATE_ITEM(player, item));
 				PacketSendUtility.sendPacket(player, new SM_SYSTEM_MESSAGE(1401626, new DescriptionId(nameId)));
 			}
-		}, 5000));
+		}, 3000));
 	}
 }

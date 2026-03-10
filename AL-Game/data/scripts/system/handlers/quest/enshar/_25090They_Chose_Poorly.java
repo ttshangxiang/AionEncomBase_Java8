@@ -51,7 +51,7 @@ public class _25090They_Chose_Poorly extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804928) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

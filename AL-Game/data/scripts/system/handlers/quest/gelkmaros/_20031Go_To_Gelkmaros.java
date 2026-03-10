@@ -33,11 +33,10 @@ import com.aionemu.gameserver.world.zone.ZoneName;
 /** Author Ghostfur & Unknown (Aion-Unique)
 /****/
 
-public class _20031Go_To_Gelkmaros extends QuestHandler
-{
+public class _20031Go_To_Gelkmaros extends QuestHandler {
+
     private final static int questId = 20031;
 	private final static int[] mobs = {216091, 216095, 216092, 216096, 216093, 216097};
-    
 	public _20031Go_To_Gelkmaros() {
         super(questId);
     }
@@ -204,7 +203,7 @@ public class _20031Go_To_Gelkmaros extends QuestHandler
             }
         } else if (qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 799225) {
-                if (env.getDialog() == QuestDialog.START_DIALOG) {
+                if (env.getDialog() == QuestDialog.USE_OBJECT) {
                     return sendQuestDialog(env, 10002);
                 } else {
                     int[] gelkmarosMission = {20031, 20032, 20033, 20034, 20035};

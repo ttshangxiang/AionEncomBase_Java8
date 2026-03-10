@@ -52,7 +52,7 @@ public class _15020La_Fin_De_Black_Fin_Tribe extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804876) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

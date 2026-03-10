@@ -20,7 +20,7 @@ public class MySQL8PlayerTransfoDAO extends PlayerTransformDAO {
     private static final String INSERT_QUERY = "INSERT INTO `player_transform` (`player_id`, `panel_id`, `item_id`) VALUES (?, ?, ?) " + "ON DUPLICATE KEY UPDATE `panel_id` = VALUES(`panel_id`), `item_id` = VALUES(`item_id`)";
     private static final String SELECT_QUERY = "SELECT `panel_id`, `item_id` FROM `player_transform` WHERE `player_id` = ?";
     private static final String DELETE_QUERY = "DELETE FROM `player_transform` WHERE `player_id` = ?";
-    private static final String UPDATE_QUERY = "UPDATE `player_transform` SET `panel_id` = ?, `item_id` = ?, `last_update` = CURRENT_TIMESTAMP WHERE `player_id` = ?";
+    private static final String UPDATE_QUERY = "UPDATE `player_transform` SET `panel_id` = ?, `item_id` = ? WHERE `player_id` = ?";
 
     @Override
     public void loadPlTransfo(Player player) {

@@ -10,11 +10,15 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author KID
  */
 public class MySQL8PlayerVarsDAO extends PlayerVarsDAO {
+
+    private static final Logger log = LoggerFactory.getLogger(MySQL8PlayerVarsDAO.class);
 
     private static final String SELECT_QUERY = "SELECT param,value FROM player_vars WHERE player_id=?";
     private static final String INSERT_QUERY = "INSERT INTO player_vars (`player_id`, `param`, `value`, `time`) VALUES (?,?,?,NOW())";
@@ -77,6 +81,4 @@ public class MySQL8PlayerVarsDAO extends PlayerVarsDAO {
     public boolean supports(String s, int i, int i1) {
         return MySQL8DAOUtils.supports(s, i, i1);
     }
-    
-    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(MySQL8PlayerVarsDAO.class);
 }

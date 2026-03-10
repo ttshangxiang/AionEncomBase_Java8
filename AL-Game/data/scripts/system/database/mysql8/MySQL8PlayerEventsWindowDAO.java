@@ -30,8 +30,8 @@ public class MySQL8PlayerEventsWindowDAO extends PlayerEventsWindowDAO {
     private static final String SELECT_LAST_STAMP_QUERY = "SELECT last_stamp FROM player_events_window WHERE account_id = ? AND event_id = ?";
     private static final String SELECT_ELAPSED_QUERY = "SELECT elapsed FROM player_events_window WHERE account_id = ? AND event_id = ?";
     private static final String UPDATE_ELAPSED_QUERY = "UPDATE player_events_window SET elapsed = ? WHERE account_id = ? AND event_id = ?";
-    private static final String SELECT_REWARD_COUNT_QUERY = "SELECT reward_received_count FROM player_events_window WHERE account_id = ? AND event_id = ?";
-    private static final String UPDATE_REWARD_QUERY = "UPDATE player_events_window SET reward_received_count = ?, elapsed = 0, last_stamp = NOW() WHERE account_id = ? AND event_id = ?";
+    private static final String SELECT_REWARD_COUNT_QUERY = "SELECT reward_recived_count FROM player_events_window WHERE account_id = ? AND event_id = ?";
+    private static final String UPDATE_REWARD_QUERY = "UPDATE player_events_window SET reward_recived_count = ?, elapsed = 0, last_stamp = NOW() WHERE account_id = ? AND event_id = ?";
     
     @Override
     public PlayerEventWindowList load(Player player) {
@@ -182,7 +182,7 @@ public class MySQL8PlayerEventsWindowDAO extends PlayerEventsWindowDAO {
             
             try (ResultSet rs = stmt.executeQuery()) {
                 if (rs.next()) {
-                    return rs.getInt("reward_received_count");
+                    return rs.getInt("reward_recived_count ");
                 }
             }
         } catch (SQLException e) {

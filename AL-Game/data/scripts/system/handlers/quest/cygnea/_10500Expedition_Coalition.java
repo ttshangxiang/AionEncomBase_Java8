@@ -89,7 +89,7 @@ public class _10500Expedition_Coalition extends QuestHandler {
             }
         } else if (qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 804699) {
-                if (env.getDialog() == QuestDialog.START_DIALOG) {
+                if (env.getDialog() == QuestDialog.USE_OBJECT) {
                     return sendQuestDialog(env, 10002);
                 } else {
                     int[] cygneaMission = {10501, 10502, 10503, 10504, 10505, 10506, 10507};

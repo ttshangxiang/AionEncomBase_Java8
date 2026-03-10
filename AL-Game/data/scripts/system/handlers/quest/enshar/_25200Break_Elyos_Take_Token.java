@@ -13,7 +13,6 @@
 package quest.enshar;
 
 import com.aionemu.gameserver.model.gameobjects.Item;
-import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.questEngine.handlers.HandlerResult;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
@@ -50,12 +49,10 @@ public class _25200Break_Elyos_Take_Token extends QuestHandler {
 	
 	@Override
 	public boolean onDialogEvent(QuestEnv env) {
-		int targetId = 0;
+		int targetId = env.getTargetId();
 		final Player player = env.getPlayer();
 		final QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if (env.getVisibleObject() instanceof Npc) {
-			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-		} if (qs == null || qs.getStatus() == QuestStatus.NONE) {
+        if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 0) { 
 				if (env.getDialog() == QuestDialog.ACCEPT_QUEST) {
 					return sendQuestStartDialog(env);
@@ -64,7 +61,8 @@ public class _25200Break_Elyos_Take_Token extends QuestHandler {
 					return closeDialogWindow(env);
 				}
 			}
-		} else if (qs.getStatus() == QuestStatus.START) {
+		} 
+        else if (qs.getStatus() == QuestStatus.START) {
 			if (targetId == 804719) {
 				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 2375);
@@ -75,8 +73,11 @@ public class _25200Break_Elyos_Take_Token extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			}
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD && targetId == 804719) {
-			return sendQuestEndDialog(env);
+		} 
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 804719) {
+			    return sendQuestEndDialog(env);
+		    }
 		}
 		return false;
 	}

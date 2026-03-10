@@ -68,7 +68,7 @@ public class _18970The_Corridor_Lore extends QuestHandler {
 				}
 			}
 		}
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if ((targetId == 804865) || (targetId == 805215)) {
 				return sendQuestEndDialog(env);
 			}

@@ -1,5 +1,4 @@
 /*
-
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -19,6 +18,8 @@ package com.aionemu.gameserver.model.drop;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -32,6 +33,8 @@ import com.aionemu.gameserver.model.gameobjects.player.Player;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "dropGroup", propOrder = { "drop" })
 public class DropGroup implements DropCalculator {
+
+    private static final Logger log = LoggerFactory.getLogger(DropGroup.class);
 
 	protected List<Drop> drop;
 	@XmlAttribute
@@ -64,10 +67,12 @@ public class DropGroup implements DropCalculator {
 	}
 
 	@Override
-    public int dropCalculator(Set<DropItem> result, int index, float dropModifier, Race race,
-        Collection<Player> groupMembers) {
+    public int dropCalculator(Set<DropItem> result, int index, float dropModifier, Race race, Collection<Player> groupMembers) {
+
     if (drop == null || drop.isEmpty()) {
-        System.out.println("The drop list is empty!"); 
+        if (log.isDebugEnabled()) {
+            log.debug("Drop group {} is empty", getGroupName());
+        }
         return index;
     }
 

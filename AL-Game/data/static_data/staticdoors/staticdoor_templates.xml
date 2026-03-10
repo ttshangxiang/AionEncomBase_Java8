@@ -2841,7 +2841,7 @@
 		</staticdoor>
 	</world>
 	<!-- INGGISON (HOUSING) -->
-	<world world="210050000">
+<!-- 	<world world="210050000">
 		<staticdoor type="HOUSE" doorid="3576">
 			<box x1="1132.26172" y1="813.267" z1="525.2291" x2="1132.53076" y2="813.5361" z2="525.429138"/>
 		</staticdoor>
@@ -2878,7 +2878,7 @@
 		<staticdoor type="HOUSE" doorid="272">
 			<box x1="2269.577" y1="150.8857" z1="463.73822" x2="2269.80566" y2="151.114517" z2="463.938232"/>
 		</staticdoor>
-	</world>
+	</world> -->
 	<!-- BELUSLAN (HOUSING) -->
 	<world world="220040000">
 		<staticdoor type="HOUSE" doorid="6">
@@ -2910,7 +2910,7 @@
 		</staticdoor>
 	</world>
 	<!-- GELKMAROS (HOUSING) -->
-	<world world="220070000">
+<!-- 	<world world="220070000">
 		<staticdoor type="HOUSE" doorid="9">
 			<box x1="2284.91064" y1="2863.4668" z1="513.8515" x2="2285.13647" y2="2863.69263" z2="514.0515"/>
 		</staticdoor>
@@ -2929,7 +2929,7 @@
 		<staticdoor type="HOUSE" doorid="1215">
 			<box x1="659.5595" y1="2840.06055" z1="409.9546" x2="659.842" y2="2840.343" z2="410.1546"/>
 		</staticdoor>
-	</world>
+	</world> -->
 	<!-- ORIEL (HOUSING) -->
 	<world world="700010000">
 		<staticdoor type="HOUSE" doorid="596">

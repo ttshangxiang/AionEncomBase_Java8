@@ -74,7 +74,7 @@ public class _25084Is_This_A_Trap extends QuestHandler {
                     return closeDialogWindow(env);
                 }
             }
-		} else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		} else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 804927) {
                 if (dialog == QuestDialog.START_DIALOG) {
                     return sendQuestDialog(env, 2034);

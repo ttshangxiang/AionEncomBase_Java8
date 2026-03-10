@@ -5,7 +5,7 @@
 	Make By (Encom)
  -->
 	<!-- [Spy/Daily] Operation: Gelkmaros -->
-	<kill_in_world id="35505" end_npc_ids="799825 799826" worlds="220070000" amount="5"/>
+	<kill_in_world id="35505" end_npc_ids="799825 799826" worlds="220140000" amount="5"/>
 	<!-- [Daily] Zero Tolerance Policy -->
 	<kill_in_world id="35508" end_npc_ids="799831" worlds="0" amount="5"/>
 	<!-- [Daily] Zero Tolerance Or Less -->

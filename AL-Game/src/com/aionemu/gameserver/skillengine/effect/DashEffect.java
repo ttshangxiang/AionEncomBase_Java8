@@ -11,7 +11,7 @@
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU Lesser Public License for more details.
  *
- *  You should have received a copy of the GNU Lesser Public License
+ *  You should have a copy of the GNU Lesser Public License
  *  along with Encom.  If not, see <http://www.gnu.org/licenses/>.
  */
 package com.aionemu.gameserver.skillengine.effect;
@@ -20,16 +20,21 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+import com.aionemu.gameserver.geoEngine.collision.CollisionIntention;
+import com.aionemu.gameserver.geoEngine.math.Vector3f;
 import com.aionemu.gameserver.model.gameobjects.Creature;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.skillengine.action.DamageType;
 import com.aionemu.gameserver.skillengine.model.DashStatus;
 import com.aionemu.gameserver.skillengine.model.Effect;
 import com.aionemu.gameserver.skillengine.model.Skill;
+import com.aionemu.gameserver.utils.MathUtil;
 import com.aionemu.gameserver.world.World;
+import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
  * @author ATracer
+ * @modified 修复冲刺技能位置重叠问题，玩家不会直接落在目标身上
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DashEffect")
@@ -57,8 +62,23 @@ public class DashEffect extends DamageEffect {
 		if (!super.calculate(effect, DamageType.PHYSICAL)) {
 			return;
 		}
+		
+		Creature effector = effect.getEffector();
 		Creature effected = effect.getEffected();
 		effect.setDashStatus(DashStatus.DASH);
-		effect.getSkill().setTargetPosition(effected.getX(), effected.getY(), effected.getZ(), effected.getHeading());
+		
+		// 修复：计算偏移位置，避免玩家直接落在目标身上
+		// 直接重叠会导致客户端无法自动攻击，需要停在目标前方一定距离
+		byte newHeading = MathUtil.estimateHeadingFrom(effector, effected);
+		float boundRadius = effector.getCollision() + effected.getCollision();
+		float x1 = effector.getX(), y1 = effector.getY(), z1 = effector.getZ(),
+			  x2 = effected.getX(), y2 = effected.getY(), z2 = effected.getZ(),
+			  distance = (float) MathUtil.getDistance(x1, y1, z1, x2, y2, z2),
+			  vx = (x1 - x2) * (boundRadius/distance),
+			  vy = (y1 - y2) * (boundRadius/distance),
+			  vz = (z1 - z2) * (boundRadius/distance);
+		Vector3f pos = GeoService.getInstance().getClosestCollision(effected, x2 + vx, y2 + vy, z2 + vz, false, CollisionIntention.PHYSICAL.getId());
+		
+		effect.getSkill().setTargetPosition(pos.x, pos.y, pos.z, newHeading);
 	}
 }

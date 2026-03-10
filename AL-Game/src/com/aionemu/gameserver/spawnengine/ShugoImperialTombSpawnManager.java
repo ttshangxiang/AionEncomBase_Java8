@@ -113,7 +113,7 @@ public class ShugoImperialTombSpawnManager {
 		Indiarunark_Cygnea(831117, 210070000, 2930.079f, 825.9626f, 569.5f, (byte) 71),
 		Alberto_Pandaemonium(831131, 120010000, 1584.4727f, 1405.4204f, 193.09547f, (byte) 0),
 		Alberto_Gelkmaros(831131, 220140000, 1794.8785f, 2914.2793f, 554.80853f, (byte) 0),
-		Alberto_Enshar(831131, 220070000, 471.96454f, 2319.1738f, 216.45724f, (byte) 23);
+		Alberto_Enshar(831131, 220080000, 471.96454f, 2319.1738f, 216.45724f, (byte) 23);
 
 		private int npc_id;
 		private int worldId;

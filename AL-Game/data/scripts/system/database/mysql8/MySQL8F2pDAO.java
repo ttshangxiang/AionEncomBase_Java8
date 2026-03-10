@@ -22,7 +22,7 @@ public class MySQL8F2pDAO extends F2pDAO {
     private static final String INSERT_QUERY = "INSERT INTO `f2paccount` (`player_id`, `time`) VALUES (?, ?) " + "ON DUPLICATE KEY UPDATE `time` = VALUES(`time`)";
     private static final String SELECT_QUERY = "SELECT `time` FROM `f2paccount` WHERE `player_id` = ?";
     private static final String DELETE_QUERY = "DELETE FROM `f2paccount` WHERE `player_id` = ?";
-    private static final String UPDATE_QUERY = "UPDATE `f2paccount` SET `time` = ?, `last_update` = CURRENT_TIMESTAMP WHERE `player_id` = ?";
+    private static final String UPDATE_QUERY = "UPDATE `f2paccount` SET `time` = ? WHERE `player_id` = ?";
 
     @Override
     public void loadF2pInfo(Player player) {

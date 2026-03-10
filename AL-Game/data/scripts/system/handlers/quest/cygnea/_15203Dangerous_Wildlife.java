@@ -52,7 +52,7 @@ public class _15203Dangerous_Wildlife extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804704) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

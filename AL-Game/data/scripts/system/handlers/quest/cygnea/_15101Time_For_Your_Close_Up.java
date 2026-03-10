@@ -62,7 +62,7 @@ public class _15101Time_For_Your_Close_Up extends QuestHandler {
                 }
             }
         } 
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804715) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

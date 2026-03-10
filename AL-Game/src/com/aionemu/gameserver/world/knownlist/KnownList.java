@@ -1,5 +1,4 @@
 /*
-
  *
  *  Encom is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -268,10 +267,9 @@ public class KnownList {
 	public int doOnAllNpcs(Visitor<Npc> visitor, int iterationLimit) {
 		int counter = 0;
 		try {
-			for (FastMap.Entry<Integer, VisibleObject> e = knownObjects.head(),
-					mapEnd = knownObjects.tail(); (e = e.getNext()) != mapEnd;) {
+			for (FastMap.Entry<Integer, VisibleObject> e = knownObjects.head(), mapEnd = knownObjects.tail(); (e = e.getNext()) != mapEnd;) {
 				VisibleObject newObject = e.getValue();
-				if (newObject instanceof Npc) {
+				if (newObject != null && newObject instanceof Npc) {
 					if ((++counter) == iterationLimit) {
 						break;
 					}
@@ -279,7 +277,7 @@ public class KnownList {
 				}
 			}
 		} catch (Exception ex) {
-			log.error("Exception when running visitor on all npcs" + ex);
+			log.error("Exception when running visitor on all npcs", ex);
 		}
 		return counter;
 	}
@@ -291,10 +289,9 @@ public class KnownList {
 	public int doOnAllNpcsWithOwner(VisitorWithOwner<Npc, VisibleObject> visitor, int iterationLimit) {
 		int counter = 0;
 		try {
-			for (FastMap.Entry<Integer, VisibleObject> e = knownObjects.head(),
-					mapEnd = knownObjects.tail(); (e = e.getNext()) != mapEnd;) {
+			for (FastMap.Entry<Integer, VisibleObject> e = knownObjects.head(), mapEnd = knownObjects.tail(); (e = e.getNext()) != mapEnd;) {
 				VisibleObject newObject = e.getValue();
-				if (newObject instanceof Npc) {
+				if (newObject != null && newObject instanceof Npc) {
 					if ((++counter) == iterationLimit) {
 						break;
 					}
@@ -302,7 +299,7 @@ public class KnownList {
 				}
 			}
 		} catch (Exception ex) {
-			log.error("Exception when running visitor on all npcs" + ex);
+			log.error("Exception when running visitor on all npcs", ex);
 		}
 		return counter;
 	}
@@ -312,29 +309,27 @@ public class KnownList {
 			return;
 		}
 		try {
-			for (FastMap.Entry<Integer, Player> e = knownPlayers.head(),
-					mapEnd = knownPlayers.tail(); (e = e.getNext()) != mapEnd;) {
+			for (FastMap.Entry<Integer, Player> e = knownPlayers.head(), mapEnd = knownPlayers.tail(); (e = e.getNext()) != mapEnd;) {
 				Player player = e.getValue();
 				if (player != null) {
 					visitor.visit(player);
 				}
 			}
 		} catch (Exception ex) {
-			log.error("Exception when running visitor on all players" + ex);
+			log.error("Exception when running visitor on all players", ex);
 		}
 	}
 
 	public void doOnAllObjects(Visitor<VisibleObject> visitor) {
 		try {
-			for (FastMap.Entry<Integer, VisibleObject> e = knownObjects.head(),
-					mapEnd = knownObjects.tail(); (e = e.getNext()) != mapEnd;) {
+			for (FastMap.Entry<Integer, VisibleObject> e = knownObjects.head(), mapEnd = knownObjects.tail(); (e = e.getNext()) != mapEnd;) {
 				VisibleObject newObject = e.getValue();
 				if (newObject != null) {
 					visitor.visit(newObject);
 				}
 			}
 		} catch (Exception ex) {
-			log.error("Exception when running visitor on all objects" + ex);
+			log.error("Exception when running visitor on all objects", ex);
 		}
 	}
 

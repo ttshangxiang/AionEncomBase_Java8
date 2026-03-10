@@ -84,9 +84,15 @@ public class CM_GM_COMMAND_SEND extends AionClientPacket {
 		}
 		switch (GmPanelCommands.getValue(cmd)) {
 		case REMOVE_SKILL_DELAY_ALL:
+            PacketSendUtility.sendMessage(admin, "Cooldowns ENABLED");
+			admin.setCoolDownZero(false);
 			break;
 		case ITEMCOOLTIME:
+			admin.setCoolDownZero(true);
+            PacketSendUtility.sendMessage(admin, "Cooldowns DISABLED");
 			new CmdItemCoolTime(admin);
+			break;
+		case SET_DISABLE_ITEMUSE_GAUGE:
 			break;
 		case ATTRBONUS:
 			new CmdAttrBonus(admin, params);
@@ -177,5 +183,4 @@ public class CM_GM_COMMAND_SEND extends AionClientPacket {
 			break;
 		}
 	}
-
 }

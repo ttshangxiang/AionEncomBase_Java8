@@ -122,8 +122,7 @@ public class MySQL8PlayerShugoSweepDAO extends PlayerShugoSweepDAO {
             stmt.executeUpdate();
             return true;
         } catch (SQLException e) {
-            log.error("Could not update PlayerSweep data for player {} from DB", 
-                player.getObjectId(), e);
+            log.error("Could not update PlayerSweep data for player {} from DB", player.getObjectId(), e);
             return false;
         }
     }

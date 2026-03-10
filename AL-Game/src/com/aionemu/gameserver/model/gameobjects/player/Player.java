@@ -60,6 +60,7 @@ import com.aionemu.gameserver.model.gameobjects.Pet;
 import com.aionemu.gameserver.model.gameobjects.Summon;
 import com.aionemu.gameserver.model.gameobjects.SummonedObject;
 import com.aionemu.gameserver.model.gameobjects.Trap;
+import com.aionemu.gameserver.model.gameobjects.VisibleObject;
 import com.aionemu.gameserver.model.gameobjects.player.AbyssRank.AbyssRankUpdateType;
 import com.aionemu.gameserver.model.gameobjects.player.FriendList.Status;
 import com.aionemu.gameserver.model.gameobjects.player.emotion.EmotionList;
@@ -696,6 +697,16 @@ public class Player extends Creature {
 	@Override
 	public byte getLevel() {
 		return (byte) playerCommonData.getLevel();
+	}
+
+	/**
+	 * 重写设置目标方法
+	 * 切换目标时重置普攻攻击计时器，确保可以立即对新目标发起攻击
+	 */
+	@Override
+	public void setTarget(VisibleObject creature) {
+		super.setTarget(creature);
+		getController().resetAttackTimer();
 	}
 
 	/**

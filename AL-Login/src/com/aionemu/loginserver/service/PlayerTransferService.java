@@ -73,7 +73,9 @@ public class PlayerTransferService {
      */
     protected void verifyNewTasks() {
         FastList<PlayerTransferTask> tasksNew = this.dao.getNew();
-        log.info("PlayerTransfer perform task init. " + tasks.size() + " new tasks.");
+        if (!tasksNew.isEmpty()) {
+            log.info("PlayerTransfer perform task init. " + tasksNew.size() + " new tasks.");
+        }
         for (PlayerTransferTask task : tasksNew) {
             GameServerInfo server = GameServerTable.getGameServerInfo(task.sourceServerId);
             if (server == null || server.getConnection() == null) {

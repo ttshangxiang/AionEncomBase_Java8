@@ -232,7 +232,7 @@
 	
 	<!-- Quest 4.8 -->
 	<!-- [Daily/Spy] No Mo' Asmos (Elyos Only) -->
-	<kill_in_world id="11324" start_npc_ids="798927" end_npc_ids="798927" worlds="220070000" amount="2"/>
+	<kill_in_world id="11324" start_npc_ids="798927" end_npc_ids="798927" worlds="220140000" amount="2"/>
 	<!-- [Daily] Get 'em Out Of Inggison (Elyos Only) -->
-	<kill_in_world id="11325" start_npc_ids="798927" end_npc_ids="798927" worlds="210050000" amount="2"/>
+	<kill_in_world id="11325" start_npc_ids="798927" end_npc_ids="798927" worlds="210130000" amount="2"/>
 </quest_scripts>

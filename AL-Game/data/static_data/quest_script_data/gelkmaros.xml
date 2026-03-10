@@ -264,7 +264,7 @@
 	
 	<!-- Quest 4.8 -->
 	<!-- [Daily/Spy] No Elyos In Gelkmaros (Asmodians Only) -->
-	<kill_in_world id="21324" start_npc_ids="799226" end_npc_ids="799226" worlds="210050000" amount="2"/>
+	<kill_in_world id="21324" start_npc_ids="799226" end_npc_ids="799226" worlds="210130000" amount="2"/>
 	<!-- [Daily] Erase The Elyos (Asmodians Only) -->
-	<kill_in_world id="21325" start_npc_ids="799226" end_npc_ids="799226" worlds="220070000" amount="2"/>
+	<kill_in_world id="21325" start_npc_ids="799226" end_npc_ids="799226" worlds="220140000" amount="2"/>
 </quest_scripts>

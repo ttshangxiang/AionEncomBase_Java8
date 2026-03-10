@@ -26,10 +26,9 @@ import com.aionemu.gameserver.services.QuestService;
 /** Author Ghostfur & Unknown (Aion-Unique)
 /****/
 
-public class _20500Enshar_Expedition extends QuestHandler
-{
+public class _20500Enshar_Expedition extends QuestHandler {
+
     public static final int questId = 20500;
-	
     public _20500Enshar_Expedition() {
         super(questId);
     }
@@ -90,7 +89,7 @@ public class _20500Enshar_Expedition extends QuestHandler
             }
         } else if (qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 804719) {
-                if (env.getDialog() == QuestDialog.START_DIALOG) {
+                if (env.getDialog() == QuestDialog.USE_OBJECT) {
                     return sendQuestDialog(env, 10002);
                 } else {
                     int[] ensharMission = {20501, 20502, 20503, 20504, 20505, 20506, 20507};

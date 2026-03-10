@@ -11,7 +11,7 @@
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU Lesser Public License for more details.
  *
- *  You should have received a copy of the GNU Lesser Public License
+ *  You should have a copy of the GNU Lesser Public License
  *  along with Encom.  If not, see <http://www.gnu.org/licenses/>.
  */
 package com.aionemu.gameserver.skillengine.properties;
@@ -62,9 +62,10 @@ public class TargetRangeProperty {
 				return false;
 			}
 
-			// Create a sorted map of the objects in knownlist
-			// and filter them properly
-			for (VisibleObject nextCreature : firstTarget.getKnownList().getKnownObjects().values())
+			// 【重要修复】使用施法者的已知对象列表，确保AOE技能能正确检测到附近的NPC
+			// 修复前：使用 firstTarget.getKnownList()，当 firstTarget != effector 时，可能导致NPC太贴近玩家反而不会被AOE打中
+			// 修复后：使用 skill.getEffector().getKnownList()，确保始终使用施法者的已知对象列表
+			for (VisibleObject nextCreature : skill.getEffector().getKnownList().getKnownObjects().values())
 				if (((nextCreature instanceof Creature)) && (firstTarget != nextCreature)
 						&& (((Creature) nextCreature).getLifeStats() != null)
 						&& (!((Creature) nextCreature).getLifeStats().isAlreadyDead())
@@ -72,13 +73,20 @@ public class TargetRangeProperty {
 								|| (((Trap) skill.getEffector()).getCreator() != nextCreature))
 						&& ((!(nextCreature instanceof Player)) || (!((Player) nextCreature).isProtectionActive()))) {
 					if (skill.isPointSkill()) {
+						float targetCollision = firstTarget.getObjectTemplate().getBoundRadius().getCollision();
 						if (MathUtil.isIn3dRange(skill.getX(), skill.getY(), skill.getZ(), nextCreature.getX(),
-								nextCreature.getY(), nextCreature.getZ(), distance + 1)) {
-							skill.getEffectedList().add((Creature) nextCreature);
+								nextCreature.getY(), nextCreature.getZ(), distance + targetCollision + 1)) {
+							if (skill.shouldAffectTarget(nextCreature)) {
+								skill.getEffectedList().add((Creature) nextCreature);
+							}
 						}
 					} else if (properties.getEffectiveWidth() > 0) {
-						if (MathUtil.isInsideAttackCylinder(firstTarget, nextCreature, distance,
-								properties.getEffectiveWidth(), !properties.isBackDirection())) {
+						float targetCollision = firstTarget.getObjectTemplate().getBoundRadius().getCollision();
+						float creatureCollision = ((Creature) nextCreature).getObjectTemplate().getBoundRadius().getCollision();
+						if (MathUtil.isInsideAttackCylinder(firstTarget, nextCreature, 
+								(int) (distance + targetCollision + creatureCollision),
+								(int) (properties.getEffectiveWidth() + targetCollision + creatureCollision), 
+								!properties.isBackDirection())) {
 							if (skill.shouldAffectTarget(nextCreature)) {
 								skill.getEffectedList().add((Creature) nextCreature);
 							}
@@ -90,19 +98,23 @@ public class TargetRangeProperty {
 						}
 						FloatRange range = new FloatRange(angle, 360.0F - angle);
 						if (range.containsFloat(PositionUtil.getAngleToTarget(firstTarget, nextCreature))) {
+							float targetCollision = firstTarget.getObjectTemplate().getBoundRadius().getCollision();
+							float creatureCollision = ((Creature) nextCreature).getObjectTemplate().getBoundRadius().getCollision();
 							if (MathUtil.isIn3dRange(firstTarget, nextCreature,
-									distance + firstTarget.getObjectTemplate().getBoundRadius().getCollision())) {
+									distance + targetCollision + creatureCollision)) {
 								if (skill.shouldAffectTarget(nextCreature)) {
 									skill.getEffectedList().add((Creature) nextCreature);
 								}
-							} else {
 							}
-							;
 						}
-					} else if (MathUtil.isIn3dRange(firstTarget, nextCreature,
-							distance + firstTarget.getObjectTemplate().getBoundRadius().getCollision())) {
-						if (skill.shouldAffectTarget(nextCreature)) {
-							skill.getEffectedList().add((Creature) nextCreature);
+					} else {
+						float targetCollision = firstTarget.getObjectTemplate().getBoundRadius().getCollision();
+						float creatureCollision = ((Creature) nextCreature).getObjectTemplate().getBoundRadius().getCollision();
+						if (MathUtil.isIn3dRange(firstTarget, nextCreature,
+								distance + targetCollision + creatureCollision)) {
+							if (skill.shouldAffectTarget(nextCreature)) {
+								skill.getEffectedList().add((Creature) nextCreature);
+							}
 						}
 					}
 				}
@@ -150,7 +162,7 @@ public class TargetRangeProperty {
 				if (effector.isInAlliance2()) {
 					effectedList.clear();
 					// TODO may be alliance group ?
-					for (Player player : effector.getPlayerAlliance2().getMembers()) {
+					for (Player player : effector.getPlayerAllianceGroup2().getMembers()) {
 						if (!player.isOnline()) {
 							continue;
 						}
@@ -199,13 +211,12 @@ public class TargetRangeProperty {
 				}
 				if (MathUtil.getDistance(skill.getX(), skill.getY(), skill.getZ(), nextCreature.getX(),
 						nextCreature.getY(), nextCreature.getZ()) <= distance + 1) {
-					effectedList.add((Creature) nextCreature);
+					if (skill.shouldAffectTarget(nextCreature)) {
+						effectedList.add((Creature) nextCreature);
+					}
 				}
 			}
-		case NONE:
 			break;
-
-		// TODO other enum values
 		}
 		return true;
 	}

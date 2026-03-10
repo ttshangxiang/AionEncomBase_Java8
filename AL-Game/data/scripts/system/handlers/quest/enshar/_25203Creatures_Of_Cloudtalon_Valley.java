@@ -52,7 +52,7 @@ public class _25203Creatures_Of_Cloudtalon_Valley extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804914) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

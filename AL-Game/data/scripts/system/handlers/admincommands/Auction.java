@@ -243,12 +243,12 @@ public class Auction extends AdminCommand {
 				if (race != Race.PC_ALL) {
 					int mapId = house.getAddress().getMapId();
 					if (race.equals(Race.ELYOS)) {
-						if (mapId != 210050000 && mapId != 700010000 && mapId != 210040000) {
+						if (mapId != 700010000 && mapId != 210040000) {
 							continue;
 						}
 					}
 					else if (race.equals(Race.ASMODIANS)) {
-						if (mapId != 710010000 && mapId != 220040000 && mapId != 220070000) {
+						if (mapId != 710010000 && mapId != 220040000) {
 							continue;
 						}
 					}

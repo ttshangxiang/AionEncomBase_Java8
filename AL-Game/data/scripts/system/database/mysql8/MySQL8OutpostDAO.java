@@ -21,9 +21,8 @@ public class MySQL8OutpostDAO extends OutpostDAO {
     private static final Logger log = LoggerFactory.getLogger(MySQL8OutpostDAO.class);
 
     private static final String SELECT_QUERY = "SELECT `id`, `race` FROM `outpost_location` ORDER BY `id`";
-    private static final String UPDATE_QUERY = "UPDATE `outpost_location` SET `race` = ?, `last_update` = CURRENT_TIMESTAMP WHERE `id` = ?";
+    private static final String UPDATE_QUERY = "UPDATE `outpost_location` SET `race` = ? WHERE `id` = ?";
     private static final String INSERT_QUERY = "INSERT INTO `outpost_location` (`id`, `race`) VALUES (?, ?) ON DUPLICATE KEY UPDATE `race` = VALUES(`race`)";
-    private static final String SELECT_ALL_QUERY = "SELECT * FROM `outpost_location`";
 
     @Override
     public boolean loadOutposLocations(Map<Integer, OutpostLocation> locations) {

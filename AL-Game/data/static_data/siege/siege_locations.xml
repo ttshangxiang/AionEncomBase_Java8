@@ -4,8 +4,6 @@
 	Made By (Encom)
  -->
 <siege_locations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="siege_locations.xsd">
-	<siege_location id="0" type="UNDERPASS" world="210050000" name_id="730256"/>
-	<siege_location id="0" type="UNDERPASS" world="220070000" name_id="730260"/>
 	<siege_location id="0" type="UNDERPASS" world="210130000" name_id="730256"/>
 	<siege_location id="0" type="UNDERPASS" world="220140000" name_id="730260"/>
 	<siege_location id="0" type="UNDERPASS" world="600100000" name_id="731464"/>
@@ -35,19 +33,12 @@
 	<siege_location id="18" type="INDUN" world="210040000" name_id="0"/>
 	<siege_location id="18" type="INDUN" world="220040000" name_id="0"/>
 	<siege_location id="25" type="INDUN" world="210040000" name_id="0"/>
-	<siege_location id="26" type="INDUN" world="210050000" name_id="0"/>
 	<siege_location id="26" type="INDUN" world="210130000" name_id="0"/>
-	<siege_location id="26" type="INDUN" world="220070000" name_id="0"/>
 	<siege_location id="26" type="INDUN" world="220140000" name_id="0"/>
-	<siege_location id="27" type="INDUN" world="210050000" name_id="0"/>
 	<siege_location id="27" type="INDUN" world="210130000" name_id="0"/>
-	<siege_location id="27" type="INDUN" world="220070000" name_id="0"/>
 	<siege_location id="27" type="INDUN" world="220140000" name_id="0"/>
-	<siege_location id="28" type="INDUN" world="600010000" name_id="0"/>
 	<siege_location id="28" type="INDUN" world="600110000" name_id="0"/>
-	<siege_location id="29" type="INDUN" world="210050000" name_id="0"/>
 	<siege_location id="29" type="INDUN" world="210130000" name_id="0"/>
-	<siege_location id="29" type="INDUN" world="220070000" name_id="0"/>
 	<siege_location id="29" type="INDUN" world="220140000" name_id="0"/>
 	<siege_location id="29" type="INDUN" world="400010000" name_id="0"/>
 	<siege_location id="45" type="INDUN" world="210040000" name_id="0"/>
@@ -60,8 +51,6 @@
 	<siege_location id="50" type="INDUN" world="210130000" name_id="0"/>
 	<siege_location id="50" type="INDUN" world="220080000" name_id="0"/>
 	<siege_location id="50" type="INDUN" world="220140000" name_id="0"/>
-	<siege_location id="51" type="INDUN" world="210050000" name_id="0"/>
-	<siege_location id="51" type="INDUN" world="220070000" name_id="0"/>
 	<siege_location id="51" type="INDUN" world="600110000" name_id="0"/>
 	<siege_location id="54" type="INDUN" world="110070000" name_id="0"/>
 	<siege_location id="54" type="INDUN" world="120080000" name_id="0"/>
@@ -71,9 +60,7 @@
 	<siege_location id="61" type="INDUN" world="120080000" name_id="0"/>
 	<siege_location id="62" type="INDUN" world="110070000" name_id="0"/>
 	<siege_location id="62" type="INDUN" world="120080000" name_id="0"/>
-	<siege_location id="68" type="INDUN" world="210050000" name_id="0"/>
 	<siege_location id="68" type="INDUN" world="210130000" name_id="0"/>
-	<siege_location id="68" type="INDUN" world="220070000" name_id="0"/>
 	<siege_location id="68" type="INDUN" world="220140000" name_id="0"/>
 	<siege_location id="69" type="INDUN" world="110070000" name_id="0"/>
 	<siege_location id="69" type="INDUN" world="120080000" name_id="0"/>
@@ -100,7 +87,6 @@
 	<siege_location id="86" type="INDUN" world="120080000" name_id="0"/>
 	<siege_location id="88" type="INDUN" world="210070000" name_id="0"/>
 	<siege_location id="88" type="INDUN" world="220080000" name_id="0"/>
-	<siege_location id="91" type="INDUN" world="600010000" name_id="0"/>
 	<siege_location id="94" type="INDUN" world="600100000" name_id="0"/>
 	<siege_location id="97" type="INDUN" world="110070000" name_id="0"/>
 	<siege_location id="97" type="INDUN" world="120080000" name_id="0"/>

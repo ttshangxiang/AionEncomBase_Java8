@@ -49,7 +49,6 @@ public class _25070Truth_Of_The_Crystal extends QuestHandler {
 					case START_DIALOG: {
 						return sendQuestDialog(env, 4762);
 					}
-					case ACCEPT_QUEST:
 					case ACCEPT_QUEST_SIMPLE:
 						return sendQuestStartDialog(env);
 					case REFUSE_QUEST_SIMPLE:
@@ -65,7 +64,7 @@ public class _25070Truth_Of_The_Crystal extends QuestHandler {
 				updateQuestStatus(env);
 			}
 		} 
-		else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+		else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 804919) {
 				return sendQuestEndDialog(env);
 			}

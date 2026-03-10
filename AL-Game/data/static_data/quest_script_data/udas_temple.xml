@@ -14,14 +14,8 @@
 	<item_collecting id="30108" start_npc_ids="799333" action_item_ids="700566"/>
 	<item_collecting id="30110" start_npc_ids="799335" action_item_ids="700567"/>
 	
-	<monster_hunt id="30004" start_npc_ids="799030">
-		<monster var="0" npc_ids="215783" end_var="1"/>
-	</monster_hunt>
 	<monster_hunt id="30033" start_npc_ids="799031">
 		<monster var="0" npc_ids="215848 215849" end_var="10"/>
-	</monster_hunt>
-	<monster_hunt id="30104" start_npc_ids="799334">
-		<monster var="0" npc_ids="215783" end_var="1"/>
 	</monster_hunt>
 	<monster_hunt id="30105" start_npc_ids="799333">
 		<monster var="0" npc_ids="215808 281366 216335 216343 215857 216351 216327 281367 215814" end_var="25"/>

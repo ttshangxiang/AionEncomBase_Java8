@@ -53,7 +53,7 @@ public class _18973Protect_Andrea extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 805214) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

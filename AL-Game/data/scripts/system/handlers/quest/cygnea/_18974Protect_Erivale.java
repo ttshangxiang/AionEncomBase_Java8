@@ -52,7 +52,7 @@ public class _18974Protect_Erivale extends QuestHandler {
                 }
             }
         }
-        else if (qs == null || qs.getStatus() == QuestStatus.REWARD) {
+        else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 805215) {
 				if (env.getDialogId() == 1352) {
 					return sendQuestDialog(env, 5);

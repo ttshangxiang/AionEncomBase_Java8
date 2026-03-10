@@ -35,7 +35,7 @@ public class _11212Balaur_Records extends QuestHandler {
 	
 	public void register() {
 		qe.registerQuestNpc(799010).addOnTalkEvent(questId);
-		qe.registerQuestNpc(799024).addOnTalkEvent(questId);
+		qe.registerQuestNpc(798996).addOnTalkEvent(questId);
 		qe.registerQuestItem(182206823, questId);
 	}
 	
@@ -73,7 +73,7 @@ public class _11212Balaur_Records extends QuestHandler {
 				    return closeDialogWindow(env);
 				}
 			}
-		} else if (targetId == 799024) {
+		} else if (targetId == 798996) {
 			if (qs != null && qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 1) {
 				if (env.getDialog() == QuestDialog.START_DIALOG) {
 					return sendQuestDialog(env, 2375);
