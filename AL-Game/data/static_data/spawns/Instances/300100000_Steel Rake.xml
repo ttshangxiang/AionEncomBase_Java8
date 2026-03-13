@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	スティール クロウ号
-	Spawn By (Encom)
+	Steel Rake Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300100000">
@@ -1135,7 +1134,7 @@
 			<spot x="505.53439" y="509.84" z="885.93512" entity_id="143"/>
 			<spot x="418.20398" y="509.8396" z="885.89221" entity_id="152"/>
 		</spawn>
-		<!-- Big Wine Barrel (Object Normal lvl:3) -->
+		<!-- Big Wine Barrel -->
         <spawn npc_id="700523">
 	        <spot x="467.887" y="574.828" z="951.703" entity_id="113"/>
 			<spot x="459.192" y="555.800" z="951.703" entity_id="41"/>
@@ -1187,7 +1186,7 @@
 		<spawn npc_id="730216">
 			<spot x="282.31824" y="451.33514" z="902.62274" entity_id="35"/>
 		</spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="244.06674" y="505.92346" z="948.6735" h="0"/>
         </spawn>

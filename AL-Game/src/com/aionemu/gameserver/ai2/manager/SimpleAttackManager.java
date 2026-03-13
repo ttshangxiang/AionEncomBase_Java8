@@ -32,17 +32,21 @@ import com.aionemu.gameserver.world.geo.GeoService;
 public class SimpleAttackManager {
 
 	/**
+	 * 执行NPC普通攻击
 	 * @param npcAI
-	 * @param delay
+	 * @param delay 攻击延迟时间（毫秒）
 	 */
 	public static void performAttack(NpcAI2 npcAI, int delay) {
 		if (npcAI.isLogging()) {
 			AI2Logger.info(npcAI, "performAttack");
 		}
+		
+		// 检查是否已经调度了攻击，防止重复调度导致一次攻击多次伤害
 		if (npcAI.getOwner().getGameStats().isNextAttackScheduled()) {
 			if (npcAI.isLogging()) {
-				AI2Logger.info(npcAI, "Attack already sheduled");
+				AI2Logger.info(npcAI, "Attack already scheduled, scheduling checked attack");
 			}
+			// 如果已经调度了攻击，则安排带检查的攻击动作
 			scheduleCheckedAttackAction(npcAI, delay);
 			return;
 		}
@@ -54,22 +58,28 @@ public class SimpleAttackManager {
 			npcAI.onGeneralEvent(AIEventType.TARGET_TOOFAR);
 			return;
 		}
+		
+		// 设置下次攻击时间，标记攻击已调度
 		npcAI.getOwner().getGameStats().setNextAttackTime(System.currentTimeMillis() + delay);
 		if (delay > 0) {
+			// 延迟执行攻击
 			ThreadPoolManager.getInstance().schedule(new SimpleAttackAction(npcAI), delay);
 		} else {
+			// 立即执行攻击
 			attackAction(npcAI);
 		}
 	}
 
 	/**
+	 * 安排带检查的攻击动作
 	 * @param npcAI
-	 * @param delay
+	 * @param delay 攻击延迟时间（毫秒）
 	 */
 	private static void scheduleCheckedAttackAction(NpcAI2 npcAI, int delay) {
 		if (npcAI.isLogging()) {
 			AI2Logger.info(npcAI, "Scheduling checked attack " + delay);
 		}
+		// 安排带检查的攻击动作，在执行前会再次检查攻击是否已调度
 		ThreadPoolManager.getInstance().schedule(new SimpleCheckedAttackAction(npcAI), delay);
 	}
 	
@@ -125,6 +135,7 @@ public class SimpleAttackManager {
     }
 
 	/**
+	 * 执行实际的攻击动作
 	 * @param npcAI
 	 */
     protected static void attackAction(final NpcAI2 npcAI) {
@@ -171,6 +182,7 @@ public class SimpleAttackManager {
     npcAI.onGeneralEvent(AIEventType.TARGET_TOOFAR);
     }
 
+	// 普通攻击动作：执行实际的攻击
 	private final static class SimpleAttackAction implements Runnable {
 		private NpcAI2 npcAI;
 		SimpleAttackAction(NpcAI2 npcAI) {
@@ -184,6 +196,7 @@ public class SimpleAttackManager {
 		}
 	}
 
+	// 带检查的攻击动作：执行前再次检查是否已调度
 	private final static class SimpleCheckedAttackAction implements Runnable {
 		private NpcAI2 npcAI;
 		SimpleCheckedAttackAction(NpcAI2 npcAI) {
@@ -192,6 +205,7 @@ public class SimpleAttackManager {
 
 		@Override
 		public void run() {
+			// 执行前再次检查攻击是否已调度，防止重复攻击
 			if (!npcAI.getOwner().getGameStats().isNextAttackScheduled()) {
 				attackAction(npcAI);
 			} else {

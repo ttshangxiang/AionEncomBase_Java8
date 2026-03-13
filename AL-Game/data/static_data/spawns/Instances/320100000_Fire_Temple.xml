@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--	
-	炎の神殿 (Retail 100%)
-	Spawn By (Encom)
+	Fire Temple (Retail 100%) Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="320100000">
@@ -13,7 +12,7 @@
 		<spawn npc_id="730048">
 			<spot x="148.834" y="465.875" z="138.756" entity_id="647"/>
 		</spawn>
-		<!-- Lesser Blessed Relics (Object Normal lvl:3) -->
+		<!-- Lesser Blessed Relics -->
 		<spawn npc_id="831987">
             <spot x="153.22354" y="455.0577" z="141.57268" h="116"/>
         </spawn>

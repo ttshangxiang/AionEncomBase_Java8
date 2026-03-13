@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    돌아온 데바의 성소 5.0
-	Spawn By (Encom)
+    Wisplight_Abbey 5.0 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="130090000">
@@ -33,101 +32,79 @@
 		<spawn npc_id="804687" respawn_time="295">
 			<spot x="247.06088" y="220.67172" z="129.28482" entity_id="81"/>
 		</spawn>
-		<!-- Mailbox (Object Normal lvl:3) -->
+		<!-- Mailbox -->
 	    <spawn npc_id="700000" respawn_time="295">
             <spot x="240.03311" y="245.29483" z="128.85756" h="80"/>
         </spawn>
-		<!-- Lena
-		<Support Instructor> -->
+		<!-- Lena -->
 		<spawn npc_id="804651" respawn_time="295">
 			<spot x="243.40108" y="238.91174" z="129.22829" h="26"/>
 		</spawn>
-		<!-- Rosette
-		<Dispatch Instructor> -->
+		<!-- Rosette -->
 		<spawn npc_id="804652" respawn_time="295">
 			<spot x="236.18364" y="284.33752" z="130.21106" h="14"/>
 		</spawn>
-		<!-- Deronis
-		<Dispatch Instructor> -->
+		<!-- Deronis -->
 		<spawn npc_id="804653" respawn_time="295">
 			<spot x="236.65486" y="297.93286" z="130.21106" h="118"/>
 		</spawn>
-		<!-- Agnes
-		<Dispatch Instructor> -->
+		<!-- Agnes -->
 		<spawn npc_id="804654" respawn_time="295">
 			<spot x="259.33" y="292.94937" z="130.21106" h="72"/>
 		</spawn>
-		<!-- Kiran
-		<Dispatch Instructor> -->
+		<!-- Kiran -->
 		<spawn npc_id="804655" respawn_time="295">
 			<spot x="254.10918" y="280.62003" z="130.21106" h="45"/>
 		</spawn>
-		<!-- Ardeus
-		<Dispatch Distributor> -->
+		<!-- Ardeus -->
 		<spawn npc_id="804656" respawn_time="295">
 			<spot x="259.2967" y="259.89734" z="128.85756" h="60"/>
 		</spawn>
-		<!-- Kalana
-		<Dispatch Distributor> -->
+		<!-- Kalana -->
 		<spawn npc_id="804657" respawn_time="295">
 			<spot x="259.33807" y="255.03786" z="128.85756" h="60"/>
 		</spawn>
-		<!-- Elgon
-		<Elite Dispatch Distributor> -->
+		<!-- Elgon -->
 		<spawn npc_id="804658" respawn_time="295">
-			<spot x="234.64473" y="259.91797" z="128.85756" h="0"/>
+			<spot x="234.64473" y="259.91797" z="128.85756"/>
 		</spawn>
-		<!-- Tezea
-		<Elite Dispatch Distributor> -->
+		<!-- Tezea -->
 		<spawn npc_id="804659" respawn_time="295">
-			<spot x="234.6178" y="254.96533" z="128.85756" h="0"/>
+			<spot x="234.6178" y="254.96533" z="128.85756"/>
 		</spawn>
-		<!-- Tobias
-		<Special Merchant> -->
+		<!-- Tobias -->
 		<spawn npc_id="804660" respawn_time="295">
 			<spot x="251.50085" y="266.79102" z="128.85756" h="80"/>
 		</spawn>
-		<!-- Adrena
-		<General Goods Merchant> -->
+		<!-- Adrena -->
 		<spawn npc_id="804661" respawn_time="295">
 			<spot x="242.52312" y="266.72507" z="128.85756" h="93"/>
 		</spawn>
-		<!-- Dereus
-		<Warehouse Manager> -->
+		<!-- Dereus -->
 		<spawn npc_id="804693" respawn_time="295">
 			<spot x="259.29642" y="250.18523" z="128.85756" h="60"/>
 		</spawn>
-		<!-- Amrinerk
-		<Warehouse Manager> -->
+		<!-- Amrinerk -->
 		<spawn npc_id="804695" respawn_time="295">
-			<spot x="234.64601" y="250.16293" z="128.85756" h="0"/>
+			<spot x="234.64601" y="250.16293" z="128.85756"/>
 		</spawn>
-		
-		<!-- Aion 4.9 -->
-		<!-- Margges
-		<Dispatch Instructor> -->
+		<!-- Margges -->
 		<spawn npc_id="805304" respawn_time="295">
             <spot x="245.02826" y="302.62253" z="130.21106" h="97"/>
         </spawn>
-		<!-- Malina
-		<Dispatchment Coin Reward Officer> -->
+		<!-- Malina -->
         <spawn npc_id="805306" respawn_time="295">
             <spot x="251.0" y="238.0" z="129.22829" h="30"/>
         </spawn>
-		<!-- Junion
-		<Superb Weapon Rental Merchant> -->
+		<!-- Junion -->
         <spawn npc_id="805307" respawn_time="295">
             <spot x="259.42038" y="265.0158" z="128.85756" h="60"/>
         </spawn>
-		<!-- Amilia
-		<Superb Armor Rental Merchant> -->
+		<!-- Amilia -->
         <spawn npc_id="805308" respawn_time="295">
             <spot x="259.4642" y="269.89868" z="128.85756" h="74"/>
         </spawn>
-		
-		<!-- Aion 5.0 -->
-		<!-- Gilios
-		<Dispatch Instructor> -->
+		<!-- Gilios -->
 		<spawn npc_id="806243" respawn_time="295">
             <spot x="253.8803" y="300.82907" z="130.21106" h="82"/>
         </spawn>

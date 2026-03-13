@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Cradle Of Eternity 5.1
-	Spawn By (Encom)
+	Cradle Of Eternity 5.1 Spawn By (Encom)
  -->
 <spawns>
     <spawn_map map_id="301550000">
@@ -658,19 +657,15 @@
             <spot h="102" z="1037.6936" y="1139.5176" x="749.2731"/>
             <spot h="95" z="1044.0072" y="894.9895" x="903.6887"/>
 		</spawn>
-		
-		<!-- Freed Earth Jotun
-		<Gardener> -->
+		<!-- Freed Earth Jotun -->
 		<spawn npc_id="220587">
             <spot x="1109.9049" y="782.9568" z="508.24936" h="0"/>
 		</spawn>
-		<!-- Fighting Earth Jotun
-		<Gardener> -->
+		<!-- Fighting Earth Jotun -->
 		<spawn npc_id="220588">
             <spot x="891.8789" y="774.6158" z="1045.4701" h="0"/>
 		</spawn>
-		<!-- Earth Jotun
-		<Gardener> -->
+		<!-- Earth Jotun -->
 		<spawn npc_id="220590">
             <spot x="549.327" y="1433.4531" z="826.2368" h="76"/>
         </spawn>

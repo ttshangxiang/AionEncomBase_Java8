@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	[R.V.R Beluslan]
-	エリュシオン 4.9.1
-	"Brigade General's Urgent Order"
-	Spawn By (Encom)
+	Beluslan 4.9.1 "Brigade General's Urgent Order" Spawn By (Encom)
  -->
 <spawns>
     <spawn_map map_id="220040000">
-		<!--
-		WAILING WOODS
-		ASHENSAND ISLAND
-		FANGDROP ISLAND
-		BESFER ISLAND -->
+		<!--WAILING WOODS, ASHENSAND ISLAND, FANGDROP ISLAND, BESFER ISLAND -->
 		<rvr_spawn id="2">
 			<rvr_type rstate="RVR">
 			    <!-- Legion Infiltration Corridor -->
@@ -50,39 +43,39 @@
 				<spawn npc_id="703106">
 				    <spot x="950.7626" y="1632.2793" z="215.86278" h="43"/>
 				</spawn>
-				<!-- Estado (NPC Normal lvl:65) -->
+				<!-- Estado -->
 				<spawn npc_id="806060">
 				    <spot x="729.784" y="2144.123" z="304.65628" h="85"/>
 				</spawn>
-				<!-- Desant (NPC Normal lvl:65) -->
+				<!-- Desant -->
 				<spawn npc_id="806061">
 				    <spot x="778.8504" y="1421.3347" z="312.63004" h="20"/>
 				</spawn>
-				<!-- Megken (NPC Normal lvl:65) -->
+				<!-- Megken -->
 				<spawn npc_id="806070">
 				    <spot x="362.78616" y="347.78357" z="229.12941" h="50"/>
 				</spawn>
-				<!-- Hark (NPC Normal lvl:65) -->
+				<!-- Hark -->
 				<spawn npc_id="806071">
 				    <spot x="346.49072" y="315.46265" z="229.18547" h="31"/>
 				</spawn>
-				<!-- Tombolk (NPC Normal lvl:65) -->
+				<!-- Tombolk -->
 				<spawn npc_id="806072">
 				    <spot x="2271.80" y="1265.40" z="477.32" h="45"/>
 				</spawn>
-				<!-- DF3_Exchange_RVR_1 (NPC Normal lvl:65) -->
+				<!-- DF3_Exchange_RVR_1 -->
 				<spawn npc_id="833736">
 				    <spot x="410.98965" y="408.4864" z="222.11166" h="91"/>
 				</spawn>
-				<!-- LF3_Teleport_RVR_L (NPC Normal lvl:65) -->
+				<!-- LF3_Teleport_RVR_L -->
 				<spawn npc_id="833738">
 				    <spot x="707.0529" y="2181.5847" z="324.12354" h="28"/>
 				</spawn>
-				<!-- Dorothea (NPC Normal lvl:65) -->
+				<!-- Dorothea -->
 				<spawn npc_id="833643">
 				    <spot x="390.27914" y="403.7313" z="222.11166" h="31"/>
 				</spawn>
-				<!-- Einther (NPC Normal lvl:65) -->
+				<!-- Einther -->
 				<spawn npc_id="833644">
 				    <spot x="388.49905" y="404.57144" z="222.11166" h="19"/>
 				</spawn>
@@ -134,27 +127,27 @@
 				    <spot x="101.223145" y="1260.2163" z="324.3648" h="38"/>
 				    <spot x="97.39955" y="1279.5006" z="326.1777" h="9"/>
 				</spawn>
-				<!-- General Magken [Defender Rvr Boss] -->
+				<!-- General Magken -->
 				<spawn npc_id="857744">
 				    <spot h="12" z="248.875" y="1423.7555" x="581.3006"/>
 				</spawn>
-				<!-- Officer Nars [Attacker Rvr Boss] -->
+				<!-- Officer Nars -->
 				<spawn npc_id="857740">
 				    <spot h="77" z="248.5029" y="1429.862" x="586.09155"/>
 				</spawn>
-				<!-- General Hark [Defender Rvr Boss] -->
+				<!-- General Hark -->
 				<spawn npc_id="857745">
 				    <spot h="72" z="214.875" y="1213.2684" x="937.372"/>
 				</spawn>
-				<!-- Officer Fasig [Attacker Rvr Boss] -->
+				<!-- Officer Fasig -->
 				<spawn npc_id="857741">
 				    <spot h="19" z="214.875" y="1207.4408" x="933.42737"/>
 				</spawn>
-				<!-- General Tombolk [Defender Rvr Boss] -->
+				<!-- General Tombolk -->
 				<spawn npc_id="857746">
 				    <spot h="11" z="215.78981" y="1628.4353" x="950.637"/>
 				</spawn>
-				<!-- Officer Gadevir [Attacker Rvr Boss] -->
+				<!-- Officer Gadevir -->
 				<spawn npc_id="857742">
 				    <spot h="75" z="215.77832" y="1633.1731" x="955.1868"/>
 				</spawn>
@@ -184,11 +177,11 @@
 				</spawn>
 			</rvr_type>
 			<rvr_type rstate="PEACE">
-			    <!-- Radak [Peace Mod] -->
+			    <!-- Radak -->
 				<spawn npc_id="806068">
 				    <spot x="236.74722" y="360.61514" z="240.20946" h="11"/>
 				</spawn>
-				<!-- Desant [Peace Mod] -->
+				<!-- Desant -->
 				<spawn npc_id="806069">
 				    <spot x="238.27315" y="366.1431" z="240.20946" h="93"/>
 				</spawn>

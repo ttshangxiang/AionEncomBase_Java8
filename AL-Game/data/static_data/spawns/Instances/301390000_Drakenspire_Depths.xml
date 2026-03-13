@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	마나카르나 4.8
-	Spawn By (Encom)
+	Drakenspire Depths 4.8 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301390000">
@@ -192,23 +191,23 @@
 			<spot x="778.45966" y="365.09576" z="1697.084" h="60"/>
 			<spot x="860.8699" y="331.26562" z="1723.6465" h="47"/>
 		</spawn>
-		<!-- Fetid Deathchar Patroler (Boss Elite Lvl 65) -->
+		<!-- Fetid Deathchar Patroler -->
 		<spawn npc_id="236221">
 			<spot x="495.8208" y="211.04044" z="1688.1962" h="61"/>
 		</spawn>
-		<!-- Fetid Deathchar Necromancer (Boss Elite Lvl 65) -->
+		<!-- Fetid Deathchar Necromancer -->
 		<spawn npc_id="236222">
 			<spot x="495.31705" y="152.06961" z="1688.2684" h="60"/>
 		</spawn>
-		<!-- Fetid Phantomscorch Chimera (Boss Elite Lvl 65) -->
+		<!-- Fetid Phantomscorch Chimera -->
 		<spawn npc_id="236223">
 			<spot x="772.6448" y="263.3362" z="1701.4059" h="75"/>
 		</spawn>
-		<!-- Fountless Lava Protector (Boss Hero Lvl 65) -->
+		<!-- Fountless Lava Protector -->
 		<spawn npc_id="236225">
 			<spot x="545.58734" y="212.11098" z="1681.8224" h="59"/>
 		</spawn>
-		<!-- Fountless Heatvent Protector (Boss Hero Lvl 65) -->
+		<!-- Fountless Heatvent Protector -->
 		<spawn npc_id="236226">
 			<spot x="545.7349" y="152.29825" z="1681.8224" h="60"/>
 		</spawn>
@@ -244,14 +243,11 @@
 		<spawn npc_id="855709">
 			<spot x="531.16644" y="212.41568" z="1681.8224" h="61"/>
 		</spawn>
-		
-		<!-- Masionel
-		<Aequis Blade Detachment Captain> -->
+		<!-- Masionel -->
 		<spawn npc_id="209678">
 			<spot x="342.651" y="190.39142" z="1684.2164" h="90"/>
 		</spawn>
-		<!-- Parsia
-		<Kismeti Detachment Captain> -->
+		<!-- Parsia -->
 		<spawn npc_id="209743">
 			<spot x="342.57306" y="175.56538" z="1684.2164" h="30"/>
 		</spawn>

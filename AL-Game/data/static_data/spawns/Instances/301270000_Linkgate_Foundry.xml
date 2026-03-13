@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	バルナ次元研究所
-	Spawn By (Encom)
+	Linkgate Foundry Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301270000">
@@ -55,11 +54,11 @@
 			<spot x="247.39194" y="180.82755" z="355.90317" entity_id="56"/>
 			<spot x="301.08780" y="314.36566" z="396.40097" entity_id="78"/>
 		</spawn>
-		<!-- Linkgate Foundry Supply Chest [Elyos] -->
+		<!-- Linkgate Foundry Supply Chest -->
 		<spawn npc_id="234194">
 		    <spot x="351.1228" y="251.30255" z="311.36133" h="83"/>
 	    </spawn>
-		<!-- Linkgate Foundry Supply Chest [Asmodians] -->
+		<!-- Linkgate Foundry Supply Chest -->
 		<spawn npc_id="234195">
 		    <spot x="351.27203" y="268.17093" z="311.36133" h="42"/>
 	    </spawn>

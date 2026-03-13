@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Theobomos Test Chamber 5.0
-	Spawn By (Encom)
+	Theobomos Test Chamber 5.0 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301610000">
@@ -65,15 +64,15 @@
 		<spawn npc_id="220426">
 	        <spot x="299.1629" y="119.63935" z="196.01414" h="63"/>
 		</spawn>
-		<!-- IDF6_Lap_Out_Portal_StartPoint (Object Normal lvl:3) -->
+		<!-- IDF6_Lap_Out_Portal_StartPoint -->
 		<spawn npc_id="806223">
 			<spot x="213.16000" y="376.51001" z="202.63000" entity_id="1"/>
 		</spawn>
-		<!-- IDF6_Lap_Boss_Room_In (Object Normal lvl:3) -->
+		<!-- IDF6_Lap_Boss_Room_In -->
 		<spawn npc_id="806208">
 	        <spot x="252.98584" y="121.23068" z="196.52226" entity_id="37"/>
 		</spawn>
-		<!-- Assistants Journal (Object Normal lvl:3) -->
+		<!-- Assistants Journal -->
 		<spawn npc_id="730153">
 			<spot x="208.73872" y="371.31787" z="203.87508" entity_id="92"/>
 		</spawn>

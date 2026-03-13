@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	황제 트릴리룽의 비밀 금고
-	Spawn By (Encom)
+	Emperor Trillirunerk Safe Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301590000">
@@ -10,13 +9,11 @@
 		    <spot x="464.49826" y="641.73578" z="395.51651" entity_id="251"/>
 		    <spot x="543.76886" y="305.18140" z="400.42877" entity_id="252"/>
         </spawn>
-		<!-- Indinerk Jonakak
-		<Adventurous Shugo> -->
+		<!-- Indinerk Jonakak -->
 		<spawn npc_id="832921">
 			<spot x="555.4215" y="306.66547" z="400.71384" h="67"/>
         </spawn>
-		<!-- Magarunerk
-		<Vault Keeper> -->
+		<!-- Magarunerk -->
 		<spawn npc_id="832922">
 		    <spot x="548.5768" y="307.9419" z="400.36774" h="95"/>
         </spawn>
@@ -120,24 +117,19 @@
             <spot x="180.41672" y="347.91483" z="397.07086" h="36"/>
             <spot x="184.69525" y="349.2807" z="397.07086" h="36"/>
         </spawn>
-		<!-- Aion 4.8 -->
-		<!-- Raynerk
-		<The Shugo Emperor's Safe Keeper> -->
+		<!-- Raynerk -->
 		<spawn npc_id="833461">
 			<spot x="171.67735" y="384.37836" z="395.0" h="66"/>
             <spot x="172.0503" y="229.18364" z="395.0" h="63"/>
 			<spot x="172.6264" y="540.00507" z="395.11777" h="71"/>
         </spawn>
-		<!-- Marinerk
-		<The Shugo Emperor's Safe Keeper> -->
+		<!-- Marinerk -->
 		<spawn npc_id="833462">
             <spot x="171.43805" y="385.95258" z="395.0" h="65"/>
             <spot x="171.60538" y="231.05965" z="395.0" h="67"/>
             <spot x="172.07166" y="541.71967" z="395.1209" h="70"/>
         </spawn>
-		
-		<!-- Intruder Skirmisher
-		<180 Points> -->
+		<!-- Intruder Skirmisher -->
 		<spawn npc_id="235629">
             <spot x="543.0" y="378.0" z="395.4375" h="114"/>
             <spot x="556.8661" y="377.77316" z="395.3067" h="80"/>
@@ -149,8 +141,7 @@
             <spot x="571.9494" y="401.50385" z="397.125" h="63"/>
             <spot x="570.83636" y="405.52032" z="397.1696" h="64"/>
         </spawn>
-		<!-- Intruder Scout
-		<180 Points> -->
+		<!-- Intruder Scout -->
 		<spawn npc_id="235630">
             <spot x="556.0" y="401.0" z="395.375" h="88"/>
             <spot x="544.02856" y="398.0499" z="395.12677" h="98"/>
@@ -158,45 +149,38 @@
             <spot x="569.18396" y="403.32956" z="396.972" h="65"/>
             <spot x="548.9842" y="386.3249" z="395.31348" h="88"/>
         </spawn>
-		<!-- Brainwashed Peon
-		<160 Points> -->
+		<!-- Brainwashed Peon -->
 		<spawn npc_id="235631">
             <spot x="549.05286" y="407.62772" z="395.254" h="90"/>
             <spot x="565.8044" y="390.52255" z="395.77283" h="56"/>
         </spawn>
-		<!-- Intruder Marksman
-		<1070 Points> -->
+		<!-- Intruder Marksman -->
 		<spawn npc_id="235633">
 		    <spot x="478.45847" y="637.70605" z="395.57568" h="109"/>
             <spot x="494.0" y="638.0" z="395.375" h="109"/>
             <spot x="486.0" y="646.0" z="395.375" h="103"/>
 		</spawn>
-		<!-- Watchman Hokuruki
-		<2040 Points> -->
+		<!-- Watchman Hokuruki -->
 		<spawn npc_id="235634">
             <spot x="486.0" y="638.0" z="395.875" h="108"/>
         </spawn>
-		<!-- Intruder Challenger
-		<700 Points> -->
+		<!-- Intruder Challenger -->
 		<spawn npc_id="235635">
             <spot x="377.02512" y="689.2465" z="398.42203" h="30"/>
         </spawn>
-		<!-- Intruder Scrapper
-		<820 Points> -->
+		<!-- Intruder Scrapper -->
 		<spawn npc_id="235637">
             <spot x="364.81863" y="762.182" z="398.42203" h="104"/>
             <spot x="368.99368" y="766.37213" z="398.42203" h="104"/>
             <spot x="356.2856" y="754.4899" z="398.42203" h="105"/>
             <spot x="353.07968" y="751.477" z="398.42203" h="105"/>
         </spawn>
-		<!-- Shugo Turncoat
-		<660 Points> -->
+		<!-- Shugo Turncoat -->
 		<spawn npc_id="235641">
             <spot x="523.90247" y="542.5264" z="394.625" h="94"/>
             <spot x="536.91125" y="543.38477" z="393.7685" h="88"/>
         </spawn>
-		<!-- Intruder Sniper
-		<760 Points> -->
+		<!-- Intruder Sniper -->
 		<spawn npc_id="235649">
             <spot x="504.5659" y="628.8002" z="395.375" h="101"/>
             <spot x="495.81213" y="619.4457" z="395.81927" h="112"/>
@@ -204,8 +188,7 @@
             <spot x="467.46716" y="634.47375" z="395.5954" h="111"/>
             <spot x="473.61514" y="650.7873" z="395.72232" h="105"/>
         </spawn>
-		<!-- Intruder Assassin
-		<700 Points> -->
+		<!-- Intruder Assassin -->
 		<spawn npc_id="235650" respawn_time="20">
             <spot x="392.77277" y="746.02997" z="398.42203" h="95" random_walk="4"/>
             <spot x="399.16064" y="754.1115" z="398.42203" h="31" random_walk="4"/>
@@ -220,8 +203,7 @@
             <spot x="364.39676" y="689.6689" z="398.42203" h="15" random_walk="4"/>
             <spot x="341.51935" y="710.8296" z="398.42203" h="9" random_walk="4"/>
         </spawn>
-		<!-- Intruder Gladiator
-		<1400 Points> -->
+		<!-- Intruder Gladiator -->
 		<spawn npc_id="235651" respawn_time="20">
             <spot x="431.65692" y="753.6582" z="398.42203" h="88" random_walk="4"/>
             <spot x="431.9651" y="734.7267" z="398.42203" h="82" random_walk="4"/>
@@ -234,8 +216,7 @@
             <spot x="387.07922" y="735.5457" z="398.42203" h="63" random_walk="4"/>
             <spot x="368.54276" y="748.0435" z="398.42203" h="103" random_walk="4"/>
         </spawn>
-		<!-- Intruder Warrior
-		<250 Points> -->
+		<!-- Intruder Warrior -->
 		<spawn npc_id="235652">
             <spot x="525.0" y="535.0" z="394.4375" h="93"/>
             <spot x="526.0" y="491.0" z="393.625" h="93"/>
@@ -261,16 +242,14 @@
             <spot x="522.81885" y="556.22485" z="394.48553" h="97"/>
             <spot x="525.88495" y="557.4158" z="393.97067" h="97"/>
         </spawn>
-		<!-- Intruder Sharpeye
-		<250 Points> -->
+		<!-- Intruder Sharpeye -->
 		<spawn npc_id="235653">
             <spot x="551.8219" y="444.63602" z="393.47137" h="91"/>
             <spot x="535.0065" y="500.6568" z="393.47894" h="84"/>
             <spot x="526.0041" y="602.769" z="395.50024" h="100"/>
             <spot x="523.57776" y="602.8369" z="395.5727" h="101"/>
         </spawn>
-		<!-- Ruthless Jabaraki
-		<1740 Points> -->
+		<!-- Ruthless Jabaraki -->
 		<spawn npc_id="235660">
             <spot x="360.03033" y="757.95233" z="398.42203" h="104"/>
         </spawn>
@@ -281,8 +260,7 @@
             <spot x="378.01266" y="763.32385" z="398.42203" h="95" random_walk="4"/>
             <spot x="352.72455" y="738.8893" z="398.42203" h="116" random_walk="4"/>
         </spawn>
-		<!-- Intruder Brawler
-		<530 Points> -->
+		<!-- Intruder Brawler -->
 		<spawn npc_id="235680" respawn_time="20">
             <spot x="376.9505" y="709.6986" z="398.42203" h="68" random_walk="4"/>
             <spot x="417.41272" y="722.5926" z="398.42203" h="101" random_walk="4"/>
@@ -293,8 +271,7 @@
             <spot x="415.2988" y="768.81775" z="398.42203" h="80" random_walk="4"/>
             <spot x="401.93542" y="719.7378" z="398.42203" h="105" random_walk="4"/>
         </spawn>
-		<!-- Intruder Lookout
-		<530 Points> -->
+		<!-- Intruder Lookout -->
 		<spawn npc_id="235681" respawn_time="20">
             <spot x="379.1412" y="679.3844" z="398.42203" h="32" random_walk="4"/>
             <spot x="401.5498" y="707.25104" z="398.42203" h="4" random_walk="4"/>

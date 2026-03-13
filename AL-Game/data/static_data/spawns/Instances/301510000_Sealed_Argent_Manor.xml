@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	저주받은 도르겔 저택 4.9.1
-	Spawn By (Encom)
+	Sealed Argent Manor 4.9.1 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301510000">
-		<!-- Sturdy Hetgolem
-		<300 points> -->
+		<!-- Sturdy Hetgolem -->
 		<spawn npc_id="237180">
 			<spot h="60" z="69.90154" y="1118.9537" x="1024.771"/>
 			<spot h="29" z="69.96651" y="1044.3063" x="983.5642"/>
@@ -32,8 +30,7 @@
 			<spot h="71" z="69.9307" y="1074.6285" x="1020.9462" walker_id="Sturdy_Hetgolem_Sealed_Argent_Manor_1"/>
 			<spot h="28" z="69.98283" y="1068.6936" x="945.8562" walker_id="Sturdy_Hetgolem_Sealed_Argent_Manor_2"/>
 		</spawn>
-		<!-- Agile Hetgolem
-		<300 points> -->
+		<!-- Agile Hetgolem -->
 		<spawn npc_id="237181">
 			<spot x="939.63763" y="1142.8478" z="71.842522" h="0"/>
     	    <spot x="939.70038" y="1134.9154" z="71.842522" h="0"/>
@@ -50,8 +47,7 @@
             <spot x="786.6908" y="1059.9005" z="59.507233" h="0"/>
             <spot x="821.8849" y="1057.3217" z="55.320408" h="31"/>
 		</spawn>
-		<!-- Mystic Hetgolem
-		<300 points> -->
+		<!-- Mystic Hetgolem -->
 		<spawn npc_id="237182">
 			<spot h="80" z="69.99789" y="1113.0759" x="988.4173"/>
 			<spot h="107" z="69.99801" y="1104.9038" x="958.92444"/>
@@ -97,15 +93,13 @@
 		<spawn npc_id="237195">
 			<spot x="820.60413" y="1120.0999" z="53.711323" entity_id="111"/>
 		</spawn>
-		<!-- Hard Hetgolem
-		<400 Points> -->
+		<!-- Hard Hetgolem -->
 		<spawn npc_id="237200">
 			<spot x="884.73883" y="1107.7944" z="91.25827" h="7" random_walk="2"/>
 			<spot x="810.4657" y="1271.5292" z="95.93739" h="95" random_walk="2"/>
 			<spot x="884.717" y="1073.594" z="91.25827" h="116" random_walk="2"/>
 			<spot x="831.7323" y="1271.0824" z="95.93723" h="87" random_walk="2"/>
 		</spawn>
-		
 		<!-- Nameless Wall -->
 		<spawn npc_id="701000">
 			<spot x="819.53564" y="1121.0496" z="54.419998" entity_id="617"/>

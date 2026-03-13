@@ -7524,7 +7524,6 @@
         <spawn npc_id="231219" respawn_time="295">
             <spot x="2428.1611" y="146.98042" z="216.44366" h="30"/>
         </spawn>
-        <!-- Katalam Base Balaur Sub Spawns -->
         <!-- Occupation Vanguard Combatant -->
         <spawn npc_id="232723" respawn_time="180">
             <spot x="442.77701" y="904.97534" z="200.47409" h="83" walker_id="30965FF3FD3B41F8AB4E32AB750DA2AC"/>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	폭풍의 섬 비밀창고 4.9
-	Spawn By (Encom)
+	Carpus Isle Storeroom 4.9 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300050000">
@@ -102,7 +101,7 @@
 		<spawn npc_id="700461">
 			<spot x="461.056" y="567.035" z="205.751" entity_id="33"/>
 		</spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="472.33267" y="564.5443" z="201.80957" h="108"/>
         </spawn>
@@ -110,13 +109,11 @@
 		<spawn npc_id="700469">
             <spot x="531.731" y="566.3029" z="197.8603" h="3"/>
         </spawn>
-		
-		<!-- 4.9 -->
-		<!-- Skar (Npc Normal lvl:65) -->
+		<!-- Skar -->
 		<spawn npc_id="805428">
             <spot x="472.7195" y="572.2097" z="201.73729" h="82"/>
         </spawn>
-		<!-- Barheter (Npc Normal lvl:65) -->
+		<!-- Barheter -->
         <spawn npc_id="805433">
             <spot x="470.7145" y="572.556" z="201.69794" h="90"/>
         </spawn>

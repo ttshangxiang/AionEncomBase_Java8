@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	右の翼の影
-    Remake By (Encom)
+	Right Wing Chamber Remake By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300090000">
@@ -9,7 +8,7 @@
 		<spawn npc_id="700457">
 			<spot x="263.59274" y="395.44913" z="103.24831" entity_id="14"/>
 		</spawn>
-		<!-- Minor Blessed Relics (Object Normal lvl:3) -->
+		<!-- Minor Blessed Relics -->
 		<spawn npc_id="831988">
             <spot x="264.27277" y="377.50946" z="103.314354" h="28"/>
         </spawn>

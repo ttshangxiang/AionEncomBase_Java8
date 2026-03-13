@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
-	Fallen Poeta 5.1
-	Spawn By (Encom)
+	Fallen Poeta 5.1 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301660000">
-		<!-- Brigade General Tahabata
-		<Tahabata Legion> -->
+		<!-- Brigade General Tahabata -->
         <spawn npc_id="243683">
 	        <spot x="215.39793" y="348.9655" z="130.49515" h="48"/>
 	    </spawn>
-		<!-- Artifact Overlord Kroban
-		<Tahabata Legion> -->
+		<!-- Artifact Overlord Kroban -->
         <spawn npc_id="243684">
 	        <spot x="1174.4622" y="1230.3268" z="144.67146" h="18"/>
 	    </spawn>

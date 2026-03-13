@@ -3298,6 +3298,7 @@
     <start_conditions>
       <finished quest_id="1526" />
       <unfinished>18600</unfinished>
+      <noacquired>18600</noacquired>
     </start_conditions>
     <quest_work_items>
       <quest_work_item item_id="182201781" count="1" />
@@ -4602,12 +4603,8 @@
       <reward_item item_id="186000005" count="25" />
       <reward_item item_id="162000050" count="10" />
     </rewards>
-    <quest_drop npc_id="235504" item_id="182201769" chance="100" drop_each_member="1" />
     <quest_drop npc_id="235505" item_id="182201769" chance="100" drop_each_member="1" />
     <quest_drop npc_id="235506" item_id="182201769" chance="100" drop_each_member="1" />
-    <quest_drop npc_id="235507" item_id="182201769" chance="100" drop_each_member="1" />
-    <quest_drop npc_id="235508" item_id="182201769" chance="100" drop_each_member="1" />
-    <quest_drop npc_id="235509" item_id="182201769" chance="100" drop_each_member="1" />
   </quest>
   <quest id="1670" name="Invisible Bridges" nameId="1102861" minlevel_permitted="38" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="QUEST">
     <rewards gold="46650" exp="3218619">
@@ -4737,9 +4734,10 @@
     <rewards exp="3243300" ap="200">
       <reward_item item_id="186000469" count="25" />
     </rewards>
-    <quest_drop npc_id="235440" item_id="182201804" chance="100" drop_each_member="1" />
-    <quest_drop npc_id="235441" item_id="182201804" chance="100" drop_each_member="1" />
-    <quest_drop npc_id="235442" item_id="182201805" chance="100" drop_each_member="1" />
+    <quest_drop npc_id="213684" item_id="182201804" chance="100" drop_each_member="1" />
+    <quest_drop npc_id="213685" item_id="182201804" chance="100" drop_each_member="1" />
+    <quest_drop npc_id="213686" item_id="182201805" chance="100" drop_each_member="1" />
+    <quest_drop npc_id="213687" item_id="182201805" chance="100" drop_each_member="1" />
     <start_conditions>
       <finished quest_id="1683" />
     </start_conditions>
@@ -15043,6 +15041,7 @@
     </rewards>
     <start_conditions>
       <unfinished>14244</unfinished>
+      <noacquired>14244</noacquired>
     </start_conditions>
   </quest>
   <quest id="3732" name="[Instance/Group] Storming The Training Camp" nameId="1199480" minlevel_permitted="25" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="IMPORTANT">
@@ -15185,10 +15184,8 @@
       <reward_item item_id="188053405" count="2" />
     </rewards>
     <start_conditions>
-      <unfinished>14260</unfinished>
-    </start_conditions>
-    <start_conditions>
-      <unfinished>14261</unfinished>
+      <unfinished>14260 14261</unfinished>
+      <noacquired>24260 24261</noacquired>
     </start_conditions>
   </quest>
   <quest id="3914" name="The Balaur Report" nameId="1103045" minlevel_permitted="48" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="QUEST">
@@ -15476,6 +15473,7 @@
     <start_conditions>
       <finished quest_id="3935" />
       <unfinished>19064</unfinished>
+      <noacquired>19064</noacquired>
     </start_conditions>
     <quest_work_items>
       <quest_work_item item_id="182206096" count="1" />
@@ -18284,6 +18282,7 @@
     </rewards>
     <start_conditions>
       <unfinished>24241</unfinished>
+      <noacquired>24241</noacquired>
     </start_conditions>
   </quest>
   <quest id="4732" name="[Instance/Group] The General's Downfall" nameId="1199484" minlevel_permitted="25" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -18458,10 +18457,8 @@
       <reward_item item_id="186000019" count="30" />
     </rewards>
     <start_conditions>
-      <unfinished>24260</unfinished>
-    </start_conditions>
-    <start_conditions>
-      <unfinished>24261</unfinished>
+      <unfinished>24260 24261</unfinished>
+      <noacquired>24260 24261</noacquired>
     </start_conditions>
   </quest>
   <quest id="4914" name="Lifeform Remodeling Report" nameId="1104249" minlevel_permitted="48" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="QUEST">
@@ -18752,6 +18749,7 @@
     <start_conditions>
       <finished quest_id="4939" />
       <unfinished>29064</unfinished>
+      <noacquired>29064</noacquired>
     </start_conditions>
     <quest_work_items>
       <quest_work_item item_id="182207122" count="1" />
@@ -27692,12 +27690,14 @@
     <rewards gold="150660" exp="3446553" />
     <start_conditions>
       <unfinished>13701</unfinished>
+      <noacquired>13701</noacquired>
     </start_conditions>
   </quest>
   <quest id="13701" name="A New Land, A New War" nameId="1111601" minlevel_permitted="65" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="IMPORTANT">
     <rewards gold="150660" exp="3446553" />
     <start_conditions>
       <unfinished>13700</unfinished>
+      <noacquired>13700</noacquired>
     </start_conditions>
   </quest>
   <quest id="13702" name="Tomul Tap" nameId="1111602" minlevel_permitted="65" max_repeat_count="1" race_permitted="ELYOS" category="QUEST">
@@ -29131,6 +29131,7 @@
     </rewards>
     <start_conditions>
       <unfinished>14275</unfinished>
+      <noacquired>14275</noacquired>
     </start_conditions>
   </quest>
   <quest id="14244" name="Eltnen Job" nameId="1800212" minlevel_permitted="25" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
@@ -29145,6 +29146,7 @@
     </rewards>
     <start_conditions>
       <unfinished>3731</unfinished>
+      <noacquired>3731</noacquired>
     </start_conditions>
   </quest>
   <quest id="14250" name="Start with the Strongest" nameId="1800199" minlevel_permitted="44" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
@@ -29174,10 +29176,8 @@
       <reward_item item_id="188053405" count="2" />
     </rewards>
     <start_conditions>
-      <unfinished>14261</unfinished>
-    </start_conditions>
-    <start_conditions>
-      <unfinished>3913</unfinished>
+      <unfinished>3913 14261</unfinished>
+      <noacquired>3913 14261</noacquired>
     </start_conditions>
   </quest>
   <quest id="14261" name="Darkness Unpassed" nameId="1800207" minlevel_permitted="48" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
@@ -29192,7 +29192,8 @@
       <reward_item item_id="188053405" count="2" />
     </rewards>
     <start_conditions>
-      <unfinished>14260</unfinished>
+      <unfinished>3913 14260</unfinished>
+      <noacquired>3913 14260</noacquired>
     </start_conditions>
   </quest>
   <quest id="14270" name="[Group] A Bio Weapon Bio" nameId="1102886" minlevel_permitted="45" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
@@ -29203,6 +29204,7 @@
     </rewards>
     <start_conditions>
       <unfinished>14251</unfinished>
+      <noacquired>14251</noacquired>
     </start_conditions>
   </quest>
   <quest id="14271" name="[Group] Research Party" nameId="1113109" minlevel_permitted="46" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
@@ -29226,6 +29228,7 @@
     </rewards>
     <start_conditions>
       <unfinished>14243</unfinished>
+      <noacquired>14243</noacquired>
     </start_conditions>
   </quest>
   <quest id="14276" name="[Group] Impede Kromede" nameId="1102634" minlevel_permitted="30" max_repeat_count="1" race_permitted="ELYOS" category="IMPORTANT">
@@ -32885,6 +32888,7 @@
     </rewards>
     <start_conditions>
       <unfinished>18251</unfinished>
+      <noacquired>18251</noacquired>
     </start_conditions>
   </quest>
   <quest id="18251" name="To Crucible Spire!" nameId="1803442" minlevel_permitted="66" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="SEEN_MARKER">
@@ -32893,6 +32897,7 @@
     </rewards>
     <start_conditions>
       <unfinished>18250</unfinished>
+      <noacquired>18250</noacquired>
     </start_conditions>
   </quest>
   <quest id="18252" name="Start of the First Trial" nameId="1803443" minlevel_permitted="66" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="SEEN_MARKER">
@@ -33194,6 +33199,7 @@
     </rewards>
     <start_conditions>
       <unfinished>1527</unfinished>
+      <noacquired>1527</noacquired>
     </start_conditions>
     <quest_work_items>
       <quest_work_item item_id="182213000" />
@@ -34467,6 +34473,7 @@
     <quest_drop npc_id="233949" item_id="182215816" chance="100" drop_each_member="1" />
     <start_conditions>
       <unfinished>18976</unfinished>
+      <noacquired>18976</noacquired>
     </start_conditions>
   </quest>
   <quest id="18976" name="Fragment Discovered in Kaldor" nameId="1801414" minlevel_permitted="65" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="IMPORTANT">
@@ -34488,6 +34495,7 @@
     <quest_drop npc_id="234268" item_id="182215817" chance="100" drop_each_member="1" />
     <start_conditions>
       <unfinished>18975</unfinished>
+      <noacquired>18975</noacquired>
     </start_conditions>
   </quest>
   <quest id="18977" name="Shard Discovered in Levinshor" nameId="1801415" minlevel_permitted="65" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="IMPORTANT">
@@ -34511,6 +34519,7 @@
     <quest_drop npc_id="233949" item_id="182215818" chance="100" drop_each_member="1" />
     <start_conditions>
       <unfinished>18978</unfinished>
+      <noacquired>18978</noacquired>
     </start_conditions>
   </quest>
   <quest id="18978" name="Shard Discovered in Kaldor" nameId="1801416" minlevel_permitted="65" max_repeat_count="1" cannot_share="true" race_permitted="ELYOS" category="IMPORTANT">
@@ -34532,6 +34541,7 @@
     <quest_drop npc_id="234268" item_id="182215819" chance="100" drop_each_member="1" />
     <start_conditions>
       <unfinished>18977</unfinished>
+      <noacquired>18977</noacquired>
     </start_conditions>
   </quest>
   <quest id="18990" name="[Instance/Group] A New Phenomenon" nameId="1802302" minlevel_permitted="66" max_repeat_count="1" race_permitted="ELYOS" category="SIGNIFICANT">
@@ -38037,12 +38047,14 @@
     <rewards gold="150660" exp="3446553" />
     <start_conditions>
       <unfinished>23701</unfinished>
+      <noacquired>23701</noacquired>
     </start_conditions>
   </quest>
   <quest id="23701" name="Levinshor Chagrin" nameId="1111627" minlevel_permitted="65" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="IMPORTANT">
     <rewards gold="150660" exp="3446553" />
     <start_conditions>
       <unfinished>23700</unfinished>
+      <noacquired>23700</noacquired>
     </start_conditions>
   </quest>
   <quest id="23702" name="Blood for Blood, Literally" nameId="1111628" minlevel_permitted="65" max_repeat_count="1" race_permitted="ASMODIANS" category="QUEST">
@@ -39293,6 +39305,7 @@
     <quest_drop npc_id="212878" item_id="182215470" chance="100" drop_each_member="1" collecting_step="2" />
     <start_conditions>
       <unfinished>24242</unfinished>
+      <noacquired>24242</noacquired>
     </start_conditions>
   </quest>
   <quest id="24122" name="Mystery of the Missing Daevas" nameId="1129979" minlevel_permitted="33" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="QUEST">
@@ -39458,6 +39471,7 @@
     </rewards>
     <start_conditions>
       <unfinished>4731</unfinished>
+      <noacquired>4731</noacquired>
     </start_conditions>
   </quest>
   <quest id="24242" name="[Group] All the Spells and Whistles" nameId="1800211" minlevel_permitted="30" max_repeat_count="1" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -39470,7 +39484,8 @@
     </rewards>
     <quest_drop npc_id="212878" item_id="182215583" chance="100" drop_each_member="1" collecting_step="2" />
     <start_conditions>
-      <unfinished>24121 </unfinished>
+      <unfinished>24121</unfinished>
+      <noacquired>24121</noacquired>
     </start_conditions>
   </quest>
   <quest id="24250" name="Time Has Come" nameId="1800204" minlevel_permitted="45" max_repeat_count="1" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -39480,6 +39495,7 @@
     </rewards>
     <start_conditions>
       <unfinished>24270</unfinished>
+      <noacquired>24270</noacquired>
     </start_conditions>
   </quest>
   <quest id="24252" name="[Dungeon/Group] Stopping the Beritra's Legion" nameId="1801870" minlevel_permitted="45" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="QUEST">
@@ -39497,10 +39513,8 @@
       <reward_item item_id="186000019" count="30" />
     </rewards>
     <start_conditions>
-      <unfinished>24261</unfinished>
-    </start_conditions>
-    <start_conditions>
-      <unfinished>4913</unfinished>
+      <unfinished>4913 24261</unfinished>
+      <noacquired>4913 24261</noacquired>
     </start_conditions>
   </quest>
   <quest id="24261" name="Back in Time" nameId="1800209" minlevel_permitted="48" max_repeat_count="1" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -39515,10 +39529,8 @@
       <reward_item item_id="186000019" count="30" />
     </rewards>
     <start_conditions>
-      <unfinished>24260</unfinished>
-    </start_conditions>
-    <start_conditions>
-      <unfinished>4913</unfinished>
+      <unfinished>4913 24260</unfinished>
+      <noacquired>4913 24260</noacquired>
     </start_conditions>
   </quest>
   <quest id="24270" name="[Group] To Steal a Secret" nameId="1104007" minlevel_permitted="45" max_repeat_count="1" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -39528,6 +39540,7 @@
     </rewards>
     <start_conditions>
       <unfinished>24250</unfinished>
+      <noacquired>24250</noacquired>
     </start_conditions>
   </quest>
   <quest id="24275" name="[Group] Retribution Resolution˜" nameId="1103726" minlevel_permitted="30" max_repeat_count="1" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -44818,6 +44831,7 @@
     <quest_drop npc_id="233906" item_id="182215820" chance="100" drop_each_member="1" />
     <start_conditions>
       <unfinished>28976</unfinished>
+      <noacquired>28976</noacquired>
     </start_conditions>
   </quest>
   <quest id="28976" name="Kaldor Fragments" nameId="1801418" minlevel_permitted="65" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -44844,6 +44858,7 @@
     <quest_drop npc_id="234264" item_id="182215821" chance="100" drop_each_member="1" />
     <start_conditions>
       <unfinished>28975</unfinished>
+      <noacquired>28975</noacquired>
     </start_conditions>
   </quest>
   <quest id="28977" name="Discovery in Levinshor" nameId="1801419" minlevel_permitted="65" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -44867,6 +44882,7 @@
     <quest_drop npc_id="233906" item_id="182215822" chance="100" drop_each_member="1" />
     <start_conditions>
       <unfinished>28978</unfinished>
+      <noacquired>28978</noacquired>
     </start_conditions>
   </quest>
   <quest id="28978" name="Discovery in Kaldor" nameId="1801420" minlevel_permitted="65" max_repeat_count="1" cannot_share="true" race_permitted="ASMODIANS" category="IMPORTANT">
@@ -44893,6 +44909,7 @@
     <quest_drop npc_id="234264" item_id="182215823" chance="100" drop_each_member="1" />
     <start_conditions>
       <unfinished>28977</unfinished>
+      <noacquired>28977</noacquired>
     </start_conditions>
   </quest>
   <quest id="28990" name="[Instance/Group] Fallen Doorways" nameId="1802306" minlevel_permitted="66" max_repeat_count="1" race_permitted="ASMODIANS" category="SIGNIFICANT">
@@ -50046,6 +50063,7 @@
     <rewards gold="110340" exp="202483" />
     <start_conditions>
       <unfinished>39010</unfinished>
+      <noacquired>39010</noacquired>
     </start_conditions>
   </quest>
   <quest id="39001" name="Griffon Aid" nameId="1140001" minlevel_permitted="60" max_repeat_count="255" race_permitted="ELYOS" category="PUBLIC" target_type="AREA">
@@ -50104,6 +50122,7 @@
     <rewards gold="110340" exp="202483" />
     <start_conditions>
       <unfinished>39000</unfinished>
+      <noacquired>39000</noacquired>
     </start_conditions>
   </quest>
   <quest id="39022" name="[Daily] Tillen's Order" nameId="1199827" minlevel_permitted="50" maxlevel_permitted="82" max_repeat_count="255" race_permitted="ELYOS" category="PUBLIC" repeat_cycle="ALL">
@@ -51344,6 +51363,7 @@
     <rewards gold="110340" exp="202483" />
     <start_conditions>
       <unfinished>49010</unfinished>
+      <noacquired>49010</noacquired>
     </start_conditions>
   </quest>
   <quest id="49001" name="Clear a Path to Jamanok Inn" nameId="1140011" minlevel_permitted="60" max_repeat_count="255" race_permitted="ASMODIANS" category="PUBLIC" target_type="AREA">
@@ -51399,6 +51419,7 @@
     <rewards gold="110340" exp="202483" />
     <start_conditions>
       <unfinished>49000</unfinished>
+      <noacquired>49000</noacquired>
     </start_conditions>
   </quest>
   <quest id="49022" name="[Daily] Relyt's Order" nameId="1199830" minlevel_permitted="50" maxlevel_permitted="82" max_repeat_count="255" race_permitted="ASMODIANS" category="PUBLIC" repeat_cycle="ALL">

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	ゲルハ 5.6
-	Spawn By (Encom)
+	Levinshor 5.6 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="600100000">
-		<!-- Levinshor Elyos Fighter (Guard Elite lvl:65) -->
+		<!-- Levinshor Elyos Fighter -->
 		<spawn npc_id="209664" respawn_time="295">
             <spot x="201.2439" y="186.38103" z="374.99332" h="93"/>
             <spot x="202.27527" y="178.9743" z="374.96558" h="33"/>
@@ -14,19 +13,19 @@
             <spot x="328.1086" y="393.06473" z="318.55975" h="89"/>
             <spot x="333.5263" y="393.12805" z="318.3205" h="93"/>
         </spawn>
-		<!-- Levinshor Elyos Ranger (Guard Elite lvl:65) -->
+		<!-- Levinshor Elyos Ranger -->
 		<spawn npc_id="209665" respawn_time="295">
             <spot x="355.74417" y="146.29036" z="352.7137" h="103"/>
             <spot x="354.01688" y="169.4389" z="352.5" h="32"/>
         </spawn>
-		<!-- Levinshor Elyos Sorcerer (Guard Elite lvl:65) -->
+		<!-- Levinshor Elyos Sorcerer -->
 		<spawn npc_id="209667" respawn_time="295">
             <spot x="349.6345" y="164.39055" z="352.5" h="43"/>
             <spot x="349.30905" y="146.54109" z="352.625" h="80"/>
             <spot x="320.79517" y="400.8062" z="318.67468" h="64"/>
             <spot x="339.43857" y="403.69943" z="318.5" h="106"/>
         </spawn>
-		<!-- Levinshor Senior Soldier (Guard Elite lvl:65) -->
+		<!-- Levinshor Senior Soldier -->
 		<spawn npc_id="209669" respawn_time="295">
             <spot x="126.630585" y="129.96938" z="349.27692" h="8"/>
             <spot x="129.29877" y="124.497314" z="348.89334" h="9"/>
@@ -36,7 +35,7 @@
             <spot x="329.64474" y="411.76297" z="318.52222" h="107"/>
             <spot x="343.2248" y="155.45706" z="352.5" h="62" walker_id="Senior_Soldier_Levinshor_OP_Elyos_1"/>
         </spawn>
-		<!-- Denku Feralclaw (Guard Elite lvl:65) -->
+		<!-- Denku Feralclaw -->
 		<spawn npc_id="235213" respawn_time="295">
 			<spot x="210.80156" y="178.18962" z="374.85242" h="50"/>
             <spot x="208.9129" y="189.80511" z="374.85242" h="75"/>
@@ -45,47 +44,46 @@
 			<spot x="403.3345" y="343.89966" z="320.8334" h="53" walker_id="Denku_Feralclaw_Restorer_Levinshor_OP_Elyos_4"/>
 			<spot x="250.34682" y="198.46358" z="348.73563" h="11" walker_id="Denku_Feralclaw_Feralmage_Levinshor_OP_Elyos_1"/>
 		</spawn>
-		<!-- Denku Fang (Guard Elite lvl:65) -->
+		<!-- Denku Fang -->
 		<spawn npc_id="235214" respawn_time="295">
 			<spot x="98.00434" y="104.82244" z="347.8236" h="15" walker_id="Denku_Fang_Feralmage_Levinshor_OP_Elyos_3"/>
 			<spot x="344.15582" y="261.67194" z="328.8955" h="118" walker_id="Denku_Fang_Restorer_Levinshor_OP_Elyos_2"/>
 			<spot x="236.03189" y="380.33786" z="322.80768" h="90" walker_id="Denku_Feralclaw_Fang_Levinshor_OP_Elyos_5"/>
 		</spawn>
-		<!-- Denku Restorer (Guard Elite lvl:65) -->
+		<!-- Denku Restorer -->
 		<spawn npc_id="235215" respawn_time="295">
 			<spot x="88.44179" y="120.54886" z="347.63168" h="109"/>
             <spot x="146.7704" y="162.52089" z="364.09766" h="116"/>
 			<spot x="344.15582" y="261.67194" z="328.8955" h="118" walker_id="Denku_Fang_Restorer_Levinshor_OP_Elyos_2"/>
 			<spot x="403.3345" y="343.89966" z="320.8334" h="53" walker_id="Denku_Feralclaw_Restorer_Levinshor_OP_Elyos_4"/>
 		</spawn>
-		<!-- Denku Feralmage (Guard Elite lvl:65) -->
+		<!-- Denku Feralmage -->
 		<spawn npc_id="235216" respawn_time="295">
 			<spot x="145.52457" y="126.31765" z="353.16086" h="39"/>
 			<spot x="98.00434" y="104.82244" z="347.8236" h="15" walker_id="Denku_Fang_Feralmage_Levinshor_OP_Elyos_3"/>
 			<spot x="250.34682" y="198.46358" z="348.73563" h="11" walker_id="Denku_Feralclaw_Feralmage_Levinshor_OP_Elyos_1"/>
 		</spawn>
-		
-		<!-- Levinshor Asmodians Fighter (Guard Elite lvl:65) -->
+		<!-- Levinshor Asmodians Fighter -->
         <spawn npc_id="209670" respawn_time="295">
             <spot x="1591.4042" y="1727.7288" z="284.28723" h="114"/>
             <spot x="1767.1829" y="1615.0859" z="289.5511" h="18"/>
             <spot x="1762.5531" y="1619.3561" z="289.58475" h="19"/>
         </spawn>
-		<!-- Levinshor Asmodians Ranger (Guard Elite lvl:65) -->
+		<!-- Levinshor Asmodians Ranger -->
         <spawn npc_id="209671" respawn_time="295">
             <spot x="1575.7915" y="1739.682" z="284.375" h="102"/>
             <spot x="1562.8461" y="1722.3263" z="285.33536" h="69"/>
             <spot x="1752.9342" y="1623.6357" z="290.5877" h="33"/>
             <spot x="1770.2405" y="1594.4631" z="289.5" h="110"/>
         </spawn>
-		<!-- Levinshor Asmodians Sorcerer (Guard Elite lvl:65) -->
+		<!-- Levinshor Asmodians Sorcerer -->
         <spawn npc_id="209673" respawn_time="295">
             <spot x="1584.2349" y="1741.0627" z="284.25" h="25"/>
             <spot x="1563.1814" y="1743.8599" z="284.32385" h="48"/>
             <spot x="1578.5272" y="1720.5869" z="284.5411" h="22"/>
             <spot x="1772.3169" y="1606.6644" z="289.31323" h="115"/>
         </spawn>
-		<!-- Levinshor Senior Soldier (Guard Elite lvl:65) -->
+		<!-- Levinshor Senior Soldier -->
 		<spawn npc_id="209675" respawn_time="295">
             <spot x="1792.4379" y="1749.7402" z="299.64728" h="117"/>
             <spot x="1798.0919" y="1741.9015" z="299.88608" h="27"/>
@@ -96,106 +94,102 @@
             <spot x="1765.2886" y="1617.8864" z="289.43365" h="24" walker_id="Senior_Soldier_Levinshor_OP_Asmodians_2"/>
 			<spot x="1771.8292" y="1599.9675" z="289.50864" h="111" walker_id="Senior_Soldier_Levinshor_OP_Asmodians_1"/>
         </spawn>
-		<!-- Tomul Brawler (Guard Elite lvl:65) -->
+		<!-- Tomul Brawler -->
 		<spawn npc_id="235208" respawn_time="295">
 			<spot x="1783.6049" y="1743.818" z="298.82288" h="12"/>
             <spot x="1790.2" y="1735.3728" z="298.82288" h="12"/>
 			<spot x="1646.9863" y="1723.7639" z="284.75" h="71" walker_id="Tomul_Brawler_Cutthroat_Levinshor_OP_Asmodians_3"/>
 			<spot x="1773.1815" y="1702.7185" z="283.60904" h="100" walker_id="Tomul_Brawler_Shaman_Levinshor_OP_Asmodians_5"/>
 		</spawn>
-		<!-- Tomul Cutthroat (Guard Elite lvl:65) -->
+		<!-- Tomul Cutthroat -->
 		<spawn npc_id="235210" respawn_time="295">
 			<spot x="1799.08" y="1755.444" z="300.9425" h="89"/>
             <spot x="1807.6573" y="1745.5225" z="301.70715" h="64"/>
 			<spot x="1646.9863" y="1723.7639" z="284.75" h="71" walker_id="Tomul_Brawler_Cutthroat_Levinshor_OP_Asmodians_3"/>
 			<spot x="1849.0784" y="1777.4343" z="305.31738" h="53" walker_id="Tomul_Aquamancer_Cutthroat_Levinshor_OP_Asmodians_1"/>
 		</spawn>
-		<!-- Tomul Shaman (Guard Elite lvl:65) -->
+		<!-- Tomul Shaman -->
 		<spawn npc_id="235211" respawn_time="295">
 			<spot x="1773.1815" y="1702.7185" z="283.60904" h="100" walker_id="Tomul_Brawler_Shaman_Levinshor_OP_Asmodians_5"/>
 			<spot x="1760.652" y="1719.2461" z="282.54074" h="61" walker_id="Tomul_Shaman_Aquamancer_Levinshor_OP_Asmodians_4"/>
 		</spawn>
-		<!-- Tomul Aquamancer (Guard Elite lvl:65) -->
+		<!-- Tomul Aquamancer -->
 		<spawn npc_id="235212" respawn_time="295">
 			<spot x="1847.8641" y="1788.9852" z="305.6696" h="80"/>
 			<spot x="1760.652" y="1719.2461" z="282.54074" h="61" walker_id="Tomul_Shaman_Aquamancer_Levinshor_OP_Asmodians_4"/>
 			<spot x="1849.0784" y="1777.4343" z="305.31738" h="53" walker_id="Tomul_Aquamancer_Cutthroat_Levinshor_OP_Asmodians_1"/>
 		</spawn>
-		
-		<!-- OBJECT/NPC -->
-		<!-- Postbox (Object Normal lvl:3) -->
+		<!-- Postbox -->
 		<spawn npc_id="700000" respawn_time="295">
 			<spot x="92.998917" y="124.07154" z="347.31235" entity_id="1246"/>
 		</spawn>
-		<!-- Postbox (Object Normal lvl:3) -->
+		<!-- Postbox -->
 		<spawn npc_id="700079" respawn_time="295">
 			<spot x="1829.0691" y="1792.3356" z="305.56219" entity_id="1247"/>
 		</spawn>
-		<!-- Fuzion Generator (Object Normal lvl:3) -->
+		<!-- Fuzion Generator -->
 		<spawn npc_id="700981" respawn_time="295">
 			<spot x="1419.3352" y="714.24652" z="256.50928" entity_id="427"/>
 			<spot x="1363.5330" y="730.29431" z="259.62051" entity_id="428"/>
 			<spot x="1394.5522" y="646.45929" z="259.36578" entity_id="429"/>
 			<spot x="1446.1046" y="641.78442" z="255.39966" entity_id="430"/>
 		</spawn>
-		<!-- Dying Beritra Combatant (Object Normal lvl:3) -->
+		<!-- Dying Beritra Combatant -->
 		<spawn npc_id="701889" respawn_time="295">
 			<spot x="198.0" y="267.0" z="339.5625" h="12"/>
             <spot x="1891.7562" y="1636.1805" z="284.1058" h="75"/>
 		</spawn>
-		<!-- Dying Beritra Combatant (Object Normal lvl:3) -->
+		<!-- Dying Beritra Combatant -->
 		<spawn npc_id="701890" respawn_time="295">
 			<spot x="192.68077" y="248.23033" z="342.81375" h="17"/>
             <spot x="1903.4525" y="1651.0963" z="287.28146" h="65"/>
 		</spawn>
-		<!-- Dying Beritra Combatant (Object Normal lvl:3) -->
+		<!-- Dying Beritra Combatant -->
 		<spawn npc_id="701891" respawn_time="295">
 			<spot x="211.68066" y="258.58008" z="339.48004" h="24"/>
             <spot x="1884.8303" y="1645.534" z="283.875" h="109"/>
 		</spawn>
-		<!-- Lost Bag (Object Normal lvl:3) -->
+		<!-- Lost Bag -->
 		<spawn npc_id="702615" respawn_time="295">
 			<spot x="513.24316" y="984.25861" z="256.53384" entity_id="26"/>
 		</spawn>
-		<!-- Missing Bag (Object Normal lvl:3) -->
+		<!-- Missing Bag -->
 		<spawn npc_id="702616" respawn_time="295">
             <spot x="1415.7996" y="949.92523" z="260.28235" entity_id="56"/>
 		</spawn>
-		<!-- Linkgate Foundry 4.7 [Elyos] (Object Normal lvl:3) -->
+		<!-- Linkgate Foundry -->
 		<spawn npc_id="730972" respawn_time="295">
 			<spot x="333.8141" y="414.28476" z="318.5" h="89"/>
 		</spawn>
-		<!-- Linkgate Foundry 4.7 [Asmodians] (Object Normal lvl:3) -->
+		<!-- Linkgate Foundry -->
 		<spawn npc_id="730973" respawn_time="295">
 			<spot x="1760.346" y="1600.78" z="289.79877" h="22"/>
 		</spawn>
-		<!-- Delphis
-		<Soul Healer> -->
+		<!-- Delphis -->
 		<spawn npc_id="731451" respawn_time="295">
 			<spot x="92.986946" y="95.09467" z="348.61826" h="17"/>
 		</spawn>
-		<!-- Gillotan
-		<Soul Healer> -->
+		<!-- Gillotan -->
 		<spawn npc_id="731452" respawn_time="295">
 			<spot x="1852.60" y="1786.24" z="306.76" h="61"/>
 		</spawn>
-		<!-- Levinshor Obelisk Elyos (Object Normal lvl:3) -->
+		<!-- Levinshor Obelisk Elyos -->
 		<spawn npc_id="731453" respawn_time="295">
 			<spot x="95.025177" y="93.625191" z="349.42200" entity_id="876"/>
 		</spawn>
-		<!-- Levinshor Obelisk Asmodians (Object Normal lvl:3) -->
+		<!-- Levinshor Obelisk Asmodians -->
 		<spawn npc_id="731454" respawn_time="295">
 			<spot x="1853.9701" y="1782.8416" z="306.11621" entity_id="50"/>
 		</spawn>
-		<!-- Aethercraft (Object Normal lvl:3) -->
+		<!-- Aethercraft -->
 		<spawn npc_id="731455" respawn_time="295">
 			<spot x="116.98872" y="131.38434" z="348.07983" entity_id="194"/>
 		</spawn>
-		<!-- Aethercraft (Object Normal lvl:3) -->
+		<!-- Aethercraft -->
 		<spawn npc_id="731458" respawn_time="295">
 			<spot x="1843.677" y="1768.6824" z="305.22461" entity_id="1245"/>
 		</spawn>
-		<!-- Denku Totem (Object Normal lvl:3) -->
+		<!-- Denku Totem -->
 		<spawn npc_id="731463" respawn_time="295">
 			<spot x="1957.8486" y="569.31671" z="251.10806" entity_id="1034"/>
 			<spot x="1727.8125" y="815.82288" z="243.48788" entity_id="1035"/>
@@ -204,189 +198,163 @@
 			<spot x="1585.7321" y="487.70126" z="231.50192" entity_id="1243"/>
 			<spot x="1743.5250" y="633.06177" z="230.97421" entity_id="1244"/>
 		</spawn>
-		<!-- Levinshor To Inggison (Object Normal lvl:3) -->
+		<!-- Levinshor To Inggison -->
 		<spawn npc_id="731464" respawn_time="295">
 			<spot x="1074.6836" y="311.38858" z="259.07254" entity_id="1418"/>
 		</spawn>
-		<!-- Levinshor To Gelkmaros (Object Normal lvl:3) -->
+		<!-- Levinshor To Gelkmaros -->
 		<spawn npc_id="731465" respawn_time="295">
 			<spot x="1054.729" y="1837.4612" z="247.82997" entity_id="1420"/>
 		</spawn>
-		<!-- Aetherbrak Invasion Corridor (Object Normal lvl:3) -->
+		<!-- Aetherbrak Invasion Corridor -->
 		<spawn npc_id="731530" respawn_time="295">
 			<spot x="185.70992" y="253.95793" z="342.87915" entity_id="109"/>
 		</spawn>
-		<!-- Stonepike Invasion Corridor (Object Normal lvl:3) -->
+		<!-- Stonepike Invasion Corridor -->
 		<spawn npc_id="731531" respawn_time="295">
 			<spot x="1908.5599" y="1643.7709" z="287.34686" entity_id="123"/>
 		</spawn>
-		<!-- Kanix (Npc Normal lvl:65) -->
+		<!-- Kanix -->
 		<spawn npc_id="801945" respawn_time="295">
 			<spot x="358.4789" y="158.01105" z="352.47006" h="72"/>
 		</spawn>
-		<!-- Giriltia (Npc Normal lvl:65) -->
+		<!-- Giriltia -->
 		<spawn npc_id="801947" respawn_time="295">
 			<spot x="1573.9424" y="1735.9062" z="284.375" h="109"/>
 		</spawn>
-		<!-- Sauro Supply Base 4.7 (Object Normal lvl:3) -->
+		<!-- Sauro Supply Base -->
 		<spawn npc_id="801965" respawn_time="295">
 			<spot x="362.08038" y="149.96175" z="352.88745" h="50"/>
 		</spawn>
-		<!-- Sauro Supply Base 4.7 (Object Normal lvl:3) -->
+		<!-- Sauro Supply Base -->
 		<spawn npc_id="801966" respawn_time="295">
 			<spot x="1571.82" y="1727.55" z="285.53" h="7"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802350" respawn_time="295">
 			<spot x="112.39" y="92.97" z="349.53" h="31"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802353" respawn_time="295">
 			<spot x="1837.7124" y="1791.6357" z="305.5" h="90"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802359" respawn_time="295">
 			<spot x="86.78926" y="116.35918" z="347.39746" h="2"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802363" respawn_time="295">
 			<spot x="1851.87" y="1770.34" z="306.95" h="45"/>
 		</spawn>
-		<!-- Kahrun
-		Q10100 [Kahrun Intrigue]
-		Q10101 [Dismal Developments] -->
+		<!-- Kahrun -->
 		<spawn npc_id="802462" respawn_time="295">
 			<spot x="186.20" y="262.57" z="344.09" h="6"/>
 		</spawn>
-		<!-- Kahrun
-		Q20100 [Ghost Of A Bygone Age]
-		Q20101 [Unraveling The Mystery] -->
+		<!-- Kahrun -->
 		<spawn npc_id="802463" respawn_time="295">
 			<spot x="1905.906" y="1635.2759" z="287.28146" h="64"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802554" respawn_time="295">
 			<spot x="119.13" y="117.47" z="348.34" h="57"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802555" respawn_time="295">
 			<spot x="117.79" y="112.56" z="348.34" h="57"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802556" respawn_time="295">
 		    <spot x="116.397415" y="108.026505" z="346.85016" h="56"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802585" respawn_time="295">
 			<spot x="1827.49" y="1769.88" z="306.95" h="45"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802586" respawn_time="295">
 			<spot x="1834.20" y="1774.83" z="306.95" h="45"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="802587" respawn_time="295">
 			<spot x="1830.43" y="1773.38" z="306.95" h="45"/>
 		</spawn>
-		<!-- (Npc Normal lvl:65) -->
 		<spawn npc_id="804464" respawn_time="295">
             <spot x="96.994225" y="131.32703" z="347.125" h="101"/>
         </spawn>
-		<!-- (Npc Normal lvl:65) -->
         <spawn npc_id="804465" respawn_time="295">
             <spot x="95.24751" y="130.26726" z="347.125" h="99"/>
         </spawn>
-		<!-- (Npc Normal lvl:65) -->
         <spawn npc_id="804466" respawn_time="295">
             <spot x="92.802895" y="126.50607" z="347.125" h="117"/>
         </spawn>
-		<!-- (Npc Normal lvl:65) -->
         <spawn npc_id="804467" respawn_time="295">
             <spot x="1820.5658" y="1784.9343" z="305.25" h="111"/>
         </spawn>
-		<!-- (Npc Normal lvl:65) -->
         <spawn npc_id="804468" respawn_time="295">
             <spot x="1823.0" y="1787.0" z="305.3125" h="111"/>
         </spawn>
-		<!-- (Npc Normal lvl:65) -->
         <spawn npc_id="804469" respawn_time="295">
             <spot x="1818.9203" y="1781.0438" z="305.1305" h="110"/>
         </spawn>
-		<!-- Topos
-		<Teleporter> (Npc Normal lvl:65) -->
+		<!-- Topos -->
 		<spawn npc_id="804561" respawn_time="295">
 			<spot x="113.88" y="131.69" z="349.36" h="90"/>
 		</spawn>
-		<!-- Spake
-		<Teleporter> (Npc Normal lvl:65) -->
+		<!-- Spake -->
 		<spawn npc_id="804562" respawn_time="295">
 			<spot x="1846.35" y="1769.76" z="306.95" h="31"/>
 		</spawn>
-		<!-- Levinshor To Reshanta
-		[Terminon Landing] -->
+		<!-- Levinshor To Reshanta -->
 		<spawn npc_id="804569" respawn_time="295">
 			<spot x="256.63498" y="1153.5842" z="226.37596" entity_id="170"/>
 		</spawn>
-		<!-- Levinshor To Reshanta
-		[Primum Landing] -->
+		<!-- Levinshor To Reshanta -->
 		<spawn npc_id="804570" respawn_time="295">
 			<spot x="1882.7357" y="1159.098" z="243.44809" entity_id="299"/>
 		</spawn>
-		<!-- Vocolith [North Warden] (Object Normal lvl:3) -->
+		<!-- Vocolith -->
 		<spawn npc_id="804573" respawn_time="3600">
 			<spot x="155.23886" y="896.09412" z="241.84668" entity_id="13"/>
 		</spawn>
-		<!-- Vocolith [Coast Warden] (Object Normal lvl:3) -->
+		<!-- Vocolith -->
 		<spawn npc_id="804574" respawn_time="3600">
 			<spot x="238.54105" y="1581.0961" z="227.63638" entity_id="20"/>
 		</spawn>
-		<!-- Vocolith [South Warden] (Object Normal lvl:3) -->
+		<!-- Vocolith -->
 		<spawn npc_id="804575" respawn_time="3600">
 			<spot x="605.80560" y="1462.2771" z="276.73804" entity_id="23"/>
 		</spawn>
-		<!-- Vocolith [East Woods Warden] (Object Normal lvl:3) -->
+		<!-- Vocolith -->
 		<spawn npc_id="804579" respawn_time="3600">
 			<spot x="1663.5723" y="612.97003" z="226.95126" entity_id="24"/>
 		</spawn>
-		<!-- Vocolith [North Woods Warden] (Object Normal lvl:3) -->
+		<!-- Vocolith -->
 		<spawn npc_id="804580" respawn_time="3600">
 			<spot x="1491.7522" y="312.94736" z="253.36563" entity_id="47"/>
 		</spawn>
-		<!-- Vocolith [Cut Warden] (Object Normal lvl:3) -->
+		<!-- Vocolith -->
 		<spawn npc_id="804581" respawn_time="3600">
 			<spot x="1211.6776" y="583.93884" z="277.81192" entity_id="48"/>
 		</spawn>
-		<!-- Vocolith [West Warden] (Object Normal lvl:3) -->
+		<!-- Vocolith -->
 		<spawn npc_id="804582" respawn_time="3600">
 			<spot x="894.83118" y="838.97162" z="313.50354" entity_id="53"/>
 		</spawn>
-		<!-- Vocolith [East Warden] (Object Normal lvl:3) -->
+		<!-- Vocolith -->
 		<spawn npc_id="804583" respawn_time="3600">
 			<spot x="1106.4246" y="1231.3024" z="308.38782" entity_id="60"/>
 		</spawn>
-		<!-- Florrick (Npc Normal lvl:65) -->
+		<!-- Florrick -->
         <spawn npc_id="804598" respawn_time="295">
-            <spot x="107.37599" y="94.762817" z="348.68036" h="0"/>
+            <spot x="107.37599" y="94.762817" z="348.68036"/>
         </spawn>
-		<!-- Gatener (Npc Normal lvl:65) -->
+		<!-- Gatener -->
         <spawn npc_id="804599" respawn_time="295">
-            <spot x="1842.1245" y="1790.1642" z="306.95078" h="0"/>
+            <spot x="1842.1245" y="1790.1642" z="306.95078"/>
         </spawn>
-		<!-- Renitis (Npc Normal lvl:65) -->
+		<!-- Renitis -->
         <spawn npc_id="804626" respawn_time="295">
             <spot x="90.42354" y="99.17831" z="348.1043" h="13"/>
         </spawn>
-		<!-- Ekthe (Npc Normal lvl:65) -->
+		<!-- Ekthe -->
         <spawn npc_id="804627" respawn_time="295">
-            <spot x="1855.1538" y="1775.4032" z="306.95078" h="0"/>
+            <spot x="1855.1538" y="1775.4032" z="306.95078"/>
         </spawn>
-		<!-- Denku Envoy
-		<Elyos League> -->
+		<!-- Denku Envoy -->
 		<spawn npc_id="832853" respawn_time="295">
             <spot x="118.48651" y="103.45749" z="346.7535" h="59"/>
         </spawn>
-		<!-- Tomul Envoy
-		<Asmodian League> -->
+		<!-- Tomul Envoy -->
 		<spawn npc_id="832854" respawn_time="295">
             <spot x="1834.431" y="1791.4484" z="305.5" h="88"/>
         </spawn>
@@ -402,55 +370,43 @@
             <spot x="1666.184" y="1737.3779" z="286.8526" h="92"/>
             <spot x="1548.4872" y="1616.9042" z="303.15872" h="16"/>
 		</spawn>
-		
-		<!-- Aion 4.8 -->
-		<!-- Kabalu
-		<Aether Trader> -->
+		<!-- Kabalu -->
 		<spawn npc_id="804826" respawn_time="295">
 			<spot x="87.0" y="104.0" z="347.4375" h="9"/>
 		</spawn>
-		<!-- Hipiku
-		<Consumable Item Distributor> -->
+		<!-- Hipiku -->
 		<spawn npc_id="804827" respawn_time="295">
 			<spot x="86.40414" y="106.739494" z="347.3288" h="7"/>
 		</spawn>
-		<!-- Zelraria
-		<Battlefield Equipment Vendor> -->
+		<!-- Zelraria -->
 		<spawn npc_id="804828" respawn_time="295">
 			<spot x="85.8195" y="109.5753" z="347.25" h="6"/>
 		</spawn>
-		<!-- Ezius
-		<Fortress Crest Purchasing Officer> -->
+		<!-- Ezius -->
 		<spawn npc_id="804829" respawn_time="295">
 			<spot x="85.37431" y="112.16324" z="347.25" h="5"/>
 		</spawn>
-		<!-- Biskachi
-		<Aether Trader> -->
+		<!-- Biskachi -->
 		<spawn npc_id="804834" respawn_time="295">
             <spot x="1851.1188" y="1774.7235" z="305.36514" h="47"/>
         </spawn>
-		<!-- Hemonta
-		<Consumable Item Distributor> -->
+		<!-- Hemonta -->
         <spawn npc_id="804835" respawn_time="295">
             <spot x="1849.2904" y="1773.0557" z="305.30902" h="46"/>
         </spawn>
-		<!-- Helinshar
-		<Battlefield Equipment Vendor> -->
+		<!-- Helinshar -->
         <spawn npc_id="804836" respawn_time="295">
             <spot x="1852.4982" y="1777.2114" z="305.43726" h="52"/>
         </spawn>
-		<!-- Avanicu
-		<Fortress Crest Purchasing Officer> -->
+		<!-- Avanicu -->
         <spawn npc_id="804837" respawn_time="295">
             <spot x="1853.188" y="1779.5884" z="305.5235" h="56"/>
         </spawn>
-		<!-- Grintea
-		<Stigma Master> -->
+		<!-- Grintea -->
 		<spawn npc_id="805228" respawn_time="295">
 			<spot x="106.19772" y="129.69211" z="347.375" h="87"/>
 		</spawn>
-		<!-- Boreant
-		<Stigma Master> -->
+		<!-- Boreant -->
 		<spawn npc_id="805229" respawn_time="295">
 			<spot x="1838.9358" y="1773.5201" z="305.28" h="31"/>
 		</spawn>
@@ -462,32 +418,25 @@
 		<spawn npc_id="805347" respawn_time="295">
             <spot x="1708.6952" y="1666.3971" z="288.98813" h="27"/>
         </spawn>
-		
-		<!-- Aion 5.6 -->
-		<!-- Leta
-		<Special Teleport - Balaurea> -->
+		<!-- Leta -->
 		<spawn npc_id="835264">
             <spot h="52" z="347.21112" y="117.832756" x="124.12035"/>
         </spawn>
-		<!-- Leta
-		<Special Teleport - Balaurea> -->
+		<!-- Leta -->
 		<spawn npc_id="835269">
             <spot h="117" z="302.25" y="1769.3446" x="1809.7942"/>
         </spawn>
-		<!-- Lief
-		<New Player Support> -->
+		<!-- Lief -->
         <spawn npc_id="835271">
             <spot h="50" z="347.98438" y="121.26889" x="125.55817"/>
             <spot h="114" z="301.97736" y="1765.5328" x="1808.5723"/>
         </spawn>
-		
-		<!-- MOBS/BOSS -->
 		<!-- Stonewood Rynoce -->
 		<spawn npc_id="233900" respawn_time="295">
 			<spot x="1121.0966" y="546.1653" z="278.95038" h="87" random_walk="3"/>
             <spot x="1149.3108" y="538.84454" z="279.4238" h="62" random_walk="3"/>
             <spot x="1128.2023" y="497.36902" z="277.92667" h="21" random_walk="3"/>
-            <spot x="1199.7096" y="506.27197" z="280.46255" h="0" random_walk="3"/>
+            <spot x="1199.7096" y="506.27197" z="280.46255" random_walk="3"/>
             <spot x="1100.6609" y="508.80112" z="278.21722" h="21" random_walk="3"/>
 		</spawn>
 		<!-- Primitive Ginseng -->
@@ -692,7 +641,7 @@
 			<spot x="441.8042" y="355.70944" z="328.42355" h="43"/>
             <spot x="316.5405" y="186.72568" z="354.34174" h="111"/>
             <spot x="645.71564" y="258.18472" z="290.024" h="18"/>
-            <spot x="294.1974" y="394.29294" z="319.82565" h="0"/>
+            <spot x="294.1974" y="394.29294" z="319.82565"/>
             <spot x="448.5358" y="112.637924" z="343.87683" h="12"/>
             <spot x="419.0" y="219.0" z="333.3125" h="26"/>
             <spot x="231.79364" y="296.5463" z="335.7758" h="36"/>
@@ -764,7 +713,7 @@
             <spot x="243.32584" y="211.2825" z="350.1265" h="102"/>
             <spot x="329.03098" y="222.05258" z="335.36572" h="3"/>
             <spot x="362.9095" y="71.42424" z="368.72916" h="21"/>
-            <spot x="314.30322" y="108.45172" z="363.59918" h="0"/>
+            <spot x="314.30322" y="108.45172" z="363.59918"/>
             <spot x="483.51343" y="131.42516" z="333.28592" h="37"/>
             <spot x="157.84727" y="465.57217" z="323.7137" h="71"/>
             <spot x="194.91043" y="478.58176" z="303.8975" h="8"/>
@@ -963,7 +912,7 @@
 		<!-- Denku Leafreader -->
 		<spawn npc_id="233926" respawn_time="295">
 			<spot x="1745.45" y="634.54877" z="231.0" h="33"/>
-            <spot x="1725.6902" y="825.9285" z="243.58192" h="0"/>
+            <spot x="1725.6902" y="825.9285" z="243.58192"/>
             <spot x="1889.5835" y="394.41574" z="252.57294" h="91"/>
             <spot x="1918.2119" y="527.9896" z="249.36111" h="13"/>
 		</spawn>
@@ -976,7 +925,7 @@
             <spot x="1953.8239" y="279.2194" z="251.58722" h="53"/>
             <spot x="1963.636" y="333.14688" z="255.35225" h="80"/>
             <spot x="1688.7024" y="641.47723" z="228.98425" h="43"/>
-            <spot x="1559.4934" y="316.155" z="255.63469" h="0"/>
+            <spot x="1559.4934" y="316.155" z="255.63469"/>
             <spot x="1914.173" y="731.3606" z="235.6917" h="78"/>
             <spot x="1758.5302" y="816.8997" z="242.01254" h="38"/>
             <spot x="1774.5858" y="558.21375" z="232.69823" h="45"/>
@@ -999,7 +948,7 @@
 		</spawn>
 		<!-- Tomul Bully -->
 		<spawn npc_id="233929" respawn_time="295">
-            <spot x="184.45331" y="1604.0225" z="226.2514" h="0"/>
+            <spot x="184.45331" y="1604.0225" z="226.2514"/>
             <spot x="219.37021" y="1657.1727" z="230.73766" h="95"/>
             <spot x="301.88052" y="1725.3105" z="233.6506" h="107"/>
             <spot x="200.06091" y="1563.6755" z="225.88261" h="2"/>
@@ -1215,8 +1164,8 @@
             <spot x="1078.1848" y="588.45856" z="274.05176" h="66"/>
             <spot x="1035.781" y="583.59985" z="276.77502" h="26"/>
             <spot x="981.8613" y="593.7855" z="275.24133" h="2"/>
-            <spot x="1083.5062" y="536.4575" z="276.66647" h="0"/>
-            <spot x="897.9913" y="730.37524" z="281.14792" h="0"/>
+            <spot x="1083.5062" y="536.4575" z="276.66647"/>
+            <spot x="897.9913" y="730.37524" z="281.14792"/>
             <spot x="851.0229" y="721.5958" z="276.3603" h="83"/>
             <spot x="926.7066" y="754.5734" z="289.6342" h="10"/>
             <spot x="945.46674" y="708.67285" z="279.84274" h="58"/>
@@ -1306,7 +1255,7 @@
             <spot x="592.3353" y="1351.0505" z="273.83383" h="82"/>
             <spot x="572.42426" y="1389.5917" z="274.30103" h="18"/>
             <spot x="580.6326" y="1483.3998" z="276.7875" h="92"/>
-            <spot x="674.43396" y="1444.7115" z="279.56183" h="0"/>
+            <spot x="674.43396" y="1444.7115" z="279.56183"/>
             <spot x="718.4448" y="1481.9623" z="279.5694" h="107"/>
             <spot x="792.41675" y="1434.5234" z="271.9085" h="19"/>
             <spot x="847.0937" y="1472.898" z="264.46835" h="28"/>
@@ -1350,7 +1299,7 @@
             <spot x="725.685" y="1371.2167" z="278.02927" h="34" random_walk="3"/>
             <spot x="454.3026" y="1102.4576" z="273.32748" h="30" random_walk="3"/>
             <spot x="441.65915" y="1149.251" z="273.2968" h="22" random_walk="3"/>
-            <spot x="442.7762" y="1277.8053" z="269.10446" h="0" random_walk="3"/>
+            <spot x="442.7762" y="1277.8053" z="269.10446" random_walk="3"/>
             <spot x="548.4517" y="1270.0637" z="285.5362" h="69" random_walk="3"/>
             <spot x="573.84576" y="1285.4899" z="290.1376" h="36" random_walk="3"/>
             <spot x="596.51135" y="1315.7776" z="287.06808" h="51" random_walk="3"/>
@@ -1381,7 +1330,7 @@
 		<!-- Manduri Pelter -->
 		<spawn npc_id="233952" respawn_time="295">
 			<spot x="146.92815" y="986.4977" z="235.2595" h="19" random_walk="3"/>
-            <spot x="110.78135" y="1079.5461" z="242.4688" h="0" random_walk="3"/>
+            <spot x="110.78135" y="1079.5461" z="242.4688" random_walk="3"/>
             <spot x="285.06158" y="1049.1525" z="242.96811" h="103" random_walk="3"/>
             <spot x="270.9943" y="1021.97235" z="239.43571" h="73" random_walk="3"/>
             <spot x="319.3324" y="1052.6587" z="248.62389" h="64" random_walk="3"/>
@@ -1447,7 +1396,7 @@
 		</spawn>
 		<!-- Downhunter Worg -->
 		<spawn npc_id="233955" respawn_time="295">
-			<spot x="394.66" y="454.64" z="332.01" h="0" random_walk="3"/>
+			<spot x="394.66" y="454.64" z="332.01" random_walk="3"/>
             <spot x="300.0503" y="147.36353" z="357.2898" h="83" random_walk="3"/>
             <spot x="288.3309" y="114.801094" z="365.4835" h="92" random_walk="3"/>
             <spot x="351.53418" y="101.572716" z="361.85922" h="7" random_walk="3"/>
@@ -1669,7 +1618,7 @@
             <spot x="1258.0" y="222.0" z="233.375" h="9"/>
             <spot x="1261.1615" y="199.225" z="233.375" h="99"/>
             <spot x="1232.0522" y="212.54385" z="233.5" h="71"/>
-            <spot x="1324.0" y="214.0" z="233.375" h="0"/>
+            <spot x="1324.0" y="214.0" z="233.375"/>
             <spot x="1304.3336" y="195.82532" z="232.74007" h="79"/>
             <spot x="1300.7141" y="227.62566" z="233.10161" h="36"/>
             <spot x="754.0" y="563.0" z="257.8221" h="63"/>
@@ -1707,7 +1656,7 @@
             <spot x="446.4592" y="721.7533" z="253.60101" h="111" random_walk="3"/>
             <spot x="1759.9193" y="1213.0701" z="239.875" h="56" random_walk="3"/>
             <spot x="1762.3032" y="1167.3743" z="239.875" h="86" random_walk="3"/>
-            <spot x="1791.7793" y="1169.9854" z="239.875" h="0" random_walk="3"/>
+            <spot x="1791.7793" y="1169.9854" z="239.875" random_walk="3"/>
             <spot x="1797.1641" y="1202.068" z="239.875" h="26" random_walk="3"/>
             <spot x="1829.8738" y="1205.5718" z="240.00961" h="113" random_walk="3"/>
             <spot x="1853.0138" y="1189.9382" z="239.87886" h="95" random_walk="3"/>
@@ -1848,7 +1797,7 @@
 			<spot x="1641.0" y="1748.0" z="285.0625" h="116"/>
             <spot x="1740.0" y="1651.0" z="290.625" h="116"/>
             <spot x="1869.0" y="1489.0" z="295.0" h="55"/>
-            <spot x="1715.6725" y="1741.9946" z="285.47986" h="0"/>
+            <spot x="1715.6725" y="1741.9946" z="285.47986"/>
             <spot x="1540.272" y="1690.2572" z="285.62408" h="44"/>
             <spot x="1869.3313" y="1621.7494" z="284.01566" h="54"/>
 		</spawn>
@@ -1961,7 +1910,7 @@
 		<!-- Black Root Agrint -->
 		<spawn npc_id="234704" respawn_time="295">
 			<spot x="1103.511" y="233.98857" z="235.43674" h="100"/>
-            <spot x="1130.0115" y="221.04172" z="236.19083" h="0"/>
+            <spot x="1130.0115" y="221.04172" z="236.19083"/>
             <spot x="1117.1017" y="259.49185" z="239.53914" h="41"/>
             <spot x="1216.3031" y="254.65036" z="235.80653" h="115"/>
             <spot x="1262.5306" y="245.01337" z="236.91617" h="108"/>
@@ -2313,8 +2262,8 @@
             <spot x="1582.3291" y="1588.4706" z="243.75" h="95" random_walk="3"/>
             <spot x="1290.1938" y="1336.7561" z="264.3094" h="42" random_walk="3"/>
             <spot x="1277.6346" y="1354.774" z="264.125" h="15" random_walk="3"/>
-            <spot x="1259.4502" y="1380.1863" z="264.125" h="0" random_walk="3"/>
-            <spot x="1277.3468" y="1372.144" z="264.384" h="0" random_walk="3"/>
+            <spot x="1259.4502" y="1380.1863" z="264.125" random_walk="3"/>
+            <spot x="1277.3468" y="1372.144" z="264.384" random_walk="3"/>
             <spot x="1307.5845" y="1390.6879" z="264.40097" h="31" random_walk="3"/>
             <spot x="1339.2467" y="1386.9248" z="264.4221" h="78" random_walk="3"/>
             <spot x="1343.3124" y="1366.0183" z="264.5" h="38" random_walk="3"/>
@@ -2334,7 +2283,7 @@
 			<spot x="823.6875" y="948.387" z="333.09766" h="3"/>
             <spot x="811.78937" y="960.8255" z="337.40585" h="116"/>
             <spot x="832.883" y="986.8321" z="330.21262" h="23"/>
-            <spot x="808.7413" y="1027.5286" z="334.22052" h="0"/>
+            <spot x="808.7413" y="1027.5286" z="334.22052"/>
             <spot x="800.6168" y="1068.5005" z="336.65628" h="20"/>
             <spot x="854.70917" y="915.6615" z="322.78635" h="110"/>
             <spot x="920.4993" y="881.2277" z="313.84106" h="91"/>
@@ -2368,7 +2317,7 @@
             <spot x="1467.1807" y="1536.1836" z="261.85242" h="111"/>
             <spot x="860.9991" y="1151.2129" z="337.38837" h="107"/>
             <spot x="781.8704" y="1148.9213" z="351.27255" h="106"/>
-            <spot x="833.8406" y="1107.8579" z="340.2721" h="0"/>
+            <spot x="833.8406" y="1107.8579" z="340.2721"/>
             <spot x="869.92725" y="1123.376" z="333.0561" h="2"/>
             <spot x="770.7706" y="1082.7114" z="342.75098" h="96"/>
             <spot x="740.883" y="1059.3744" z="336.60822" h="107"/>

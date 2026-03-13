@@ -334,8 +334,8 @@
 	<npc_drop npc_id="232394">
 		<!-- Foothold Subjugator Combatant -->
 		<drop_group name="POTION" race="PC_ALL">
-			<drop item_id="162000075" chance="1.52" min_amount="1" max_amount="5"/>
-			<drop item_id="162000076" chance="1.52" min_amount="1" max_amount="5"/>
+			<drop item_id="164000108" chance="1.52" min_amount="1" max_amount="5"/>
+			<drop item_id="164000109" chance="1.52" min_amount="1" max_amount="5"/>
 		</drop_group>
 		<drop_group name="POWER_SHARDS" race="PC_ALL">
 			<drop item_id="169000010" chance="29.7" min_amount="1" max_amount="5"/>

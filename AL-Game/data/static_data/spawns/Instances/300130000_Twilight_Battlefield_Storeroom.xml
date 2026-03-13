@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	황혼의 전장 비밀창고 4.9
-    Spawn By (Encom)
+	Twilight Battlefield Storeroom 4.9 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300130000">
@@ -41,19 +40,18 @@
 			<spot x="526.70624" y="456.98648" z="179.67361" entity_id="81"/>
 			<spot x="413.93796" y="608.15704" z="189.98061" entity_id="82"/>
 		</spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="527.4625" y="144.58412" z="179.18855" h="30"/>
         </spawn>
-		<!-- Tider (Npc Normal lvl:65) -->
+		<!-- Tider -->
 		<spawn npc_id="805432">
             <spot x="523.1197" y="145.38531" z="178.94678" h="90"/>
         </spawn>
-		<!-- Senaste (Npc Normal lvl:65) -->
+		<!-- Senaste -->
         <spawn npc_id="805437">
             <spot x="531.3423" y="145.57184" z="178.93628" h="90"/>
         </spawn>
-		
 		<!-- Ranx Operative -->
 		<spawn npc_id="215350">
 			<spot x="539.913" y="340.086" z="179.91" h="102"/>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	ヨルムンガンドの進撃路
-	Spawn By (Encom)
+	Engulfed Ophidan Bridge Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301210000">
@@ -12,55 +11,54 @@
 	        <spot x="602.73395" y="556.29407" z="591.52533" entity_id="158"/>
 	        <spot x="667.11389" y="474.22995" z="600.48346" entity_id="164"/>
 		</spawn>
-		<!-- Elyos Field Gun (Object Normal lvl:3) -->
+		<!-- Elyos Field Gun -->
 		<spawn npc_id="701947">
 			<spot x="339.84003" y="468.66354" z="595.2064" h="9"/>
             <spot x="337.18887" y="513.1137" z="595.2064" h="109"/>
 		</spawn>
-		<!-- Asmodians Field Gun (Object Normal lvl:3) -->
+		<!-- Asmodians Field Gun -->
 		<spawn npc_id="701948">
 			<spot x="771.9331" y="565.97644" z="577.08014" h="88"/>
             <spot x="746.5495" y="569.6571" z="577.24384" h="89"/>
 		</spawn>
-		<!-- Elyos Field Gun (Object Normal lvl:3) -->
+		<!-- Elyos Field Gun -->
 		<spawn npc_id="701949">
 			<spot x="316.5503" y="502.77008" z="596.52875" h="0"/>
             <spot x="317.76346" y="476.9133" z="596.5294" h="1"/>
 		</spawn>
-		<!-- Asmodians Field Gun (Object Normal lvl:3) -->
+		<!-- Asmodians Field Gun -->
 		<spawn npc_id="701950">
 			<spot x="735.52246" y="548.4562" z="576.4035" h="100"/>
             <spot x="773.91504" y="542.0265" z="576.25" h="78"/>
 		</spawn>
-		<!-- Daeva Of Zephyr Rearguard (NPC Normal lvl:65) -->
+		<!-- Daeva Of Zephyr Rearguard -->
 		<spawn npc_id="701984">
 	        <spot x="316.89774" y="494.96988" z="596.2939" h="119"/>
             <spot x="317.85175" y="484.25467" z="596.3323" h="5"/>
 		</spawn>
-		<!-- Archon Of Dusk Rearguard (NPC Normal lvl:65) -->
+		<!-- Archon Of Dusk Rearguard -->
 		<spawn npc_id="701985">
 	        <spot x="759.99097" y="555.41235" z="577.1164" h="87"/>
             <spot x="754.0445" y="556.09015" z="577.1496" h="88"/>
 		</spawn>
-		<!-- Daeva Of Zephyr Rearguard (NPC Normal lvl:65) -->
+		<!-- Daeva Of Zephyr Rearguard -->
 		<spawn npc_id="701986">
 	        <spot x="329.89984" y="487.55933" z="596.0588" h="111"/>
             <spot x="329.28595" y="493.1939" z="596.1075" h="10"/>
 		</spawn>
-		<!-- Archon Of Dusk Rearguard (NPC Normal lvl:65) -->
+		<!-- Archon Of Dusk Rearguard -->
 		<spawn npc_id="701987">
 	        <spot x="755.3768" y="565.8618" z="577.1246" h="87"/>
             <spot x="762.47504" y="564.5854" z="577.09784" h="87"/>
 		</spawn>
-		<!-- Moireste (NPC Normal lvl:65) -->
+		<!-- Moireste -->
 		<spawn npc_id="802025">
 	        <spot x="306.3371" y="488.438" z="598.5838" h="2"/>
 		</spawn>
-		<!-- Asthyn (NPC Normal lvl:65) -->
+		<!-- Asthyn -->
 		<spawn npc_id="802026">
 	        <spot x="760.0722" y="574.4416" z="578.4367" h="87"/>
 		</spawn>
-		
 		<!-- Beritra Barricade -->
 		<spawn npc_id="233856">
 			<spot x="745.93378" y="470.74503" z="587.52997" entity_id="33"/>
@@ -79,10 +77,7 @@
             <spot x="648.8516" y="434.70456" z="604.2337" h="14"/>
             <spot x="751.37354" y="477.99728" z="586.0397" h="29"/>
 		</spawn>
-		<!-- =================================== -->
-		<!-- ========= Bridge Watchpost ======== -->
-		<!-- =================================== -->
-		<!-- Defense Post Flag (Object Normal lvl:3) -->
+		<!-- Defense Post Flag -->
 		<spawn npc_id="802044">
 			<spot x="492.81982" y="536.56732" z="598.24933" h="0"/>
 		</spawn>
@@ -102,10 +97,7 @@
 		<spawn npc_id="233477">
 			<spot x="498.373" y="543.4837" z="597.5" h="9"/>
 		</spawn>
-		<!-- =================================== -->
-		<!-- ====== Northern Approach Post ===== -->
-		<!-- =================================== -->
-		<!-- Northern Approach Post Flag (Object Normal lvl:3) -->
+		<!-- Northern Approach Post Flag -->
 		<spawn npc_id="802038">
 			<spot x="524.84589" y="427.63959" z="621.21320" h="0"/>
 		</spawn>
@@ -121,10 +113,7 @@
 		<spawn npc_id="233480">
 			<spot x="533.65063" y="428.35898" z="620.25" h="5"/>
 		</spawn>
-		<!-- =================================== -->
-		<!-- ====== Southern Approach Post ===== -->
-		<!-- =================================== -->
-		<!-- Southern Approach Post Flag (Object Normal lvl:3) -->
+		<!-- Southern Approach Post Flag -->
 		<spawn npc_id="802041">
 			<spot x="602.73395" y="556.29407" z="591.52533" h="0"/>
 		</spawn>
@@ -140,10 +129,7 @@
 		<spawn npc_id="233483">
 			<spot x="607.1519" y="548.563" z="590.5" h="103"/>
 		</spawn>
-		<!-- =================================== -->
-		<!-- ===== Chokepoint Defence Post ===== -->
-		<!-- =================================== -->
-		<!-- Guard Post Flag (Object Normal lvl:3) -->
+		<!-- Guard Post Flag -->
 		<spawn npc_id="802035">
 			<spot x="667.11389" y="474.22995" z="600.48346" h="0"/>
 		</spawn>

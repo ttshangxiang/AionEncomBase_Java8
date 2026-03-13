@@ -8077,7 +8077,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -8328,7 +8328,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -8579,7 +8579,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -8830,7 +8830,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -9081,7 +9081,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -9332,7 +9332,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -9705,7 +9705,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -9956,7 +9956,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -10207,7 +10207,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>
@@ -17918,7 +17918,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -18120,7 +18120,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -18322,7 +18322,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -18524,7 +18524,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -18726,7 +18726,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -18928,7 +18928,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -19130,7 +19130,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -19332,7 +19332,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -19534,7 +19534,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -19736,7 +19736,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -19938,7 +19938,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -20140,7 +20140,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -20342,7 +20342,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -20544,7 +20544,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -20746,7 +20746,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -20948,7 +20948,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -21150,7 +21150,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -21352,7 +21352,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -21554,7 +21554,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -21756,7 +21756,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -21958,7 +21958,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -22160,7 +22160,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -22362,7 +22362,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -22564,7 +22564,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -22766,7 +22766,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -22968,7 +22968,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -23170,7 +23170,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -23372,7 +23372,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -23574,7 +23574,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -23776,7 +23776,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -23978,7 +23978,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -24180,7 +24180,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -27357,7 +27357,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -27559,7 +27559,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -27761,7 +27761,7 @@
 						<drop chance="9.0" item_id="162000075" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="GODSTONES" use_category="true">
 						<drop chance="9.0" item_id="168000141" max_amount="1" min_amount="1"/>
@@ -27966,7 +27966,7 @@
 						<drop chance="9.0" item_id="162000085" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="MANA_ELIXIR" use_category="true">
-						<drop chance="9.0" item_id="162000086" max_amount="10" min_amount="1"/>
+						<drop chance="9.0" item_id="162000076" max_amount="10" min_amount="1"/>
 				</drop_group>
 				<drop_group name="FLUX_COMMON" use_category="true">
 						<drop chance="9.0" item_id="152011100" max_amount="1" min_amount="1"/>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	暗黒のポエタ 4.9
-	Spawn By (Encom)
+	Dark Poeta 4.9 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300040000">
@@ -971,7 +970,7 @@
 			<spot x="807.14" y="480.39" z="107.167" h="99"/>
 		</spawn>
 		
-		<!-- Balaur Remains (Object Normal lvl:3) -->
+		<!-- Balaur Remains -->
 		<spawn npc_id="237379">
 		    <spot h="70" z="141.0195" y="1228.315" x="525.0758"/>
             <spot h="49" z="157.53485" y="1426.933" x="261.75867"/>
@@ -979,30 +978,30 @@
             <spot h="114" z="158.375" y="1434.0" x="256.0"/>
             <spot h="1" z="105.56871" y="825.91113" x="428.80148"/>
 		</spawn>
-		<!-- Balaur Remains (Object Normal lvl:3) -->
+		<!-- Balaur Remains -->
 		<spawn npc_id="237380">
 			<spot h="0" z="105.19673" y="820.0098" x="433.61087"/>
             <spot h="84" z="139.8284" y="1221.5372" x="529.58923"/>
             <spot h="106" z="102.4861" y="861.7775" x="169.22696"/>
             <spot h="27" z="100.70232" y="943.54333" x="255.23708"/>
 		</spawn>
-		<!-- Prison Camp (Object Normal lvl:3) -->
+		<!-- Prison Camp -->
 		<spawn npc_id="702896">
             <spot x="836.9628" y="577.8961" z="118.75" h="26"/>
         </spawn>
-		<!-- Prison Camp (Object Normal lvl:3) -->
+		<!-- Prison Camp -->
         <spawn npc_id="702897">
             <spot x="650.4983" y="139.6467" z="102.65614" h="36"/>
         </spawn>
-		<!-- Prison Camp (Object Normal lvl:3) -->
+		<!-- Prison Camp -->
         <spawn npc_id="702898">
             <spot x="584.71295" y="162.4949" z="104.125" h="25"/>
         </spawn>
-		<!-- Prison Camp (Object Normal lvl:3) -->
+		<!-- Prison Camp -->
 		<spawn npc_id="702899">
             <spot x="583.1705" y="229.94957" z="106.875" h="3"/>
         </spawn>
-		<!-- Drana Lump (Object Normal lvl:3) -->
+		<!-- Drana Lump -->
 		<spawn npc_id="281178">
 			<spot x="261.423" y="1413.46" z="155.787" h="55"/>
 			<spot x="267.671" y="1162.31" z="147.946" h="102"/>
@@ -1011,96 +1010,96 @@
 			<spot x="344.383" y="1404.41" z="152.274" h="20"/>
 			<spot x="249.02" y="1310.59" z="149.31" h="32"/>
 		</spawn>
-		<!-- Marabata Attack Booster (Object Normal lvl:3) -->
+		<!-- Marabata Attack Booster -->
 		<spawn npc_id="700439">
 			<spot x="665.374" y="372.751" z="99.375" h="90"/>
 		</spawn>
-		<!-- Marabata Defense Booster (Object Normal lvl:3) -->
+		<!-- Marabata Defense Booster -->
 		<spawn npc_id="700440">
 			<spot x="681.851" y="408.625" z="100.472" h="13"/>
 		</spawn>
-		<!-- Marabata Property Controller (Object Normal lvl:3) -->
+		<!-- Marabata Property Controller -->
 		<spawn npc_id="700441">
 			<spot x="646.55" y="406.088" z="99.375" h="49"/>
 		</spawn>
-		<!-- Marabata Attack Booster (Object Normal lvl:3) -->
+		<!-- Marabata Attack Booster -->
 		<spawn npc_id="700442">
 			<spot x="636.118" y="325.537" z="99.375" h="49"/>
 		</spawn>
-		<!-- Marabata Defense Booster (Object Normal lvl:3) -->
+		<!-- Marabata Defense Booster -->
 		<spawn npc_id="700443">
 			<spot x="676.257" y="319.65" z="99.375" h="4"/>
 		</spawn>
-		<!-- Marabata Property Controller (Object Normal lvl:3) -->
+		<!-- Marabata Property Controller -->
 		<spawn npc_id="700444">
 			<spot x="655.851" y="292.711" z="99.375" h="90"/>
 		</spawn>
-		<!-- Marabata Attack Booster (Object Normal lvl:3) -->
+		<!-- Marabata Attack Booster -->
 		<spawn npc_id="700445">
 			<spot x="605.625" y="380.479" z="99.375" h="14"/>
 		</spawn>
-		<!-- Marabata Defense Booster (Object Normal lvl:3) -->
+		<!-- Marabata Defense Booster -->
 		<spawn npc_id="700446">
 			<spot x="598.706" y="345.978" z="99.375" h="98"/>
 		</spawn>
-		<!-- Marabata Property Controller (Object Normal lvl:3) -->
+		<!-- Marabata Property Controller -->
 		<spawn npc_id="700447">
 			<spot x="567.775" y="366.207" z="99.375" h="59"/>
 		</spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="1222.4789" y="415.15884" z="140.18988" h="86"/>
         </spawn>
-		<!-- Power Generator Core (Object Normal lvl:3) -->
+		<!-- Power Generator Core -->
 		<spawn npc_id="214898">
             <spot x="231.74629" y="305.68942" z="120.36815" h="0"/>
         </spawn>
-		<!-- Power Generator Core (Object Normal lvl:3) -->
+		<!-- Power Generator Core -->
 		<spawn npc_id="214899">
             <spot x="231.55772" y="310.1522" z="121.0055" h="1"/>
         </spawn>
-		<!-- Power Generator Core (Object Normal lvl:3) -->
+		<!-- Power Generator Core -->
 		<spawn npc_id="214900">
             <spot x="252.91783" y="335.40994" z="121.83353" h="83"/>
         </spawn>
-		<!-- Power Generator Core (Object Normal lvl:3) -->
+		<!-- Power Generator Core -->
 		<spawn npc_id="214901">
             <spot x="256.76852" y="333.8842" z="121.79355" h="83"/>
         </spawn>
-		<!-- Power Generator Core (Object Normal lvl:3) -->
+		<!-- Power Generator Core -->
 		<spawn npc_id="214902">
             <spot x="250.69989" y="362.57434" z="121.22865" h="99"/>
         </spawn>
-		<!-- Power Generator Core (Object Normal lvl:3) -->
+		<!-- Power Generator Core -->
 		<spawn npc_id="214903">
             <spot x="246.99377" y="360.79077" z="121.03237" h="99"/>
         </spawn>
-		<!-- Balaur Supply Box (Object Normal lvl:3) -->
+		<!-- Balaur Supply Box -->
 		<spawn npc_id="700510">
 			<spot x="216.19383" y="1218.9935" z="171.64407" entity_id="150"/>
 		</spawn>
-		<!-- Camouflaging Stone Wall (Object Normal lvl:3) -->
+		<!-- Camouflaging Stone Wall -->
 		<spawn npc_id="701869">
 		    <spot x="191.79227" y="432.72479" z="126.9567" entity_id="83"/>
 			<spot x="220.50540" y="386.66074" z="129.9903" entity_id="87"/>
 			<spot x="166.00000" y="415.00000" z="133.0000" entity_id="142"/>
 			<spot x="200.23024" y="426.76007" z="109.9644" entity_id="168"/>
 		</spawn>
-		<!-- Balaur Barricade (Object Normal lvl:3) -->
+		<!-- Balaur Barricade -->
 		<spawn npc_id="700558">
 			<spot x="309.50507" y="983.87494" z="110.8034" entity_id="55"/>
 			<spot x="285.58893" y="998.22437" z="112.4227" entity_id="57"/>
 			<spot x="206.27953" y="845.20538" z="100.6222" entity_id="59"/>
 		</spawn>
-		<!-- Balaur Operation Order (Object Normal lvl:3) -->
+		<!-- Balaur Operation Order -->
 		<spawn npc_id="730192">
 			<spot x="823.56061" y="555.29865" z="118.91444" entity_id="136"/>
 		</spawn>
-		<!-- Balaur Material Converter (Object Normal lvl:3) -->
+		<!-- Balaur Material Converter -->
 		<spawn npc_id="730212">
 			<spot x="246.93385" y="408.8613" z="104.01749" entity_id="95"/>
 		</spawn>
-		<!-- Controller Protection Device (Object Normal lvl:3) -->
+		<!-- Controller Protection Device -->
 		<spawn npc_id="281118">
 			<spot x="230.7800" y="414.0000" z="103.8500" entity_id="79"/>
 			<spot x="228.4368" y="427.2474" z="103.8919" entity_id="143"/>

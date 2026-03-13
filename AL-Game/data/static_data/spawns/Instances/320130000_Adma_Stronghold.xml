@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	アドマ城砦 4.9
-	Spawn By (Encom)
+	Adma Stronghold 4.9 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="320130000">
@@ -588,11 +587,11 @@
 			<spot x="512.65" y="473.579" z="188.71" h="119"/>
 			<spot x="538.714" y="473.661" z="186.645" h="33"/>
 		</spawn>
-		<!-- Macaronerk (NPC Normal lvl:50) -->
+		<!-- Macaronerk -->
 	    <spawn npc_id="205224">
 		    <spot x="453.7055" y="211.30554" z="167.84444" h="90"/>
 	    </spawn>
-		<!-- Adma Stronghold To Theobomos 4.9 (NPC Normal lvl:65) -->
+		<!-- Adma Stronghold To Theobomos -->
 		<spawn npc_id="805319">
             <spot x="449.03226" y="211.24873" z="167.84444" h="90"/>
         </spawn>
@@ -606,7 +605,7 @@
 			<spot x="564.159" y="425.738" z="189.401" h="59"/>
 			<spot x="613.72" y="513.187" z="193" h="53"/>
 		</spawn>
-		<!-- Npc (Object Normal lvl:3) -->
+		<!-- Npc -->
 	    <spawn npc_id="798224">
 		    <spot x="342.825928" y="409.156982" z="188.000000" h="00"/>
 			<spot h="101" z="162.9956" y="662.8862" x="438.60202"/>
@@ -664,44 +663,44 @@
             <spot x="510.65714" y="470.73593" z="188.86784" h="60"/>
             <spot x="501.8403" y="470.6291" z="189.38443" h="60"/>
         </spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="451.43082" y="214.44058" z="168.8863" h="30"/>
         </spawn>
-		<!-- Ntuamus Teddy Bear (Object Normal lvl:3) -->
+		<!-- Ntuamus Teddy Bear -->
 		<spawn npc_id="700396">
 			<spot x="650.96558" y="608.5318" z="191.17825" entity_id="160"/>
 		</spawn>
-		<!-- Tarnished Incense Burner (Object Normal lvl:3) -->
+		<!-- Tarnished Incense Burner -->
 	    <spawn npc_id="700397">
 	        <spot x="595.72003" y="609.56067" z="191.17163" entity_id="161"/>
 	    </spawn>
-		<!-- Glowing Grain Sack (Object Normal lvl:3) -->
+		<!-- Glowing Grain Sack -->
 		<spawn npc_id="700433">
 			<spot x="354.56226" y="214.0249" z="164.02957" entity_id="93"/>
 			<spot x="494.56824" y="212.22911" z="163.96736" entity_id="96"/>
 		</spawn>
-		<!-- Jewel Box (Object Normal lvl:3) -->
+		<!-- Jewel Box -->
 		<spawn npc_id="700434">
 			<spot x="602.69061" y="632.45752" z="191.5358" entity_id="97"/>
 		</spawn>
-		<!-- Golden Goblet (Object Normal lvl:3) -->
+		<!-- Golden Goblet -->
 		<spawn npc_id="700435">
 			<spot x="470.30331" y="383.16382" z="190.30717" entity_id="98"/>
 		</spawn>
-		<!-- Ornate Box (Object Normal lvl:3) -->
+		<!-- Ornate Box -->
 		<spawn npc_id="700436">
 			<spot x="356.01193" y="559.3606" z="180.40247" entity_id="120"/>
 		</spawn>
-		<!-- Adma Stronghold Exit (Object Normal lvl:3) -->
+		<!-- Adma Stronghold Exit -->
 	    <spawn npc_id="730166">
 	        <spot x="451.09711" y="196.10121" z="167.84679" entity_id="195"/>
 	    </spawn>
-		<!-- Adma Stronghold Warehouse Backdoor (Object Normal lvl:3) -->
+		<!-- Adma Stronghold Warehouse Backdoor -->
 	    <spawn npc_id="730167">
 		    <spot x="335.6524" y="673.2641" z="169.33171" entity_id="211"/>
 	    </spawn>
-		<!-- Wreck Of Unstable Entrance (Object Normal lvl:3) -->
+		<!-- Wreck Of Unstable Entrance -->
 	    <spawn npc_id="730175">
 	        <spot x="581.0448" y="758.66888" z="201.53044" entity_id="12"/>
 	    </spawn>

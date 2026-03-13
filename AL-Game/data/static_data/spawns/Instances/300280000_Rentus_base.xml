@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    レントゥス基地 4.8
-    Spawn By (Encom)
+    Rentus base 4.8 Spawn By (Encom)
 -->
 <spawns>
 	<spawn_map map_id="300280000">
@@ -170,12 +169,11 @@
 		<spawn npc_id="217317">
 			<spot x="163.09702" y="319.17807" z="252.86755" h="85"/>
 		</spawn>
-		
-		<!-- Quartier-Maitre Reian (Npc Normal Level 60) -->
+		<!-- Quartier-Maitre Reian -->
         <spawn npc_id="282393">
             <spot x="156.7495" y="235.1058" z="209.80113" h="32"/>
         </spawn>
-		<!-- Destroyed Building (Object Normal lvl:3) -->
+		<!-- Destroyed Building -->
 		<spawn npc_id="282470">
 			<spot x="756.02" y="370.10" z="114.00"/>
 			<spot x="902.83" y="686.51" z="157.00"/>
@@ -190,19 +188,19 @@
 			<spot x="223.10" y="287.99" z="256.50"/>
 			<spot x="299.61" y="721.82" z="172.00"/>
 		</spawn>
-		<!-- Find Oil (Object Normal lvl:3) -->
+		<!-- Find Oil -->
 		<spawn npc_id="282540">
 			<spot x="239.71" y="604.26" z="180.88" h="0"/>
 		</spawn>
-		<!-- Dancing Red Flame (Object Normal lvl:3) -->
+		<!-- Dancing Red Flame -->
 		<spawn npc_id="282996">
 			<spot x="167.600" y="418.220" z="262.540"/>
 		</spawn>
-		<!-- Dancing Blue Flame (Object Normal lvl:3) -->
+		<!-- Dancing Blue Flame -->
 		<spawn npc_id="282997">
 			<spot x="208.580" y="410.710" z="262.540"/>
 		</spawn>
-		<!-- Red Flame Smash (Object Normal lvl:3) -->
+		<!-- Red Flame Smash -->
 		<spawn npc_id="283008">
 			<spot x="177.106" y="413.678" z="260.569" h="58"/>
 			<spot x="167.271" y="418.102" z="260.721"/>
@@ -217,7 +215,7 @@
 			<spot x="173.963" y="412.215" z="260.557"/>
 			<spot x="175.762" y="422.974" z="260.572"/>
 		</spawn>
-		<!-- Blue Flame Smash (Object Normal lvl:3) -->
+		<!-- Blue Flame Smash -->
 		<spawn npc_id="283009">
 			<spot x="176.184" y="415.782" z="260.572" h="58"/>
 			<spot x="159.480" y="412.495" z="260.555"/>
@@ -232,7 +230,7 @@
 			<spot x="184.120" y="384.201" z="260.571"/>
 			<spot x="178.429" y="415.372" z="260.572"/>
 		</spawn>
-		<!-- Fallen Reian Craftsman (Npc Normal Level 60) -->
+		<!-- Fallen Reian Craftsman -->
 		<spawn npc_id="701035">
 			<spot h="5" z="252.62862" y="252.0" x="104.0"/>
 			<spot h="5" z="252.62862" y="346.0" x="122.0"/>
@@ -252,7 +250,7 @@
 			<spot x="163.791931" y="357.213715" z="209.294556" h="00"/>
 			<spot x="193.493652" y="359.940460" z="259.414215" h="00"/>
 		</spawn>
-		<!-- Reian Warrior (Npc Normal Level 60) -->
+		<!-- Reian Warrior -->
 		<spawn npc_id="799654">
 			<spot x="552.64716" y="574.17267" z="153.20604" h="47"/>
             <spot x="551.1235" y="572.4845" z="153.2059" h="46"/>
@@ -261,7 +259,7 @@
             <spot x="535.0603" y="587.87463" z="153.11414" h="105"/>
             <spot x="533.2304" y="586.1128" z="153.11392" h="105"/>
 		</spawn>
-		<!-- Imprisoned Reian (Npc Normal Level 60) -->
+		<!-- Imprisoned Reian -->
 		<spawn npc_id="799658">
 			<spot x="530.85" y="506.12" z="146.0075" h="93" walker_id="948F12DACB8985E11AED67CC8EE6AFBD86727B39" walker_index="1"/>
 			<spot x="501.41" y="523.01" z="146.05125" h="20" walker_id="4105369BF9FC1DADD0A4DC192CBFB5137BC55F48" walker_index="3"/>
@@ -284,7 +282,7 @@
 			<spot x="522.27" y="474.05" z="145.73" h="118" walker_id="3D27EE863EF93C4A5CA38110EC417AFDA8B8C606" walker_index="6"/>
 			<spot x="364.63" y="646.26" z="151.14125" h="118" walker_id="C040E74BBB03132150BAE9CD774A1F61912ED508" walker_index="1"/>
 		</spawn>
-		<!-- Reian Prisoner (Npc Normal Level 60) -->
+		<!-- Reian Prisoner -->
 		<spawn npc_id="799659">
 			<spot x="188.704773" y="314.738556" z="207.000" h="00"/>
 			<spot x="188.957504" y="300.636414" z="253.000" h="00"/>
@@ -307,7 +305,7 @@
 			<spot h="41" z="252.62862" y="311.41867" x="137.11307"/>
 			<spot h="87" z="252.62862" y="283.66016" x="121.707"/>
 		</spawn>
-		<!-- Imprisoned Reian (Npc Normal Level 60) -->
+		<!-- Imprisoned Reian -->
 		<spawn npc_id="799660">
 			<spot x="532.89" y="503.34" z="145.81937" h="26" walker_id="709EA133FF12D3D6A8A94C4998D26E2D16722DAE" walker_index="5"/>
 			<spot x="498.633" y="524.853" z="145.614"/>
@@ -327,7 +325,7 @@
 			<spot x="314.0" y="665.14" z="155.58875" h="95" walker_id="D6E7B2B72F2E29A3DDD2E28057EA066D16376C87" walker_index="2"/>
 			<spot x="365.95" y="643.56" z="151.0" h="95" walker_id="618F639ADA1EAF9F89A8B889DC3DCA3348090780" walker_index="3"/>
 		</spawn>
-		<!-- Reian Craftsman (Npc Normal Level 60) -->
+		<!-- Reian Craftsman -->
 		<spawn npc_id="799662">
 			<spot x="226.048981" y="346.028290" z="208.000" h="00"/>
 			<spot x="226.768982" y="348.208282" z="208.000" h="00"/>
@@ -338,7 +336,7 @@
 			<spot h="56" z="209.44359" y="328.41867" x="143.02225"/>
 			<spot h="55" z="209.44359" y="326.9828" x="142.4114"/>
 		</spawn>
-		<!-- Reian Prisoner (Npc Normal Level 60) -->
+		<!-- Reian Prisoner -->
 		<spawn npc_id="799664">
 			<spot x="119.640068" y="327.156860" z="253.000" h="00"/>
 		    <spot x="171.610840" y="266.615387" z="253.000" h="00"/>
@@ -357,7 +355,7 @@
 			<spot h="43" z="252.62862" y="224.68881" x="173.25764"/>
 			<spot h="73" z="253.05522" y="317.77383" x="220.96532"/>
 		</spawn>
-		<!-- Reian Warrior (Npc Normal Level 60) -->
+		<!-- Reian Warrior -->
 		<spawn npc_id="800291">
 			<spot x="543.0645" y="570.3399" z="148.6011" h="75"/>
             <spot x="545.15234" y="568.2296" z="148.75" h="75"/>
@@ -368,89 +366,89 @@
             <spot x="531.4375" y="581.599" z="148.40463" h="75"/>
             <spot x="533.2538" y="579.9385" z="148.45337" h="75"/>
 		</spawn>
-		<!-- Greater Blessed Relics (Object Normal lvl:3) -->
+		<!-- Greater Blessed Relics -->
 		<spawn npc_id="831990">
             <spot x="552.8852" y="590.8183" z="154.21321" h="75"/>
         </spawn>
-		<!-- Broken Barrel (Object Normal lvl:3) -->
+		<!-- Broken Barrel -->
 		<spawn npc_id="282541">
 			<spot x="175.36511" y="369.6372" z="207.94514" h="107"/>
 		</spawn>
-		<!-- Lition (Npc Normal Level 60) -->
+		<!-- Lition -->
 		<spawn npc_id="205438">
 			<spot x="537.98" y="580.43" z="151.68" h="15"/>
 		</spawn>
-		<!-- Paios (Npc Normal Level 60) -->
+		<!-- Paios -->
 		<spawn npc_id="799536">
 			<spot x="453.200" y="529.930" z="139.500" h="86"/>
 		</spawn>
-		<!-- Rodelion (Npc Normal Level 60) -->
+		<!-- Rodelion -->
 		<spawn npc_id="799541">
 			<spot x="226.800" y="712.853" z="164.551" h="13"/>
 		</spawn>
-		<!-- Ariana (Npc Normal Level 60) -->
+		<!-- Ariana -->
 		<spawn npc_id="799592">
             <spot x="535.2759" y="566.7656" z="147.13019" h="75"/>
         </spawn>
-		<!-- Beanskim (Npc Normal Level 60) -->
+		<!-- Beanskim -->
         <spawn npc_id="799679">
             <spot x="233.669098" y="721.586670" z="166.024261" h="00"/>
         </spawn>
-		<!-- Tori's Master (Npc Normal Level 60) -->
+		<!-- Tori's Master -->
         <spawn npc_id="799680">
             <spot x="232.985855" y="716.786743" z="166.024261" h="00"/>
         </spawn>
-		<!-- Tori Of The Abyss (Mobs Junk Level 3) -->
+		<!-- Tori Of The Abyss -->
         <spawn npc_id="217324">
             <spot x="233.8391" z="164.54756" y="716.66205" h="57"/>
         </spawn>
-		<!-- Ariana's Jewelry Box (Object Normal lvl:3) -->
+		<!-- Ariana's Jewelry Box -->
 		<spawn npc_id="218572">
             <spot x="226.67325" y="317.78052" z="253.05522" h="71"/>
         </spawn>
-		<!-- Sensory Area (Object Normal lvl:3) -->
+		<!-- Sensory Area -->
 		<spawn npc_id="206180">
             <spot x="468.93274" y="450.43698" z="151.18329" h="66"/>
         </spawn>
-		<!-- Solid Balaur Picket (Object Normal lvl:3) -->
+		<!-- Solid Balaur Picket -->
 		<spawn npc_id="272263">
 			<spot x="398.37463" y="514.06281" z="137.7623" entity_id="932"/>
 		</spawn>
-		<!-- Reian Combat Ration (Object Normal lvl:3) -->
+		<!-- Reian Combat Ration -->
 		<spawn npc_id="701151">
 			<spot x="221.31136" y="333.99814" z="206.9675" entity_id="194"/>
 			<spot x="170.06387" y="273.54733" z="210.5190" entity_id="196"/>
 		</spawn>
-		<!-- Reian Emergency Rations (Object Normal lvl:3) -->
+		<!-- Reian Emergency Rations -->
 		<spawn npc_id="701152">
 			<spot x="173.82263" y="288.48926" z="209.4427" entity_id="197"/>
 			<spot x="201.13000" y="366.98999" z="206.9660" entity_id="201"/>
 		</spawn>
-		<!-- Collapsed Stone Wall (Object Normal lvl:3) -->
+		<!-- Collapsed Stone Wall -->
 		<spawn npc_id="701097">
 			<spot x="243.83279" y="717.52014" z="164.4425" entity_id="34"/>
 		</spawn>
-		<!-- Building Debris (Object Normal lvl:3) -->
+		<!-- Building Debris -->
 		<spawn npc_id="701098">
 			<spot x="453.49973" y="531.33832" z="139.4712" entity_id="195"/>
 		</spawn>
-		<!-- Torn Scroll (Object Normal lvl:3) -->
+		<!-- Torn Scroll -->
 		<spawn npc_id="701099">
 			<spot x="142.67281" y="300.73633" z="210.6805" entity_id="130"/>
 		</spawn>
-		<!-- Old Incense Burner (Object Normal lvl:3) -->
+		<!-- Old Incense Burner -->
 		<spawn npc_id="701100">
 			<spot x="508.70395" y="613.86493" z="158.7253" entity_id="1"/>
 		</spawn>
-		<!-- Training Camp Bridge Barrier (Object Normal lvl:3) -->
+		<!-- Training Camp Bridge Barrier -->
 		<spawn npc_id="701155">
 			<spot x="729.10754" y="632.77063" z="137.1530" entity_id="69"/>
 		</spawn>
-		<!-- Fortress Bridge Barrier (Object Normal lvl:3) -->
+		<!-- Fortress Bridge Barrier -->
 		<spawn npc_id="701156">
 			<spot x="230.62059" y="569.73993" z="178.4034" entity_id="237"/>
 		</spawn>
-		<!-- Rentus Base Exit (Object Normal lvl:3) -->
+		<!-- Rentus Base Exit -->
 		<spawn npc_id="730401">
 			<spot x="578.63385" y="121.95078" z="51.97187" entity_id="131"/>
 		</spawn>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	鉄壁の砦 4.8
-	Spawn By (Encom)
+	Eternal Bastion 4.8 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300540000">
@@ -221,10 +220,7 @@
             <spot x="815.5477" y="535.14465" z="229.23938" h="69"/>
             <spot x="605.2382" y="388.07382" z="223.375" h="35"/>
 		</spawn>
-		
-		<!-- Post-Bastion Strategy
-		Beritra's intended strategy for conquering "Danaria" and "Katalam"
-		from his starting point at the "Eternal Bastion" -->
+		<!-- Post-Bastion Strategy -->
 		<spawn npc_id="701660">
 			<spot x="572.27283" y="514.05396" z="218.33615" entity_id="328"/>
 		</spawn>
@@ -240,7 +236,7 @@
 		<spawn npc_id="231180">
 			<spot x="789.77563" y="771.85559" z="200.77870" entity_id="229"/>
 		</spawn>
-		<!-- Cannon Supplies Box (Object Normal lvl:3) -->
+		<!-- Cannon Supplies Box -->
 		<spawn npc_id="831328">
             <spot x="455.71304" y="271.08563" z="246.54420" entity_id="317"/>
             <spot x="389.22247" y="265.75354" z="253.39273" entity_id="320"/>
@@ -258,7 +254,7 @@
             <spot x="243.69191" y="761.59729" z="201.33101" entity_id="323"/>
             <spot x="272.92630" y="732.62634" z="205.47568" entity_id="325"/>
         </spawn>
-		<!-- Ammo Box (Object Normal lvl:3) -->
+		<!-- Ammo Box -->
         <spawn npc_id="831329">
             <spot x="680.60107" y="736.97571" z="179.61253" entity_id="337"/>
             <spot x="402.74118" y="561.36957" z="215.70866" entity_id="336"/>
@@ -266,27 +262,27 @@
             <spot x="533.66534" y="693.07813" z="205.95287" entity_id="340"/>
             <spot x="555.28540" y="692.96661" z="205.73410" entity_id="338"/>
         </spawn>
-		<!-- Siege Mine (Object Normal lvl:3) -->
+		<!-- Siege Mine -->
         <spawn npc_id="831330">
             <spot x="680.12537" y="291.81180" z="225.66817" entity_id="366"/>
             <spot x="787.61670" y="362.55170" z="230.88277" entity_id="363"/>
             <spot x="688.16638" y="348.48398" z="228.66360" entity_id="364"/>
             <spot x="747.26013" y="352.09000" z="230.88277" entity_id="365"/>
         </spawn>
-		<!-- Trebuchet Parts (Object Normal lvl:3) -->
+		<!-- Trebuchet Parts -->
         <spawn npc_id="701123">
             <spot x="681.43671" y="265.97824" z="226.90387" entity_id="22"/>
         </spawn>
-		<!-- Inner Castle Wall (Object Normal lvl:3) -->
+		<!-- Inner Castle Wall -->
 		<spawn npc_id="831333">
 			<spot x="776.2572" y="379.83923" z="233.87485" entity_id="131"/>
 			<spot x="783.83661" y="402.55899" z="234.45784" entity_id="304"/>
 		</spawn>
-		<!-- Outer Water Gate (Object Normal lvl:3) -->
+		<!-- Outer Water Gate -->
 		<spawn npc_id="831334">
 			<spot x="662.54413" y="221.62517" z="225.74001" entity_id="309"/>
 		</spawn>
-		<!-- Inner Water Gate (Object Normal lvl:3) -->
+		<!-- Inner Water Gate -->
 		<spawn npc_id="831335">
 			<spot x="569.57892" y="163.50827" z="220.0367" entity_id="271"/>
 		</spawn>

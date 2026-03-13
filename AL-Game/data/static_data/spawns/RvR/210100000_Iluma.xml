@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Iluma
-	"Warship Invasion"
-	"Heavy Tetran/Kenovikan"
-	"Artifact Bonus"
-	Spawn By (Encom)
+	Iluma "Warship Invasion" "Heavy Tetran/Kenovikan" "Artifact Bonus" Spawn By (Encom)
  -->
 <spawns>
     <spawn_map map_id="210100000">
 		<!-- ILUMA -->
 		<rvr_spawn id="3">
 			<rvr_type rstate="RVR">
-			    <!-- Sky Island Rift
-				This is a Sky Island Teleport Stone, to which Aether energy is gathered.
-				It feels like a powerful beam of Aether energy is shooting out towards the ground.
-				You may be able to reach the ground by using the power infused in the fragment. -->
+			    <!-- Sky Island Rift -->
 			    <spawn npc_id="805897">
 					<spot x="2352.955" y="2212.8022" z="270.7281" h="75"/>
 			    	<spot x="2111.0786" y="2624.273" z="261.89206" h="106"/>
@@ -158,10 +151,7 @@
 			    	<spot x="1703.479" y="2862.9395" z="366.03372" h="72"/>
 			    	<spot x="1780.4281" y="2341.35" z="367.81738" h="61"/>
 				</spawn>
-				<!-- Sky Island Rift
-				This is a Sky Island Teleport Stone, to which Aether energy is gathered.
-				It feels like a powerful beam of Aether energy is shooting out towards the ground.
-				You may be able to reach the ground by using the power infused in the fragment. -->
+				<!-- Sky Island Rift -->
 			    <spawn npc_id="805907">
 			        <spot x="2317.9" y="2258.29" z="1116.813" h="108"/>
 				</spawn>
@@ -746,50 +736,41 @@
 				    <spot h="63" z="297.02432" y="1397.9352" x="1979.2594"/>
 				    <spot h="48" z="291.25" y="1440.4064" x="1953.4216"/>
 				</spawn>
-				<!-- Pilotos
-				<Destroyer Officer> -->
+				<!-- Pilotos -->
 				<spawn npc_id="805917">
 				    <spot x="1498.0798" y="1402.5879" z="339.58603" h="98"/>
 				</spawn>
 			</rvr_type>
 			<rvr_type rstate="PEACE">
-			    <!-- Este
-				<Hymn Of Aion Legion> -->
+			    <!-- Este -->
 				<spawn npc_id="806224">
 				    <spot x="1258.4889" y="1031.6471" z="323.375" h="110"/>
 				</spawn>
-				<!-- Ovest
-				<Hymn Of Aion Legion> -->
+				<!-- Ovest -->
 				<spawn npc_id="806225">
 				    <spot x="1722.0677" y="795.0338" z="309.9354" h="32"/>
 				</spawn>
-				<!-- Meridies
-				<Hymn Of Aion Legion> -->
+				<!-- Meridies -->
 				<spawn npc_id="806226">
 				    <spot x="1553.8928" y="1824.3728" z="315.625" h="74"/>
 				</spawn>
-				<!-- Ceber
-				<Hymn Of Aion Legion> -->
+				<!-- Ceber -->
 				<spawn npc_id="806227">
 				    <spot x="1909.0442" y="1367.3309" z="295.875" h="35"/>
 				</spawn>
-			    <!-- Cufrunerk
-				<Master Numismatist> -->
+			    <!-- Cufrunerk -->
 				<spawn npc_id="833744">
 				    <spot x="1299.7766" y="1032.975" z="319.875" h="81"/>
 				</spawn>
-				<!-- Aimonerk
-				<Master Numismatist> -->
+				<!-- Aimonerk -->
 				<spawn npc_id="833746">
 				    <spot x="1699.1714" y="809.66675" z="307.5" h="18"/>
 				</spawn>
-				<!-- Ronaminerk
-				<Master Numismatist> -->
+				<!-- Ronaminerk -->
 				<spawn npc_id="833748">
 				    <spot x="1527.876" y="1810.561" z="313.5" h="91"/>
 				</spawn>
-				<!-- Kirarinerk
-				<Master Numismatist> -->
+				<!-- Kirarinerk -->
 				<spawn npc_id="833750">
 				    <spot x="1938.31" y="1440.26" z="292.45" h="61"/>
 				</spawn>
@@ -932,60 +913,10 @@
 		</rvr_spawn>
 		
 		<!-- HEAVY TETRAN 5.6
-		http://power.ncsoft.jp/aion/powerWiki/%E5%8F%A4%E4%BB%A3%E5%85%B5%E5%99%A8%E4%BE%B5%E6%94%BB%E6%88%A6
-		
-		- 毎週末、アステーラとノスフォルドにて、古代兵器が出現する「侵攻戦」が開催されます。
-		- 天族側の侵攻戦は、ノスフォルドに侵攻。 「重装甲テトラノン<ガーディアン古代兵器>」がノスフォルドMAP上に出現します。
-		└ 《侵攻：天》 「塔のかけら」を運ぶ輸送車/運送車が破壊されないよう護衛を行います。より多くの「塔のかけら」を届けることで「重装甲テトラノン」の真の力が発揮されます。
-		└ 《防衛：魔》 「塔のかけら」を運ぶ輸送車/運送車を、より多く破壊して「重装甲テトラノン」の弱体化を目指します。その上で、同古代兵器を破壊することが目的です。
-		- 魔族側の侵攻戦は、アステーラに侵攻。 「重機動ケノビカン<アルコン砲撃機>」がアステーラMAP上に出現します。
-		└ 《侵攻：魔》 「塔のかけら」を運ぶ輸送車/運送車が破壊されないよう護衛を行います。より多くの「塔のかけら」を届けることで「重機動ケノビカン」の真の力が発揮されます。
-		└ 《防衛：天》 「塔のかけら」を運ぶ輸送車/運送車を、より多く破壊して「重機動ケノビカン」の弱体化を目指します。その上で、同古代兵器を破壊することが目的です。
-		
-		◆開始直後（20時～）
-		【防衛側】
-		- 侵攻戦の開始アナウンスが画面中央に表示されます。
-		- 敵対種族が潜入してくる合図となるので、侵攻に備えてください。
-		【侵攻側】
-		- 開始時間(20時)になり約1分以内に、敵対種族エリアに侵攻するための「軍団の回廊」が出現します
-		- 「軍団の回廊」を通って、敵対種族エリアに潜入してください。
-		
-		◆開始直後（20時～）
-		【防衛側】
-		- 敵対種族側が派遣した「塔のかけら」輸送車(運送車)4台の出現場所が、MAP上に表示されます。
-		- 輸送車(運送車)4台は1台破壊するごとに、最後に出現する「古代兵器」の力を削ぐことができます。
-		- 輸送車(運送車)をより多く破壊できるよう、準備を進めてください。（敵対種族の妨害が予想されます）
-		【侵攻側】
-		- 敵対種族エリア潜入後すぐに、フォース加入のウインドウが表示されます。
-		- ［はい］を押して、フォースに加入してください
-		- 敵対種族エリアでは、自軍が派遣した「塔のかけら」の輸送車(運送車)4台が、後ほど動き出します。
-		敵対種族の動きを察知しながら、輸送車(運送車)の警備に向かいましょう。
-		
-        ◆開始 約10分後
-		【防衛側】
-		- 出現エリアに輸送車(運送車)4台が出現。MAP上の表示も変化します。
-		- 輸送車(運送車)4台は「塔のかけら」を集結エリアに運ぶため、移動を開始します。
-		- 集結エリアに到着する前に、1台でも多く輸送車(運送車)を破壊することが目標となります。
-		【侵攻側】
-		- 集結エリアに向かう輸送車(運送車)の護衛を行ってください。
-		- 輸送車(運送車)が落とす「塔のかけら」収集クエストなどの達成も目指します。
-		
-		◆輸送車（運送車）が集結エリアに到着
-		【防衛側】
-		- 集結エリアに輸送車/運送車(最後の1台)が到着すると、侵攻側の「古代兵器」が出現します。
-		  ※輸送車(運送車)4台がすべて破壊されている場合、一定時間経過後に「古代兵器」が出現します
-		- 味方種族間で力をあわせて「古代兵器」を破壊してください。
-		  「古代兵器」の強さは、4台の輸送車(運送車)で運ばれた「塔のかけら」の数に比例します。
-		  輸送車(運送車)を多く破壊していた場合、弱体化された「古代兵器」が出現します。
-		  ※「古代兵器」を破壊すると、特殊な報酬箱を取得することができます
-		  ※出現した「古代兵器」は、一定時間経過後に消滅します
-		- 「古代兵器」出現場所(集結エリア)は、イベント開始時よりフィールド上で特殊エフェクトが表示されてます。
-		【侵攻側】
-		- 出現した「古代兵器」を利用して、より多くの敵対種族を討伐してください。 -->
+		http://power.ncsoft.jp/aion/powerWiki/%E5%8F%A4%E4%BB%A3%E5%85%B5%E5%99%A8%E4%BE%B5%E6%94%BB%E6%88%A6  -->
 		<rvr_spawn id="5">
 			<rvr_type rstate="RVR">
-			    <!-- Legion Infiltration Corridor To
-				<Norsvold Cursed Canyon> -->
+			    <!-- Legion Infiltration Corridor To -->
 				<spawn npc_id="835523">
 					<spot x="1445.1173" y="1271.769" z="336.66086" h="23"/>
 				</spawn>
@@ -1003,9 +934,7 @@
 				    <spot h="17" z="249.09445" y="1123.4645" x="2834.4888"/>
 				    <spot h="44" z="219.25" y="1369.0989" x="2955.411"/>
 				</spawn> -->
-				<!-- Kenovikan
-				A weapon made with Asmodian technology using loot from the Beritra Invasion.
-				It is being used for the Iluma tower fragment retrieval mission -->
+				<!-- Kenovikan -->
 				<spawn npc_id="246460">
 					<spot x="2722.799" y="1424.293" z="227.375" h="53"/>
 				</spawn>
@@ -1016,81 +945,63 @@
 				    <spot h="17" z="249.09445" y="1123.4645" x="2834.4888"/>
 				    <spot h="44" z="219.25" y="1369.0989" x="2955.411"/>
 				</spawn>
-				<!-- Light Armored Carrier Alpha
-				These transporters excavate tower fragments in Norsvold &
-				fly them to the area Kenovikan is protecting -->
+				<!-- Light Armored Carrier Alpha -->
 				<spawn npc_id="246481">
 				    <spot h="85" z="241.6766" y="1715.4128" x="2884.4744"/>
 				</spawn>
-				<!-- Light Armored Carrier Beta
-				These transporters excavate tower fragments in Norsvold &
-				fly them to the area Kenovikan is protecting -->
+				<!-- Light Armored Carrier Beta -->
 				<spawn npc_id="246482">
 				    <spot h="5" z="225.01532" y="1316.245" x="2433.7007"/>
 				</spawn>
-				<!-- Light Armored Carrier Gamma
-				These transporters excavate tower fragments in Norsvold &
-				fly them to the area Kenovikan is protecting -->
+				<!-- Light Armored Carrier Gamma -->
 				<spawn npc_id="246483">
 				    <spot h="19" z="249.09415" y="1123.7291" x="2834.4937"/>
 				</spawn>
-				<!-- Light Armored Carrier Delta
-				These transporters excavate tower fragments in Norsvold &
-				fly them to the area Kenovikan is protecting -->
+				<!-- Light Armored Carrier Delta -->
 				<spawn npc_id="246484">
 				    <spot h="43" z="219.25" y="1369.2512" x="2955.419"/>
 				</spawn>
-				<!-- Norsvold Guard Captain
-				<Archon's Shadow Legion> -->
+				<!-- Norsvold Guard Captain -->
 				<spawn npc_id="246688">
 				    <spot h="58" z="227.02628" y="1434.4204" x="2695.659"/>
 				</spawn>
-				<!-- Archon Convoy Gladiator
-				<Archon's Shadow Legion> -->
+				<!-- Archon Convoy Gladiator -->
 				<spawn npc_id="246689">
 				    <spot h="57" z="227.42513" y="1436.802" x="2700.7292"/>
 				    <spot h="57" z="227.27565" y="1429.6691" x="2699.7485"/>
 				    <spot h="110" z="227.51065" y="1409.8297" x="2734.5505"/>
 				    <spot h="110" z="227.51799" y="1416.5463" x="2738.2878"/>
 				</spawn>
-				<!-- Archon Convoy Cleric
-				<Archon's Shadow Legion> -->
+				<!-- Archon Convoy Cleric -->
 				<spawn npc_id="246690">
 				    <spot h="58" z="227.375" y="1432.8749" x="2703.7544"/>
 				</spawn>
-				<!-- Archon Convoy Marksman
-				<Archon's Shadow Legion> -->
+				<!-- Archon Convoy Marksman -->
 				<spawn npc_id="246691">
 				    <spot h="78" z="228.81534" y="1443.0499" x="2722.0044"/>
 				    <spot h="25" z="232.34354" y="1405.9315" x="2712.7773"/>
 				</spawn>
-				<!-- Archon Convoy Sorcerer
-				<Archon's Shadow Legion> -->
+				<!-- Archon Convoy Sorcerer -->
 				<spawn npc_id="246693">
 				    <spot h="110" z="227.375" y="1414.4714" x="2734.1455"/>
 				</spawn>
-				<!-- Marzian
-				<Tunes Of Splendor Operation Support Officer> -->
+				<!-- Marzian -->
 				<spawn npc_id="806671">
 				    <spot x="2706.1338" y="1424.1245" z="227.49164" h="49"/>
 				</spawn>
-				<!-- Southern Mining Traces
-				Evidence that Light Carrier tried to take the tower fragment at Polten Marsh -->
+				<!-- Southern Mining Traces -->
 				<spawn npc_id="703434">
 				    <spot x="2817.5037" y="1132.0977" z="251.09724" entity_id="3310"/>
 				</spawn>
-				<!-- Northern Mining Traces
-				Evidence that Light Carrier tried to take the tower fragment at Polten Marsh -->
+				<!-- Northern Mining Traces -->
 				<spawn npc_id="703435">
 				    <spot x="2431.5010" y="1328.9498" z="225.43758" entity_id="3324"/>
 				</spawn>
-				<!-- Eastern Mining Traces
-				Evidence that Light Carrier tried to take the tower fragment at Polten Marsh -->
+				<!-- Eastern Mining Traces -->
 				<spawn npc_id="703436">
 				    <spot x="2892.0166" y="1726.6914" z="243.78575" entity_id="3325"/>
 				</spawn>
-				<!-- Southern Mining Traces
-				Evidence that Light Carrier tried to take the tower fragment at Polten Marsh -->
+				<!-- Southern Mining Traces -->
 				<spawn npc_id="703437">
 				    <spot x="2944.6753" y="1364.7593" z="218.79268" entity_id="3326"/>
 				</spawn>
@@ -1121,8 +1032,7 @@
 				    <spot x="2963.8750" y="1372.9812" z="219.59979" entity_id="3348"/>
 				    <spot x="2890.9119" y="1707.6632" z="242.52356" entity_id="3349"/>
 				</spawn>
-				<!-- Fragment Debris
-				Small pieces of a shattered Tower Fragment are lying around -->
+				<!-- Fragment Debris -->
 				<spawn npc_id="731793">
 				    <spot x="2726.4067" y="1424.1554" z="227.61403" entity_id="3327"/>
 				</spawn>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	テオボモス秘密研究所 4.9 - Theobomos Secret Institute
-	Spawn By (Encom)
+	Theobomos_Lab 4.9 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="310110000">
@@ -431,7 +430,7 @@
 			<spot x="501.912" y="251.536" z="172.952" h="61"/>
 			<spot x="585.588" y="654.966" z="165.324" h="8"/>
 		</spawn>
-		<!-- Npc (Object Normal lvl:3) - TreasureBox_Hidden -->
+		<!-- Npc - TreasureBox_Hidden -->
 	    <spawn npc_id="798224">
 	        <spot x="253.595749" y="513.169006" z="189.000" h="00"/>
 		    <spot x="360.541" y="527.875" z="186.203" h="104"/>
@@ -457,39 +456,39 @@
 		<spawn npc_id="805320">
             <spot x="473.93744" y="208.1757" z="169.993" h="80"/>
         </spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="477.85797" y="207.26915" z="169.9891" h="91"/>
         </spawn>
-		<!-- Faded Book (Object Normal lvl:3) -->
+		<!-- Faded Book -->
 		<spawn npc_id="700422">
 			<spot x="542.86298" y="741.07666" z="203.07074" entity_id="268"/>
 		</spawn>
-		<!-- Fire Element Device (Object Normal lvl:3) -->
+		<!-- Fire Element Device -->
 		<spawn npc_id="700423">
 			<spot x="654.24506" y="153.35245" z="167.65126" entity_id="267"/>
 		</spawn>
-		<!-- Water Element Device (Object Normal lvl:3) -->
+		<!-- Water Element Device -->
 		<spawn npc_id="700424">
 			<spot x="282.12234" y="514.53522" z="189.28932" entity_id="265"/>
 		</spawn>
-		<!-- Earth Element Device (Object Normal lvl:3) -->
+		<!-- Earth Element Device -->
 		<spawn npc_id="700425">
 			<spot x="380.75" y="509.44" z="187.76282" entity_id="264"/>
 		</spawn>
-		<!-- Wind Element Device (Object Normal lvl:3) -->
+		<!-- Wind Element Device -->
 		<spawn npc_id="700426">
 			<spot x="478.52997" y="514.54663" z="189.34767" entity_id="266"/>
 		</spawn>
-		<!-- Assistants Journal (Object Normal lvl:3) -->
+		<!-- Assistants Journal -->
 		<spawn npc_id="730153">
 			<spot x="525.77069" y="740.42542" z="203.87508" entity_id="92"/>
 		</spawn>
-		<!-- Theobomos Lab Exit (Object Normal lvl:3) -->
+		<!-- Theobomos Lab Exit -->
 		<spawn npc_id="730168">
 			<spot x="477.62" y="196.8" z="169.92999" entity_id="74"/>
 		</spawn>
-		<!-- Unstable Entrance Fragment (Object Normal lvl:3) -->
+		<!-- Unstable Entrance Fragment -->
 		<spawn npc_id="730177">
 			<spot x="569.96021" y="490.50586" z="196.5226" entity_id="37"/>
 		</spawn>

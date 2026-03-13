@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	サウロの軍需基地
-	Spawn By (Encom)
+	Sauro Supply Base Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301130000">
@@ -148,47 +147,47 @@
             <spot x="509.92545" y="534.8851" z="182.28629" h="77"/>
             <spot h="60" z="182.1528" y="387.1255" x="497.83157"/>
 		</spawn>
-		<!-- Guard Captain Rohuka (Boss Hero LvL 65) -->
+		<!-- Guard Captain Rohuka -->
 		<spawn npc_id="230849">
 			<spot x="598.4606" y="354.03815" z="202.91283" h="0"/>
 		</spawn>
-		<!-- Research Teselik (Boss Hero LvL 65) -->
+		<!-- Research Teselik -->
 		<spawn npc_id="230850">
 			<spot x="479.24103" y="337.3065" z="181.71579" h="30"/>
 		</spawn>
-		<!-- Chief Gunner Kurmata (Boss Hero LvL 65) -->
+		<!-- Chief Gunner Kurmata -->
 		<spawn npc_id="230851">
 		    <spot h="85" z="202.5307" y="495.3563" x="635.13794" walker_id="Chief_Gunner_Kurmata"/>
 		</spawn>
-		<!-- Commander Ranodim (Boss Hero LvL 65) -->
+		<!-- Commander Ranodim -->
 		<spawn npc_id="230852">
 			<spot x="289.98172" y="345.1212" z="159.34445" h="90"/>
 		</spawn>
-		<!-- Chief Of Staff Moriata (Boss Hero LvL 65) -->
+		<!-- Chief Of Staff Moriata -->
 		<spawn npc_id="230853">
 			<spot x="146.53566" y="429.89893" z="150.77364" h="119"/>
 		</spawn>
-		<!-- Guard Captain Ahuradim's (Boss Hero LvL 65) -->
+		<!-- Guard Captain Ahuradim's -->
 		<spawn npc_id="230857">
 			<spot x="703.3685" y="889.8764" z="411.537" h="60"/>
 		</spawn>
-		<!-- The Brigade General Sheba's (Boss Legendary) -->
+		<!-- The Brigade General Sheba's -->
 		<spawn npc_id="230858">
 			<spot x="899.7731" y="889.8521" z="411.5367" h="75"/>
 		</spawn>
-		<!-- Gatekeeper Stranir (Mini-Boss Hero LvL 65) -->
+		<!-- Gatekeeper Stranir -->
 		<spawn npc_id="233255">
 			<spot x="393.593" y="291.46286" z="160.02109" h="0" walker_id="Gatekeeper_Stranir"/>
 		</spawn>
-		<!-- Darkblade Ovanuka (Mini-Boss Hero LvL 65) -->
+		<!-- Darkblade Ovanuka -->
 		<spawn npc_id="233256">
 			<spot x="262.78516" y="400.464" z="156.83209" h="31"/>
 		</spawn>
-		<!-- Archmagus Sayahum (Mini-Boss Hero LvL 65) -->
+		<!-- Archmagus Sayahum -->
 		<spawn npc_id="233257">
 			<spot x="262.18298" y="457.60693" z="156.7057" h="91"/>
 		</spawn>
-		<!-- Derakanak The Reaver (Mini-Boss Hero LvL 65) -->
+		<!-- Derakanak The Reaver -->
 		<spawn npc_id="233258">
             <spot h="91" z="181.77863" y="532.7365" x="495.29944"/>
 		</spawn>
@@ -261,29 +260,29 @@
             <spot h="29" z="204.16" y="333.05847" x="654.15546"/>
             <spot h="29" z="204.16" y="328.62244" x="625.66315"/>
 		</spawn>
-		<!-- Greater Blessed Relics (Object Normal lvl:3) -->
+		<!-- Greater Blessed Relics -->
 		<spawn npc_id="831990">
             <spot x="638.9371" y="190.13669" z="195.8815" h="30"/>
         </spawn>
-		<!-- Sauro Supply Base Ancient War Machine (Object Normal lvl:3) -->
+		<!-- Sauro Supply Base Ancient War Machine -->
 		<spawn npc_id="801955">
 			<spot x="490.16394" y="380.58337" z="182.03795" entity_id="134"/>
 			<spot x="454.54834" y="502.78647" z="181.88437" entity_id="136"/>
 			<spot x="430.89337" y="452.41830" z="182.00000" entity_id="178"/>
 		</spawn>
-		<!-- Flame Cannon (Object Normal lvl:3) -->
+		<!-- Flame Cannon -->
         <spawn npc_id="284453">
 	        <spot x="646.59906" y="486.4713" z="202.77705" h="60"/>
 			<spot x="628.47815" y="477.5591" z="202.53070" h="22"/>
             <spot x="628.20013" y="496.4919" z="202.53070" h="104"/>
         </spawn>
-		<!-- Flame Cannon FX (Object Normal lvl:3) -->
+		<!-- Flame Cannon FX -->
         <spawn npc_id="284454">
 	        <spot x="646.59906" y="486.4713" z="202.77705" h="60"/>
 			<spot x="628.47815" y="477.5591" z="202.53070" h="22"/>
             <spot x="628.20013" y="496.4919" z="202.53070" h="104"/>
         </spawn>
-		<!-- Sauro Supply Base Secret Key Box (Object Normal lvl:3) -->
+		<!-- Sauro Supply Base Secret Key Box -->
 		<spawn npc_id="230847">
 			<spot x="263.3429" y="463.5408" z="156.70581" h="90"/>
             <spot h="89" z="203.68098" y="363.61868" x="666.08844"/>

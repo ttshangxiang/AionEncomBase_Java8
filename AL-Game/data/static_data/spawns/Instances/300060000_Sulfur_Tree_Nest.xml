@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	サルファ ツリーの巣窟
-	Spawn By (Encom)
+	Sulfur Tree Nest Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300060000">
@@ -127,7 +126,7 @@
 		<spawn npc_id="214804">
 			<spot x="462.252" y="485.84" z="165.077" h="90"/>
 		</spawn>
-		<!-- Minor Blessed Relics (Object Normal lvl:3) -->
+		<!-- Minor Blessed Relics -->
 		<spawn npc_id="831988">
             <spot x="463.24426" y="361.21298" z="165.76007" h="30"/>
         </spawn>

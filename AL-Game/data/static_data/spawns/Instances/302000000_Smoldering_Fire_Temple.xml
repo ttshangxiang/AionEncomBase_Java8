@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
-	Smoldering Fire Temple 5.1
-	Spawn By (Encom)
+	Smoldering Fire Temple 5.1 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="302000000">
@@ -184,10 +183,6 @@
 		    <spot x="157.15315" y="426.40717" z="139.77805" entity_id="266"/>
 		    <spot x="280.82581" y="170.60211" z="119.81683" entity_id="306"/>
         </spawn>
-		<!-- 말하는 거울 -->
-        <spawn npc_id="730051">
-	        <spot x="424.38080" y="91.949837" z="117.33677" entity_id="9"/>
-	    </spawn>
 		<!-- 열려진 크로메데의 방 -->
         <spawn npc_id="834069">
 	        <spot x="148.83389" y="465.87445" z="138.75577" entity_id="647"/>

@@ -187,7 +187,7 @@ public class _10031A_Risk_For_The_Obelisk extends QuestHandler {
             }
         } else if (qs.getStatus() == QuestStatus.REWARD) {
             if (targetId == 798927) {
-                if (env.getDialog() == QuestDialog.START_DIALOG) {
+                if (env.getDialog() == QuestDialog.USE_OBJECT) {
                     return sendQuestDialog(env, 10002);
                 } else {
                     int[] inggisonMission = {10031, 10032, 10033, 10034, 10035};

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    カスパール内部
-    Spawn By (Encom)
+    Taloc's Hollow Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300190000">
-		<!-- Drudge Sheluk
-		A Sheluk that has dug through Taloc's Roots -->
+		<!-- Drudge Sheluk -->
 		<spawn npc_id="215454">
 	        <spot h="74" z="1169.2616" y="703.9813" x="291.0917" random_walk="3"/>
             <spot h="48" z="1168.5557" y="544.27264" x="310.52286" random_walk="3"/>
@@ -14,8 +12,7 @@
             <spot h="108" z="1129.7582" y="347.04248" x="150.74217" random_walk="3"/>
             <spot h="65" z="1123.1177" y="466.01138" x="191.60509" random_walk="3"/>
 		</spawn>
-		<!-- Drudge Sheluk
-		A Sheluk that has dug through Taloc's Roots -->
+		<!-- Drudge Sheluk -->
 		<spawn npc_id="215455">
 			<spot h="59" z="1159.9498" y="555.73413" x="268.76077" random_walk="3"/>
             <spot h="21" z="1140.8429" y="685.48126" x="161.65678" random_walk="3"/>
@@ -23,28 +20,22 @@
             <spot h="98" z="1168.4819" y="678.5116" x="243.90562" random_walk="3"/>
             <spot h="119" z="1124.8218" y="459.25375" x="173.20258" random_walk="3"/>
 		</spawn>
-		<!-- Shishir
-		<Taloc Parasites>
-		A particularly powerful mutant Sheluk inside Taloc.
-		It has powerful corrosive fluid as well as an object of great power -->
+		<!-- Shishir -->
 		<spawn npc_id="215456">
 			<spot x="142.716" y="695.6153" z="1140.0204" h="95"/>
 		</spawn>
-		<!-- Ancient Octanus
-		<Taloc Parasites> -->
+		<!-- Ancient Octanus -->
 		<spawn npc_id="215457">
 			<spot x="203.4562" y="302.2227" z="1107.0774" h="76" random_walk="6"/>
 		</spawn>
-		<!-- Mask Arachna
-		An Arachna that has dug through Taloc's Roots -->
+		<!-- Mask Arachna -->
 		<spawn npc_id="215458">
 			<spot h="118" z="1131.2043" y="466.59567" x="154.35596" random_walk="3"/>
             <spot h="97" z="1173.296" y="733.8286" x="274.4441" random_walk="3"/>
             <spot h="65" z="1169.4872" y="411.78604" x="292.7614" random_walk="3"/>
             <spot h="74" z="1124.4098" y="468.1944" x="231.38988" random_walk="3"/>
 		</spawn>
-		<!-- Mask Arachna
-		An Arachna that has dug through Taloc's Roots -->
+		<!-- Mask Arachna -->
 		<spawn npc_id="215459">
 			<spot h="63" z="1169.761" y="537.02686" x="339.46393" random_walk="3"/>
             <spot h="58" z="1144.9382" y="544.14545" x="201.15265" random_walk="3"/>
@@ -68,21 +59,18 @@
             <spot h="104" z="1164.8562" y="628.63965" x="233.57343" random_walk="3"/>
             <spot h="64" z="1167.3496" y="634.5657" x="259.7461" random_walk="3"/>
 		</spawn>
-		<!-- Emerald Sparkle
-		A Sparkle found in Taloc's Roots -->
+		<!-- Emerald Sparkle -->
 		<spawn npc_id="215462">
 			<spot h="85" z="1230.0319" y="869.9822" x="218.79874" random_walk="3"/>
             <spot h="76" z="1237.1521" y="900.4571" x="259.3872" random_walk="3"/>
             <spot h="20" z="1185.905" y="346.6795" x="322.4196" random_walk="3"/>
 		</spawn>
-		<!-- Emerald Sparkle
-		A Sparkle found in Taloc's Roots -->
+		<!-- Emerald Sparkle -->
 		<spawn npc_id="215463">
 			<spot h="96" z="1217.9723" y="829.2823" x="205.70193" random_walk="3"/>
             <spot h="110" z="1207.6427" y="801.1812" x="217.65509" random_walk="3"/>
 		</spawn>
-		<!-- Parasitic Clodworm
-		A Clodworm surviving upon Taloc's Roots inside Taloc -->
+		<!-- Parasitic Clodworm -->
 		<spawn npc_id="215464">
 			<spot h="112" z="1140.6017" y="644.2" x="160.4139" random_walk="3"/>
             <spot h="87" z="1146.1766" y="620.75055" x="197.96904" random_walk="3"/>
@@ -97,8 +85,7 @@
             <spot h="77" z="1106.8712" y="278.57104" x="190.57617" random_walk="3"/>
             <spot h="6" z="1139.4104" y="657.0493" x="156.61995" random_walk="3"/>
 		</spawn>
-		<!-- Parasitic Clodworm
-		A Clodworm surviving upon Taloc's Roots inside Taloc -->
+		<!-- Parasitic Clodworm -->
 		<spawn npc_id="215465">
 			<spot h="93" z="1140.5059" y="732.05536" x="169.28209"/>
             <spot h="93" z="1140.2075" y="729.7608" x="164.7631"/>
@@ -146,9 +133,7 @@
             <spot h="74" z="1146.566" y="585.7426" x="167.751" random_walk="3"/>
             <spot h="14" z="1138.743" y="534.5071" x="145.18086" random_walk="3"/>
 		</spawn>
-		<!-- Kinquid
-		<Taloc Parasites>
-		A creature found in Kinquid's Den at the end of Taloc's Roots -->
+		<!-- Kinquid -->
 		<spawn npc_id="215467">
 			<spot x="260.69223" y="701.72437" z="1169.504" h="29" random_walk="6"/>
 		</spawn>
@@ -232,10 +217,7 @@
             <spot h="50" z="1270.941" y="835.3939" x="504.78598" random_walk="3"/>
             <spot h="70" z="1271.2133" y="867.05176" x="531.7931" random_walk="3"/>
 		</spawn>
-		<!-- Neith
-		<Taloc Parasites>
-		A strong mutant Arachna living inside Taloc.
-		It carries with it a special dagger and a powerful sleep-inducing item -->
+		<!-- Neith -->
 		<spawn npc_id="215478">
 			<spot x="508.5373" y="809.8848" z="1283.3287" h="41" random_walk="6"/>
 		</spawn>
@@ -256,21 +238,15 @@
             <spot h="67" z="1265.5151" y="971.1868" x="456.48196"/>
             <spot h="87" z="1255.8594" y="979.9808" x="421.64832"/>
 		</spawn>
-		<!-- Queen Mosqua
-		<Taloc Parasites>
-		A creature, found in Mosqua's Nest, who is eating into Taloc -->
+		<!-- Queen Mosqua -->
 		<spawn npc_id="215480">
 			<spot x="676.901" y="831.546" z="1305.88" h="34" random_walk="6"/>
 		</spawn>
-		<!-- Gellmar
-		<Taloc Parasites>
-		A mutant seen at the Swarmspring or the Muculent Grotto inside Taloc.
-		One of the Taloc parasites, it holds an object with great defensive power -->
+		<!-- Gellmar -->
 		<spawn npc_id="215482">
 			<spot x="245.05054" y="447.3147" z="1124.9097" h="50"/>
 		</spawn>
-		<!-- Komad Elite Watcher
-		A mutant creature living inside Taloc -->
+		<!-- Komad Elite Watcher -->
 		<spawn npc_id="215483">
 			<spot h="112" z="1380.3562" y="780.2735" x="622.1192"/>
             <spot h="3" z="1381.6094" y="832.4772" x="622.29626"/>
@@ -280,8 +256,7 @@
             <spot h="115" z="1379.875" y="816.4258" x="617.15564"/>
             <spot h="8" z="1382.0492" y="843.03784" x="587.8006"/>
 		</spawn>
-		<!-- Komad Elite Watchman
-		A mutant creature living inside Taloc -->
+		<!-- Komad Elite Watchman -->
 		<spawn npc_id="215484">
 			<spot h="3" z="1380.4083" y="805.1004" x="584.4765"/>
             <spot h="93" z="1380.0375" y="857.8414" x="640.73804"/>
@@ -289,8 +264,7 @@
             <spot h="4" z="1380.2258" y="813.1519" x="664.36536"/>
             <spot h="28" z="1379.7416" y="779.9907" x="668.5493"/>
 		</spawn>
-		<!-- Komad Shaman
-		A mutant creature living inside Taloc -->
+		<!-- Komad Shaman -->
 		<spawn npc_id="215485">
 			<spot h="0" z="1382.0" y="841.0605" x="639.4495"/>
             <spot h="0" z="1384.0" y="840.05383" x="596.07355"/>
@@ -300,79 +274,64 @@
             <spot h="0" z="1382.0" y="857.86774" x="644.30756"/>
             <spot h="2" z="1378.6239" y="823.584" x="684.1222"/>
 		</spawn>
-		<!-- Komad Shaman
-		A mutant creature living inside Taloc -->
+		<!-- Komad Shaman -->
 		<spawn npc_id="215486">
 			<spot h="5" z="1379.8026" y="808.24915" x="591.24713"/>
             <spot h="6" z="1381.0593" y="824.25543" x="583.1685"/>
             <spot h="23" z="1379.6907" y="780.6877" x="666.43097"/>
 		</spawn>
-		<!-- Celestius
-		A polluting Komad boss found in the Blightroot inside Taloc -->
+		<!-- Celestius -->
 		<spawn npc_id="215488">
 		    <spot x="543.0300" y="834.0800" z="1377.2900" h="00"/>
 		</spawn>
-		<!-- Drudge Sheluk
-		A Sheluk that has dug through Taloc's Roots -->
+		<!-- Drudge Sheluk -->
 		<spawn npc_id="216133">
 			<spot h="2" z="1108.6151" y="293.02188" x="173.20569" random_walk="3"/>
 		</spawn>
-		<!-- Drudge Sheluk
-		A Sheluk that has dug through Taloc's Roots -->
+		<!-- Drudge Sheluk -->
 		<spawn npc_id="216134">
 			<spot h="119" z="1108.3685" y="286.29208" x="177.99474" random_walk="3"/>
 		</spawn>
-		<!-- Mask Arachna
-		An Arachna that has dug through Taloc's Roots -->
+		<!-- Mask Arachna -->
 		<spawn npc_id="216135">
 			<spot h="48" z="1107.7167" y="284.76718" x="216.66591" random_walk="3"/>
 		</spawn>
-		<!-- Mask Arachna
-		An Arachna that has dug through Taloc's Roots -->
+		<!-- Mask Arachna -->
 		<spawn npc_id="216136">
 			<spot h="84" z="1109.536" y="316.36823" x="218.54099" random_walk="3"/>
 		</spawn>
-		<!-- Emerald Sparkle
-		A Sparkle found in Taloc's Roots -->
+		<!-- Emerald Sparkle -->
 		<spawn npc_id="216137">
 			<spot h="56" z="1108.1005" y="299.96112" x="225.56729" random_walk="3"/>
             <spot h="98" z="1108.4823" y="311.65387" x="195.15567" random_walk="3"/>
 		</spawn>
-		<!-- Emerald Sparkle
-		A Sparkle found in Taloc's Roots -->
+		<!-- Emerald Sparkle -->
 		<spawn npc_id="216138">
 			<spot h="47" z="1107.7899" y="291.4436" x="219.68002" random_walk="3"/>
 		</spawn>
-		<!-- Sheluk Drone
-		A strong and robust Sheluk who attacks Taloc's Roots -->
+		<!-- Sheluk Drone -->
 		<spawn npc_id="216139">
 			<spot h="77" z="1174.5858" y="447.8081" x="305.1168" random_walk="3"/>
             <spot h="83" z="1137.8958" y="476.04306" x="119.29971" random_walk="3"/>
             <spot h="55" z="1160.4192" y="379.14673" x="234.73024" random_walk="3"/>
             <spot h="101" z="1173.2775" y="440.3578" x="276.69705" random_walk="3"/>
 		</spawn>
-		<!-- Sheluk Drone
-		A strong and robust Sheluk who attacks Taloc's Roots -->
+		<!-- Sheluk Drone -->
 		<spawn npc_id="216140">
 			<spot h="70" z="1163.6005" y="412.27716" x="257.88025" random_walk="3"/>
 		</spawn>
-		<!-- Vampiric Arachna
-		An Arachna living in Taloc's Roots.
-		It feeds on the blood of animals and the sap from plants -->
+		<!-- Vampiric Arachna -->
 		<spawn npc_id="216141">
 			<spot h="97" z="1137.7284" y="485.60754" x="104.179214" random_walk="3"/>
             <spot h="96" z="1160.8461" y="393.3616" x="248.13005" random_walk="3"/>
             <spot h="35" z="1174.2283" y="477.6712" x="296.3159" random_walk="3"/>
 		</spawn>
-		<!-- Vampiric Arachna
-		An Arachna living in Taloc's Roots.
-		It feeds on the blood of animals and the sap from plants -->
+		<!-- Vampiric Arachna -->
 		<spawn npc_id="216142">
 			<spot h="86" z="1173.0684" y="437.49335" x="291.63843" random_walk="3"/>
             <spot h="92" z="1140.8367" y="508.0273" x="107.71398" random_walk="3"/>
 		</spawn>
-		<!-- Radiant Sparkle
-		A Sparkle living in Taloc's Roots that shines in the dark -->
+		<!-- Radiant Sparkle -->
 		<spawn npc_id="216143">
 			<spot h="6" z="1160.5836" y="384.94064" x="220.66028" random_walk="3"/>
             <spot h="63" z="1139.2874" y="550.75464" x="176.74805" random_walk="3"/>
@@ -380,8 +339,7 @@
             <spot h="117" z="1161.7401" y="396.56897" x="229.721" random_walk="3"/>
             <spot h="4" z="1185.9027" y="335.9078" x="291.16052" random_walk="3"/>
 		</spawn>
-		<!-- Radiant Sparkle
-		A Sparkle living in Taloc's Roots that shines in the dark -->
+		<!-- Radiant Sparkle -->
 		<spawn npc_id="216144">
 			<spot h="35" z="1186.116" y="317.63077" x="279.96503" random_walk="3"/>
             <spot h="25" z="1185.1198" y="346.7185" x="271.1626" random_walk="3"/>
@@ -495,8 +453,7 @@
             <spot h="106" z="1379.0663" y="802.1316" x="608.7686"/>
             <spot h="36" z="1379.8645" y="794.234" x="612.65796"/>
 		</spawn>
-		<!-- Komad Shaman
-		A mutant creature living inside Taloc -->
+		<!-- Komad Shaman -->
 		<spawn npc_id="216939">
 			<spot h="0" z="1382.0" y="855.897" x="622.44305"/>
             <spot h="0" z="1382.0" y="824.17145" x="596.0562"/>
@@ -504,8 +461,7 @@
             <spot h="83" z="1378.96" y="802.4375" x="613.84424"/>
             <spot h="21" z="1379.4834" y="795.4187" x="608.7804"/>
 		</spawn>
-		<!-- Komad Shaman
-		A mutant creature living inside Taloc -->
+		<!-- Komad Shaman -->
 		<spawn npc_id="216940">
 			<spot h="0" z="1382.0" y="848.4031" x="621.9739"/>
             <spot h="0" z="1382.0" y="793.72784" x="680.3881"/>
@@ -539,28 +495,19 @@
             <spot h="114" z="1297.816" y="858.4" x="626.1331"/>
             <spot h="104" z="1299.4727" y="872.29956" x="635.6209"/>
 		</spawn>
-		
-		<!-- Dorkin
-		<Recluse>
-		A Shulack who was expelled from his village for some reason.
-		He is hiding somewhere inside Taloc -->
+		<!-- Dorkin -->
 		<spawn npc_id="799502">
 			<spot x="436.318" y="767.912" z="1288.42" h="83"/>
 		</spawn>
-		<!-- Taloc's Soul
-		<Soul of Elim>
-		A sample of extremely unstable Aether.
-		You can obtain them from a Celestius, Kinquid, or Queen Mosqua living inside Taloc -->
+		<!-- Taloc's Soul -->
 		<spawn npc_id="799526">
 			<spot x="199.74" y="235.64" z="1099.18" h="90"/>
 		</spawn>
-		<!-- Hyas
-		<Reian Scholar> -->
+		<!-- Hyas -->
 		<spawn npc_id="799527">
 			<spot x="203.517" y="819.265" z="1214.4"/>
 		</spawn>
-		<!-- Tealen
-		<Reian Tribe> -->
+		<!-- Tealen -->
 		<spawn npc_id="799528">
 			<spot x="520.0769" y="831.70465" z="1284.2622" h="86"/>
 		</spawn>
@@ -572,8 +519,7 @@
 		<spawn npc_id="730527">
 			<spot x="164.37347" y="338.67148" z="1125.9337" entity_id="51"/>
 		</spawn>
-		<!-- Taloc's Soil
-		Fertile soil where Taloc's Young Leaf grows -->
+		<!-- Taloc's Soil -->
 		<spawn npc_id="700634">
 		    <spot x="238.89708" y="460.52948" z="1124.4933" entity_id="18"/>
 			<spot x="267.22464" y="319.54120" z="1186.6373" entity_id="32"/>
@@ -582,15 +528,11 @@
 			<spot x="374.16504" y="789.96832" z="1270.4418" entity_id="169"/>
 			<spot x="444.25388" y="1000.2786" z="1264.3168" entity_id="170"/>
 		</spawn>
-		<!-- Taloc's Knot
-		A measurement of the Holy Tree Taloc's growth -->
+		<!-- Taloc's Knot -->
 		<spawn npc_id="700635">
 			<spot x="498.24069" y="896.19092" z="1271.8767" entity_id="94"/>
 		</spawn>
-		<!-- Research Journal
-		A Lepharist research document of records on remodeled Human test subjects kept by Lepharists.
-		It is normally found deep inside the Alquimia Research Center.
-		But some claim to have seen it near the entrance of the research center -->
+		<!-- Research Journal -->
 		<spawn npc_id="700636">
 			<spot x="546.00000" y="845.0000" z="1377.14590" entity_id="57"/>
 		</spawn>
@@ -633,15 +575,11 @@
 		<spawn npc_id="700960">
 			<spot x="624.73199" y="851.96332" z="1381.7305" entity_id="173"/>
 		</spawn>
-		<!-- Writhing Cocoon
-		A cocoon made by insects inside Taloc to capture intruders.
-		The Reian tribesmen Abyla and Engeius are trapped in these cocoons -->
+		<!-- Writhing Cocoon -->
 		<spawn npc_id="730232">
 			<spot x="143.84792" y="394.82858" z="1144.6510" entity_id="54"/>
 		</spawn>
-		<!-- Writhing Cocoon
-		A cocoon made by insects inside Taloc to capture intruders.
-		The Reian tribesmen Abyla and Engeius are trapped in these cocoons -->
+		<!-- Writhing Cocoon -->
 		<spawn npc_id="730233">
 			<spot x="148.25824" y="395.66791" z="1144.1628" entity_id="55"/>
 		</spawn>

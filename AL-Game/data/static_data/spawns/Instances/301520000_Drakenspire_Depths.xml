@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	마나카르나 4.9.1
-	Spawn By (Encom)
+	Drakenspire Depths 4.9.1 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301520000">
@@ -105,23 +104,23 @@
 		<spawn npc_id="237216">
 			<spot x="634.76654" y="828.1771" z="1599.7133" h="90"/>
 		</spawn>
-		<!-- Fetid Deathchar Patroler (Boss Elite Lvl 65) -->
+		<!-- Fetid Deathchar Patroler -->
 		<spawn npc_id="237222">
 			<spot x="495.8208" y="211.04044" z="1688.1962" h="61"/>
 		</spawn>
-		<!-- Fetid Deathchar Necromancer (Boss Elite Lvl 65) -->
+		<!-- Fetid Deathchar Necromancer -->
 		<spawn npc_id="237223">
 			<spot x="495.31705" y="152.06961" z="1688.2684" h="60"/>
 		</spawn>
-		<!-- Fetid Phantomscorch Chimera (Boss Elite Lvl 65) -->
+		<!-- Fetid Phantomscorch Chimera -->
 		<spawn npc_id="237224">
 			<spot x="772.6448" y="263.3362" z="1701.4059" h="75"/>
 		</spawn>
-		<!-- Fountless Lava Protector (Boss Hero Lvl 65) -->
+		<!-- Fountless Lava Protector -->
 		<spawn npc_id="237228">
 			<spot x="545.58734" y="212.11098" z="1681.8224" h="59"/>
 		</spawn>
-		<!-- Fountless Heatvent Protector (Boss Hero Lvl 65) -->
+		<!-- Fountless Heatvent Protector -->
 		<spawn npc_id="237229">
 			<spot x="545.7349" y="152.29825" z="1681.8224" h="60"/>
 		</spawn>

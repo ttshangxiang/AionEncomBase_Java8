@@ -1,73 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
-	Ashunatal Dredgion 5.1
-	Spawn By (Encom)
+	Ashunatal Dredgion 5.1 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301650000">
-	    <!-- Chief Navigator Yatri
-		<Asyunatar Legion> -->
+	    <!-- Chief Navigator Yatri -->
 		<spawn npc_id="243808">
 			<spot x="341.49973" y="415.8883" z="410.66293" h="117"/>
 		</spawn>
-		<!-- Assistant Navigator Magoyart
-		<Asyunatar Legion> -->
+		<!-- Assistant Navigator Magoyart -->
 		<spawn npc_id="243809">
 			<spot x="627.15643" y="409.6418" z="410.62933" h="69"/>
 		</spawn>
-		<!-- Arebusqeirs Sub Captain Darma
-		<Asyunatar Legion> -->
+		<!-- Arebusqeirs Sub Captain Darma -->
 		<spawn npc_id="243810">
 			<spot x="390.77063" y="569.32166" z="408.91055" h="116"/>
 		</spawn>
-		<!-- Arebusqeirs Captain Magus
-		<Asyunatar Legion> -->
+		<!-- Arebusqeirs Captain Magus -->
 		<spawn npc_id="243811">
 			<spot x="581.96893" y="563.54694" z="408.83063" h="99"/>
 		</spawn>
-		<!-- Airborne Captain Lagabrinta
-		<Asyunatar Legion> -->
+		<!-- Airborne Captain Lagabrinta -->
 		<spawn npc_id="243812">
 			<spot x="410.95197" y="494.48758" z="393.75522" h="60"/>
 		</spawn>
-		<!-- Airborne Captain Filitu
-		<Asyunatar Legion> -->
+		<!-- Airborne Captain Filitu -->
 		<spawn npc_id="243813">
 			<spot x="556.89" y="489.416" z="393.648" h="1"/>
 		</spawn>
-		<!-- Technician Mursillis
-		<Asyunatar Legion> -->
+		<!-- Technician Mursillis -->
 		<spawn npc_id="243814">
 			<spot x="483.29904" y="294.43115" z="402.2051" h="30"/>
 		</spawn>
-		<!-- Raima The Cruel
-		<Asyunatar Legion> -->
+		<!-- Raima The Cruel -->
 		<spawn npc_id="243818">
 			<spot x="484.7845" y="597.18066" z="390.94467" h="91"/>
 		</spawn>
-		<!-- Supply Captain Varuk
-		<Asyunatar Legion> -->
+		<!-- Supply Captain Varuk -->
 		<spawn npc_id="243819">
 			<spot x="394.188" y="710.548" z="401.770" h="60"/>
 		</spawn>
-		<!-- Supply Vice Captain Aketaton
-		<Asyunatar Legion> -->
+		<!-- Supply Vice Captain Aketaton -->
 		<spawn npc_id="243820">
 			<spot x="574.5883" y="715.7344" z="402.3068" h="94"/>
 		</spawn>
-		<!-- Gatekeeper Menes
-		<Asyunatar Legion> -->
+		<!-- Gatekeeper Menes -->
 		<spawn npc_id="243821">
 			<spot x="484.01807" y="516.49536" z="397.9869" h="91"/>
 		</spawn>
-		<!-- Lieutenant Renuka
-		<Asyunatar Legion> -->
+		<!-- Lieutenant Renuka -->
 		<spawn npc_id="243823">
 			<spot x="465.55896" y="607.9618" z="391.57822" h="114"/>
 		</spawn>
-		
-		<!-- IDDreadgion_04_DrakanFi_Vil_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanFi_Vil_71_Ae -->
 		<spawn npc_id="243792">
 			<spot h="35" z="404.12006" y="312.7594" x="517.6292"/>
             <spot h="91" z="402.42203" y="327.37534" x="516.9158"/>
@@ -85,8 +70,7 @@
             <spot h="13" z="409.8467" y="265.9885" x="542.6821"/>
             <spot h="34" z="409.75793" y="264.75806" x="550.45667"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanAs_Vil_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanAs_Vil_71_Ae -->
 		<spawn npc_id="243793">
 			<spot h="36" z="411.8913" y="399.14407" x="354.6776"/>
             <spot h="63" z="405.20096" y="895.6394" x="507.45032"/>
@@ -95,22 +79,19 @@
             <spot h="87" z="402.53857" y="331.99188" x="457.76904"/>
             <spot h="4" z="402.91318" y="318.5161" x="504.55023"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanRa_Vil_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanRa_Vil_71_Ae -->
 		<spawn npc_id="243794">
 			<spot h="111" z="405.24435" y="882.2625" x="475.4465"/>
             <spot h="107" z="397.93176" y="499.3924" x="504.5552"/>
 			<spot h="61" z="410.8118" y="567.0326" x="407.01678"/>
             <spot h="12" z="408.96814" y="559.471" x="571.7337"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanPr_Vil_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanPr_Vil_71_Ae -->
 		<spawn npc_id="243796">
 			<spot h="82" z="405.21228" y="882.0306" x="495.10858"/>
             <spot h="105" z="399.03894" y="507.80975" x="464.84735"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanSc_Tiamat_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanSc_Tiamat_71_Ae -->
 		<spawn npc_id="243802">
 			<spot h="75" z="409.73944" y="293.14365" x="427.16855"/>
             <spot h="70" z="411.60934" y="420.60727" x="372.90878"/>
@@ -130,8 +111,7 @@
             <spot h="107" z="410.0597" y="292.99167" x="541.55786"/>
             <spot h="78" z="409.9605" y="294.81726" x="564.8786"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanCl_Noble_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanCl_Noble_71_Ae -->
 		<spawn npc_id="243800">
 			<spot h="71" z="409.7311" y="283.1194" x="565.20544"/>
             <spot h="36" z="413.0127" y="387.48782" x="626.8166"/>
@@ -141,8 +121,7 @@
             <spot h="69" z="399.05923" y="512.22656" x="500.32138"/>
             <spot h="7" z="402.82986" y="309.7572" x="492.52548"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanFi_Tiamat_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanFi_Tiamat_71_Ae -->
 		<spawn npc_id="243801">
 			<spot h="72" z="387.73267" y="655.7882" x="489.755"/>
             <spot h="104" z="387.7321" y="656.12" x="480.43292"/>
@@ -172,8 +151,7 @@
             <spot h="105" z="409.2309" y="445.8829" x="626.281"/>
             <spot h="72" z="409.31534" y="444.13016" x="635.74475"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanBroadA_Vil_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanBroadA_Vil_71_Ae -->
 		<spawn npc_id="243805">
 			<spot h="95" z="413.45328" y="798.4138" x="541.86774"/>
             <spot h="9" z="413.51587" y="789.77954" x="535.03754"/>
@@ -184,8 +162,7 @@
             <spot h="40" z="402.22354" y="717.16833" x="574.36896"/>
             <spot h="19" z="402.22354" y="718.12683" x="392.48245"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanWi_Tiamat_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanWi_Tiamat_71_Ae -->
 		<spawn npc_id="243803">
 			<spot h="101" z="408.85327" y="576.8062" x="384.19693"/>
             <spot h="35" z="408.8244" y="556.8232" x="381.32184"/>
@@ -201,8 +178,7 @@
             <spot h="44" z="409.10013" y="551.5957" x="401.04895"/>
 			<spot h="27" z="410.46527" y="257.11908" x="546.0164"/>
 		</spawn>
-		<!-- IDDreadgion_04_DrakanCl_Tiamat_71_Ae
-		<Asyunatar Legion> -->
+		<!-- IDDreadgion_04_DrakanCl_Tiamat_71_Ae -->
 		<spawn npc_id="243804">
 			<spot h="89" z="402.22354" y="704.8612" x="584.67676"/>
             <spot h="28" z="416.65332" y="823.72925" x="490.10046"/>
@@ -222,67 +198,67 @@
 			<spot x="588.2" y="713.44" z="402.22894" h="31" walker_id="B1CD578F1C1AF858E33135FA3D5BD8B231D31E69"/>
 		</spawn>
 		
-		<!-- Nizna (NPC Normal lvl:66) -->
+		<!-- Nizna -->
 		<spawn npc_id="806259">
 			<spot x="579.42267" y="170.3023" z="432.28156" h="68"/>
 		</spawn>
-		<!-- Lenanti (NPC Normal lvl:66) -->
+		<!-- Lenanti -->
 		<spawn npc_id="806261">
 			<spot x="406.48495" y="164.1239" z="432.36267" h="47"/>
 		</spawn>
-		<!-- Armory Maintenance Surkana (Object Normal lvl:3) -->
+		<!-- Armory Maintenance Surkana -->
 		<spawn npc_id="801974">
 			<spot x="418.58847" y="281.88992" z="409.69183" entity_id="21"/>
 		</spawn>
-		<!-- Armory Maintenance Surkana (Object Normal lvl:3) -->
+		<!-- Armory Maintenance Surkana -->
 		<spawn npc_id="801975">
 			<spot x="553.40283" y="279.28409" z="409.74921" entity_id="30"/>
 		</spawn>
-		<!-- Gravity Control Surkana (Object Normal lvl:3) -->
+		<!-- Gravity Control Surkana -->
 		<spawn npc_id="801976">
 			<spot x="484.98300" y="292.94415" z="402.19073" entity_id="19"/>
 		</spawn>
-		<!-- Port Thrust Control Surkana (Object Normal lvl:3) -->
+		<!-- Port Thrust Control Surkana -->
 		<spawn npc_id="801977">
 			<spot x="346.13550" y="414.72470" z="410.52921" entity_id="20"/>
 		</spawn>
-		<!-- Starboard Thrust Control Surkana (Object Normal lvl:3) -->
+		<!-- Starboard Thrust Control Surkana -->
 		<spawn npc_id="801978">
 			<spot x="625.67969" y="412.05869" z="410.48172" entity_id="28"/>
 		</spawn>
-		<!-- Cannon Control Surkana (Object Normal lvl:3) -->
+		<!-- Cannon Control Surkana -->
 		<spawn npc_id="801979">
 			<spot x="393.52335" y="567.06299" z="408.93356" entity_id="25"/>
 		</spawn>
-		<!-- Cannon Control Surkana (Object Normal lvl:3) -->
+		<!-- Cannon Control Surkana -->
 		<spawn npc_id="801980">
 			<spot x="579.93268" y="566.64429" z="408.83276" entity_id="31"/>
 		</spawn>
-		<!-- Drop Authority Surkana (Object Normal lvl:3) -->
+		<!-- Drop Authority Surkana -->
 		<spawn npc_id="801981">
 			<spot x="413.06436" y="490.79669" z="393.62073" entity_id="23"/>
 		</spawn>
-		<!-- Drop Authority Surkana (Object Normal lvl:3) -->
+		<!-- Drop Authority Surkana -->
 		<spawn npc_id="801982">
 			<spot x="555.76239" y="491.23868" z="393.54401" entity_id="32"/>
 		</spawn>
-		<!-- Weapons Charge Surkana (Object Normal lvl:3) -->
+		<!-- Weapons Charge Surkana -->
 		<spawn npc_id="801983">
 			<spot x="466.01926" y="607.22192" z="391.61496" entity_id="22"/>
 		</spawn>
-		<!-- Flywheel Surkana (Object Normal lvl:3) -->
+		<!-- Flywheel Surkana -->
 		<spawn npc_id="801984">
 			<spot x="392.20630" y="710.76050" z="401.78912" entity_id="29"/>
 		</spawn>
-		<!-- Flywheel Surkana (Object Normal lvl:3) -->
+		<!-- Flywheel Surkana -->
 		<spawn npc_id="801985">
 			<spot x="577.82098" y="711.19012" z="401.75961" entity_id="24"/>
 		</spawn>
-		<!-- Bridge Power Surkana (Object Normal lvl:3) -->
+		<!-- Bridge Power Surkana -->
 		<spawn npc_id="801986">
 			<spot x="485.00003" y="881.68243" z="404.95462" entity_id="27"/>
 		</spawn>
-		<!-- Cabin Power Surkana (Object Normal lvl:3) -->
+		<!-- Cabin Power Surkana -->
 		<spawn npc_id="801987">
 			<spot x="485.34122" y="817.60040" z="416.68781" entity_id="26"/>
 		</spawn>
@@ -298,23 +274,23 @@
 		<spawn npc_id="802001">
 			<spot x="467.42523" y="586.23065" z="391.53033" entity_id="40"/>
 		</spawn>
-		<!-- Starboard Teleporter Generator (Object Normal lvl:3) -->
+		<!-- Starboard Teleporter Generator -->
 		<spawn npc_id="802002">
 			<spot x="503.45291" y="586.89984" z="391.51694" entity_id="41"/>
 		</spawn>
-		<!-- Portside Defense Shield Generator (Object Normal lvl:3) -->
+		<!-- Portside Defense Shield Generator -->
 		<spawn npc_id="802003">
 			<spot x="363.65765" y="571.69086" z="410.74249" entity_id="16"/>
 		</spawn>
-		<!-- Starboard Defense Shield Generator (Object Normal lvl:3) -->
+		<!-- Starboard Defense Shield Generator -->
 		<spawn npc_id="802004">
 			<spot x="604.64386" y="570.05841" z="409.49820" entity_id="7"/>
 		</spawn>
-		<!-- Port Bulkhead (Object Normal lvl:3) -->
+		<!-- Port Bulkhead -->
 		<spawn npc_id="802005">
 			<spot x="445.52554" y="322.47467" z="402.47620" entity_id="95"/>
 		</spawn>
-		<!-- Starboard Bulkhead (Object Normal lvl:3) -->
+		<!-- Starboard Bulkhead -->
 		<spawn npc_id="802006">
 			<spot x="524.67957" y="322.53738" z="402.40710" entity_id="98"/>
 		</spawn>

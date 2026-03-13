@@ -1427,8 +1427,11 @@ public class Skill {
 			QuestEngine.getInstance().onUseSkill(env, skillTemplate.getSkillId());
 		}
 
-		if (skillMethod == SkillMethod.CAST && getSkillTemplate().getSubType() != SkillSubType.HEAL && hitTime <= 0
-				|| getSkillTemplate().getSubType() != SkillSubType.HEAL) {
+		// 【修复】只在客户端未发送有效hitTime时才由服务端计算
+		// 原条件存在运算符优先级问题，导致非HEAL技能的hitTime被错误覆盖
+		// 修复后：确保 hitTime <= 0 时才由服务端计算，保留客户端发送的有效值
+		if ((skillMethod == SkillMethod.CAST || skillMethod == SkillMethod.ITEM)
+				&& getSkillTemplate().getSubType() != SkillSubType.HEAL && hitTime <= 0) {
 			if (skillskinHitTIme > 0) {
 				hitTime += (int) (skillskinHitTIme * effector.getDistanceToTarget() * 1.8F);
 			} else {

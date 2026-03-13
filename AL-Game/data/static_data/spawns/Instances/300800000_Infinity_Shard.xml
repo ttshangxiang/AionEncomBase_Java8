@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	カタラマイズ
-	Spawn By (Encom)
+	Infinity Shard Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300800000">
-		<!-- Hyperion (Boss Legendary) -->
+		<!-- Hyperion -->
 		<spawn npc_id="231073">
 			<spot x="128.75" y="137.86" z="113.95"/>
 		</spawn>
@@ -71,7 +70,7 @@
 		<spawn npc_id="231091">
 			<spot x="106.97135" y="133.35056" z="124.67736" h="97" walker_id="Hyperion_Defense_Elite_2"/>
 		</spawn>
-		<!-- Greater Blessed Relics (Object Normal lvl:3) -->
+		<!-- Greater Blessed Relics -->
 		<spawn npc_id="831990">
             <spot x="120.73726" y="117.29873" z="131.8584" h="10"/>
         </spawn>

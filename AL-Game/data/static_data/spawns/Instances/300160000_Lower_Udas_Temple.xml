@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	ウダス神殿の地下
-	Spawn By (Encom)
+	Lower Udas Temple Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300160000">
@@ -665,11 +664,11 @@
 	    <spawn npc_id="700638">
 		    <spot x="744.382" y="886.282" z="152.785" h="31"/>
 	    </spawn>
-		<!-- Toxic Caverns Teleport Device (Object Normal lvl:3) -->
+		<!-- Toxic Caverns Teleport Device -->
 		<spawn npc_id="700966">
 			<spot x="1145.7043" y="357.582" z="109.990486" h="30"/>
 		</spawn>
-		<!-- Greater Blessed Relics (Object Normal lvl:3) -->
+		<!-- Greater Blessed Relics -->
 		<spawn npc_id="831990">
             <spot x="1145.4631" y="282.362" z="115.53499" h="30"/>
         </spawn>

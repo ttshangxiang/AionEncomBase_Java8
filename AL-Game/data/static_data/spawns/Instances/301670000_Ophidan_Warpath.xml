@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
-	Ophidan Warpath 5.1
-	Spawn By (Encom)
+	Ophidan Warpath 5.1 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301670000">
@@ -177,36 +176,36 @@
             <spot x="671.6612" y="475.7728" z="599.3538" h="2"/>
 		</spawn>
 		
-		<!-- Post Flag (Object Normal lvl:3) -->
+		<!-- Post Flag -->
 		<spawn npc_id="806425">
 			<spot x="589.974180" y="407.85278" z="610.20313" h="0"/>
 			<spot x="605.049130" y="553.60150" z="591.49310" h="0"/>
 		</spawn>
-		<!-- Elyos Field Gun (Object Normal lvl:3) -->
+		<!-- Elyos Field Gun -->
 		<spawn npc_id="701947">
 		    <spot x="339.84003" y="468.66354" z="595.2064" h="9"/>
             <spot x="337.18887" y="513.1137" z="595.2064" h="109"/>
 		</spawn>
-		<!-- Asmodians Field Gun (Object Normal lvl:3) -->
+		<!-- Asmodians Field Gun -->
 		<spawn npc_id="701948">
 		    <spot x="771.9331" y="565.97644" z="577.08014" h="88"/>
             <spot x="746.5495" y="569.6571" z="577.24384" h="89"/>
 		</spawn>
-		<!-- Elyos Field Gun (Object Normal lvl:3) -->
+		<!-- Elyos Field Gun -->
 		<spawn npc_id="701949">
 		    <spot x="316.5503" y="502.77008" z="596.52875" h="0"/>
             <spot x="317.76346" y="476.9133" z="596.5294" h="1"/>
 		</spawn>
-		<!-- Asmodians Field Gun (Object Normal lvl:3) -->
+		<!-- Asmodians Field Gun -->
 		<spawn npc_id="701950">
 		    <spot x="735.52246" y="548.4562" z="576.4035" h="100"/>
             <spot x="773.91504" y="542.0265" z="576.25" h="78"/>
 		</spawn>
-		<!-- Terua (NPC Normal lvl:75) -->
+		<!-- Terua -->
 		<spawn npc_id="806267">
 	        <spot x="306.3371" y="488.438" z="598.5838" h="2"/>
 		</spawn>
-		<!-- Gangher (NPC Normal lvl:75) -->
+		<!-- Gangher -->
 		<spawn npc_id="806269">
 	        <spot x="760.0722" y="574.4416" z="578.4367" h="87"/>
 		</spawn>

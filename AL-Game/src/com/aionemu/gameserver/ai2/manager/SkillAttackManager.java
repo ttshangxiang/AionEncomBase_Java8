@@ -31,34 +31,49 @@ import com.aionemu.gameserver.skillengine.model.SkillType;
 import com.aionemu.gameserver.utils.MathUtil;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
 /**
-* @modified Yon (Aion Reconstruction Project) -- removed extra delay from {@link #performAttack(NpcAI2, int)}
+ * NPC技能攻击管理器
+ * 负责处理NPC的技能攻击调度和攻击逻辑
+ * 修复：使用正确的攻击范围进行检查，防止技能使用时范围错误
+ * @modified Yon (Aion Reconstruction Project) -- removed extra delay from {@link #performAttack(NpcAI2, int)}
 */
 public class SkillAttackManager {
 
+	/**
+	 * 执行技能攻击
+	 * @param npcAI
+	 * @param delay 攻击延迟时间（毫秒）
+	 */
 	public static void performAttack(NpcAI2 npcAI, int delay) {
+		// 如果攻击范围为0，使用攻击范围进行检查（而不是仇恨范围）
 		if (npcAI.getOwner().getObjectTemplate().getAttackRange() == 0) {
 			if (npcAI.getOwner().getTarget() != null && !MathUtil.isInRange(npcAI.getOwner(),
-					npcAI.getOwner().getTarget(), npcAI.getOwner().getAggroRange())) {
+					npcAI.getOwner().getTarget(), npcAI.getOwner().getGameStats().getAttackRange().getCurrent() / 1000f)) {
 				npcAI.onGeneralEvent(AIEventType.TARGET_TOOFAR);
 				npcAI.getOwner().getController().abortCast();
 				return;
 			}
 		}
+		// 设置施法子状态
 		if (npcAI.setSubStateIfNot(AISubState.CAST)) {
 			if (delay > 0) {
-				//Who added the extra delay? The cast time will be handled later, this delay is for when the cast starts.
-				ThreadPoolManager.getInstance().schedule(new SkillAction(npcAI), delay/* + DataManager.SKILL_DATA.getSkillTemplate(npcAI.getSkillId()).getDuration()*/);
+				// 延迟执行技能攻击
+				ThreadPoolManager.getInstance().schedule(new SkillAction(npcAI), delay);
 			} else {
 				skillAction(npcAI);
 			}
 		}
 	}
 
+	/**
+	 * 执行技能攻击动作
+	 * @param npcAI
+	 */
 	protected static void skillAction(NpcAI2 npcAI) {
 		Creature target = (Creature) npcAI.getOwner().getTarget();
+		// 如果攻击范围为0，使用攻击范围进行检查（而不是仇恨范围）
 		if (npcAI.getOwner().getObjectTemplate().getAttackRange() == 0) {
 			if (npcAI.getOwner().getTarget() != null && !MathUtil.isInRange(npcAI.getOwner(),
-					npcAI.getOwner().getTarget(), npcAI.getOwner().getAggroRange())) {
+					npcAI.getOwner().getTarget(), npcAI.getOwner().getGameStats().getAttackRange().getCurrent() / 1000f)) {
 				npcAI.onGeneralEvent(AIEventType.TARGET_TOOFAR);
 				npcAI.getOwner().getController().abortCast();
 				return;
@@ -93,21 +108,33 @@ public class SkillAttackManager {
 			}
 			boolean success = npcAI.getOwner().getController().useSkill(skillId, skillLevel);
 			if (!success) {
+				// 技能使用失败，结束技能
 				afterUseSkill(npcAI);
 			}
 		} else {
+			// 目标无效，放弃目标
 			npcAI.setSubStateIfNot(AISubState.NONE);
 			npcAI.onGeneralEvent(AIEventType.TARGET_GIVEUP);
 		}
 
 	}
 
+	/**
+	 * 技能使用后的处理
+	 * @param npcAI
+	 */
 	public static void afterUseSkill(NpcAI2 npcAI) {
 		npcAI.setSubStateIfNot(AISubState.NONE);
 		npcAI.onGeneralEvent(AIEventType.ATTACK_COMPLETE);
 	}
 
+	/**
+	 * 选择下一个技能
+	 * @param npcAI
+	 * @return 下一个技能，如果没有则返回null
+	 */
 	public static NpcSkillEntry chooseNextSkill(NpcAI2 npcAI) {
+		// 如果正在施法，不选择技能
 		if (npcAI.isInSubState(AISubState.CAST)) {
 			return null;
 		}
@@ -123,6 +150,7 @@ public class SkillAttackManager {
 				if (npcSkill.isReady(currentHpPercent,
 						System.currentTimeMillis() - owner.getGameStats().getFightStartingTime())) {
 					SkillTemplate template = npcSkill.getSkillTemplate();
+					// 检查技能使用条件
 					if ((template.getType() == SkillType.MAGICAL
 							&& owner.getEffectController().isAbnormalSet(AbnormalState.SILENCE))
 							|| (template.getType() == SkillType.PHYSICAL
@@ -137,6 +165,7 @@ public class SkillAttackManager {
 		return null;
 	}
 
+	// 技能攻击动作：执行实际的技能攻击
 	private final static class SkillAction implements Runnable {
 		private NpcAI2 npcAI;
 

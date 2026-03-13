@@ -16,13 +16,13 @@
  */
 package quest.heiron;
 
-import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.questEngine.handlers.QuestHandler;
 import com.aionemu.gameserver.questEngine.model.QuestDialog;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
+import com.aionemu.gameserver.questEngine.model.QuestActionType;
 
 /**
  * @author Balthazar
@@ -46,10 +46,8 @@ public class _1582ThePriestsNightmare extends QuestHandler {
 	@Override
 	public boolean onDialogEvent(QuestEnv env) {
 		final Player player = env.getPlayer();
+		int targetId = env.getTargetId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		int targetId = 0;
-		if (env.getVisibleObject() instanceof Npc)
-			targetId = ((Npc) env.getVisibleObject()).getNpcId();
 		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
 			if (targetId == 204560) {
 				if (env.getDialog() == QuestDialog.START_DIALOG)
@@ -122,5 +120,18 @@ public class _1582ThePriestsNightmare extends QuestHandler {
             }
 		}
 		return false;
+	}
+
+	@Override
+	public boolean onCanAct(QuestEnv env, QuestActionType questEventType, Object... objects) {
+		Player player = env.getPlayer();
+		QuestState qs = player.getQuestStateList().getQuestState(env.getQuestId());
+		int targetId = env.getTargetId();
+		if (targetId == 700196) {
+			if (qs == null && (qs.getStatus() == QuestStatus.START || qs.getStatus() == QuestStatus.REWARD)) {
+				return false;
+			}
+		}
+		return true;
 	}
 }

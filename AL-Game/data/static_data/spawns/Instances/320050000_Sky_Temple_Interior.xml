@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	アルカニス空中神殿内部
-	Spawn By (Encom)
+	Sky Temple Interior Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="320050000">
@@ -17,7 +16,7 @@
 		<spawn npc_id="730046">
 			<spot x="230.29063" y="303.65009" z="547.23334" entity_id="17"/>
 		</spawn>
-		<!-- Lesser Blessed Relics (Object Normal lvl:3) -->
+		<!-- Lesser Blessed Relics -->
 		<spawn npc_id="831987">
             <spot x="310.39575" y="433.22675" z="416.82278" h="55"/>
             <spot x="468.38144" y="112.86071" z="214.81421" h="8"/>

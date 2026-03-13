@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Kamar Battlefield
-	Spawn By (Encom)
+	Kamar Battlefield Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301120000">
@@ -25,8 +24,7 @@
 		<spawn npc_id="701918">
             <spot x="1535.2096" y="1573.6921" z="612.4217" h="70"/>
         </spawn>
-		<!-- Reian Prisoner
-		<225 Points> -->
+		<!-- Reian Prisoner -->
 		<spawn npc_id="801766">
 			<spot x="1468.493" y="1545.6619" z="607.25" h="77"/>
             <spot x="1178.1528" y="1574.8911" z="585.1998" h="108"/>
@@ -34,8 +32,7 @@
             <spot x="1336.9324" y="1260.816" z="593.75" h="2"/>
             <spot x="1332.3691" y="1438.5255" z="596.875" h="79"/>
 		</spawn>
-		<!-- Reian Prisoner
-		<225 Points> -->
+		<!-- Reian Prisoner -->
 		<spawn npc_id="801767">
 			<spot x="1462.4587" y="1396.3723" z="598.5873" h="43"/>
             <spot x="1264.653" y="1401.2899" z="607.375" h="6"/>
@@ -46,26 +43,22 @@
             <spot x="1337.6399" y="1258.2614" z="593.75" h="7"/>
             <spot x="1313.1215" y="1662.1171" z="599.27075" h="13"/>
 		</spawn>
-		<!-- Fuel Barrel
-		<75 Points> -->
+		<!-- Fuel Barrel -->
 		<spawn npc_id="801773">
 			<spot x="1350.5276" y="1462.0272" z="598.3067" h="93"/>
 		</spawn>
-		<!-- Reian Prisoner
-		<225 Points> -->
+		<!-- Reian Prisoner -->
 		<spawn npc_id="801818">
 			<spot x="1185.1263" y="1615.9283" z="598.625" h="84"/>
             <spot x="1319.8872" y="1680.0289" z="598.625" h="115"/>
             <spot x="1418.4308" y="1561.7803" z="595.7288" h="50"/>
             <spot x="1426.7488" y="1376.6411" z="600.67914" h="51"/>
 		</spawn>
-		<!-- Reian Prisoner
-		<225 Points> -->
+		<!-- Reian Prisoner -->
 		<spawn npc_id="801819">
 			<spot x="1520.0065" y="1418.1825" z="596.6364" h="13"/>
 		</spawn>
-		<!-- Reian Prisoner
-		<225 Points> -->
+		<!-- Reian Prisoner -->
 		<spawn npc_id="801820">
 			<spot x="1151.957" y="1461.5796" z="586.5563" h="1"/>
             <spot x="1221.0009" y="1621.4042" z="585.02655" h="8"/>
@@ -75,8 +68,7 @@
             <spot x="1354.7946" y="1727.7479" z="598.43396" h="68"/>
             <spot x="1371.503" y="1302.6368" z="593.9204" h="83"/>
 		</spawn>
-		<!-- Reian Prisoner
-		<225 Points> -->
+		<!-- Reian Prisoner -->
 		<spawn npc_id="801821">
 			<spot x="1152.1084" y="1463.8317" z="586.5563" h="113"/>
             <spot x="1370.2026" y="1302.9741" z="593.7753" h="89"/>
@@ -86,246 +78,183 @@
             <spot x="1125.7876" y="1619.0876" z="598.43506" h="8"/>
             <spot x="1220.443" y="1622.2881" z="585.02655" h="8"/>
 		</spawn>
-		<!-- Danell
-		She is obsessed with dark visions of misery and suffering.
-		Her brother, Wurus, thinks she just needs a pet -->
+		<!-- Danell -->
 		<spawn npc_id="801822">
 			<spot x="1378.85" y="1263.0" z="592.6344" h="78"/>
 		</spawn>
-		<!-- Garius
-		The Weapons Quarteraster for the Elyos Armory in Kamar -->
+		<!-- Garius -->
 		<spawn npc_id="801823">
 			<spot h="41" x="1205.03" y="1521.66" z="584.23"/>
 		</spawn>
-		<!-- Dariunos
-		The Armor Quartermaster for the Elyos Armory in Kamar -->
+		<!-- Dariunos -->
 		<spawn npc_id="801824">
 			<spot h="26" x="1216.94" y="1513.56" z="584.42"/>
 		</spawn>
-		<!-- Lasos
-		The Shield Quartermaster for the Elyos Armory in Kamar -->
+		<!-- Lasos -->
 		<spawn npc_id="801825">
 			<spot h="64" x="1204.18" y="1554.88" z="586.95"/>
 		</spawn>
-		<!-- Berzeni
-		A Manastone Remover outside the Elyos Armory in Kamar.
-		He removes Manastones from most kinds of equipment -->
+		<!-- Berzeni -->
 		<spawn npc_id="801826">
 			<spot h="90" x="1186.40" y="1548.70" z="586.56"/>
 		</spawn>
-		<!-- Narin
-		A Magic Stigma Distributor at Kahrun Guard Headquarters in Kamar -->
+		<!-- Narin -->
 		<spawn npc_id="801827">
 			<spot h="13" x="1199.33" y="1616.54" z="599.60"/>
 		</spawn>
-		<!-- Farensus
-		A Combat Stigma Distributor at Kahrun Guard Headquarters in Kamar -->
+		<!-- Farensus -->
 		<spawn npc_id="801828">
 			<spot h="41" x="1209.68" y="1622.29" z="599.72"/>
 		</spawn>
-		<!-- Rarius
-		An Accessory Distributor at Kahrun Guard Headquarters in Kamar -->
+		<!-- Rarius -->
 		<spawn npc_id="801829">
 			<spot h="100" x="1137.05" y="1619.90" z="600.15"/>
 		</spawn>
-		<!-- Avas
-		A Consumable Item Distributor at Kahrun Guard Headquarters in Kamar -->
+		<!-- Avas -->
 		<spawn npc_id="801830">
 			<spot x="1129.43" y="1626.34" z="598.43506" h="97"/>
 		</spawn>
-		<!-- Coran
-		An Armor Distributor at Kahrun Guard Headquarters in Kamar -->
+		<!-- Coran -->
 		<spawn npc_id="801831">
 			<spot h="0" x="1169.03" y="1650.56" z="600.54"/>
 		</spawn>
-		<!-- Alre
-		A Greater Armor Distributor at Kahrun Guard Headquarters in Kamar -->
+		<!-- Alre -->
 		<spawn npc_id="801832">
 			<spot h="61" x="1187.65" y="1609.97" z="600.54"/>
 		</spawn>
-		<!-- Trakis
-		A Weapon Distributor at Kahrun Guard Headquarters in Kamar -->
+		<!-- Trakis -->
 		<spawn npc_id="801833">
 			<spot h="64" x="1155.52" y="1653.79" z="600.54"/>
 		</spawn>
-		<!-- Antilochus
-		A Greater Weapon Distributor at Kahrun Guard Headquarters in Kamar -->
+		<!-- Antilochus -->
 		<spawn npc_id="801834">
 			<spot h="90" x="1160.52" y="1641.70" z="600.54"/>
 		</spawn>
-		<!-- Bariunos
-		A Stigma Master at Kahrun Guard Headquarters in Kamar,
-		who equips and removes Stigma -->
+		<!-- Bariunos -->
 		<spawn npc_id="801835">
 			<spot h="113" x="1180.32" y="1598.05" z="599.86"/>
 		</spawn>
-		<!-- Jariunos
-		A Boarding Facility Manager working at Griffoen Boarding Site.
-		He wishes he were stationed onboard the Griffoen -->
+		<!-- Jariunos -->
 		<spawn npc_id="801836">
 			<spot h="34" x="1235.94" y="1365.25" z="612.95"/>
 		</spawn>
-		<!-- Gretia
-		An Aethercraft Technician in Ekne, the great plaza of Kamar
-		She feels watched by Great Square of Peace -->
+		<!-- Gretia -->
 		<spawn npc_id="801837">
 			<spot x="1360.8694" y="1456.5005" z="599.3814" h="51"/>
 		</spawn>
-		<!-- Erista
-		A Daeva who anxiously paces Great Square of Peace in Kamar -->
+		<!-- Erista -->
 		<spawn npc_id="801839">
 			<spot h="45" x="1345.89" y="1423.06" z="600.16"/>
 		</spawn>
-		<!-- Rafaniel
-		A Material Merchant at the entrance of the Elyos Armory in Lamina Bazaar -->
+		<!-- Rafaniel -->
 		<spawn npc_id="801840">
 			<spot h="74" x="1149.06" y="1536.15" z="585.83"/>
 		</spawn>
-		<!-- Benuz
-		A Shield Distributor in Kahrun Guard Headquarters -->
+		<!-- Benuz -->
 		<spawn npc_id="801841">
 			<spot h="105" x="1168.98" y="1627.78" z="599.91"/>
 		</spawn>
-		<!-- Gilion
-		A Divine Power Charger whom you can meet in the Elyos Armory in Kamar -->
+		<!-- Gilion -->
 		<spawn npc_id="801842">
 			<spot x="1200.03" y="1556.2" z="585.0268" h="73"/>
 		</spawn>
-		<!-- Leontidan
-		A Sandstorm Shield Steward located in the Sarpan Capitol -->
+		<!-- Leontidan -->
 		<spawn npc_id="801843">
 			<spot h="100" x="1456.99" y="1397.23" z="600.20"/>
 		</spawn>
-		<!-- Kalinia
-		A Sandstorm Shield Exchanger located in the Sarpan Capitol -->
+		<!-- Kalinia -->
 		<spawn npc_id="801844">
 			<spot h="110" x="1403.97" y="1355.60" z="599.94"/>
 		</spawn>
-		<!-- Sarie
-		A Furniture Merchant in Kamena Development District,
-		who sells exotic Crafting items -->
+		<!-- Sarie -->
 		<spawn npc_id="801845">
 			<spot h="44" x="1561.98" y="1469.29" z="597.70"/>
 		</spawn>
-		<!-- Werenne
-		A General Goods Merchant in Lamina Bazaar -->
+		<!-- Werenne -->
 		<spawn npc_id="801846">
 			<spot x="1197.73" y="1569.28" z="584.875" h="74"/>
 		</spawn>
-		<!-- Haborimus
-		A food merchant in Lamina Bazaar,
-		who is distraught at the lack of fresh food available -->
+		<!-- Haborimus -->
 		<spawn npc_id="801847">
 			<spot x="1228.2885" y="1586.7024" z="584.893" h="102"/>
 		</spawn>
-		<!-- Garlon
-		A Potion Supply merchant in Lamina Bazaar -->
+		<!-- Garlon -->
 		<spawn npc_id="801848">
 			<spot h="80" x="1288.90" y="1655.01" z="585.46"/>
 		</spawn>
-		<!-- Alix
-		A Flux Merchant in Lamina Bazaar -->
+		<!-- Alix -->
 		<spawn npc_id="801849">
 			<spot h="6" x="1284.37" y="1629.70" z="585.48"/>
 		</spawn>
-		<!-- Mirdinia
-		A Reian Crafting Materials Merchant in the Kamena Development District -->
+		<!-- Mirdinia -->
 		<spawn npc_id="801850">
 			<spot h="6" x="1563.63" y="1457.78" z="598.12"/>
 		</spawn>
-		<!-- Ulstia
-		A Head Priestess at Siel Temple in Kamar,
-		who is respected by many Reian tribesmen for her wisdom and intellect -->
+		<!-- Ulstia -->
 		<spawn npc_id="801851">
 			<spot x="1432.4535" y="1611.4768" z="599.9493" h="53"/>
 		</spawn>
-		<!-- Ajenos
-		The Reian Director of Public Relations in Great Square of Peace in Kamar,
-		who is well informed about what's happening throughout Sarpan -->
+		<!-- Ajenos -->
 		<spawn npc_id="801852">
 			<spot h="107" x="1337.15" y="1517.67" z="594.44"/>
 		</spawn>
-		<!-- Baia
-		A Sandstorm Tribunus in Sarpan Capitol,
-		who administers Sarpan defensive missions -->
+		<!-- Baia -->
 		<spawn npc_id="801853">
 			<spot x="1447.1346" y="1368.579" z="600.67914" h="65"/>
 		</spawn>
-		<!-- Lumen
-		A Reian High Sorcerer in Kamar.
-		He does not suffer fools gladly -->
+		<!-- Lumen -->
 		<spawn npc_id="801854">
 			<spot h="61" x="1427.90" y="1378.32" z="602.14"/>
 		</spawn>
-		<!-- Kutos
-		A Kahrun Guard Brigade General who trusts Kahrun completely.
-		He commands from the Kahrun Guard Headquarters -->
+		<!-- Kutos -->
 		<spawn npc_id="801857">
 			<spot x="1161.0" y="1649.0" z="599.151" h="19"/>
 		</spawn>
-		<!-- Pascal
-		A Kahrun Zayedan Tribunus in Sarpan Capitol.
-		He was a scholar until he heard Kahrun speak at a public gathering,
-		and was so impressed that he joined the Guard -->
+		<!-- Pascal -->
 		<spawn npc_id="801858">
 			<spot h="75" x="1445.56" y="1382.01" z="602.65"/>
 		</spawn>
-		<!-- Varzeni
-		A Sarpan Zayedan Tribunus in Sarpan Capitol,
-		who administers missions throughout Sarpan -->
+		<!-- Varzeni -->
 		<spawn npc_id="801859">
 			<spot x="1366.5651" y="1545.5238" z="595.375" h="114"/>
 		</spawn>
-		<!-- Orn
-		A Sarpan Zayedan Centurion in Sarpan Capitol who has some outlandish ideas -->
+		<!-- Orn -->
 		<spawn npc_id="801860">
 			<spot x="1423.87" y="1368.58" z="600.67914" h="14"/>
 		</spawn>
-		<!-- Rafael
-		A portly Reian Elder in Siel', who leads the Siel's Spear Legion -->
+		<!-- Rafael -->
 		<spawn npc_id="801861">
 			<spot x="1310.68" y="1726.11" z="599.151" h="83"/>
 		</spawn>
-		<!-- Acheron
-		A Researcher in the Jotun Research Library.
-		His hearing is badly damaged -->
+		<!-- Acheron -->
 		<spawn npc_id="801862">
 			<spot h="0" x="1250.97" y="1425.02" z="604.98"/>
 		</spawn>
-		<!-- Morphius
-		A Researcher in Drana Research Library.
-		He has studied Drana for decades -->
+		<!-- Morphius -->
 		<spawn npc_id="801863">
 			<spot h="100" x="1437.27" y="1565.34" z="605.36"/>
 		</spawn>
-		<!-- Solomon
-		The lauded Architect of Kamar,
-		he is currently busy overseeing construction in the Kamena Development District -->
+		<!-- Solomon -->
 		<spawn npc_id="801864">
 			<spot x="1515.59" y="1437.93" z="596.625" h="110"/>
 		</spawn>
-		<!-- Seres
-		A Reian Craftsman in Kamar whose weapons are famous for their durability -->
+		<!-- Seres -->
 		<spawn npc_id="801865">
 			<spot h="10" x="1546.67" y="1460.97" z="597.37"/>
 		</spawn>
-		<!-- Iskadar
-		A Weapon Steward for Sandstorm in Sarpan Capitol -->
+		<!-- Iskadar -->
 		<spawn npc_id="801866">
 			<spot h="41" x="1394.38" y="1347.59" z="599.33"/>
 		</spawn>
-		<!-- Versin
-		An Armor Steward for Sandstorm in Sarpan Capitol -->
+		<!-- Versin -->
 		<spawn npc_id="801867">
 			<spot h="15" x="1456.69" y="1405.15" z="600.05"/>
 		</spawn>
-		<!-- Dena
-		An Accessory Steward for Sandstorm in Sarpan Capitol -->
+		<!-- Dena -->
 		<spawn npc_id="801868">
 			<spot x="1415.5198" y="1368.1884" z="600.19275" h="66"/>
 		</spawn>
-		<!-- Equous
-		A Special Steward in Sarpan Capitol, who is also Sandstorm Soldier -->
+		<!-- Equous -->
 		<spawn npc_id="801869">
 			<spot h="67" x="1395.47" y="1356.96" z="599.11"/>
 		</spawn>
@@ -333,126 +262,95 @@
 		<spawn npc_id="801870">
 			<spot h="51" x="1342.25" y="1269.15" z="594.98"/>
 		</spawn>
-		<!-- Dagud
-		The Weapon Quartermaster at the Asmodian Armory in Kamar -->
+		<!-- Dagud -->
 		<spawn npc_id="801871">
 			<spot x="1316.746" y="1639.2487" z="585.02655" h="78"/>
 		</spawn>
-		<!-- Rainark
-		The Armor Quartermaster at the Asmodian Armory in Kamar -->
+		<!-- Rainark-->
 		<spawn npc_id="801872">
 			<spot h="80" x="1361.66" y="1650.26" z="584.52"/>
 		</spawn>
-		<!-- Naizenne
-		The Shield Quartermaster at the Asmodian Armory in Kamar -->
+		<!-- Naizenne -->
 		<spawn npc_id="801873">
 			<spot h="3" x="1366.55" y="1661.33" z="584.36"/>
 		</spawn>
-		<!-- Vala
-		A Manastone Remover outside the Asmodian Armory in Kamar.
-		She can remove Manastones from all types of equipment -->
+		<!-- Vala -->
 		<spawn npc_id="801874">
 			<spot x="1304.76" y="1629.77" z="584.875" h="55"/>
 		</spawn>
-		<!-- Ralith
-		A Magic Stigma Distributor in Siel' -->
+		<!-- Ralith-->
 		<spawn npc_id="801875">
 			<spot h="61" x="1310.49" y="1668.30" z="599.29"/>
 		</spawn>
-		<!-- Beraki
-		A Combat Stigma Distributor in Siel' -->
+		<!-- Beraki -->
 		<spawn npc_id="801876">
 			<spot h="113" x="1333.98" y="1670.50" z="599.29"/>
 		</spawn>
-		<!-- Polith
-		An Accessory Distributor in Siel' -->
+		<!-- Polith -->
 		<spawn npc_id="801877">
 			<spot x="1358.5715" y="1728.997" z="598.43396" h="90"/>
 		</spawn>
-		<!-- Disen
-		An Consumable Item Distributor in Siel' -->
+		<!-- Disen -->
 		<spawn npc_id="801878">
 			<spot x="1349.8032" y="1719.8168" z="598.43396" h="51"/>
 		</spawn>
-		<!-- Vaigud
-		An Armor Distributor in Siel' -->
+		<!-- Vaigud -->
 		<spawn npc_id="801879">
 			<spot h="61" x="1321.25" y="1699.42" z="600.54"/>
 		</spawn>
-		<!-- Kalam
-		A Greater Armor Distributor in Siel'.
-		He sells excellent armor -->
+		<!-- Kalam -->
 		<spawn npc_id="801880">
 			<spot h="100" x="1302.75" y="1718.19" z="600.54"/>
 		</spawn>
-		<!-- Lanix
-		A Weapon Distributor in Siel' -->
+		<!-- Lanix -->
 		<spawn npc_id="801881">
 			<spot h="31" x="1316.67" y="1717.87" z="600.54"/>
 		</spawn>
-		<!-- Grom
-		A Greater Weapon Distributor in Siel'.
-		He sells excellent weapons -->
+		<!-- Grom -->
 		<spawn npc_id="801882">
 			<spot h="51" x="1311.71" y="1712.49" z="600.54"/>
 		</spawn>
-		<!-- Vaut
-		A Stigma Master in Siel', who can equip and remove Stigma -->
+		<!-- Vaut -->
 		<spawn npc_id="801883">
 			<spot h="77" x="1300.72" y="1658.33" z="599.12"/>
 		</spawn>
-		<!-- Svenson
-		A Boarding Facility Manager working at Habrok Boarding Site.
-		He gets airsick when onboard a ship -->
+		<!-- Svenson -->
 		<spawn npc_id="801884">
 			<spot h="26" x="1505.63" y="1554.07" z="612.42"/>
 		</spawn>
-		<!-- Ekne
-		An Aethercraft Technician in Kamar's Gretia.
-		She holds a grudge against Great Square of Peace -->
+		<!-- Ekne -->
 		<spawn npc_id="801885">
 			<spot x="1378.9" y="1479.4" z="598.3146" h="109"/>
 		</spawn>
-		<!-- Sasha
-		A Daeva who wanders Great Square of Peace in Kamar,
-		trying to sort her thoughts on the truce between Elyos and Asmodians -->
+		<!-- Sasha -->
 		<spawn npc_id="801887">
 			<spot x="1424.57" y="1474.73" z="598.875" h="112"/>
 		</spawn>
-		<!-- Chicorunerk
-		An admission officer at the Dark Cloudy Merchants at Kamar in Sarpan -->
+		<!-- Chicorunerk -->
 		<spawn npc_id="801888">
 			<spot x="1219.4875" y="1572.7073" z="584.8308" h="66"/>
 		</spawn>
-		<!-- Hucorinerk
-		A worker at the Dark Cloudy Merchants in Lamina Bazaar,
-		who does not get enough sleep -->
+		<!-- Hucorinerk -->
 		<spawn npc_id="801889">
 			<spot h="116" x="1209.82" y="1578.96" z="586.97"/>
 		</spawn>
-		<!-- Kainark
-		A Material Merchant in Lamina Bazaar -->
+		<!-- Kainark -->
 		<spawn npc_id="801890">
 			<spot h="26" x="1247.51" y="1636.85" z="585.79"/>
 		</spawn>
-		<!-- Zethius
-		A Shield Distributor in Siel' -->
+		<!-- Zethius -->
 		<spawn npc_id="801891">
 			<spot x="1343.7599" y="1726.9873" z="598.43396" h="108"/>
 		</spawn>
-		<!-- Adrina
-		A Divine Power Charger in the Asmodian Armory in Kamar,
-		who can imbue equipment with great powers -->
+		<!-- Adrina -->
 		<spawn npc_id="801892">
 			<spot x="1317.66" y="1626.54" z="585.35376" h="117"/>
 		</spawn>
-		<!-- Cleyos
-		Responsible for the Kamar Dungeon who is worried about his job -->
+		<!-- Cleyos -->
 		<spawn npc_id="801893">
 			<spot x="1176.16" y="1431.16" z="586.5563" h="15"/>
 		</spawn>
-		<!-- Betios
-		A Sandstorm Member in the Sarpan Capitol in Kamar -->
+		<!-- Betios -->
 		<spawn npc_id="801894">
 			<spot x="1403.85" y="1422.45" z="600.3041" h="46"/>
 		</spawn>
@@ -460,13 +358,11 @@
 		<spawn npc_id="801895">
 			<spot x="1388.5382" y="1515.7169" z="597.5314" h="15"/>
 		</spawn>
-		<!-- Audria
-		A Divine Accessories Merchant working in Kamar -->
+		<!-- Audria -->
 		<spawn npc_id="801897">
 			<spot h="100" x="1400.39" y="1300.03" z="596.17"/>
 		</spawn>
-		<!-- Anathia
-		A Reian Craftsman working in Kamar -->
+		<!-- Anathia -->
 		<spawn npc_id="801898">
 			<spot h="41" x="1385.54" y="1305.91" z="595.25"/>
 		</spawn>
@@ -478,76 +374,55 @@
 		<spawn npc_id="801900">
 			<spot h="10" x="1313.38" y="1470.21" z="598.34"/>
 		</spawn>
-		<!-- Sokios
-		An Elyos Special Distributor in the Siel's Spear Headquarters in Kamar -->
+		<!-- Sokios -->
 		<spawn npc_id="801901">
 			<spot h="34" x="1144.75" y="1625.67" z="600.68"/>
 		</spawn>
-		<!-- Indalon
-		An Asmodian Special Distributor in the Siel's Spear Headquarters in Kamar -->
+		<!-- Indalon -->
 		<spawn npc_id="801902">
 			<spot h="72" x="1325.58" y="1685.95" z="599.95"/>
 		</spawn>
-		<!-- Merlean
-		A Fatebound Centurion dispatched to Kamar -->
+		<!-- Merlean -->
 		<spawn npc_id="801904">
 			<spot x="1273.33" y="1656.17" z="585.72876" h="14"/>
 		</spawn>
-		<!-- Enoa
-		A Centurion dispatched to Sarpan -->
+		<!-- Enoa -->
 		<spawn npc_id="801905">
 			<spot x="1233.92" y="1667.83" z="585.3441" h="91"/>
 		</spawn>
-		<!-- Phaedara
-		A Teleporter working in the Great Square of Peace,
-		she worries about getting so much sun -->
+		<!-- Phaedara -->
 		<spawn npc_id="801906">
 			<spot h="47" x="1382.71" y="1452.15" z="600.38"/>
 		</spawn>
-		<!-- Recis
-		He is recording transport patterns to Habrok Boarding Site in the Habrok -->
+		<!-- Recis -->
 		<spawn npc_id="801907">
 			<spot h="100" x="1497.67" y="1554.60" z="612.71"/>
 		</spawn>
-		<!-- Favil
-		He is studying transport patterns to Griffoen Boarding Site at the Griffoen -->
+		<!-- Favil -->
 		<spawn npc_id="801908">
 			<spot h="100" x="1239.15" y="1375.67" z="612.91"/>
 		</spawn>
-		<!-- Gaston
-		A Drana Researcher in the Morphius who serves as Drana Research Library' assistant -->
+		<!-- Gaston -->
 		<spawn npc_id="801909">
 			<spot h="57" x="1444.99" y="1569.04" z="605.38"/>
 		</spawn>
-		<!-- Riome
-		A Jotun Researcher in the Acheron.
-		His position as assistant to Jotun Research Library is made more
-		difficult by his boss'poor hearing -->
+		<!-- Riome -->
 		<spawn npc_id="801910">
 			<spot h="100" x="1260.27" y="1429.41" z="604.30"/>
 		</spawn>
-		<!-- Laso
-		He runs the Bivarus Tavern in Kamar.
-		He is a good-natured man, though some accuse him of watering down his drinks -->
+		<!-- Laso -->
 		<spawn npc_id="801911">
 			<spot h="90" x="1334.70" y="1241.83" z="595.28"/>
 		</spawn>
-		<!-- Leyni
-		A Bartender at Bivarus Tavern.
-		She mixes a cocktail with Raydam herb that is rumored to be Kahrun's favorite drink -->
+		<!-- Leyni -->
 		<spawn npc_id="801912">
 			<spot h="41" x="1329.63" y="1228.76" z="595.00"/>
 		</spawn>
-		<!-- Yohar
-		A souse usually found in Bivarus Tavern.
-		Depending on who you ask, he was once a pirate,
-		a Pagati racer, or Sarpan's boldest spelunker -->
+		<!-- Yohar -->
 		<spawn npc_id="801913">
 			<spot h="77" x="1344.34" y="1255.71" z="595.35"/>
 		</spawn>
-		<!-- Miyerin
-		A waitress at Yohar.
-		She is tired of cleaning up after Bivarus Tavern -->
+		<!-- Miyerin -->
 		<spawn npc_id="801914">
 			<spot h="54" x="1339.28" y="1234.14" z="595.24"/>
 		</spawn>
@@ -603,9 +478,7 @@
 		<spawn npc_id="801927">
 			<spot h="3" x="1540.72" y="1422.83" z="597.28"/>
 		</spawn>
-		<!-- Teukis
-		A Building District Supervisor working in the Kamena Development District,
-		who is trying to improve efficiency -->
+		<!-- Teukis -->
 		<spawn npc_id="801928">
 			<spot h="26" x="1531.33" y="1436.01" z="597.64"/>
 		</spawn>
@@ -669,7 +542,6 @@
 		<spawn npc_id="801943">
 			<spot x="1325.06" y="1712.79" z="599.3122" h="39"/>
 		</spawn>
-		
 		<!-- Elyos Guardian Statue -->
 		<spawn npc_id="701900">
             <spot x="1208.5055" y="1356.3091" z="612.4769" h="10"/>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	서풍의 섬 비밀창고 4.9
-	Spawn By (Encom)
+	Hamate Isle Storeroom 4.9 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300070000">
@@ -101,7 +100,7 @@
 			<spot x="523.02" y="599.44" z="100.50599" h="89" walker_id="28CE19D8AC55E8665081C6B9DB4ECE74B5082413"/>
 			<spot x="485.38" y="562.47" z="100.506744" h="32" walker_id="6854F4BF8880D22BC1373E47427EEE84AC848980"/>
 		</spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="503.93295" y="392.0989" z="94.34823" h="30"/>
         </spawn>
@@ -113,13 +112,11 @@
 		<spawn npc_id="700480">
 			<spot x="505.27969" y="375.68188" z="93.839989" entity_id="33"/>
 		</spawn>
-		
-		<!-- 4.9 -->
-		<!-- Klenod (Npc Normal lvl:65) -->
+		<!-- Klenod -->
 		<spawn npc_id="805429">
             <spot x="498.80835" y="401.7558" z="94.34823" h="101"/>
         </spawn>
-		<!-- Sishote (Npc Normal lvl:65) -->
+		<!-- Sishote -->
         <spawn npc_id="805434">
             <spot x="497.3961" y="400.64923" z="94.34823" h="104"/>
         </spawn>

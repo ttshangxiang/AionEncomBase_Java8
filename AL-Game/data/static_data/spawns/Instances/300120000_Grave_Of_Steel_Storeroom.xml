@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	강철의 무덤 비밀창고 4.9
-    Spawn By (Encom)
+	Grave Of Steel Storeroom 4.9 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300120000">
@@ -41,19 +40,18 @@
 			<spot x="637.25623" y="488.88467" z="193.31065" entity_id="31"/>
 			<spot x="638.48651" y="608.33130" z="189.93639" entity_id="32"/>
 		</spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="527.61884" y="137.25879" z="178.94252" h="90"/>
         </spawn>
-		<!-- Befas (Npc Normal lvl:65) -->
+		<!-- Befas -->
 		<spawn npc_id="805431">
             <spot x="525.58386" y="125.5117" z="175.95563" h="88"/>
         </spawn>
-		<!-- Isrune (Npc Normal lvl:65) -->
+		<!-- Isrune -->
         <spawn npc_id="805436">
             <spot x="529.8865" y="125.27954" z="175.95131" h="94"/>
         </spawn>
-		
 		<!-- Ranx Dark Blade -->
 		<spawn npc_id="215346">
 			<spot x="643.94" y="439.595" z="197.267" h="27"/>

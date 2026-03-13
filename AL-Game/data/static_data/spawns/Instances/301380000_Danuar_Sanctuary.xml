@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	ヨルムンガンドの橋 4.8
-	Spawn By (Encom)
+	Danuar Sanctuary 4.8 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301380000">
@@ -125,24 +124,24 @@
             <spot x="856.45276" y="912.5339" z="292.7933" h="36"/>
             <spot x="840.06537" y="914.9674" z="292.77646" h="8"/>
 		</spawn>
-		<!-- IDF5_U2_P_T_ShugoG_Wi_SN_63_Ae (Boss Hero Lvl 65) -->
+		<!-- IDF5_U2_P_T_ShugoG_Wi_SN_63_Ae -->
 		<spawn npc_id="235657">
 			<spot x="1059.3523" y="824.26587" z="284.486" h="30"/>
 		</spawn>
-		<!-- IDF5_U2_P_T_ShulackF_Ri_SN_63_Ae (Boss Hero Lvl 65) -->
+		<!-- IDF5_U2_P_T_ShulackF_Ri_SN_63_Ae -->
 		<spawn npc_id="235658">
 			<spot x="1055.1064" y="824.12994" z="284.486" h="30"/>
 		</spawn>
-		<!-- IDF5_U2_P_T_ShulackF_As_SN_63_Ae (Boss Hero Lvl 65) -->
+		<!-- IDF5_U2_P_T_ShulackF_As_SN_63_Ae -->
 		<spawn npc_id="235659">
 			<spot x="1056.6898" y="859.7759" z="282.58716" h="30"/>
 		</spawn>
 		
-		<!-- Siege Drill (Object Normal lvl:3) -->
+		<!-- Siege Drill -->
 		<spawn npc_id="233331">
 			<spot x="1048.0173" y="821.04877" z="284.486" h="90"/>
 		</spawn>
-		<!-- Jar (Object Normal lvl:3) -->
+		<!-- Jar -->
 		<spawn npc_id="233185">
 			<spot x="1084.21" y="351.57" z="301.84" h="11"/>
 			<spot x="1079.88" y="1159.40" z="308.84" h="11"/>
@@ -152,19 +151,19 @@
             <spot x="981.8729" y="1340.8151" z="335.875" h="101"/>
             <spot x="778.7867" y="980.4399" z="309.9841" h="10"/>
 		</spawn>
-		<!-- Greater Blessed Relics (Object Normal lvl:3) -->
+		<!-- Greater Blessed Relics -->
 		<spawn npc_id="831990">
             <spot x="395.46576" y="1178.9171" z="55.36066" h="47"/>
         </spawn>
-		<!-- Alkatron (Npc Normal lvl:65) -->
+		<!-- Alkatron -->
 		<spawn npc_id="804862">
 			<spot x="402.0597" y="1169.9233" z="55.258022" h="44"/>
 		</spawn>
-		<!-- Dintanum (Npc Normal lvl:65) -->
+		<!-- Dintanum -->
 		<spawn npc_id="804863">
 			<spot x="374.27615" y="1169.5868" z="55.23915" h="16"/>
 		</spawn>
-		<!-- Ancien Danuar Coffin (Npc Normal lvl:65) -->
+		<!-- Ancien Danuar Coffin -->
 		<spawn npc_id="233084">
 			<spot x="1043.1229" y="281.16452" z="309.91623" entity_id="263"/>
 			<spot x="1101.2522" y="283.08405" z="301.90897" entity_id="392"/>
@@ -220,27 +219,27 @@
 			<spot x="1001.0312" y="1354.5323" z="337.40408" entity_id="1900"/>
 			<spot x="1012.6262" y="1372.9420" z="337.41165" entity_id="1901"/>
 		</spawn>
-		<!-- Unyielding Boulder (Object Normal lvl:3) -->
+		<!-- Unyielding Boulder -->
 		<spawn npc_id="233142">
 			<spot x="1099.0125" y="978.01031" z="288.21808" entity_id="7"/>
 			<spot x="937.55585" y="876.63904" z="305.12701" entity_id="1820"/>
 		</spawn>
-		<!-- Sturdy Boulder (Object Normal lvl:3) -->
+		<!-- Sturdy Boulder -->
 		<spawn npc_id="233188">
 			<spot x="1029.9758" y="355.22501" z="298.81873" entity_id="147"/>
 			<spot x="1051.7915" y="369.01736" z="298.92966" entity_id="153"/>
 			<spot x="905.67981" y="859.79224" z="278.03140" entity_id="158"/>
 			<spot x="1031.9492" y="436.11459" z="295.52182" entity_id="1656"/>
 		</spawn>
-		<!-- Chamber Of Ruin Entrance (Object Normal lvl:3) -->
+		<!-- Chamber Of Ruin Entrance -->
 		<spawn npc_id="233189">
 			<spot x="1056.1144" y="808.13947" z="284.96677" entity_id="362"/>
 		</spawn>
-		<!-- Stone Treasure Box (Object Normal lvl:3) -->
+		<!-- Stone Treasure Box -->
 		<spawn npc_id="233190">
 			<spot x="1063.6106" y="826.70123" z="284.48718" entity_id="6"/>
 		</spawn>
-		<!-- Stone Treasure Box (Object Normal lvl:3) -->
+		<!-- Stone Treasure Box -->
 		<spawn npc_id="233191">
 			<spot x="885.44275" y="874.76062" z="306.74438" entity_id="11"/>
 			<spot x="1173.1305" y="1045.8094" z="285.81714" entity_id="20"/>
@@ -250,59 +249,59 @@
 			<spot x="775.5365" y="1060.85000" z="310.87695" entity_id="1156"/>
 			<spot x="958.30768" y="931.41235" z="296.54401" entity_id="1166"/>
 		</spawn>
-		<!-- Stone Treasure Box (Object Normal lvl:3) -->
+		<!-- Stone Treasure Box -->
 		<spawn npc_id="233192">
 			<spot x="1097.8208" y="422.58508" z="285.69165" entity_id="21"/>
 			<spot x="776.07233" y="944.67407" z="318.23914" entity_id="23"/>
 			<spot x="978.22223" y="1310.4764" z="336.53885" entity_id="33"/>
 		</spawn>
-		<!-- Infernal Danuar Sanctuary Keybox (Object Normal lvl:3) -->
+		<!-- Infernal Danuar Sanctuary Keybox -->
 		<spawn npc_id="233391">
 			<spot x="388.71414" y="1173.6805" z="55.232941" entity_id="259"/>
 		</spawn>
-		<!-- Sturdy Boulder (Object Normal lvl:3) -->
+		<!-- Sturdy Boulder -->
 		<spawn npc_id="233447">
 			<spot x="1149.4208" y="1142.3667" z="304.38727" entity_id="151"/>
 			<spot x="1070.1891" y="1085.6509" z="302.88110" entity_id="155"/>
 			<spot x="1032.0061" y="1287.3173" z="327.70145" entity_id="156"/>
 			<spot x="1047.4684" y="1204.2748" z="315.48434" entity_id="1692"/>
 		</spawn>
-		<!-- Sturdy Boulder (Object Normal lvl:3) -->
+		<!-- Sturdy Boulder -->
 		<spawn npc_id="233448">
 			<spot x="783.29211" y="1037.3185" z="310.16440" entity_id="414"/>
 			<spot x="859.69092" y="908.85358" z="293.04236" entity_id="1657"/>
 			<spot x="928.17126" y="926.90375" z="293.10721" entity_id="1661"/>
 			<spot x="831.09186" y="966.35010" z="305.12903" entity_id="1663"/>
 		</spawn>
-		<!-- Metallic Mystic Keystone (Object Normal lvl:3) -->
+		<!-- Metallic Mystic Keystone -->
 		<spawn npc_id="701859">
 			<spot x="1100.6958" y="263.35339" z="301.43103" entity_id="34"/>
 		</spawn>
-		<!-- Golden Mystic Keystone (Object Normal lvl:3) -->
+		<!-- Golden Mystic Keystone -->
 		<spawn npc_id="701860">
 			<spot x="825.43347" y="939.57715" z="305.19696" entity_id="150"/>
 		</spawn>
-		<!-- Spherical Mystic Keystone (Object Normal lvl:3) -->
+		<!-- Spherical Mystic Keystone -->
 		<spawn npc_id="701863">
 			<spot x="1046.0391" y="783.45721" z="280.47012" entity_id="143"/>
 		</spawn>
-		<!-- Pyramidal Mystic Keystone (Object Normal lvl:3) -->
+		<!-- Pyramidal Mystic Keystone -->
 		<spawn npc_id="701864">
 			<spot x="921.92059" y="836.90283" z="279.71716" entity_id="142"/>
 		</spawn>
-		<!-- The Charnel Entrance (Object Normal lvl:3) -->
+		<!-- The Charnel Entrance -->
 		<spawn npc_id="701871">
 			<spot x="388.45288" y="1134.2689" z="61.946301" entity_id="1759"/>
 		</spawn>
-		<!-- The Crypts Entrance (Object Normal lvl:3) -->
+		<!-- The Crypts Entrance -->
 		<spawn npc_id="701872">
 			<spot x="1097.6876" y="409.07495" z="285.57089" entity_id="462"/>
 		</spawn>
-		<!-- The Catacombs Entrance (Object Normal lvl:3) -->
+		<!-- The Catacombs Entrance -->
 		<spawn npc_id="701873">
 			<spot x="1047.2957" y="1206.5072" z="315.44235" entity_id="460"/>
 		</spawn>
-		<!-- Steel Rose Cannon (Object Normal lvl:3) -->
+		<!-- Steel Rose Cannon -->
 		<spawn npc_id="730863">
 			<spot x="900.30823" y="839.59943" z="292.76813" entity_id="117"/>
 		</spawn>

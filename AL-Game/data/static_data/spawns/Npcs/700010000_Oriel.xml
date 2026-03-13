@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    エリアン 4.7
-	Spawn By (Encom)
+    Oriel 4.7 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="700010000">
-		<!--  Housing Recycle Box Elyos (Object Normal lvl:3) -->
+		<!--  Housing Recycle Box Elyos -->
 	    <spawn npc_id="730522" respawn_time="295">
 		    <spot x="641.70044" y="2245.9705" z="160.51688" h="83"/>
 			<spot x="704.61346" y="2272.579" z="160.99702" h="87"/>
@@ -2487,10 +2486,7 @@
             <spot x="2361.492" y="2523.7795" z="187.18848" random_walk="3"/>
             <spot x="2362.8362" y="2528.1895" z="187.07275" random_walk="3"/>
         </spawn>
-		<!-- Shulack Pickpocket
-		<Dadokin Bandit Member>
-		A Shulack thief appearing in the residential area.
-		Their mentor is the legendary pickpocket Dadokin -->
+		<!-- Shulack Pickpocket -->
 		<spawn npc_id="219501" respawn_time="295">
             <spot x="72.1670" y="1979.5598" z="129.2500" h="18" random_walk="3"/>
             <spot x="93.1445" y="2006.2711" z="128.8750" h="82" random_walk="3"/>
@@ -2650,7 +2646,7 @@
             <spot x="2648.5281" y="771.7872" z="155.3058" h="35" random_walk="3"/>
             <spot x="2677.5054" y="767.4685" z="157.8750" h="99" random_walk="3"/>
 		</spawn>
-		<!-- Tezz's House Information (Object Normal lvl:3) -->
+		<!-- Tezz's House Information -->
 		<spawn npc_id="730526" respawn_time="295">
 			<spot x="1178.576" y="1853.733" z="99.750" h="18"/>
 		</spawn>
@@ -2662,11 +2658,11 @@
         <spawn npc_id="830587" respawn_time="295">
             <spot x="2489.438" y="1618.7118" z="180.75" h="116"/>
         </spawn>
-		<!-- Siloson (NPC Normal lvl:65) -->
+		<!-- Siloson -->
         <spawn npc_id="206336" respawn_time="295">
             <spot x="1394.2062" y="1886.4293" z="101.17323" h="42"/>
         </spawn>
-		<!-- Melina (NPC Normal lvl:65) -->
+		<!-- Melina -->
         <spawn npc_id="206337" respawn_time="295">
             <spot x="1325.54" y="1775.2441" z="101.12904" h="117"/>
         </spawn>

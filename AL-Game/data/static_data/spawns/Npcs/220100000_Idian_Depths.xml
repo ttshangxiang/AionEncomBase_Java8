@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	지하 카탈람 4.8
-	Spawn By (Encom)
+	Idian_Depths 4.8 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="220100000">
@@ -42,22 +41,22 @@
             <spot x="693.9336" y="759.4314" z="512.9729" h="110"/>
 		</spawn>
 		<spawn npc_id="805241" respawn_time="295">
-			<spot x="686.107849" y="701.780396" z="515.795898" h="0"/>
+			<spot x="686.107849" y="701.780396" z="515.795898"/>
 		</spawn>
 		<spawn npc_id="805242" respawn_time="295">
-			<spot x="681.511047" y="849.905762" z="515.790771" h="0"/>
+			<spot x="681.511047" y="849.905762" z="515.790771"/>
 		</spawn>
 		<spawn npc_id="805251" respawn_time="295">
 			<spot x="689.35767" y="665.3423" z="514.9797" h="90"/>
 		</spawn>
 		<spawn npc_id="805252" respawn_time="295">
-			<spot x="683.520630" y="868.796509" z="517.195496" h="0"/>
+			<spot x="683.520630" y="868.796509" z="517.195496"/>
 		</spawn>
 		<spawn npc_id="805253" respawn_time="295">
 			<spot x="682.856" y="665.4941" z="514.9903" h="91"/>
 		</spawn>
 		<spawn npc_id="805254" respawn_time="295">
-			<spot x="683.519409" y="860.312134" z="517.208557" h="0"/>
+			<spot x="683.519409" y="860.312134" z="517.208557"/>
 		</spawn>
 		<spawn npc_id="805255" respawn_time="295">
 			<spot x="688.83374" y="642.7476" z="515.03455" h="30"/>
@@ -73,14 +72,14 @@
 		</spawn>
 		<!-- Company Bodyguard -->
 		<spawn npc_id="209586" respawn_time="295">
-			<spot x="684.4659" y="737.016" z="512.9729" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_NPC_QUEST2"/>
+			<spot x="684.4659" y="737.016" z="512.9729" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_NPC_QUEST2"/>
 		</spawn>
 		<!-- Company Bodyguard -->
 		<spawn npc_id="209587" respawn_time="295">
-			<spot x="684.4659" y="737.016" z="512.9729" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_NPC_QUEST2"/>
+			<spot x="684.4659" y="737.016" z="512.9729" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_NPC_QUEST2"/>
 		</spawn>
 		<spawn npc_id="209612" respawn_time="295">
-		    <spot x="554.24347" y="715.7962" z="553.46954" h="0"/>
+		    <spot x="554.24347" y="715.7962" z="553.46954"/>
 		</spawn>
 		<spawn npc_id="209615" respawn_time="295">
 			<spot x="711.0852" y="737.0332" z="560.0033" h="119"/>
@@ -90,7 +89,7 @@
 		<spawn npc_id="209619" respawn_time="295">
 			<spot x="727.7494" y="885.9995" z="514.7932" h="107" walker_id="SHUGO_SHERPA_SEGARUNERKS_BAZAAR_00000005"/>
 			<spot x="691.3197" y="778.2177" z="512.9729" h="26" walker_id="SHUGO_SHERPA_SEGARUNERKS_BAZAAR_00000006"/>
-			<spot x="694.0322" y="679.18384" z="514.92456" h="0" walker_id="SHUGO_SHERPA_SEGARUNERKS_BAZAAR_00000007"/>
+			<spot x="694.0322" y="679.18384" z="514.92456" walker_id="SHUGO_SHERPA_SEGARUNERKS_BAZAAR_00000007"/>
 			<spot x="652.59717" y="672.6636" z="517.56793" h="25" walker_id="SHUGO_SHERPA_SEGARUNERKS_BAZAAR_00000008"/>
 			<spot x="617.33923" y="660.381" z="525.3589" h="17" walker_id="SHUGO_SHERPA_SEGARUNERKS_BAZAAR_00000009"/>
 		</spawn>
@@ -103,14 +102,14 @@
 		</spawn>
 	    <spawn npc_id="209621" respawn_time="295">
 		    <spot x="604.47076" y="813.41296" z="558.75" h="84"/>
-            <spot x="666.375" y="726.81604" z="514.7426" h="0"/>
+            <spot x="666.375" y="726.81604" z="514.7426"/>
 		</spawn>
-		<!-- Mailbox Asmodians (Object Normal lvl:3) -->
+		<!-- Mailbox Asmodians -->
 		<spawn npc_id="700079" respawn_time="295">
-            <spot x="696.99445" y="692.36536" z="514.8785" h="0"/>
-			<spot x="689.1342" y="839.81824" z="514.85754" h="0"/>
+            <spot x="696.99445" y="692.36536" z="514.8785"/>
+			<spot x="689.1342" y="839.81824" z="514.85754"/>
         </spawn>
-		<!-- Subterranean Idium Lode (Object Normal lvl:3) -->
+		<!-- Subterranean Idium Lode -->
 	    <spawn npc_id="701812" respawn_time="295">
 		    <spot x="1048.7467" y="345.13806" z="549.6106" entity_id="296"/>
             <spot x="203.04866" y="1127.4407" z="534.375" entity_id="767"/>
@@ -137,7 +136,7 @@
             <spot x="356.65067" y="1240.6196" z="530.8108" entity_id="762"/>
             <spot x="354.72598" y="1173.5686" z="537.7731" entity_id="288"/>
 		</spawn>
-		<!-- Danuar Building Rubble (Object Normal lvl:3) -->
+		<!-- Danuar Building Rubble -->
 	    <spawn npc_id="701813" respawn_time="295">
 		    <spot x="292.31235" y="727.0603" z="549.26251" entity_id="315"/>
 			<spot x="294.30099" y="744.66235" z="549.26251" entity_id="365"/>
@@ -147,7 +146,7 @@
 			<spot x="295.17529" y="754.76764" z="548.53131" entity_id="749"/>
 			<spot x="291.43448" y="744.66235" z="549.1521" entity_id="750"/>
 		</spawn>
-		<!-- Katalluna (Object Normal lvl:3) -->
+		<!-- Katalluna -->
 	    <spawn npc_id="701814" respawn_time="295">
 		    <spot x="475.18802" y="458.23764" z="568.4734" entity_id="775"/>
             <spot x="468.77267" y="393.0441" z="567.125" entity_id="284"/>
@@ -162,83 +161,82 @@
             <spot x="418.05515" y="603.60284" z="572.51782" entity_id="756"/>
             <spot x="358.30905" y="592.65204" z="570.2977" entity_id="772"/>
 		</spawn>
-		<!-- Classified Document (Object Normal lvl:3) -->
+		<!-- Classified Document -->
 	    <spawn npc_id="730821" respawn_time="295">
 		    <spot x="613.0426" y="1343.4286" z="506.05548" entity_id="751"/>
 		</spawn>
-		<!-- Sealed Danuar Tomb (Object Normal lvl:3) -->
+		<!-- Sealed Danuar Tomb -->
 	    <spawn npc_id="730822" respawn_time="295">
 		    <spot x="644.50104" y="1238.3621" z="512.36597" entity_id="778"/>
 		</spawn>
-		<!-- Old Danuar Stone Slab (Object Normal lvl:3) -->
+		<!-- Old Danuar Stone Slab -->
 	    <spawn npc_id="730823" respawn_time="295">
 		    <spot x="737.03229" y="533.23322" z="520.9082" entity_id="145"/>
 		</spawn>
-		<!-- Worn Danuar Stone Slab (Object Normal lvl:3) -->
+		<!-- Worn Danuar Stone Slab -->
 	    <spawn npc_id="730824" respawn_time="295">
 		    <spot x="719.37836" y="1056.4093" z="514.19824" entity_id="237"/>
 		</spawn>
-		<!-- Sealed Document (Object Normal lvl:3) -->
+		<!-- Sealed Document -->
 	    <spawn npc_id="730825" respawn_time="295">
 		    <spot x="720.89264" y="153.92757" z="521.19415" entity_id="753"/>
 		</spawn>
-		<!-- Airtight Danuar Tomb (Object Normal lvl:3) -->
+		<!-- Airtight Danuar Tomb -->
 	    <spawn npc_id="730826" respawn_time="295">
 		    <spot x="825.30133" y="301.14908" z="517.03058" entity_id="571"/>
 		</spawn>
-		<!-- Danuar Reliquary 4.8 (Object Normal lvl:3) -->
+		<!-- Danuar Reliquary -->
 		<spawn npc_id="730841" respawn_time="295">
             <spot x="192.13733" y="767.5993" z="540.3175" entity_id="752"/>
         </spawn>
-		<!-- Idian Depths To Katalam (Exit A) (Object Normal lvl:3) -->
+		<!-- Idian Depths To Katalam -->
 	    <spawn npc_id="730856" respawn_time="295">
 		    <spot x="487.40152" y="290.205" z="571.42786" entity_id="602"/>
 		</spawn>
-		<!-- Idian Depths To Katalam (Exit B) (Object Normal lvl:3) -->
+		<!-- Idian Depths To Katalam -->
 	    <spawn npc_id="730857" respawn_time="295">
 		    <spot x="888.4125" y="1131.0482" z="548.7961" entity_id="363"/>
 		</spawn>
-		<!-- Idian Depths To Danaria (Exit A) (Object Normal lvl:3) -->
+		<!-- Idian Depths To Danaria -->
 	    <spawn npc_id="730858" respawn_time="295">
 		    <spot x="398.4937" y="1056.1182" z="557.6554" entity_id="287"/>
 		</spawn>
-		<!-- Idian Depths To Danaria (Exit B) (Object Normal lvl:3) -->
+		<!-- Idian Depths To Danaria -->
 	    <spawn npc_id="730859" respawn_time="295">
 		    <spot x="968.9587" y="497.01855" z="561.94904" entity_id="134"/>
 		</spawn>
-		<!-- Idian Depths To Pandaemonium (Object Normal lvl:3) -->
+		<!-- Idian Depths To Pandaemonium -->
 		<spawn npc_id="731634" respawn_time="295">
-			<spot x="684.0351" y="709.4115" z="514.8746" h="0"/>
+			<spot x="684.0351" y="709.4115" z="514.8746"/>
             <spot x="703.36066" y="824.0092" z="514.8277" h="60"/>
 		</spawn>
-		<!-- Claw Fist Garrison Corridor (Object Normal lvl:3) -->
+		<!-- Claw Fist Garrison Corridor -->
 		<spawn npc_id="731636" respawn_time="295">
 			<spot x="305.5991" y="724.68243" z="549.09644" h="30"/>
 		</spawn>
-		<!-- 키벨리스크 Asmodians (Object Normal lvl:3) -->
+		<!-- 키벨리스크 Asmodians -->
 		<spawn npc_id="731639" respawn_time="295">
 			<spot x="686.9432" y="695.41364" z="515.5968" entity_id="682"/>
 		</spawn>
-		<!-- 키벨리스크 Asmodians (Object Normal lvl:3) -->
+		<!-- 키벨리스크 Asmodians -->
 		<spawn npc_id="731640" respawn_time="295">
 			<spot x="681.3887" y="843.1074" z="515.5165" entity_id="694"/>
 		</spawn>
-		<!-- GHB_VritraPotal (Object Normal lvl:3) -->
+		<!-- GHB_VritraPotal -->
 		<spawn npc_id="287212" respawn_time="295">
             <spot x="1294.2059" y="768.82477" z="570.98999" entity_id="108"/>
         </spawn>
-		<!-- GHB_VritraBossPotal (Object Normal lvl:3) -->
+		<!-- GHB_VritraBossPotal -->
 		<spawn npc_id="287213" respawn_time="295">
             <spot x="355.50873" y="515.38947" z="571.00647" entity_id="300"/>
 			<spot x="1058.4769" y="970.82678" z="569.06049" entity_id="570"/>
 			<spot x="1194.8542" y="568.87891" z="559.45020" entity_id="779"/>
 			<spot x="711.39874" y="1375.6588" z="495.67062" entity_id="1798"/>
         </spawn>
-		<!-- Evirunerk (NPC Normal lvl:65) -->
+		<!-- Evirunerk -->
 		<spawn npc_id="831998" respawn_time="295">
             <spot x="711.7718" y="654.57043" z="516.47797" h="60"/>
         </spawn>
-		
 		<!-- Mobs 4.8 Official Spawn -->
 		<spawn npc_id="230859" respawn_time="900">
 			<spot x="455.03586" y="739.01996" z="553.6845" h="10" random_walk="2"/>
@@ -295,7 +293,7 @@
             <spot x="728.96075" y="1280.0903" z="486.8893" h="12" random_walk="2"/>
             <spot x="708.5074" y="246.61812" z="502.82446" h="69" random_walk="2"/>
             <spot x="706.02484" y="210.46004" z="501.78125" h="33" random_walk="2"/>
-            <spot x="622.94025" y="242.29863" z="502.65192" h="0" random_walk="2"/>
+            <spot x="622.94025" y="242.29863" z="502.65192" random_walk="2"/>
 			<spot x="727.75415" y="295.33545" z="517.8865" h="37" walker_id="Towering_Lich_1_Ldf5_Under_D"/>
 			<spot x="727.75415" y="295.33545" z="517.8865" h="37" walker_id="Towering_Lich_1_Ldf5_Under_D"/>
 			<spot x="712.2022" y="1256.0486" z="513.24426" h="90" walker_id="Towering_Lich_2_Ldf5_Under_D"/>
@@ -329,7 +327,7 @@
             <spot x="629.1762" y="407.41846" z="516.8326" h="93" random_walk="2"/>
             <spot x="621.97614" y="434.0413" z="515.375" h="110" random_walk="2"/>
             <spot x="701.1543" y="432.63635" z="514.5" h="82" random_walk="2"/>
-            <spot x="687.78546" y="512.9623" z="514.0" h="0" random_walk="2"/>
+            <spot x="687.78546" y="512.9623" z="514.0" random_walk="2"/>
             <spot x="686.2009" y="545.02026" z="517.1887" h="21" random_walk="2"/>
             <spot x="642.8509" y="533.4343" z="524.6113" h="109" random_walk="2"/>
             <spot x="651.37604" y="489.08286" z="521.0676" h="13" random_walk="2"/>
@@ -399,7 +397,7 @@
             <spot x="386.79745" y="593.00183" z="571.0997" h="112"/>
             <spot x="392.37808" y="598.70166" z="571.0575" h="102"/>
             <spot x="400.71783" y="595.1976" z="571.25" h="66"/>
-            <spot x="386.3578" y="628.1444" z="574.64734" h="0"/>
+            <spot x="386.3578" y="628.1444" z="574.64734"/>
 		</spawn>
 		<spawn npc_id="230870" respawn_time="900">
 			<spot x="527.3334" y="539.5898" z="553.5" h="43"/>
@@ -459,8 +457,8 @@
 		</spawn>
 		<spawn npc_id="230872" respawn_time="900">
 			<spot x="691.7483" y="1027.8903" z="519.5118" h="5"/>
-            <spot x="691.7074" y="1000.6222" z="520.32227" h="0"/>
-            <spot x="693.164" y="991.70215" z="520.30145" h="0"/>
+            <spot x="691.7074" y="1000.6222" z="520.32227"/>
+            <spot x="693.164" y="991.70215" z="520.30145"/>
             <spot x="748.62756" y="986.52716" z="517.3023" h="62"/>
             <spot x="740.38666" y="1027.4987" z="521.4135" h="51"/>
             <spot x="727.4648" y="1054.8164" z="516.3345" h="62"/>
@@ -634,7 +632,7 @@
 		</spawn>
 		<spawn npc_id="230892" respawn_time="900">
 			<spot x="309.72647" y="532.0815" z="565.3279" h="37"/>
-            <spot x="262.76712" y="615.5316" z="573.3594" h="0"/>
+            <spot x="262.76712" y="615.5316" z="573.3594"/>
             <spot x="277.56134" y="593.3803" z="573.3594" h="32"/>
 		</spawn>
 		<spawn npc_id="230893" respawn_time="900">
@@ -664,10 +662,10 @@
             <spot x="191.65475" y="638.57166" z="573.3729" h="108"/>
 		</spawn>
 		<spawn npc_id="230898" respawn_time="900">
-			<spot x="1012.5767" y="757.08" z="554.18585" h="0" walker_id="Remnant_Hunter_Elite_Outrider_4_Ldf5_Under_D"/>
-            <spot x="444.87125" y="767.7262" z="552.8479" h="0" walker_id="Remnant_Hunter_Elite_Outrider_2_Ldf5_Under_D"/>
+			<spot x="1012.5767" y="757.08" z="554.18585" walker_id="Remnant_Hunter_Elite_Outrider_4_Ldf5_Under_D"/>
+            <spot x="444.87125" y="767.7262" z="552.8479" walker_id="Remnant_Hunter_Elite_Outrider_2_Ldf5_Under_D"/>
             <spot x="1012.3279" y="767.7267" z="554.18585" h="119" walker_id="Remnant_Hunter_Elite_Outrider_6_Ldf5_Under_D"/>
-            <spot x="662.0" y="768.0" z="552.8594" h="0" walker_id="Remnant_Hunter_Elite_Outrider_1_Ldf5_Under_D"/>
+            <spot x="662.0" y="768.0" z="552.8594" walker_id="Remnant_Hunter_Elite_Outrider_1_Ldf5_Under_D"/>
             <spot x="1170.9208" y="778.4245" z="554.18585" h="60" walker_id="Remnant_Hunter_Elite_Outrider_5_Ldf5_Under_D"/>
             <spot x="434.95877" y="768.35815" z="548.2869" h="59" walker_id="Remnant_Hunter_Elite_Outrider_3_Ldf5_Under_D"/>
 		</spawn>
@@ -678,7 +676,7 @@
             <spot x="1192.3112" y="783.84705" z="554.9713" h="103" walker_id="Inspection_Guard_Sorcerer_Ldf5_Under_D"/>
             <spot x="317.7285" y="804.9181" z="549.09644" h="111"/>
 		</spawn>
-		<!-- Argush (Named Elite) -->
+		<!-- Argush -->
 		<spawn npc_id="230900" pool="1" respawn_time="900">
 			<spot x="273.7744" y="635.97174" z="573.3594" h="76"/>
             <spot x="296.30563" y="451.77048" z="575.98376" h="20"/>
@@ -699,28 +697,28 @@
 		</spawn>
 		<spawn npc_id="230920" respawn_time="900">
 			<spot x="273.38037" y="767.6455" z="551.59766" h="60" walker_id="Veteran_Insurgent_Brawler_3_Ldf5_Under_D"/>
-            <spot x="1012.5767" y="757.08" z="554.18585" h="0" walker_id="Remnant_Hunter_Elite_Outrider_4_Ldf5_Under_D"/>
-            <spot x="444.87125" y="767.7262" z="552.8479" h="0" walker_id="Remnant_Hunter_Elite_Outrider_2_Ldf5_Under_D"/>
+            <spot x="1012.5767" y="757.08" z="554.18585" walker_id="Remnant_Hunter_Elite_Outrider_4_Ldf5_Under_D"/>
+            <spot x="444.87125" y="767.7262" z="552.8479" walker_id="Remnant_Hunter_Elite_Outrider_2_Ldf5_Under_D"/>
             <spot x="1012.3279" y="767.7267" z="554.18585" h="119" walker_id="Remnant_Hunter_Elite_Outrider_6_Ldf5_Under_D"/>
-            <spot x="1039.6088" y="921.5123" z="553.4124" h="0"/>
+            <spot x="1039.6088" y="921.5123" z="553.4124"/>
             <spot x="1076.3136" y="920.1527" z="553.4165" h="68"/>
-            <spot x="662.0" y="768.0" z="552.8594" h="0" walker_id="Remnant_Hunter_Elite_Outrider_1_Ldf5_Under_D"/>
+            <spot x="662.0" y="768.0" z="552.8594" walker_id="Remnant_Hunter_Elite_Outrider_1_Ldf5_Under_D"/>
             <spot x="1170.9208" y="778.4245" z="554.18585" h="60" walker_id="Remnant_Hunter_Elite_Outrider_5_Ldf5_Under_D"/>
             <spot x="565.73663" y="799.2269" z="552.7665" h="7" walker_id="Veteran_Insurgent_Brawler_2_Ldf5_Under_D"/>
             <spot x="434.95877" y="768.35815" z="548.2869" h="59" walker_id="Remnant_Hunter_Elite_Outrider_3_Ldf5_Under_D"/>
-            <spot x="792.0" y="724.0" z="554.0598" h="0" walker_id="Veteran_Insurgent_Brawler_1_Ldf5_Under_D"/>
+            <spot x="792.0" y="724.0" z="554.0598" walker_id="Veteran_Insurgent_Brawler_1_Ldf5_Under_D"/>
             <spot x="1055.5157" y="835.58093" z="555.7414" h="90"/>
 			<spot x="1060.8549" y="835.37964" z="555.7414" h="90"/>
             <spot x="286.5473" y="735.3542" z="549.09644" h="10"/>
-            <spot x="287.87418" y="793.9248" z="549.09644" h="0"/>
+            <spot x="287.87418" y="793.9248" z="549.09644"/>
             <spot x="298.33865" y="805.82434" z="549.09644" h="73"/>
-            <spot x="293.4036" y="764.01685" z="548.2869" h="0"/>
-            <spot x="293.2592" y="772.311" z="548.2869" h="0"/>
+            <spot x="293.4036" y="764.01685" z="548.2869"/>
+            <spot x="293.2592" y="772.311" z="548.2869"/>
 		</spawn>
 		<spawn npc_id="230923" respawn_time="900">
 			<spot x="762.6389" y="768.47577" z="553.25" h="60"/>
             <spot x="621.3462" y="767.6032" z="553.125" h="50"/>
-            <spot x="1056.5732" y="886.02606" z="553.2876" h="0" walker_id="Veteran_Insurgent_Fighter_2_Ldf5_Under_D"/>
+            <spot x="1056.5732" y="886.02606" z="553.2876" walker_id="Veteran_Insurgent_Fighter_2_Ldf5_Under_D"/>
             <spot x="434.95877" y="768.35815" z="548.2869" h="59" walker_id="Remnant_Hunter_Elite_Outrider_3_Ldf5_Under_D"/>
             <spot x="395.53937" y="743.60284" z="549.09644" h="48"/>
             <spot x="344.17996" y="747.4996" z="549.09644" h="38"/>
@@ -732,7 +730,7 @@
 			<spot x="537.0298" y="768.4746" z="552.89685" h="3" walker_id="Veteran_Insurgent_Fighter_1_Ldf5_Under_D"/>
 		</spawn>
 		<spawn npc_id="230924" respawn_time="900">
-			<spot x="273.6719" y="783.9896" z="552.07135" h="0"/>
+			<spot x="273.6719" y="783.9896" z="552.07135"/>
             <spot x="300.95337" y="791.40674" z="549.09644" h="101"/>
             <spot x="296.4512" y="746.73016" z="549.09644" h="12"/>
             <spot x="275.8983" y="803.37103" z="549.93414" h="115"/>
@@ -743,7 +741,7 @@
 		</spawn>
 		<spawn npc_id="230925" respawn_time="900">
 			<spot x="1028.4799" y="888.57806" z="555.7574" h="5"/>
-            <spot x="1026.4252" y="905.76697" z="555.7574" h="0"/>
+            <spot x="1026.4252" y="905.76697" z="555.7574"/>
             <spot x="1093.2236" y="922.857" z="555.78143" h="49"/>
             <spot x="1092.1925" y="888.68585" z="555.78143" h="43"/>
             <spot x="1269.2205" y="776.9067" z="563.34973" h="68"/>
@@ -753,7 +751,7 @@
             <spot x="380.36038" y="747.352" z="549.09644" h="41"/>
             <spot x="387.07397" y="806.5359" z="552.11005" h="90"/>
             <spot x="305.78616" y="731.6377" z="549.09644" h="27"/>
-            <spot x="283.4777" y="767.588" z="549.93414" h="0"/>
+            <spot x="283.4777" y="767.588" z="549.93414"/>
 		</spawn>
 		<spawn npc_id="230926" respawn_time="900">
 			<spot x="1144.0762" y="738.09094" z="554.99457" h="16"/>
@@ -773,12 +771,12 @@
 		<spawn npc_id="230929" respawn_time="900">
 			<spot x="273.38037" y="767.6455" z="551.59766" h="60" walker_id="Veteran_Insurgent_Brawler_3_Ldf5_Under_D"/>
             <spot x="565.73663" y="799.2269" z="552.7665" h="7" walker_id="Veteran_Insurgent_Brawler_2_Ldf5_Under_D"/>
-            <spot x="792.0" y="724.0" z="554.0598" h="0" walker_id="Veteran_Insurgent_Brawler_1_Ldf5_Under_D"/>
-            <spot x="1056.8025" y="889.0375" z="552.4647" h="0" walker_id="Veteran_Insurgent_Fighter_2_Ldf5_Under_D"/>
-            <spot x="287.5782" y="778.78424" z="549.93414" h="0"/>
-            <spot x="287.45154" y="782.79834" z="549.93414" h="0"/>
-            <spot x="287.7747" y="756.4773" z="549.93414" h="0"/>
-            <spot x="287.43365" y="752.5172" z="549.93414" h="0"/>
+            <spot x="792.0" y="724.0" z="554.0598" walker_id="Veteran_Insurgent_Brawler_1_Ldf5_Under_D"/>
+            <spot x="1056.8025" y="889.0375" z="552.4647" walker_id="Veteran_Insurgent_Fighter_2_Ldf5_Under_D"/>
+            <spot x="287.5782" y="778.78424" z="549.93414"/>
+            <spot x="287.45154" y="782.79834" z="549.93414"/>
+            <spot x="287.7747" y="756.4773" z="549.93414"/>
+            <spot x="287.43365" y="752.5172" z="549.93414"/>
 		</spawn>
 		<spawn npc_id="230930" respawn_time="900">
             <spot x="946.0318" y="778.974" z="554.8856" h="112" random_walk="2"/>
@@ -841,7 +839,7 @@
             <spot x="489.6983" y="963.7772" z="555.0" h="109"/>
             <spot x="542.63635" y="893.5573" z="560.2898" h="81"/>
             <spot x="526.2051" y="855.6302" z="556.5599" h="79"/>
-            <spot x="481.0734" y="677.13025" z="557.789" h="0"/>
+            <spot x="481.0734" y="677.13025" z="557.789"/>
             <spot x="488.03287" y="666.6947" z="557.7938" h="7"/>
             <spot x="460.73407" y="654.9432" z="557.0" h="13"/>
             <spot x="520.6761" y="735.6459" z="553.69543" h="38"/>
@@ -948,27 +946,27 @@
             <spot x="604.4496" y="257.58862" z="501.9552" h="110" random_walk="2"/>
             <spot x="603.9132" y="1283.2692" z="497.08652" h="36" random_walk="2"/>
 		</spawn>
-		<!-- Captain Rata (Named Hero) -->
+		<!-- Captain Rata -->
 		<spawn npc_id="230995" respawn_time="1800">
 			<spot x="1269.9343" y="767.7653" z="563.42145" h="60"/>
 		</spawn>
-		<!-- Staff Officer Grazda (Named Hero) -->
+		<!-- Staff Officer Grazda -->
 		<spawn npc_id="230996" respawn_time="1800">
 			<spot x="307.9523" y="433.51172" z="577.6757" h="1"/>
 		</spawn>
-		<!-- Azak The Unyielding (Named Hero) -->
+		<!-- Azak The Unyielding -->
 		<spawn npc_id="230997" respawn_time="1800">
 			<spot x="482.8214" y="995.539" z="557.6078" h="93"/>
 		</spawn>
-		<!-- Slavir The Ancient (Named Hero) -->
+		<!-- Slavir The Ancient -->
 		<spawn npc_id="230998" respawn_time="1800">
 			<spot x="864.3158" y="1042.9938" z="543.44965" h="13"/>
 		</spawn>
-		<!-- Promion The Undying (Named Hero) -->
+		<!-- Promion The Undying -->
 		<spawn npc_id="230999" respawn_time="1800">
 			<spot x="674.5021" y="995.7043" z="520.32227" h="19"/>
 		</spawn>
-		<!-- Bloodcrazed Grigol (Named Hero) -->
+		<!-- Bloodcrazed Grigol -->
 		<spawn npc_id="231000" respawn_time="1800">
 			<spot x="1160.8323" y="334.18604" z="561.88965" h="54" walker_id="Bloodcrazed_Grigol_Ldf5_Under_D"/>
 		</spawn>
@@ -982,11 +980,11 @@
             <spot x="410.71893" y="972.6945" z="558.5883" h="103" random_walk="2"/>
             <spot x="371.07013" y="970.0789" z="558.24396" h="34" random_walk="2"/>
         </spawn>
-		<!-- Blackened Grave [Pop Executioner Penemon] -->
+		<!-- Blackened Grave -->
 		<spawn npc_id="231002" respawn_time="1800">
             <spot x="384.18744" y="892.8905" z="559.375" h="60"/>
 		</spawn>
-		<!-- Queen Serusia (Named Hero) -->
+		<!-- Queen Serusia -->
 		<spawn npc_id="231003" respawn_time="1800">
 			<spot x="408.73123" y="614.37445" z="572.0925" h="71"/>
 		</spawn>
@@ -1024,27 +1022,27 @@
             <spot x="806.71454" y="622.764" z="543.5" h="7" random_walk="2"/>
 		</spawn>
 		<spawn npc_id="231060" respawn_time="900">
-			<spot x="1152.27" y="1124.39" z="493.86" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P1"/>
-			<spot x="1100.41" y="1305.15" z="557.99" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P15"/>
-			<spot x="1090.32" y="1178.25" z="542.58" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P14"/>
-			<spot x="1147.98" y="1134.98" z="516.37" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P2"/>
-			<spot x="1061.96" y="1236.77" z="570.43" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P3"/>
-			<spot x="1234.96" y="1298.95" z="532.98" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P18"/>
-			<spot x="1176.85" y="1031.82" z="536.04" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P9"/>
-			<spot x="1112.94" y="1314.20" z="513.37" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P6"/>
-			<spot x="1129.06" y="1197.82" z="549.49" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P12"/>
-			<spot x="1079.65" y="1270.00" z="531.70" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P4"/>
-			<spot x="1194.35" y="1281.37" z="545.36" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P16"/>
-			<spot x="1273.84" y="1283.00" z="509.34" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P7"/>
-			<spot x="1248.44" y="1141.86" z="521.30" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P8"/>
-			<spot x="1129.06" y="1197.82" z="539.74" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P11"/>
-			<spot x="1129.06" y="1197.82" z="560.90" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P13"/>
-			<spot x="1103.15" y="1118.82" z="532.60" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P17"/>
-			<spot x="1173.61" y="1260.03" z="515.99" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P5"/>
-			<spot x="1176.85" y="1031.82" z="545.10" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P10"/>
-			<spot x="1207.58" y="1012.19" z="524.87" h="0" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P19"/>
-			<spot x="1246.39" y="956.29" z="538.62" h="0"/>
-			<spot x="1194.18" y="1209.14" z="536.81" h="0"/>
+			<spot x="1152.27" y="1124.39" z="493.86" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P1"/>
+			<spot x="1100.41" y="1305.15" z="557.99" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P15"/>
+			<spot x="1090.32" y="1178.25" z="542.58" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P14"/>
+			<spot x="1147.98" y="1134.98" z="516.37" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P2"/>
+			<spot x="1061.96" y="1236.77" z="570.43" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P3"/>
+			<spot x="1234.96" y="1298.95" z="532.98" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P18"/>
+			<spot x="1176.85" y="1031.82" z="536.04" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P9"/>
+			<spot x="1112.94" y="1314.20" z="513.37" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P6"/>
+			<spot x="1129.06" y="1197.82" z="549.49" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P12"/>
+			<spot x="1079.65" y="1270.00" z="531.70" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P4"/>
+			<spot x="1194.35" y="1281.37" z="545.36" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P16"/>
+			<spot x="1273.84" y="1283.00" z="509.34" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P7"/>
+			<spot x="1248.44" y="1141.86" z="521.30" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P8"/>
+			<spot x="1129.06" y="1197.82" z="539.74" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P11"/>
+			<spot x="1129.06" y="1197.82" z="560.90" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P13"/>
+			<spot x="1103.15" y="1118.82" z="532.60" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P17"/>
+			<spot x="1173.61" y="1260.03" z="515.99" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P5"/>
+			<spot x="1176.85" y="1031.82" z="545.10" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P10"/>
+			<spot x="1207.58" y="1012.19" z="524.87" walker_id="LDF5_UNDER_D_NPCPATHLDF5_UNDER_MOB_D1_P19"/>
+			<spot x="1246.39" y="956.29" z="538.62"/>
+			<spot x="1194.18" y="1209.14" z="536.81"/>
 		</spawn>
 		<spawn npc_id="231061" respawn_time="900">
 			<spot x="665.99945" y="502.49872" z="514.944" h="118"/>
@@ -1116,7 +1114,7 @@
             <spot x="472.54657" y="633.8149" z="561.4658" h="70"/>
             <spot x="501.38348" y="516.7326" z="558.375" h="42"/>
 		</spawn>
-		<!-- Roaring Kamara (Named Hero) -->
+		<!-- Roaring Kamara -->
 		<spawn npc_id="231196" respawn_time="1800">
             <spot x="1272.0697" y="1353.7805" z="539.45105" h="88"/>
         </spawn>
@@ -1125,39 +1123,39 @@
             <spot x="1062.7539" y="944.50836" z="555.78143" h="90"/>
             <spot x="1054.0021" y="944.51996" z="555.7574" h="89"/>
 		</spawn>
-		<!-- Elder Marones (Named Hero) -->
+		<!-- Elder Marones -->
 		<spawn npc_id="233040" respawn_time="1800">
 			<spot x="683.98395" y="251.7525" z="502.65192" h="90"/>
 		</spawn>
-		<!-- Elder Dalanoah (Named Hero) -->
+		<!-- Elder Dalanoah -->
 		<spawn npc_id="233041" respawn_time="1800">
 			<spot x="763.3176" y="1241.786" z="513.24426" h="30"/>
 		</spawn>
-		<!-- Arathel The Malevolent (Named Hero) -->
+		<!-- Arathel The Malevolent -->
 		<spawn npc_id="233302" respawn_time="1800">
 			<spot x="598.19543" y="443.14734" z="530.3241" h="114"/>
 		</spawn>
-		<!-- Ruanan The Spiteful (Named Hero) -->
+		<!-- Ruanan The Spiteful -->
 		<spawn npc_id="233303" respawn_time="1800">
 			<spot x="214.406" y="1137.9513" z="534.00305" h="34"/>
 		</spawn>
-		<!-- Isala The Wrathful (Named Hero) -->
+		<!-- Isala The Wrathful -->
 		<spawn npc_id="233304" respawn_time="1800">
 			<spot x="1001.20026" y="367.64032" z="559.66266" h="34"/>
 		</spawn>
-		<!-- Sorodus The Mad (Named Hero) -->
+		<!-- Sorodus The Mad -->
 		<spawn npc_id="233305" respawn_time="1800">
 			<spot x="1073.498" y="1144.5325" z="547.34296" h="59"/>
 		</spawn>
-		<!-- Inspector Chardu (Named Hero) -->
+		<!-- Inspector Chardu -->
 		<spawn npc_id="233306" respawn_time="1800">
 			<spot x="719.3949" y="1070.2217" z="517.50433" h="79"/>
 		</spawn>
-		<!-- Inspector Avanoha (Named Hero) -->
+		<!-- Inspector Avanoha -->
 		<spawn npc_id="233307" respawn_time="1800">
 			<spot x="858.7906" y="485.99612" z="539.3461" h="47"/>
 		</spawn>
-		<!-- Inspector Pidara (Named Hero) -->
+		<!-- Inspector Pidara -->
 		<spawn npc_id="233308" respawn_time="1800">
 			<spot x="310.3991" y="798.44226" z="549.09644" h="104"/>
 		</spawn>

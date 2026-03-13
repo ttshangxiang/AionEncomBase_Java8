@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    アラカ
-    Spawn By (Encom)
+    Esoterrace Spawn By (Encom)
 -->
 <spawns>
 	<spawn_map map_id="300250000">
@@ -135,8 +134,7 @@
 			<spot h="7" z="273.00256" y="402.82635" x="1263.1838" walker_id="Esoterrace_Destroyer_1"/>
 			<spot h="13" z="279.9423" y="425.62967" x="1346.3531" walker_id="Esoterrace_Destroyer_2"/>
 		</spawn>
-		<!-- Dalia Charlands
-		The Holy Tree of Esoterrace, now used as a tool to produce Drana -->
+		<!-- Dalia Charlands -->
 		<spawn npc_id="217185">
 		    <spot h="2" z="295.25" y="645.9562" x="1266.1956"/>
 		</spawn>
@@ -238,9 +236,7 @@
             <spot h="70" z="316.52972" y="902.2783" x="1169.6693"/>
             <spot h="15" z="323.93338" y="956.0561" x="996.3904"/>
 		</spawn>
-		<!-- Captain Murugan
-		One of Surama's loyal servants.
-		He was last seen in Laboratory Air Conditioning Room -->
+		<!-- Captain Murugan -->
 		<spawn npc_id="217195">
 		    <spot x="804.6792" y="1113.5134" z="363.13092" h="60" walker_id="Captain_Murugan"/>
 		</spawn>
@@ -291,9 +287,7 @@
             <spot h="58" z="188.32457" y="1160.58" x="1363.563"/>
             <spot h="13" z="188.32457" y="1207.84" x="1281.4185"/>
 		</spawn>
-		<!-- Kexkra
-		One of Surama's loyal servants.
-		He was last seen in Esoterrace Bio Lab -->
+		<!-- Kexkra -->
 		<spawn npc_id="217204">
 		    <spot x="1315.99" y="1170.77" z="51.8004" h="87"/>
 		</spawn>
@@ -334,18 +328,15 @@
 		<spawn npc_id="217281">
 		    <spot h="90" z="352.94437" y="940.5641" x="789.58093"/>
 		</spawn>
-		<!-- Lab Investigator
-		<Section Manager> -->
+		<!-- Lab Investigator -->
 		<spawn npc_id="217282">
 		    <spot h="0" z="326.53745" y="873.8077" x="1181.1958"/>
 		</spawn>
-		<!-- Senior Lab Researcher
-		<Section Manager> -->
+		<!-- Senior Lab Researcher -->
 		<spawn npc_id="217283">
 		    <spot h="119" z="316.52972" y="900.59595" x="1101.3854"/>
 		</spawn>
-		<!-- Lab Supervisor
-		<Section Manager> -->
+		<!-- Lab Supervisor -->
 		<spawn npc_id="217284">
 		    <spot h="119" z="326.86572" y="895.0352" x="1056.727"/>
 		</spawn>
@@ -353,9 +344,7 @@
 		<spawn npc_id="217289">
 		    <spot h="29" z="189.33026" y="1040.7982" x="1314.5724"/>
 		</spawn>
-		
-		<!-- Blighted Dalia Root
-		These Dalia Charlands roots absorb energy from Elim in Drana Esoterrace -->
+		<!-- Blighted Dalia Root -->
 		<spawn npc_id="701015">
 		    <spot x="1001.3297" y="635.12286" z="257.10785" entity_id="55"/>
             <spot x="996.41360" y="645.72300" z="256.82330" entity_id="61"/>
@@ -419,33 +408,19 @@
 		    <spot x="1302.5600" y="1164.9200" z="119.06600" entity_id="176"/>
 		    <spot x="1321.4900" y="1160.8100" z="150.65000" entity_id="179"/>
 		</spawn>
-		<!-- Surama's Infosphere
-		The ribbons chase words around a sphere -->
+		<!-- Surama's Infosphere -->
 		<spawn npc_id="730380">
 		    <spot x="1310.6300" y="1146.8200" z="189.16100" entity_id="42"/>
 		</spawn>
-		<!-- Murugan's Mailbox
-		Each file is labeled with a name.
-		Perhaps a recipient ? You open one. Dearest Friend,
-		When a commander sendest thee to gate duty, demotest thee from the field, and then forgetest!
-		Thou art doomed to play guard sergeant forever, watching woeful the least eventful door.
-		Days run one into the next.
-		I treat my fellows as broodmates, yet they bear me no love.
-		Nor I them neither. I'faith, we are none of us easiest to love, only to beat at dice.
-		I simply cheat better -->
+		<!-- Murugan's Mailbox -->
 		<spawn npc_id="730381">
 		    <spot x="1320.1100" y="1146.6200" z="189.22500" entity_id="54"/>
 		</spawn>
-		<!-- Elim 
-		Spirits of trees which can talk and move.
-		They communicate with trees in the forest and
-		are sensitive to any change in their natural environment -->
+		<!-- Elim -->
 		<spawn npc_id="799562">
             <spot x="343.35336" y="469.1436" z="328.1609" h="93"/>
         </spawn>
-		<!-- Nepion
-		<Esoterrace Spy>
-		May Aion whisper grace upon your steps -->
+		<!-- Nepion -->
 		<spawn npc_id="799563">
 		    <spot x="339.009" y="464.46" z="327.029" h="100"/>
 		</spawn>
@@ -478,21 +453,15 @@
 		    <spot h="109" z="326.77368" y="905.79926" x="1008.02747"/>
             <spot h="105" z="324.79144" y="978.85" x="981.2783"/>
 		</spawn>
-		<!-- Rothyns
-		<Protector Of Holy Tree>
-		Protector of Dalia Charlands.
-		She used to live in the Dalia Garden.
-		But now hides from the Balaur at the Esoterrace Entrance -->
+		<!-- Rothyns -->
 		<spawn npc_id="799590">
 		    <spot x="384.95343" y="542.33" z="321.26166" h="104"/>
 		</spawn>
-		<!-- Teho
-		<Reian Tribe Survivor> -->
+		<!-- Teho -->
 		<spawn npc_id="799591">
 		    <spot x="1252.7394" y="730.72754" z="295.8159" h="86"/>
 		</spawn>
-		<!-- Inokin
-		<Captive Merchant> -->
+		<!-- Inokin -->
 		<spawn npc_id="799594">
             <spot x="1186.0405" y="890.3752" z="325.62115" h="6"/>
         </spawn>
@@ -554,7 +523,7 @@
 		<spawn npc_id="282297">
 		    <spot x="1139.83" y="724.100" z="299.296" entity_id="187"/>
 		</spawn>
-		<!-- Reian Refugee [AI2] -->
+		<!-- Reian Refugee -->
 		<spawn npc_id="207048">
             <spot x="357.37485" y="481.6385" z="330.87668" h="27"/>
         </spawn>

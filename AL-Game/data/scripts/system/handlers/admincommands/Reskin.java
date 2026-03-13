@@ -25,6 +25,8 @@ import com.aionemu.gameserver.utils.chathandlers.AdminCommand;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author Wakizashi, Imaginary
@@ -48,27 +50,55 @@ public class Reskin extends AdminCommand {
 			target = (Player) creature;
 		}
 		
-		int oldItemId = 0; int newItemId = 0;
-		try	{
-			oldItemId = Integer.parseInt(params[0]);
-			newItemId = Integer.parseInt(params[1]);
+		int oldItemId = parseItemId(params[0]);
+		int newItemId = parseItemId(params[1]);
+		
+		if (oldItemId == 0) {
+			PacketSendUtility.sendMessage(admin, "Invalid old item ID or name: " + params[0]);
+			return;
 		}
-		catch(NumberFormatException e) {
-			PacketSendUtility.sendMessage(admin, "<old item ID> & <new item ID> must be an integer.");
+		
+		if (newItemId == 0) {
+			PacketSendUtility.sendMessage(admin, "Invalid new item ID or name: " + params[1]);
 			return;
 		}
 
 		List<Item> items = target.getInventory().getItemsByItemId(oldItemId);
 		if(items.size() == 0) {
-			PacketSendUtility.sendMessage(admin, "Tu n'as pas cet objet dans ton inventaire.");
+			PacketSendUtility.sendMessage(admin, "You don't have this item in your inventory.");
 			return;
 		}
 		
 		Iterator<Item> iter = items.iterator();
-		Item item = iter.next();
-		item.setItemSkinTemplate(DataManager.ITEM_DATA.getItemTemplate(newItemId));
+		if (iter.hasNext()) {
+			Item item = iter.next();
+			item.setItemSkinTemplate(DataManager.ITEM_DATA.getItemTemplate(newItemId));
+			PacketSendUtility.sendMessage(admin, "Reskin Successfull.");
+		} else {
+			PacketSendUtility.sendMessage(admin, "Error: No items to reskin.");
+		}
+	}
+	
+	private int parseItemId(String param) {
+		if (param == null || param.isEmpty()) {
+			return 0;
+		}
 		
-		PacketSendUtility.sendMessage(admin, "Reskin Successfull.");
+		if (param.startsWith("[item:")) {
+			Pattern pattern = Pattern.compile("\\[item:(\\d+)");
+			Matcher matcher = pattern.matcher(param);
+			
+			if (matcher.find()) {
+				return Integer.parseInt(matcher.group(1));
+			}
+			return 0;
+		}
+		
+		try {
+			return Integer.parseInt(param);
+		} catch (NumberFormatException e) {
+			return 0;
+		}
 	}
 	
 	@Override

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	左の翼の影
-	Spawn By (Encom)
+	Left Wing Chamber Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300080000">
-		<!-- Ashikar Assailant (Monster Elite lvl:35) -->
+		<!-- Ashikar Assailant -->
 		<spawn npc_id="214740">
 			<spot x="498.62" y="488.063" z="352.717" h="104"/>
 			<spot x="492.482" y="632.713" z="352.946" h="49"/>
@@ -15,7 +14,7 @@
 			<spot x="491.338" y="536.709" z="352.946" h="10"/>
 			<spot x="451.367" y="585.771" z="352.698" h="31" random_walk="3"/>
 		</spawn>
-		<!-- Ashikar Ambusher (Monster Elite lvl:35) -->
+		<!-- Ashikar Ambusher -->
 		<spawn npc_id="214741">
 			<spot x="511.099" y="579.852" z="351.153" h="110"/>
 			<spot x="511.099" y="591.401" z="351.153" h="75"/>
@@ -44,7 +43,7 @@
 			<spot x="407.86" y="664.08" z="359.11444" h="82" walker_id="LEFTCIELDRAKANAS35AE000000000000001"/>
 			<spot x="312.59" y="608.87" z="362.02255" h="61" walker_id="LEFTCIELDRAKANAS35AE000000000000002"/>
 		</spawn>
-		<!-- Ashikar Sniper (Monster Elite lvl:35) -->
+		<!-- Ashikar Sniper -->
 		<spawn npc_id="214742">
 			<spot x="529.419" y="578.792" z="351.153" h="98"/>
 			<spot x="429.799" y="594.985" z="354.733" h="93"/>
@@ -64,7 +63,7 @@
 			<spot x="397.24" y="633.24" z="359.0654" h="65" walker_id="LEFTCIELDRAKANRA35AE000000000000003"/>
 			<spot x="335.66" y="474.14" z="362.00903" h="48" walker_id="LEFTCIELDRAKANAS35AE000000000000003"/>
 		</spawn>
-		<!-- Ashikar Healer (Monster Elite lvl:35) -->
+		<!-- Ashikar Healer -->
 		<spawn npc_id="214743">
 			<spot x="482.352" y="602.681" z="352.946" h="61"/>
 			<spot x="482.457" y="567.503" z="352.946" h="50"/>
@@ -81,7 +80,7 @@
 			<spot x="318.26" y="654.56" z="361.98587" h="59" walker_id="LEFTCIELDRAKANPR35AE000000000000001"/>
 			<spot x="321.22" y="517.19" z="362.02667" h="115" walker_id="LEFTCIELDRAKANPR35AE000000000000002"/>
 		</spawn>
-		<!-- Ashikar Serpentguard (Monster Elite lvl:35) -->
+		<!-- Ashikar Serpentguard -->
 		<spawn npc_id="214824">
             <spot x="416.625" y="545.85443" z="356.94904" h="0"/>
             <spot x="245.40259" y="496.62177" z="366.30603" h="18"/>
@@ -96,7 +95,7 @@
             <spot x="456.5396" y="631.9568" z="352.69922" h="4" random_walk="3"/>
             <spot x="449.15997" y="565.8656" z="352.69846" h="14" random_walk="3"/>
         </spawn>
-		<!-- Ashikar Shaman (Monster Elite lvl:35) -->
+		<!-- Ashikar Shaman -->
 		<spawn npc_id="214825">
 			<spot x="280.891" y="708.252" z="364.936" h="8"/>
 			<spot x="344.58813" y="523.70514" z="361.9332" h="5"/>
@@ -125,7 +124,7 @@
 			<spot x="485.0" y="522.43" z="352.94534" h="87" walker_id="LEFTCIELDRAKANWI35AE000000000000003"/>
 			<spot x="312.65" y="562.8" z="362.02374" h="22" walker_id="LEFTCIELDRAKANWI35AE000000000000004"/>
 		</spawn>
-		<!-- Ashikar Fleshmender (Monster Elite lvl:35) -->
+		<!-- Ashikar Fleshmender -->
 		<spawn npc_id="214826">
 			<spot x="696.96" y="580.748" z="325.318" h="57" random_walk="3"/>
 			<spot x="615.975" y="585.651" z="343.877" h="5"/>
@@ -136,15 +135,15 @@
 			<spot x="467.421" y="520.047" z="352.705" h="22" random_walk="3"/>
 			<spot x="496.781" y="487.161" z="352.713" h="63"/>
 		</spawn>
-		<!-- Treasurer Nabatma (Monster Elite lvl:35) -->
+		<!-- Treasurer Nabatma -->
 		<spawn npc_id="215424">
 			<spot x="484.63086" y="585.4334" z="355.34595" h="0"/>
 		</spawn>
-		<!-- Minor Blessed Relics (Object Normal lvl:3) -->
+		<!-- Minor Blessed Relics -->
 		<spawn npc_id="831988">
             <spot x="674.8719" y="603.94617" z="321.19" h="106"/>
         </spawn>
-		<!-- Barricade (Object Normal lvl:3) -->
+		<!-- Barricade -->
 		<spawn npc_id="219617">
 		    <spot h="59" z="359.35156" y="602.0332" x="388.06778"/>
             <spot h="59" z="361.89124" y="606.2992" x="340.30038"/>
@@ -167,7 +166,7 @@
 			<spot x="301.82870" y="658.71759" z="361.59088" h="0"/>
 			<spot x="440.42996" y="573.96472" z="352.96234" h="0"/>
 		</spawn>
-		<!-- Shining Magic Ward (Object Normal lvl:3) -->
+		<!-- Shining Magic Ward -->
 		<spawn npc_id="700455">
 			<spot x="672.83002" y="606.21997" z="321.17999" entity_id="1"/>
 		</spawn>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	棄てられたウダス神殿
-	Spawn By (Encom)
+	Udas Temple Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300150000">
@@ -187,19 +186,19 @@
 		<spawn npc_id="216322">
 			<spot x="621.145" y="476.009" z="138" h="17"/>
 		</spawn>
-		<!-- Brainwashed Reian I (Npc Normal lvl:55) -->
+		<!-- Brainwashed Reian I -->
 	    <spawn npc_id="799513">
             <spot h="105" z="134.34929" y="226.42572" x="539.4123"/>
         </spawn>
-	    <!-- Brainwashed Reian II (Npc Normal lvl:55) -->
+	    <!-- Brainwashed Reian II -->
         <spawn npc_id="799514">
             <spot h="105" z="134.34929" y="222.95421" x="536.05927"/>
         </spawn>
-	    <!-- Brainwashed Reian III (Npc Normal lvl:55) -->
+	    <!-- Brainwashed Reian III -->
         <spawn npc_id="799515">
             <spot h="68" z="134.34929" y="222.58128" x="587.01013"/>
         </spawn>
-	    <!-- Brainwashed Reian IV (Npc Normal lvl:55) -->
+	    <!-- Brainwashed Reian IV -->
         <spawn npc_id="799516">
             <spot h="67" z="134.34929" y="226.16125" x="586.9908"/>
         </spawn>
@@ -342,16 +341,11 @@
 		<spawn npc_id="215860">
 			<spot x="636.3667" y="495.64575" z="135.85449" h="90" walker_id="Udas_Deserter_Legatus_Fleshripper_1"/>
 		</spawn>
-		
-		<!-- Blessed Totem
-		<Black Cloud Traders Device>
-		The totem finds a prestigious presence within you and begins to hum with power -->
+		<!-- Blessed Totem -->
 		<spawn npc_id="831990">
             <spot x="633.02185" y="643.85944" z="133.23831" h="80"/>
         </spawn>
-		<!-- Poison Bottle 
-		A bottle of the poison the Dragonbound use on their weapons.
-		They are scattered throughout Udas Temple for easy access in case of attack -->
+		<!-- Poison Bottle -->
 		<spawn npc_id="700567">
 			<spot x="770.939" y="393.651" z="133" entity_id="165"/>
 			<spot x="774.179" y="458.918" z="135" entity_id="155"/>
@@ -386,18 +380,15 @@
 			<spot x="481.494" y="707.273" z="128" entity_id="126"/>
 			<spot x="467.359" y="585.815" z="131" entity_id="151"/>
 		</spawn>
-		<!-- Ancient Dragonbound Document
-        An ancient book written by the Dragonbound and kept in the Udas Temple.
-		It is rumored to contain the key to the secrets of the Beshmundir Temple -->
+		<!-- Ancient Dragonbound Document -->
 		<spawn npc_id="700750">
 			<spot x="774.79773" y="485.6145" z="135.09157" entity_id="425"/>
 		</spawn>
-		<!-- Balaur's Order
-        It's a document written in Balaur -->
+		<!-- Balaur's Order -->
 		<spawn npc_id="730217">
 			<spot x="638.51361" y="441.6297" z="138.56612" entity_id="117"/>
 		</spawn>
-		<!-- Rebirthing Chamber Exit [Q20034 Rescue The Reian's] -->
+		<!-- Rebirthing Chamber Exit -->
 		<spawn npc_id="700706">
 			<spot x="561.85376" y="180.2854" z="136.30590" entity_id="213"/>
 		</spawn>

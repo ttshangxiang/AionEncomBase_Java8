@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    パシュマンディル寺院
-	Spawn By (Encom) (Version 3.9/4.3)
+    Beshmundir Temple Spawn By (Encom) (Version 3.9/4.3)
  -->
 <spawns>
 	<spawn_map map_id="300170000">
@@ -13,10 +12,7 @@
 		<spawn npc_id="799342">
 			<spot x="1356.789" y="95.86024" z="247.58742" h="59"/>
 		</spawn>
-		<!-- Lupukin
-		<Shulack Elder>
-		A Shulack elder that the Nightshade Clan captured and brought to the Beshmundir Temple.
-		He is hiding in fear of Dorakiki the Bold -->
+		<!-- Lupukin -->
 		<spawn npc_id="216527">
             <spot x="1164.5264" y="1210.8931" z="283.3387" h="107"/>
         </spawn>
@@ -78,7 +74,6 @@
 		<spawn npc_id="700637">
 			<spot x="1329.4216" y="96.423637" z="246.47659" entity_id="558"/>
 		</spawn>
-		
 		<!-- Explosive Root -->
 		<spawn npc_id="216646" respawn_time="30">
 			<spot x="1142.57" y="1095.47" z="278.875"/>
@@ -992,21 +987,15 @@
 			<spot x="1305.31" y="517.812" z="240.145"/>
 			<spot x="1388.43" y="475.367" z="243.239"/>
 		</spawn>
-		
-	    <!-- Vehala The Cursed
-		The Tiamat leader in the Beshmundir Temple's Vault of the Conquerors.
-		His curse is to appear sometimes as a living creature and sometimes as one of the undead -->
+	    <!-- Vehala The Cursed -->
         <spawn npc_id="216161">
             <spot x="1101.62" y="34.2592" z="234.361" h="31"/>
         </spawn>
-		<!-- The Plaguebearer
-    	An overgrown Slime living in the Beshmundir Temple's Vault of the Conquerors -->
+		<!-- The Plaguebearer -->
         <spawn npc_id="216163">
-            <spot x="1042.79" y="81.730003" z="250.52" entity_id="342"/>
+            <spot x="1042.79" y="81.730003" z="233.84" entity_id="342"/>
         </spawn>
-		<!-- Flarestorm
-		A Flame Spirit shackled by the Balaur and
-		confined to the Beshmundir Temple's Blue Flame Incinerator -->
+		<!-- Flarestorm -->
 		<spawn npc_id="216168">
 			<spot x="1511.69" y="1048.16" z="273.441" h="42"/>
 		</spawn>
@@ -1014,14 +1003,11 @@
 	    <spawn npc_id="216240">
 		    <spot x="1357.25" y="388.925" z="249.261" h="90"/>        
         </spawn>
-		<!-- Manadar
-        The Stormwing leader in the Beshmundir Temple's Crypt of the Vanquished -->
+		<!-- Manadar -->
 	    <spawn npc_id="216241">
 		    <spot x="1086.1499" y="621.0919" z="234.15215" h="90"/>        
         </spawn>
-		<!-- Macunbello 
-		A malicious shaman hiding in the Beshmundir Temple's Macunbello's Refuge beneath.
-		He feeds on Daevas' pained souls -->
+		<!-- Macunbello -->
 	    <spawn npc_id="216245">
 		    <spot x="980.9427" y="134.60326" z="241.74876" h="31"/>
 	    </spawn>
@@ -1029,25 +1015,19 @@
 	    <spawn npc_id="216246">
 		    <spot x="1215.36" y="660.362" z="250.238" h="90"/>
         </spawn>
-		<!-- Taros Lifebane 
-		An ancient Daeva, fettered by the Balaur and now guarding the Garden of the Dead -->
+		<!-- Taros Lifebane -->
 	    <spawn npc_id="216248">
 		    <spot x="1369.5013" y="1292.1421" z="304.13388" h="100" walker_id="TAROSLIFEBANEBESHMUNDIRTEMPLEGARDENOFDEA"/>
 	    </spawn>
-		<!-- Dorakiki The Bold 
-		The boss of the Nightshade Clan.
-		He hides in the Beshmundir Temple's Garden of the Entombed -->
+		<!-- Dorakiki The Bold -->
 	    <spawn npc_id="216250">
 		    <spot x="1170.37" y="1214.75" z="283.576" h="106"/>       
         </spawn>
-		<!-- Isbariya The Resolute 
-		A Balaur of the Laksyaka Legion under Dragon Lord Tiamat.
-		He is the guardian of the Beshmundir Temple who protects the seal of Stormwing inside the temple -->
+		<!-- Isbariya The Resolute -->
 	    <spawn npc_id="216263">
 		    <spot x="1602.4944" y="1591.6042" z="307.0335" h="72"/>        
         </spawn>
-		<!-- Temadaro
-		The bodyguard you must quickly defeat in order to meet Macunbello. -->
+		<!-- Temadaro -->
 	    <spawn npc_id="216586">
 		    <spot x="939.025" y="245.078" z="226.623" h="30"/>
 	    </spawn>
@@ -1068,38 +1048,31 @@
 	    <spawn npc_id="216170">
 		    <spot x="1501.2063" y="1590.4446" z="329.94492" h="89"/>
         </spawn>
-		<!-- Gatekeeper Kutarrun
-		<Laksyaka Legion> -->
+		<!-- Gatekeeper Kutarrun -->
 	    <spawn npc_id="216171">
 		    <spot x="1403.51" y="1475.79" z="307.793" h="98"/>
 	    </spawn>
-	    <!-- Gatekeeper Samarrn
-		<Laksyaka Legion> -->
+	    <!-- Gatekeeper Samarrn -->
 	    <spawn npc_id="216172">
 		    <spot x="1494.27" y="1362.55" z="307.793" h="0"/>
 	    </spawn>
-		<!-- Gatekeeper Rhapsharr
-		<Laksyaka Legion> -->
+		<!-- Gatekeeper Rhapsharr -->
 	    <spawn npc_id="216173">
 		    <spot x="1546.5916" y="1471.214" z="300.33008" h="84"/>
 	    </spawn>
-		<!-- Protector Pahraza
-		<Temple Defender> -->
+		<!-- Protector Pahraza -->
 	    <spawn npc_id="216175">
 		    <spot x="1434.53" y="1584.14" z="305.825" h="0"/>
 	    </spawn>
-		<!-- Protector Dinata
-		<Temple Defender> -->
+		<!-- Protector Dinata -->
 	    <spawn npc_id="216177">
 		   <spot x="1501.43" y="1593.96" z="329.945" h="0"/>
 	    </spawn>
-	    <!-- Protector Narma
-		<Temple Defender> -->
+	    <!-- Protector Narma -->
 	    <spawn npc_id="216179">
 		    <spot x="1631.57" y="1495.91" z="329.945" h="0"/>
 	    </spawn>
-		<!-- Judge Kramaka
-		<Temple Defender> -->
+		<!-- Judge Kramaka -->
 	    <spawn npc_id="216181">
 		    <spot x="1640.2" y="1428.82" z="305.835" h="0"/>
 	    </spawn>

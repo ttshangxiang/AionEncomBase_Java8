@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Unstable Abyssal Splinter
-	Spawn By (Encom)
+	Unstable Abyssal Splinter Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300600000">
-		<!-- Fallen Shugo
-		A Shugo who went to Unstable Abyssal Splinter searching for treasure,
-		but failed to return safely and ended up imprisoned in The Storm Cave -->
+		<!-- Fallen Shugo -->
 		<spawn npc_id="207945">
 		    <spot h="6" z="462.76807" y="420.53268" x="671.3511"/>
 		</spawn>
-		<!-- Unstable Holy Orkanimum
-		A magical creature in Unstable Abyssal Splinter,
-		which possesses powerful Aether energy -->
+		<!-- Unstable Holy Orkanimum -->
 		<spawn npc_id="219556">
 		    <spot h="98" z="462.52393" y="243.3596" x="641.2196"/>
             <spot h="91" z="462.8707" y="282.02493" x="644.4882"/>
             <spot h="96" z="456.76895" y="217.2893" x="649.891"/>
 		</spawn>
-		<!-- Unstable Ametgolem Of Guarding
-		A magical creature found in Unstable Abyssal Splinter -->
+		<!-- Unstable Ametgolem Of Guarding -->
 		<spawn npc_id="219558">
 		    <spot h="94" z="462.67657" y="249.27328" x="642.24854"/>
             <spot h="94" z="462.92407" y="247.9408" x="636.8384"/>
@@ -29,28 +23,22 @@
             <spot h="92" z="463.12473" y="286.14285" x="641.03265"/>
             <spot h="92" z="463.17712" y="286.91537" x="647.18976"/>
 		</spawn>
-		<!-- Unstable Enos Grappler
-		A huge magical creature in Unstable Abyssal Splinter
-		with great Aether energy -->
+		<!-- Unstable Enos Grappler -->
 		<spawn npc_id="219547">
 		    <spot h="116" z="427.97363" y="666.4905" x="521.9317"/>
             <spot h="104" z="424.5322" y="655.19995" x="554.3595"/>
             <spot h="96" z="420.1649" y="613.53705" x="563.3957"/>
 		</spawn>
-		<!-- Unstable Enos Watcher
-		It guards The Storm Cave in Unstable Abyssal Splinter -->
+		<!-- Unstable Enos Watcher -->
 		<spawn npc_id="219548">
 		    <spot h="80" z="465.7128" y="371.128" x="700.64" walker_id="Enos_Watcher"/>
 		</spawn>
-		<!-- Unstable Noble Lapilima
-		A creature in Unstable Abyssal Splinter with great Aether energy -->
+		<!-- Unstable Noble Lapilima -->
 		<spawn npc_id="219549">
 		    <spot h="118" z="452.2759" y="652.8995" x="790.52057"/>
             <spot h="5" z="439.22278" y="643.1991" x="739.5379"/>
 		</spawn>
-		<!-- Unstable Flash Lapilimo
-		A small magical creature in Unstable Abyssal Splinter,
-		which possesses powerful Aether energy -->
+		<!-- Unstable Flash Lapilimo -->
 		<spawn npc_id="219550">
 		    <spot h="94" z="454.83865" y="647.49493" x="808.5032"/>
             <spot h="0" z="446.55313" y="652.591" x="754.86505"/>
@@ -61,29 +49,20 @@
             <spot h="78" z="454.99496" y="633.086" x="811.87494"/>
             <spot h="7" z="455.34326" y="616.88745" x="796.291"/>
 		</spawn>
-		<!-- Unstable Kaluva The Fourth
-		A gigantic Arachna in the Unstable Abyssal Splinter that has a fragment
-		of the Tower of Aion embedded in its tail.
-		It guards its eggs and traps anyone who approaches in a cocoon -->
+		<!-- Unstable Kaluva The Fourth -->
 		<spawn npc_id="219553">
 		    <spot h="17" z="422.9871" y="545.019" x="618.10767"/>
 		</spawn>
-		<!-- Unstable Pazuzu
-		A beautiful spirit in the Unstable Abyssal Splinter.
-		Aether seems to have changed its features significantly -->
+		<!-- Unstable Pazuzu -->
 		<spawn npc_id="219554">
 		    <spot h="73" z="466.07324" y="331.4126" x="670.0997"/>
 		</spawn>
-		<!-- Unstable Noble Lapilima
-		A creature in Unstable Abyssal Splinter,
-		with great Aether energy -->
+		<!-- Unstable Noble Lapilima -->
 		<spawn npc_id="219560">
 		    <spot h="79" z="461.78842" y="605.37415" x="761.7432"/>
             <spot h="76" z="454.32053" y="626.3237" x="805.03046"/>
 		</spawn>
-		<!-- Unstable Flash Lapilimo
-		A small magical creature in Unstable Abyssal Splinter,
-		which possesses powerful Aether energy -->
+		<!-- Unstable Flash Lapilimo -->
 		<spawn npc_id="219561">
 		    <spot h="78" z="428.48944" y="611.79974" x="703.85657"/>
             <spot h="111" z="453.6902" y="656.0148" x="794.1914"/>
@@ -92,9 +71,7 @@
             <spot h="0" z="449.65417" y="651.8034" x="779.9885"/>
             <spot h="7" z="441.19986" y="644.73944" x="745.53253"/>
 		</spawn>
-		<!-- Unstable Flash Lapilimo
-		A small magical creature in Unstable Abyssal Splinter,
-		which possesses powerful Aether energy -->
+		<!-- Unstable Flash Lapilimo -->
 		<spawn npc_id="219562">
 		    <spot h="99" z="454.21005" y="650.24567" x="802.3735"/>
             <spot h="77" z="460.55234" y="611.7898" x="768.3915"/>
@@ -108,9 +85,7 @@
 		<spawn npc_id="219577">
 		    <spot h="103" z="449.87097" y="187.35692" x="661.27075"/>
 		</spawn>
-		<!-- Unstable Dayshade
-		A huge magical creature protecting the Unstable Abyssal Splinter.
-		It splits into Rukril and Ebonsoul when threatened -->
+		<!-- Unstable Dayshade -->
 		<spawn npc_id="219578">
 		    <spot h="114" z="432.435" y="690.2454" x="458.32898"/>
 		</spawn>
@@ -134,7 +109,6 @@
             <spot h="83" z="447.97116" y="157.186" x="638.1987"/>
             <spot h="16" z="447.42532" y="144.37418" x="643.2509"/>
 		</spawn>
-		
 		<!-- Teleporter I -->
 		<spawn npc_id="282038">
             <spot x="334.31927" y="708.99976" z="197.77257" entity_id="52"/>

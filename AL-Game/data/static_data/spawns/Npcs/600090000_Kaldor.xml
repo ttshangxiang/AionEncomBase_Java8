@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	分かれたカタラム 5.8
-	Spawn By (Encom)
+	Kaldor 5.8 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="600090000">
-		<!-- GUARD -->
-		<!-- Kaldor Elyos Fighter (Guard Elite lvl:65) -->
+		<!-- Kaldor Elyos Fighter -->
 		<spawn npc_id="209664" respawn_time="295">
 			<spot x="1273.4985" y="1314.9573" z="195.34366" h="73"/>
             <spot x="1276.9016" y="1313.6895" z="195.375" h="87"/>
             <spot x="1249.7855" y="1280.1056" z="190.9282" h="94"/>
 		</spawn>
-		<!-- Kaldor Elyos Ranger (Guard Elite lvl:65) -->
+		<!-- Kaldor Elyos Ranger -->
 		<spawn npc_id="209666" respawn_time="295">
 			<spot x="1266.7941" y="1279.545" z="192.42007" h="83"/>
 		</spawn>
-		<!-- Kaldor Elyos Sorcerer (Guard Elite lvl:65) -->
+		<!-- Kaldor Elyos Sorcerer -->
 		<spawn npc_id="209668" respawn_time="295">
 			<spot x="1247.7585" y="1279.8816" z="191.13298" h="91"/>
 			<spot x="1256.7002" y="1278.3575" z="190.59045" h="85" walker_id="Kaldor_Elyos_Knight_Sorcerer"/>
 		</spawn>
-		<!-- Kaldor Elyos Knight (Guard Elite lvl:65) -->
+		<!-- Kaldor Elyos Knight -->
 		<spawn npc_id="209669" respawn_time="295">
 			<spot x="1264.6261" y="1280.4047" z="192.01768" h="83"/>
 			<spot x="1256.7002" y="1278.3575" z="190.59045" h="85" walker_id="Kaldor_Elyos_Knight_Sorcerer"/>
 		</spawn>
-		<!-- Kaldor Asmodians Fighter (Guard Elite lvl:65) -->
+		<!-- Kaldor Asmodians Fighter -->
 		<spawn npc_id="209670" respawn_time="295">
 			<spot x="379.9689" y="1367.8486" z="162.8667" h="83"/>
             <spot x="390.85623" y="1361.0546" z="162.84636" h="77"/>
 		</spawn>
-		<!-- Kaldor Asmodians Ranger (Guard Elite lvl:65) -->
+		<!-- Kaldor Asmodians Ranger -->
 		<spawn npc_id="209672" respawn_time="295">
 			<spot x="351.49716" y="1323.9016" z="156.14484" h="100"/>
 		</spawn>
-		<!-- Kaldor Asmodians Sorcerer (Guard Elite lvl:65) -->
+		<!-- Kaldor Asmodians Sorcerer -->
 		<spawn npc_id="209674" respawn_time="295">
 			<spot x="349.47443" y="1322.8418" z="156.17761" h="99"/>
 			<spot x="361.62238" y="1326.2599" z="156.74417" h="83" walker_id="Kaldor Asmodians Knight_Sorcerer"/>
 		</spawn>
-		<!-- Kaldor Asmodians Knight (Guard Elite lvl:65) -->
+		<!-- Kaldor Asmodians Knight -->
 		<spawn npc_id="209675" respawn_time="295">
 			<spot x="384.54935" y="1364.8197" z="162.85115" h="80"/>
 			<spot x="361.62238" y="1326.2599" z="156.74417" h="83" walker_id="Kaldor Asmodians Knight_Sorcerer"/>
 		</spawn>
-		
-		<!-- OBJECT/NPC -->
 		<!-- Mailbox -->
 		<spawn npc_id="700000" respawn_time="295">
 			<spot x="1301.7587" y="1304.3939" z="199.83194" entity_id="297"/>
@@ -60,8 +56,7 @@
 			<spot x="380.40" y="1388.51" z="164.12" h="3"/>
             <spot x="1280.1359" y="1352.2539" z="196.29872" h="79"/>
 		</spawn>
-		<!-- Shugo Porter
-		A Shugo at Anangke Excavation Camp in Theobomos -->
+		<!-- Shugo Porter -->
 		<spawn npc_id="702506" respawn_time="295">
             <spot x="433.82864" y="1386.1124" z="164.04254" h="67" walker_id="Kaldor_Shugo_Porter_1"/>
             <spot x="379.56134" y="1392.05" z="163.625" h="104" walker_id="Kaldor_Shugo_Porter_2"/>
@@ -83,7 +78,7 @@
 		<!-- Kobold Worker -->
 		<spawn npc_id="702511" respawn_time="295">
 		    <spot x="1285.8396" y="1316.1937" z="195.375" h="4"/>
-            <spot x="409.63522" y="1384.9546" z="164.05695" h="0"/>
+            <spot x="409.63522" y="1384.9546" z="164.05695"/>
 		</spawn>
 		<!-- Mepiguss -->
 		<spawn npc_id="702512" respawn_time="5">
@@ -152,9 +147,7 @@
 		<spawn npc_id="702528" respawn_time="295">
 			<spot x="424.09573" y="1356.8514" z="163.75" h="48"/>
 		</spawn>
-		<!-- Abandonned Power Generator
-		A power generator abandoned by the Beritra Army.
-		It seems to be broken -->
+		<!-- Abandonned Power Generator -->
 		<spawn npc_id="702551" respawn_time="295">
 			<spot x="1307.9414" y="985.32819" z="148.59958" entity_id="1360"/>
 			<spot x="1303.4752" y="952.16974" z="149.91454" entity_id="1361"/>
@@ -163,9 +156,7 @@
 			<spot x="1160.9364" y="947.12878" z="142.84593" entity_id="1364"/>
 			<spot x="1116.3676" y="1024.2941" z="151.41887" entity_id="1507"/>
 		</spawn>
-		<!-- Deserted Power Generators
-		A power generator abandoned by the Beritra Army.
-		It seems to be broken -->
+		<!-- Deserted Power Generators -->
 		<spawn npc_id="702552" respawn_time="295">
 			<spot x="394.95087" y="933.29169" z="90.570557" entity_id="372"/>
 			<spot x="391.90656" y="913.31897" z="90.044952" entity_id="1356"/>
@@ -188,15 +179,11 @@
 			<spot x="1259.7484" y="1290.0273" z="192.37842" h="26" walker_id="Saparinerk_Bodyguard"/>
 			<spot x="1259.7484" y="1290.0273" z="192.37842" h="26" walker_id="Saparinerk_Bodyguard"/>
 		</spawn>
-		<!-- Rubirinerk Supervisor
-		A member of the Steel Rose Mercenaries.
-		She supervises Mukuki Loggers and Mukuki Workers in Rubirinerk' -->
+		<!-- Rubirinerk Supervisor -->
 		<spawn npc_id="702565" respawn_time="295">
 			<spot x="376.92" y="1389.40" z="164.45" h="15"/>
 		</spawn>
-		<!-- Saparinerk Supervisor 
-		A member of the Steel Rose Mercenaries.
-		He is employed in Ququ Gatherer to supervise the Saparinerk's -->
+		<!-- Saparinerk Supervisor -->
 		<spawn npc_id="702566" respawn_time="295">
 			<spot x="1244.37" y="1314.15" z="196.70"/>
 		</spawn>
@@ -225,63 +212,47 @@
             <spot x="1261.401" y="1327.9103" z="194.0" h="89"/>
             <spot x="1282.5542" y="1324.2799" z="195.5" h="4"/>
 		</spawn>
-		<!-- Kaldor Obelisk
-		A device that resurrects defeated Daevas.
-		Binding a Daeva's soul at a specific Obelisk allows the Daeva to resurrect there -->
+		<!-- Kaldor Obelisk -->
 		<spawn npc_id="702574" respawn_time="295">
 			<spot x="1314.2593" y="1320.7137" z="200.57019" entity_id="380"/>
 		</spawn>
-		<!-- Kaldor Obelisk
-		A device that resurrects defeated Daevas.
-		Binding a Daeva's soul at a specific Obelisk allows the Daeva to resurrect there -->
+		<!-- Kaldor Obelisk -->
 		<spawn npc_id="702575" respawn_time="295">
 			<spot x="395.03064" y="1342.7482" z="163.91916" entity_id="396"/>
 		</spawn>
-		<!-- Scorched Tree 
-		A tree found in Hero'.
-		Unlike other trees, it seems to have been burned for a specific purpose -->
+		<!-- Scorched Tree -->
 		<spawn npc_id="730969" respawn_time="295">
 			<spot x="809.7999" y="849.0558" z="161.91495" entity_id="429"/>
 		</spawn>
-		<!-- Cindery Tree
-		A tree found in Hero'.
-		Unlike other trees, it seems to have been burned for a specific purpose -->
+		<!-- Cindery Tree -->
 		<spawn npc_id="730970" respawn_time="295">
 			<spot x="910.8974" y="800.3707" z="175.07497" entity_id="331"/>
 		</spawn>
-		<!-- Burnt Tree
-		A tree found in Hero'.
-		Unlike other trees, it seems to have been burned for a specific purpose -->
+		<!-- Burnt Tree -->
 		<spawn npc_id="730971" respawn_time="295">
 			<spot x="677.3901" y="709.9400" z="173.86000" entity_id="321"/>
 		</spawn>
-		<!-- Silon
-		<Soul Healer> -->
+		<!-- Silon -->
 		<spawn npc_id="804470" respawn_time="295">
 			<spot x="398.02" y="1343.60" z="164.67" h="31"/>
 		</spawn>
-		<!-- Habitus
-		<Soul Healer> -->
+		<!-- Habitus -->
 		<spawn npc_id="804471" respawn_time="295">
 			<spot x="1313.42" y="1318.52" z="200.89" h="61"/>
 		</spawn>
-		<!-- Pitrunerk
-		<Union Dispatch> -->
+		<!-- Pitrunerk -->
 		<spawn npc_id="804628" respawn_time="295">
 			<spot x="785.1077" y="1036.5526" z="111.25" h="52"/>
 		</spawn>
-		<!-- Invasion Power Plant
-		<Linkgate Foundry Bound> -->
+		<!-- Invasion Power Plant -->
 		<spawn npc_id="832798" respawn_time="295">
 			<spot x="1374.0256" y="936.40228" z="156.66826" entity_id="1353"/>
 		</spawn>
-		<!-- Invasion Power Plant
-		<Linkgate Foundry Bound> -->
+		<!-- Invasion Power Plant -->
 		<spawn npc_id="832802" respawn_time="295">
 			<spot x="314.66959" y="925.8714" z="91.255234" entity_id="1386"/>
 		</spawn>
-		<!-- Pasha
-		<Ascension Area Detachment Guide> -->
+		<!-- Pasha -->
 		<spawn npc_id="804572" respawn_time="295">
 			<spot x="1362.5718" y="937.18451" z="155.51956" entity_id="179"/>
 			<spot x="326.0600" y="926.02002" z="90.525978" entity_id="658"/>
@@ -290,112 +261,87 @@
 		<spawn npc_id="284641" respawn_time="295">
 			<spot x="987.69879" y="508.5209" z="194.57176" entity_id="131"/>
 		</spawn>
-		<!-- Sacred Image Of Kaisinel 
-		This is the gift of blessing for pilgrims on the Great Pilgrimage.
-		It can be obtained by killing the Krall protecting the road between the Miraju' and the Tursin Garrison -->
+		<!-- Sacred Image Of Kaisinel -->
 		<spawn npc_id="258313" respawn_time="295">
 			<spot x="1240.2717" y="1285.5923" z="193.44055" h="100"/>
 		</spawn>
-		<!-- Sacred Image Of Marchutan
-		This is the gift of blessing for pilgrims on the Great Pilgrimage.
-		It can be obtained by killing the Mau protecting the road between the Altgard and Morheim -->
+		<!-- Sacred Image Of Marchutan -->
 		<spawn npc_id="258314" respawn_time="295">
 			<spot x="349.21216" y="1325.8679" z="156.36674" h="99"/>
 		</spawn>
-		<!-- Voltin
-		<Kaldor Advance Unit Chief> -->
+		<!-- Voltin -->
 		<spawn npc_id="802357" respawn_time="295">
 			<spot x="1321.2205" y="920.30884" z="153.04407" h="10"/>
 		</spawn>
-		<!-- Hymrunerk
-		<Saparinerk League> -->
+		<!-- Hymrunerk -->
 		<spawn npc_id="802358" respawn_time="295">
 			<spot x="1306.30" y="1335.06" z="200.58" h="75"/>
 		</spawn>
-		<!-- Kisian
-		<Kaldor Scout Leader> -->
+		<!-- Kisian -->
 		<spawn npc_id="802361" respawn_time="295">
 		    <spot x="377.00906" y="919.8898" z="90.38189" h="52"/>
 		</spawn>
-		<!-- Derunerk
-		<Rubirinerk League> -->
+		<!-- Derunerk -->
 		<spawn npc_id="802362" respawn_time="295">
 			<spot x="425.10" y="1371.58" z="164.30" h="67"/>
 		</spawn>
-		<!-- Alphioh
-		<Guardian Detachment Captain> -->
+		<!-- Alphioh -->
 		<spawn npc_id="802431" respawn_time="295">
 			<spot x="1305.55" y="1307.39" z="200.58" h="45"/>
 		</spawn>
-		<!-- Vanst
-		<Levinshor Detachment> -->
+		<!-- Vanst -->
 		<spawn npc_id="802432" respawn_time="295">
 			<spot x="1311.22" y="1314.03" z="201.00" h="45"/>
 		</spawn>
-		<!-- Pintor
-		<Leader Of The Kaldor Cleanup Squad> -->
+		<!-- Pintor -->
 		<spawn npc_id="802433" respawn_time="295">
 			<spot x="404.93" y="1352.33" z="164.67" h="34"/>
 		</spawn>
-		<!-- Naiya
-		<Ecologist> -->
+		<!-- Naiya -->
 		<spawn npc_id="802434" respawn_time="295">
 			<spot x="410.70" y="1350.40" z="164.67" h="31"/>
 		</spawn>
-		<!-- Tobrunerk
-		<Teleportation Guide> -->
+		<!-- Tobrunerk -->
 		<spawn npc_id="802451" respawn_time="295">
 			<spot x="426.15616" y="1381.0027" z="163.83684" h="68"/>
 		</spawn>
-		<!-- Midrunerk
-		<Teleportation Guide> -->
+		<!-- Midrunerk -->
 		<spawn npc_id="802452" respawn_time="295">
 			<spot x="1266.5714" y="1364.8313" z="196.08409" h="97"/>
 		</spawn>
-		<!-- Lundvarr
-		<Eternal Bastion Defense Deputy> -->
+		<!-- Lundvarr -->
 		<spawn npc_id="801280" respawn_time="295">
 			<spot x="407.96164" y="1351.8109" z="163.75" h="28"/>
 		</spawn>
-		<!-- Demades
-		<Eternal Bastion Defense Deputy> -->
+		<!-- Demades -->
 		<spawn npc_id="801281" respawn_time="295">
 			<spot x="1307.4246" y="1309.4033" z="199.75026" h="45"/>
 		</spawn>
-		<!-- [Infernal] Danuar Reliquary
-		A corridor located under the Emberpine Pass bridge in Kaldor -->
+		<!-- [Infernal] Danuar Reliquary -->
 		<spawn npc_id="804621" respawn_time="295">
 			<spot x="774.39648" y="1023.0743" z="113.0941" entity_id="163"/>
 		</spawn>
-		<!-- Lucky Lunarunerk
-		<Danuar Reliquary Novice> -->
+		<!-- Lucky Lunarunerk -->
 		<spawn npc_id="832267" respawn_time="295">
 			<spot x="787.22864" y="1039.5432" z="111.20179" h="52"/>
 		</spawn>
-		<!-- Lucky Lunarinerk
-		<Danuar Reliquary Novice> -->
+		<!-- Lucky Lunarinerk -->
 		<spawn npc_id="832268" respawn_time="295">
 			<spot x="779.21594" y="1031.9028" z="111.549" h="52"/>
 		</spawn>
-		<!-- Lucky Danuar Reliquary Gatekeeper
-		<Service Administrator> -->
+		<!-- Lucky Danuar Reliquary Gatekeeper -->
 		<spawn npc_id="804619" respawn_time="295">
 			<spot x="782.30536" y="1034.4692" z="111.08798" h="53"/>
 		</spawn>
-		<!-- Asteness
-		<Kaisinel's Wings> -->
+		<!-- Asteness -->
 		<spawn npc_id="805336" respawn_time="295">
             <spot x="1098.3999" y="1259.3407" z="177.93349" h="91"/>
         </spawn>
-		<!-- Sach
-		<Marchutan's Iron Mace> -->
+		<!-- Sach -->
 		<spawn npc_id="805348" respawn_time="295">
             <spot x="336.62848" y="1061.8036" z="124.11637" h="23"/>
         </spawn>
-		<!-- Eternal Bastion
-		This is an Invasion Corridor installed by the Beritra army.
-		It seems to have been built for going to the Iron Wall.
-		To use it, you need three Blood Marks -->
+		<!-- Eternal Bastion -->
 		<spawn npc_id="833009" respawn_time="295">
 			<spot x="699.0545" y="777.24133" z="174.97795" entity_id="1509"/>
 		</spawn>
@@ -433,24 +379,19 @@
         <spawn npc_id="281817" respawn_time="60">
             <spot x="355.70752" y="239.10789" z="118.04477" entity_id="3300"/>
         </spawn>
-		<!-- Leta
-		<Special Teleport - Balaurea> -->
+		<!-- Leta -->
 		<spawn npc_id="835264">
             <spot h="16" z="199.9039" y="1314.5344" x="1293.6366"/>
         </spawn>
-		<!-- Leta
-		<Special Teleport - Balaurea> -->
+		<!-- Leta -->
 		<spawn npc_id="835269">
             <spot h="12" z="164.19377" y="1357.8729" x="396.89963"/>
         </spawn>
-		<!-- Lief
-		<New Player Support> -->
+		<!-- Lief -->
         <spawn npc_id="835271">
             <spot h="2" z="199.86969" y="1310.0352" x="1295.7045"/>
             <spot h="1" z="164.03384" y="1354.5416" x="397.26"/>
         </spawn>
-		
-		<!-- MOBS/BOSS -->
 		<!-- Sandshell Starturtle -->
 		<spawn npc_id="233997" respawn_time="295">
 			<spot x="490.7207" y="845.5524" z="84.0" h="50" random_walk="3"/>
@@ -700,7 +641,7 @@
         </spawn>
 		<!-- Vasharti Spellslinger -->
         <spawn npc_id="234258" respawn_time="295">
-            <spot x="831.873" y="1301.7166" z="158.7561" h="0"/>
+            <spot x="831.873" y="1301.7166" z="158.7561"/>
             <spot x="845.6257" y="1393.2849" z="159.75" h="103"/>
             <spot x="838.8365" y="1490.2871" z="156.125" h="7"/>
         </spawn>
@@ -1039,7 +980,7 @@
         <spawn npc_id="234275" respawn_time="295">
             <spot x="342.95544" y="753.1326" z="116.63498" h="12" random_walk="3"/>
             <spot x="330.66357" y="767.0282" z="112.58" h="54" random_walk="3"/>
-            <spot x="283.4745" y="740.03015" z="114.375" h="0" random_walk="3"/>
+            <spot x="283.4745" y="740.03015" z="114.375" random_walk="3"/>
             <spot x="375.67706" y="742.48425" z="125.42265" h="14" random_walk="3"/>
             <spot x="375.95508" y="808.59344" z="129.61377" h="6" random_walk="3"/>
             <spot x="356.7251" y="824.5004" z="127.41404" h="110" random_walk="3"/>
@@ -1081,7 +1022,7 @@
             <spot x="1204.3579" y="730.0769" z="160.35744" h="57" random_walk="3"/>
             <spot x="1175.9103" y="750.0053" z="160.00034" h="56" random_walk="3"/>
             <spot x="1165.3987" y="772.9712" z="161.54118" h="37" random_walk="3"/>
-            <spot x="1200.8124" y="761.438" z="161.05078" h="0" random_walk="3"/>
+            <spot x="1200.8124" y="761.438" z="161.05078" random_walk="3"/>
             <spot x="1247.343" y="759.8502" z="163.0" h="110" random_walk="3"/>
             <spot x="1288.8556" y="734.2801" z="162.4824" h="83" random_walk="3"/>
             <spot x="1257.6661" y="733.00104" z="162.625" h="69" random_walk="3"/>
@@ -1221,7 +1162,7 @@
             <spot x="476.82248" y="349.12686" z="153.17953" h="38" random_walk="3"/>
             <spot x="443.91702" y="356.47992" z="153.0" h="53" random_walk="3"/>
             <spot x="462.9438" y="375.5876" z="153.93399" h="26" random_walk="3"/>
-            <spot x="316.5665" y="423.27768" z="148.32985" h="0" random_walk="3"/>
+            <spot x="316.5665" y="423.27768" z="148.32985" random_walk="3"/>
             <spot x="322.8668" y="402.78952" z="147.75" h="4" random_walk="3"/>
             <spot x="312.1518" y="387.01843" z="148.17686" h="92" random_walk="3"/>
             <spot x="345.781" y="410.89807" z="147.19482" h="14" random_walk="3"/>
@@ -1265,7 +1206,7 @@
             <spot x="332.98935" y="326.85492" z="148.43817" h="8"/>
             <spot x="340.82715" y="303.13486" z="148.64578" h="103"/>
             <spot x="437.58435" y="310.6688" z="145.625" h="3"/>
-            <spot x="470.14838" y="312.41837" z="144.875" h="0"/>
+            <spot x="470.14838" y="312.41837" z="144.875"/>
             <spot x="491.8166" y="294.7574" z="145.625" h="99"/>
             <spot x="579.98627" y="331.03055" z="160.87221" h="43"/>
             <spot x="554.3529" y="316.75" z="158.98206" h="71"/>
@@ -1658,7 +1599,7 @@
             <spot x="618.8621" y="1238.8843" z="147.89856" h="28" random_walk="3"/>
             <spot x="586.6709" y="1282.5615" z="153.67287" h="43" random_walk="3"/>
             <spot x="590.20123" y="1243.0928" z="149.83185" h="101" random_walk="3"/>
-            <spot x="661.36383" y="1175.2145" z="145.08524" h="0" random_walk="3"/>
+            <spot x="661.36383" y="1175.2145" z="145.08524" random_walk="3"/>
             <spot x="714.1759" y="1133.9858" z="151.10478" h="51" random_walk="3"/>
             <spot x="711.91785" y="1248.3942" z="156.8945" h="77" random_walk="3"/>
             <spot x="779.8607" y="1195.3918" z="148.7294" h="101" random_walk="3"/>
@@ -1934,7 +1875,7 @@
         </spawn>
 		<!-- LDF5_Fortress_Vritra_Noble_D_QNmd_65_An -->
         <spawn npc_id="234648" respawn_time="295">
-            <spot x="329.22128" y="925.9979" z="89.875" h="0"/>
+            <spot x="329.22128" y="925.9979" z="89.875"/>
         </spawn>
 		<!-- LDF5_Fortress_Vri_L_QD_65_An -->
         <spawn npc_id="234653" respawn_time="295">
@@ -1967,7 +1908,7 @@
         </spawn>
 		<!-- LDF5_Fortress_A3_TR_Wi_65_An_Q -->
         <spawn npc_id="234660" respawn_time="295">
-            <spot x="749.5167" y="1223.0165" z="152.37189" h="0"/>
+            <spot x="749.5167" y="1223.0165" z="152.37189"/>
             <spot x="822.6284" y="1274.2306" z="157.05042" h="15"/>
         </spawn>
 		<!-- LDF5_Fortress_A3_TR_As1_65_An_Q -->

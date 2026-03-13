@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Trials Of Eternity 5.5
-	Spawn By (Encom)
+	Trials Of Eternity 5.5 Spawn By (Encom)
  -->
 <spawns>
     <spawn_map map_id="301560000">
@@ -239,7 +238,6 @@
 		<spawn npc_id="247036">
             <spot x="268.0713" y="1025.4207" z="710.8994" h="0"/>
         </spawn>
-		
 		<!-- IDEternity_03_Teleporter_6 -->
 	    <spawn npc_id="731736">
 		    <spot x="529.57593" y="1216.2897" z="712.68573" entity_id="964"/>

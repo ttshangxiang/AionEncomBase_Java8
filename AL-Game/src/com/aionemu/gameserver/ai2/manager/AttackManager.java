@@ -27,12 +27,15 @@ import com.aionemu.gameserver.configs.main.GeoDataConfig;
 import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
+ * NPC攻击管理器
+ * 负责处理NPC的攻击调度和攻击逻辑
  * @author ATracer
  * @modified Yon (Aion Reconstruction Project) -- removed non-retail-like leash in {@link #checkGiveupDistance(NpcAI2)}.
  */
 public class AttackManager {
 
 	/**
+	 * 开始攻击目标
 	 * @param npcAI
 	 */
 	public static void startAttacking(NpcAI2 npcAI) {
@@ -45,12 +48,23 @@ public class AttackManager {
 	}
 
 	/**
+	 * 安排下一次攻击
+	 * 修复：添加了重复调度检查，防止多次调度导致一次攻击多次伤害
 	 * @param npcAI
 	 */
 	public static void scheduleNextAttack(NpcAI2 npcAI) {
 		if (npcAI.isLogging()) {
 			AI2Logger.info(npcAI, "AttackManager: scheduleNextAttack");
 		}
+		
+		// 检查是否已经调度了攻击，防止重复调度
+		if (npcAI.getOwner().getGameStats().isNextAttackScheduled()) {
+			if (npcAI.isLogging()) {
+				AI2Logger.info(npcAI, "Attack already scheduled, skipping");
+			}
+			return;
+		}
+		
 		// don't start attack while in casting substate
 		AISubState subState = npcAI.getSubState();
 		if (subState == AISubState.NONE) {
@@ -63,7 +77,9 @@ public class AttackManager {
 	}
 
 	/**
-	 * choose attack type
+	 * 选择攻击类型
+	 * @param npcAI
+	 * @param delay 攻击延迟时间
 	 */
 	protected static void chooseAttack(NpcAI2 npcAI, int delay) {
 		AttackIntention attackIntention = npcAI.chooseAttackIntention();
@@ -75,12 +91,15 @@ public class AttackManager {
 		}
 		switch (attackIntention) {
 			case SIMPLE_ATTACK:
+				// 普通攻击
 				SimpleAttackManager.performAttack(npcAI, delay);
 				break;
 			case SKILL_ATTACK:
+				// 技能攻击
 				SkillAttackManager.performAttack(npcAI, delay);
 				break;
 			case FINISH_ATTACK:
+				// 结束攻击，进入思考状态
 				npcAI.think();
 				break;
 			default:
@@ -89,6 +108,7 @@ public class AttackManager {
 	}
 
 	/**
+	 * 目标太远时的处理
 	 * @param npcAI
 	 */
 	public static void targetTooFar(NpcAI2 npcAI) {
@@ -97,7 +117,7 @@ public class AttackManager {
 			AI2Logger.info(npcAI, "AttackManager: attackTimeDelta " + npc.getGameStats().getLastAttackTimeDelta());
 		}
 
-		// switch target if there is more hated creature
+		// 如果有更仇恨的目标，切换到那个目标
 		if (npc.getGameStats().getLastChangeTargetTimeDelta() > 5) {
 			Creature mostHated = npc.getAggroList().getMostHated();
 			if (mostHated != null && !mostHated.getLifeStats().isAlreadyDead()
@@ -109,14 +129,17 @@ public class AttackManager {
 				return;
 			}
 		}
+		// 无法看到目标，放弃目标
 		if (!npc.canSee((Creature) npc.getTarget())) {
 			npcAI.onGeneralEvent(AIEventType.TARGET_GIVEUP);
 			return;
 		}
+		// 检查是否应该放弃目标
 		if (checkGiveupDistance(npcAI)) {
 			npcAI.onGeneralEvent(AIEventType.TARGET_GIVEUP);
 			return;
 		}
+		// 尝试移动到目标
 		if (npcAI.isMoveSupported()){
 			npc.getMoveController().moveToTargetObject();
 			return;
@@ -124,6 +147,11 @@ public class AttackManager {
 		npcAI.onGeneralEvent(AIEventType.TARGET_GIVEUP);
 	}
 
+	/**
+	 * 检查是否应该放弃目标
+	 * @param npcAI
+	 * @return true表示应该放弃目标
+	 */
 	private static boolean checkGiveupDistance(NpcAI2 npcAI) {
 		Npc npc = npcAI.getOwner();
 		// if target run away too far
@@ -142,7 +170,7 @@ public class AttackManager {
 //        if (distanceToHome > chaseHome) { //Leashes like this don't exist on retail (with very few exceptions)
 //            return true;
 //        }
-		// if npc is far away from home
+		// 如果NPC离家太远且长时间没有攻击
 		// start thinking about home after 100 meters and no attack for 10 seconds (only for default monsters)
 		if (chaseHome <= 200 || distanceToHome > chaseHome) { // TODO: Check Client and use chase_user_by_trace value
 			if ((npc.getGameStats().getLastAttackTimeDelta() > 10 && npc.getGameStats().getLastAttackedTimeDelta() > 10)

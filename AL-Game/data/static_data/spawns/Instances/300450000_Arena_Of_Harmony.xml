@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
-	격투의 광장
-	Spawn By (Encom)
+	Arena Of Harmony Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300450000">
@@ -44,21 +43,20 @@
 			<spot x="450.1526" y="1771.6342" z="154.4948" h="45"/>
 			<spot x="451.9798" y="1789.6945" z="154.4945" h="15"/>
 		</spawn>
-		
-		<!-- 1st Floor Stunner (Object Normal lvl:3) -->
+		<!-- 1st Floor Stunner -->
 		<spawn npc_id="207116">
 			<spot x="1876.0594" y="1760.6831" z="308.8514"/>
 		</spawn>
-		<!-- 2nd Floor Bomb (Object Normal lvl:3) -->
+		<!-- 2nd Floor Bomb -->
 		<spawn npc_id="207099">
 			<spot x="1851.3745" y="1736.6553" z="306.1605"/>
 		</spawn>
-		<!-- Crater (Object Normal lvl:3) -->
+		<!-- Crater -->
 		<spawn npc_id="207105" respawn_time="30">
 			<spot x="1550.5076" y="361.9555" z="198.6615"/>
 			<spot x="1587.2059" y="366.8799" z="198.7352"/>
 		</spawn>
-		<!-- Recovery Relics (Object Normal lvl:3) -->
+		<!-- Recovery Relics -->
 		<spawn npc_id="207102">
 			<spot x="1542.7887" y="371.5511" z="198.6253"/>
 			<spot x="491.8075" y="422.2727" z="210.7991"/>
@@ -71,13 +69,13 @@
 			<spot x="1571.4750" y="359.3044" z="204.0539"/>
 			<spot x="479.6086" y="387.6217" z="220.3917"/>
 		</spawn>
-		<!-- Arena Treasure Chest (Object Normal lvl:3) -->
+		<!-- Arena Treasure Chest -->
 		<spawn npc_id="219272">
 			<spot x="1851.8521" y="1179.7650" z="230.5344"/>
 			<spot x="1830.2291" y="1150.3005" z="217.6914"/>
 			<spot x="1854.1764" y="1701.6035" z="310.2712" h="30"/>
 		</spawn>
-		<!-- Explosive Aether (Object Normal lvl:3) -->
+		<!-- Explosive Aether -->
 		<spawn npc_id="219274" respawn_time="10">
 			<spot x="466.8595" y="1762.2043" z="176.6272"/>
 			<spot x="520.1926" y="1799.5516" z="178.6339"/>
@@ -122,8 +120,7 @@
 			<spot x="1852.3782" y="1133.2284" z="217.5058" h="30"/>
 			<spot x="1851.5396" y="1141.2166" z="217.4248" h="30"/>
 		</spawn>
-		<!-- Plaza Wall
-		<50 Points> -->
+		<!-- Plaza Wall -->
         <spawn npc_id="219328">
 	        <spot x="1834.84" y="1159.8" z="218.40236" entity_id="396"/>
 		</spawn>

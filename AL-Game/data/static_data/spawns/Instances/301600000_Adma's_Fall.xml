@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Adma's Fall 5.0
-	Spawn By (Encom)
+	Adma's Fall 5.0 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301600000">
@@ -61,11 +60,11 @@
 		<spawn npc_id="220427">
 		    <spot x="521.611" y="503.438" z="197.72092" h="45"/>
 		</spawn>
-		<!-- IDF6_Adma_Out_Portal_StartPoint (Object Normal lvl:3) -->
+		<!-- IDF6_Adma_Out_Portal_StartPoint -->
 	    <spawn npc_id="806222">
 			<spot x="495.39050" y="468.34970" z="173.14999" entity_id="27"/>
 	    </spawn>
-		<!-- IDF6_Adma_Boss_Room_In (Object Normal lvl:3) -->
+		<!-- IDF6_Adma_Boss_Room_In -->
 	    <spawn npc_id="806207">
 		    <spot x="502.52878" y="523.12482" z="201.53044" entity_id="12"/>
 	    </spawn>

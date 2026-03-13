@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Archives Of Eternity 5.0
-	Spawn By (Encom)
+	Archives Of Eternity 5.0 Spawn By (Encom)
  -->
 <spawns>
     <spawn_map map_id="301570000">
-		<!-- Leibo
-		<Steward> -->
+		<!-- Leibo -->
 		<spawn npc_id="857833">
 			<spot x="691.4854" y="432.26862" z="468.80524" h="20"/>
 		</spawn>
-		<!-- Leibo
-		<Steward> -->
+		<!-- Leibo -->
 		<spawn npc_id="857834">
 			<spot x="557.36707" y="359.95865" z="468.94095" h="22"/>
 		</spawn>
-		<!-- Leibo
-		<Steward> -->
+		<!-- Leibo -->
 		<spawn npc_id="857835">
 			<spot x="461.16504" y="352.28656" z="468.9799" h="0"/>	
 		</spawn>
-		<!-- Leibo
-		<Steward> -->
+		<!-- Leibo -->
 		<spawn npc_id="857836">
 			<spot x="548.8543" y="514.45404" z="468.97675" h="49"/>
 		</spawn>
-		<!-- Leibo
-		<Steward> -->
+		<!-- Leibo -->
 		<spawn npc_id="857904">
 			<spot x="506.56866" y="592.13477" z="468.8791" h="100"/>
 		</spawn>
-		<!-- Leibo
-		<Steward> -->
+		<!-- Leibo -->
 		<spawn npc_id="857905">
 			<spot x="414.46826" y="591.53534" z="468.8791" h="20"/>
 		</spawn>
-		
 		<!-- IDEternity_Q_Sado_As_65_An_01 -->
 		<spawn npc_id="857781">
 			<spot x="579.8225" y="425.95874" z="468.94095" h="4"/>

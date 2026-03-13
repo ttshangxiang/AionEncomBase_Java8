@@ -56,8 +56,113 @@ public class AttackUtil {
 	    if (attacker instanceof Player && ((Player) attacker).getEquipment().getOffHandWeaponType() != null) {
 	        calculateOffHandResult(attacker, attacked, mainHandStatus, attackList);
 	    }
+	    
+	    // 【修复】应用攻击状态修正（暴击伤害、格挡伤害、伤害调整、最小伤害保护）
+	    applyAttackStatusModifiers(attacker, attacked, attackList);
+	    
+	    // 【修复】NPC AI伤害修正
+	    modifyDamageByNpcAi(attacker, attacked, attackList);
+	    
 	    attacked.getObserveController().checkShieldStatus(attackList, null, attacker);
 	    return attackList;
+	}
+
+	/**
+	 * 应用攻击状态修正到伤害列表 - 官服机制
+	 * 包括：暴击伤害、格挡伤害、伤害调整、最小伤害保护
+	 */
+	private static void applyAttackStatusModifiers(Creature attacker, Creature attacked, List<AttackResult> attackList) {
+		for (AttackResult result : attackList) {
+			AttackStatus status = result.getAttackStatus();
+			int damage = result.getDamage();
+			
+			// 暴击伤害计算（主手和副手）
+			if (status == AttackStatus.CRITICAL || status == AttackStatus.OFFHAND_CRITICAL) {
+				WeaponType weaponType = null;
+				if (attacker instanceof Player) {
+					weaponType = ((Player) attacker).getEquipment().getMainHandWeaponType();
+				}
+				damage = (int) calculateWeaponCritical(attacked, damage, weaponType, StatEnum.PHYSICAL_CRITICAL_DAMAGE_REDUCE);
+			}
+			
+			// 格挡伤害计算（主手和副手）
+			if (status == AttackStatus.BLOCK || status == AttackStatus.OFFHAND_BLOCK) {
+				damage = calculateBlockedDamage(attacked, damage);
+			}
+			
+			// 应用伤害调整
+			damage = (int) StatFunctions.adjustDamages(attacker, attacked, damage, 0, false);
+			
+			// 确保最小伤害（dodge 除外）
+			if (damage <= 0 && status != AttackStatus.DODGE && status != AttackStatus.OFFHAND_DODGE) {
+				damage = 1;
+			}
+			
+			result.setDamage(damage);
+		}
+	}
+
+	/**
+	 * 计算格挡后的伤害 - 官服5.8机制
+	 * 盾牌防御伤害削减为70%（橙色盾牌+10以上），武器防御伤害削减为40%
+	 * 盾牌有最大防御值（伤害承受上限）限制，过载时按最大值计算
+	 */
+	private static int calculateBlockedDamage(Creature attacked, int damage) {
+		// 检查是否有盾牌
+		if (attacked instanceof Player) {
+			Player player = (Player) attacked;
+			Item shield = player.getEquipment().getEquippedShield();
+			if (shield != null) {
+				// 【盾牌防御计算】
+				// 1. 获取盾牌减伤百分比（橙色盾牌+10以上为70%）
+				int shieldDefensePercent = player.getGameStats().getPositiveReverseStat(StatEnum.DAMAGE_REDUCE, damage);
+				
+				// 2. 计算理论减伤金额
+				int theoreticalBlockedDamage = (int) (damage * shieldDefensePercent * 0.01f);
+				
+				// 3. 获取盾牌的最大防御值（伤害承受上限）
+				int maxBlock = shield.getItemTemplate().getWeaponStats().getReduceMax();
+				
+				// 4. 检查是否过载
+				// 如果理论减伤金额 > 最大防御值，则实际减伤 = 最大防御值（过载）
+				// 否则实际减伤 = 理论减伤金额（未过载）
+				int actualBlockedDamage;
+				if (maxBlock > 0 && theoreticalBlockedDamage > maxBlock) {
+					// 过载情况：按最大防御值计算
+					actualBlockedDamage = maxBlock;
+				} else {
+					// 未过载情况：按理论减伤金额计算
+					actualBlockedDamage = theoreticalBlockedDamage;
+				}
+				
+				// 5. 计算实际伤害
+				damage -= actualBlockedDamage;
+				return damage;
+			}
+		}
+		
+		// 【武器防御计算】
+		// 武器防御伤害削减为40%，没有最大防御值限制
+		int weaponDefensePercent = attacked.getGameStats().getPositiveReverseStat(StatEnum.DAMAGE_REDUCE, damage);
+		int actualBlockedDamage = (int) (damage * weaponDefensePercent * 0.01f);
+		damage -= actualBlockedDamage;
+		return damage;
+	}
+
+	/**
+	 * NPC AI伤害修正 - 根据NPC AI类型调整伤害输出
+	 */
+	private static void modifyDamageByNpcAi(Creature attacker, Creature attacked, List<AttackResult> attackResults) {
+		if (!(attacker instanceof Npc || attacked instanceof Npc))
+			return;
+		for (AttackResult result : attackResults) {
+			float modifiedDamage = result.getDamage();
+			if (attacker instanceof Npc)
+				modifiedDamage = attacker.getAi2().modifyDamage((int) modifiedDamage);
+			if (attacked instanceof Npc)
+				modifiedDamage = attacked.getAi2().modifyDamage((int) modifiedDamage);
+			result.setDamage((int) modifiedDamage);
+		}
 	}
 
 	/**
@@ -118,9 +223,63 @@ public class AttackUtil {
 
 	        attackList.add(new AttackResult(offHandDamage, offHandStatus));
 	    }
-
+	    
+	    // 【修复】NPC AI伤害修正
+	    modifyDamageByNpcAi(attacker, attacked, attackList);
+	    
 	    attacked.getObserveController().checkShieldStatus(attackList, null, attacker);
 	    return attackList;
+	}
+
+	/**
+	 * 技能随机伤害计算 - 参考4.8项目
+	 */
+	private static int randomizeDamage(int randomDamageType, int damage) {
+		int randomChance = Rnd.get(100);
+		switch (randomDamageType) {
+		case 1:
+			if (randomChance <= 35) {
+				damage *= 0.5f;
+			} else if (randomChance <= 70) {
+				// 保持不变
+			} else {
+				damage *= 1.5f;
+			}
+			break;
+		case 2:
+			if (randomChance <= 70) {
+				damage *= 0.6f;
+			} else {
+				damage *= 2.0f;
+			}
+			break;
+		case 3:
+			if (randomChance <= 35) {
+				damage *= 0.9f;
+			} else if (randomChance <= 70) {
+				// 保持不变
+			} else {
+				damage *= 1.1f;
+			}
+			break;
+		case 6:
+			if (randomChance > 70) {
+				damage *= 2.0f;
+			}
+			break;
+		case 4:
+		case 5:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			// 无伤害波动
+			break;
+		default:
+			damage *= (Rnd.get(25, 100) * 0.02f);
+			break;
+		}
+		return damage;
 	}
 
 	/**
@@ -380,39 +539,8 @@ public class AttackUtil {
 
 		// implementation of random damage for skills like Stunning Shot, etc
 		if (randomDamage > 0) {
-			int randomChance = Rnd.get(100);
-			// TODO Hard fix
-			if (effect.getSkillId() == 20033) {
-				damage *= 10;
-			}
-
-			switch (randomDamage) {
-			case 1:
-				if (randomChance <= 40) {
-					damage /= 2;
-				} else if (randomChance <= 70) {
-					damage *= 1.5;
-				}
-				break;
-			case 2:
-				if (randomChance <= 25) {
-					damage *= 3;
-				}
-				break;
-			case 6:
-				if (randomChance <= 30) {
-					damage *= 2;
-				}
-				break;
-			// TODO rest of the cases
-			default:
-				/*
-				 * chance to do from 50% to 200% damage This must NOT be calculated after
-				 * critical status check, or it will be over powered and not retail
-				 */
-				damage *= (Rnd.get(25, 100) * 0.02f);
-				break;
-			}
+			// 【修复】使用 randomizeDamage 方法计算随机伤害
+			damage = randomizeDamage(randomDamage, damage);
 		}
 
 		AttackStatus status = AttackStatus.NORMALHIT;

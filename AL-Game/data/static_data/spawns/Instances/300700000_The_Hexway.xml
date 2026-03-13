@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	裏切りの回廊
-	Spawn By (Encom)
+	The Hexway Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300700000">
-		<!-- Laksyaka Elite Magus (Monster Elite lvl:57) -->
+		<!-- Laksyaka Elite Magus -->
 		<spawn npc_id="219601">
 			<spot x="280.891" y="708.252" z="364.936" h="8"/>
 			<spot x="344.58813" y="523.70514" z="361.9332" h="5"/>
@@ -34,7 +33,7 @@
 			<spot x="485.0" y="522.43" z="352.94534" h="87" walker_id="IDUNDERPASSREDRAKANWI57AE000000000000003"/>
 			<spot x="312.65" y="562.8" z="362.02374" h="22" walker_id="IDUNDERPASSREDRAKANWI57AE000000000000004"/>
 		</spawn>
-		<!-- Laksyaka Elite Ambusher (Monster Elite lvl:57) -->
+		<!-- Laksyaka Elite Ambusher -->
 		<spawn npc_id="219602">
 			<spot x="511.099" y="579.852" z="351.153" h="110"/>
 			<spot x="511.099" y="591.401" z="351.153" h="75"/>
@@ -56,7 +55,7 @@
 			<spot x="407.86" y="664.08" z="359.11444" h="82" walker_id="IDUNDERPASSREDRAKANAS57AE000000000000001"/>
 			<spot x="312.59" y="608.87" z="362.02255" h="61" walker_id="IDUNDERPASSREDRAKANAS57AE000000000000002"/>
 		</spawn>
-		<!-- Laksyaka Elite Sniper (Monster Elite lvl:57) -->
+		<!-- Laksyaka Elite Sniper -->
 		<spawn npc_id="219603">
 			<spot x="529.419" y="578.792" z="351.153" h="98"/>
 			<spot x="429.799" y="594.985" z="354.733" h="93"/>
@@ -74,7 +73,7 @@
 			<spot x="397.24" y="633.24" z="359.0654" h="65" walker_id="IDUNDERPASSREDRAKANRA57AE000000000000003"/>
 			<spot x="335.66" y="474.14" z="362.00903" h="48" walker_id="IDUNDERPASSREDRAKANAS57AE000000000000003"/>
 		</spawn>
-		<!-- Laksyaka Elite Officer (Monster Elite lvl:57) -->
+		<!-- Laksyaka Elite Officer -->
 		<spawn npc_id="219604">
 			<spot x="482.352" y="602.681" z="352.946" h="61"/>
 			<spot x="482.457" y="567.503" z="352.946" h="50"/>
@@ -91,7 +90,7 @@
 			<spot x="318.26" y="654.56" z="361.98587" h="59" walker_id="IDUNDERPASSREDRAKANPR57AE000000000000001"/>
 			<spot x="321.22" y="517.19" z="362.02667" h="115" walker_id="IDUNDERPASSREDRAKANPR57AE000000000000002"/>
 		</spawn>
-		<!-- Laksyaka Elite Infantry (Monster Elite lvl:57) -->
+		<!-- Laksyaka Elite Infantry -->
 		<spawn npc_id="219605">
 			<spot x="498.62" y="488.063" z="352.717" h="104"/>
 			<spot x="492.482" y="632.713" z="352.946" h="49"/>
@@ -101,17 +100,17 @@
 			<spot x="491.338" y="536.709" z="352.946" h="10"/>
 			<spot x="451.367" y="585.771" z="352.698" h="31" random_walk="3"/>
 		</spawn>
-		<!-- Laksyaka Bladesworn (Monster Elite lvl:57) -->
+		<!-- Laksyaka Bladesworn -->
 		<spawn npc_id="219606">
             <spot x="416.625" y="545.85443" z="356.94904" h="0"/>
             <spot x="245.40259" y="496.62177" z="366.30603" h="18"/>
         </spawn>
-		<!-- Laksyaka Sentry (Monster Elite lvl:57) -->
+		<!-- Laksyaka Sentry -->
         <spawn npc_id="219607">
             <spot x="407.90173" y="604.58856" z="357.4876" h="110"/>
             <spot x="235.18227" y="615.7309" z="366.25406" h="113"/>
         </spawn>
-		<!-- Laksyaka Elite Medic (Monster Elite lvl:57) -->
+		<!-- Laksyaka Elite Medic -->
 		<spawn npc_id="219608">
 			<spot x="696.96" y="580.748" z="325.318" h="57" random_walk="3"/>
 			<spot x="615.975" y="585.651" z="343.877" h="5"/>
@@ -122,15 +121,15 @@
 			<spot x="467.421" y="520.047" z="352.705" h="22" random_walk="3"/>
 			<spot x="496.781" y="487.161" z="352.713" h="63"/>
 		</spawn>
-		<!-- Captain Jarka (Boss Hero lvl:57) -->
+		<!-- Captain Jarka -->
 		<spawn npc_id="219609">
 			<spot x="273.4016" y="726.3119" z="364.6414" h="112"/>
 		</spawn>
-		<!-- Adjutant Galamat (Boss Hero lvl:57) -->
+		<!-- Adjutant Galamat -->
 		<spawn npc_id="219610">
 			<spot x="484.63086" y="585.4334" z="355.34595" h="0"/>
 		</spawn>
-		<!-- Laksyaka Bladesworn (Monster Elite lvl:57) -->
+		<!-- Laksyaka Bladesworn -->
 		<spawn npc_id="219611">
 			<spot x="554.106" y="589.223" z="350.907" h="71"/>
 			<spot x="493.257" y="634.208" z="352.946" h="60"/>
@@ -140,36 +139,36 @@
 			<spot x="459.086" y="615.812" z="352.698" h="66"/>
 			<spot x="674.355" y="565.694" z="333.28" h="9"/>
 		</spawn>
-		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_A (Monster Elite lvl:57) -->
+		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_A -->
 		<spawn npc_id="219612">
             <spot x="692.87897" y="561.9453" z="329.50885" h="22" random_walk="3"/>
             <spot x="705.6217" y="562.381" z="328.25244" h="36"/>
         </spawn>
-		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_B (Monster Elite lvl:57) -->
+		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_B -->
         <spawn npc_id="219613">
             <spot x="715.578" y="574.62823" z="327.86514" h="53"/>
             <spot x="691.86346" y="592.1215" z="323.48126" h="49"/>
         </spawn>
-		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_C (Monster Elite lvl:57) -->
+		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_C -->
         <spawn npc_id="219614">
             <spot x="684.403" y="615.91754" z="320.20065" h="79" random_walk="3"/>
             <spot x="631.268" y="585.0168" z="340.64523" h="96"/>
         </spawn>
-		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_D (Monster Elite lvl:57) -->
+		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_D -->
         <spawn npc_id="219615">
             <spot x="626.9153" y="576.0842" z="339.99695" h="114"/>
             <spot x="447.81638" y="600.8536" z="352.69846" h="115"/>
         </spawn>
-		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_E (Monster Elite lvl:57) -->
+		<!-- IDUnderpassRe_Lizard_Fi_Q_57_An_E -->
         <spawn npc_id="219616">
             <spot x="456.5396" y="631.9568" z="352.69922" h="4" random_walk="3"/>
             <spot x="449.15997" y="565.8656" z="352.69846" h="14" random_walk="3"/>
         </spawn>
-		<!-- Greater Blessed Relics (Object Normal lvl:3) -->
+		<!-- Greater Blessed Relics -->
 		<spawn npc_id="831990">
             <spot x="674.8719" y="603.94617" z="321.19" h="106"/>
         </spawn>
-		<!-- The Hexway Barricade (Object Normal lvl:3) -->
+		<!-- The Hexway Barricade -->
 		<spawn npc_id="219617">
 		    <spot h="59" z="359.35156" y="602.0332" x="388.06778"/>
             <spot h="59" z="361.89124" y="606.2992" x="340.30038"/>
@@ -193,7 +192,7 @@
 			<spot x="316.09210" y="608.34473" z="361.87628" entity_id="227"/>
 			<spot x="440.42996" y="573.96472" z="352.96234" entity_id="228"/>
 		</spawn>
-		<!-- Shining Magic Ward (Object Normal lvl:3) -->
+		<!-- Shining Magic Ward -->
 		<spawn npc_id="700455">
 		    <spot x="672.83002" y="606.21997" z="321.17999" entity_id="1"/>
 		</spawn>

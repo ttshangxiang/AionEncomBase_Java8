@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	기회의 루나디움
-	Spawn By (Encom)
+	Lucky Danuar Reliquary Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301330000">
@@ -17,7 +16,7 @@
         <spawn npc_id="284379">
             <spot x="262.5065" y="267.70798" z="241.93697" h="90" random_walk="6"/>
         </spawn>
-		<!-- Greater Blessed Relics (Object Normal lvl:3) -->
+		<!-- Greater Blessed Relics -->
 		<spawn npc_id="831990">
             <spot x="260.4103" y="245.6087" z="241.89952" h="35"/>
         </spawn>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	뿌리의 섬 비밀창고 4.9
-    Spawn By (Encom)
+	Isle Of Roots Storeroom 4.9 Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="300140000">
@@ -41,19 +40,18 @@
 			<spot x="637.25623" y="488.88467" z="193.31065" entity_id="31"/>
 			<spot x="638.48651" y="608.33130" z="189.93639" entity_id="32"/>
 		</spawn>
-		<!-- Major Blessed Relics (Object Normal lvl:3) -->
+		<!-- Major Blessed Relics -->
 		<spawn npc_id="831989">
             <spot x="527.4344" y="139.83282" z="178.84537" h="30"/>
         </spawn>
-		<!-- Dyrba (Npc Normal lvl:65) -->
+		<!-- Dyrba -->
 		<spawn npc_id="805430">
             <spot x="525.28326" y="125.12009" z="175.90152" h="86"/>
         </spawn>
-		<!-- Basek (Npc Normal lvl:65) -->
+		<!-- Basek -->
         <spawn npc_id="805435">
             <spot x="529.5775" y="125.077545" z="175.89717" h="92"/>
         </spawn>
-		
 		<!-- Ranx Legionary -->
 		<spawn npc_id="215094">
 			<spot x="506.929" y="193.644" z="179.152" h="87"/>

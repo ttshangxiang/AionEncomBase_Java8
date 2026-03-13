@@ -397,6 +397,29 @@ public class StatFunctions {
 				float power = attacker.getGameStats().getPower().getCurrent() * 0.01f;
 				int diff = Math.round((totalMax - totalMin) * power / 2);
 				resultDamage = pAttack.getBonus() + baseDamage;
+				// 【修正】副手武器精通计算 - 官服5.8机制
+				// 双持时副手武器只发挥部分伤害（精通系数）
+				// 长剑精通系数0.367（36.7%），短剑精通系数0.4295（42.95%）
+				if (!isMainHand && attacker instanceof Player) {
+					float weaponCoefficient = 0.4295f; // 默认短剑系数
+					switch (weapon.getItemTemplate().getWeaponType()) {
+					case SWORD_1H:
+					case POLEARM_2H:
+					case MACE_1H:
+					case STAFF_2H:
+					case BOW:
+					case GUN_1H:
+						weaponCoefficient = 0.367f; // 长剑系数
+						break;
+					case DAGGER_1H:
+						weaponCoefficient = 0.4295f; // 短剑系数
+						break;
+					}
+					// 计算绿字：平均伤害 × 武器系数
+					int averageDamage = (totalMin + totalMax) / 2 + weaponStat.getAttackSpeed(); // 简化计算
+					float greenDamage = averageDamage * weaponCoefficient;
+					resultDamage += greenDamage;
+				}
 				// adjust with value from WeaponDualEffect
 				// it makes lower cap of damage lower, so damage is more random on offhand
 				int negativeDiff = diff;

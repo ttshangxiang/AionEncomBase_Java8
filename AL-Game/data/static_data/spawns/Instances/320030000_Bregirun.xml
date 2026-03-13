@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	브레기룬 [Q2022 Crushing The Conspiracy]
-	Spawn By (Encom)
+	Bregirun Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="320030000">
@@ -9,7 +8,7 @@
 		<spawn npc_id="700184">
 			<spot x="250.70007" y="273.28397" z="228.61275" entity_id="8"/>
 		</spawn>
-		<!-- Dragon Portal [No Utility] -->
+		<!-- Dragon Portal -->
 		<spawn npc_id="700813">
 			<spot x="276.32733" y="161.67171" z="203.65775" entity_id="17"/>
 		</spawn>

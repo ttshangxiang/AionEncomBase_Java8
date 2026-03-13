@@ -1,56 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	鉄壁の決戦場
-	Spawn By (Encom)
+	Iron Wall Warfront Spawn By (Encom)
  -->
 <spawns>
 	<spawn_map map_id="301220000">
-		<!-- =================================== -->
-		<!-- ========= 鉄壁の決戦場 Flag ========= -->
-		<!-- =================================== -->
-		<!-- Supply Base Beta Flag (Object Normal lvl:3) -->
+		<!-- Supply Base Beta Flag -->
 		<spawn npc_id="831895">
 			<spot x="393.92688" y="271.82904" z="253.375" h="107"/>
 		</spawn>
-		<!-- Military Supply Base Flag (Object Normal lvl:3) -->
+		<!-- Military Supply Base Flag -->
 		<spawn npc_id="831896">
 			<spot x="259.81546" y="740.3553" z="201.36577" h="23"/>
 		</spawn>
-		<!-- Supply Base Alpha Flag (Object Normal lvl:3) -->
+		<!-- Supply Base Alpha Flag -->
 		<spawn npc_id="831897">
 			<spot x="574.5787" y="505.92386" z="217.75" h="8"/>
 		</spawn>
-		<!-- Artillery Base Flag (Object Normal lvl:3) -->
+		<!-- Artillery Base Flag -->
 		<spawn npc_id="831898">
 			<spot x="604.0888" y="878.7746" z="192.95142" h="88"/>
 		</spawn>
-		<!-- Sentry Post Alpha Flag (Object Normal lvl:3) -->
+		<!-- Sentry Post Alpha Flag -->
 		<spawn npc_id="831899">
 			<spot x="555.3127" y="416.20398" z="222.77223" h="19"/>
 		</spawn>
-		<!-- Sentry Post Beta Flag (Object Normal lvl:3) -->
+		<!-- Sentry Post Beta Flag -->
 		<spawn npc_id="831900">
 			<spot x="819.66156" y="604.6976" z="239.70569" h="82"/>
 		</spawn>
-		<!-- Holy Grounds Flag (Object Normal lvl:3) -->
+		<!-- Holy Grounds Flag -->
 		<spawn npc_id="831901">
 			<spot x="449.6276" y="448.86804" z="270.74738" h="78"/>
 		</spawn>
-		<!-- Command Center Flag (Object Normal lvl:3) -->
+		<!-- Command Center Flag -->
 		<spawn npc_id="831902">
 			<spot x="440.07004" y="768.60376" z="202.6145" h="118"/>
 		</spawn>
-		<!-- Headquarters Alpha Flag (Object Normal lvl:3) -->
+		<!-- Headquarters Alpha Flag -->
 		<spawn npc_id="831903">
 			<spot x="356.20807" y="473.54718" z="236.18228" h="106"/>
 		</spawn>
-		<!-- Headquarters Beta Flag (Object Normal lvl:3) -->
+		<!-- Headquarters Beta Flag -->
 		<spawn npc_id="831904">
 			<spot x="772.203" y="762.5251" z="198.04073" h="69"/>
 		</spawn>
-		<!-- =================================== -->
-		<!-- ========= 鉄壁の決戦場 Boss ========= -->
-		<!-- =================================== -->
 		<!-- Pashid Supply Base Beta Officer -->
 		<spawn npc_id="233550">
             <spot x="393.92688" y="271.82904" z="253.375" h="107"/>
@@ -91,9 +84,6 @@
 		<spawn npc_id="233559">
             <spot x="772.203" y="762.5251" z="198.04073" h="69"/>
         </spawn>
-		<!-- =================================== -->
-		<!-- ======= 鉄壁の決戦場 Monsters ======= -->
-		<!-- =================================== -->
 		<!-- Pashid Beastmaster -->
 		<spawn npc_id="233537">
 			<spot x="702.0077" y="340.50586" z="247.84883" h="43"/>
@@ -193,10 +183,6 @@
             <spot x="745.6468" y="724.97" z="194.5" h="59"/>
             <spot x="728.9531" y="758.34247" z="194.5" h="83"/>
         </spawn>
-		
-		<!-- =================================== -->
-		<!-- =========== Npc/Objects =========== -->
-		<!-- =================================== -->
 		<!-- Pashid Aetheric Cannon -->
 		<spawn npc_id="233741">
 			<spot x="726.56537" y="328.0778" z="254.21608" h="48"/>
@@ -267,7 +253,7 @@
 		<spawn npc_id="730732">
 			<spot x="550.53485" y="417.41046" z="222.66599" entity_id="329"/>
 		</spawn>
-		<!-- Cannon Supplies Box (Object Normal lvl:3) -->
+		<!-- Cannon Supplies Box -->
 		<spawn npc_id="831328">
             <spot x="455.71304" y="271.08563" z="246.54420" entity_id="317"/>
             <spot x="389.22247" y="265.75354" z="253.39273" entity_id="320"/>
@@ -285,7 +271,7 @@
             <spot x="243.69191" y="761.59729" z="201.33101" entity_id="323"/>
             <spot x="272.92630" y="732.62634" z="205.47568" entity_id="325"/>
         </spawn>
-		<!-- Ammo Box (Object Normal lvl:3) -->
+		<!-- Ammo Box -->
         <spawn npc_id="831329">
             <spot x="680.60107" y="736.97571" z="179.61253" entity_id="337"/>
             <spot x="402.74118" y="561.36957" z="215.70866" entity_id="336"/>
@@ -293,34 +279,34 @@
             <spot x="533.66534" y="693.07813" z="205.95287" entity_id="340"/>
             <spot x="555.28540" y="692.96661" z="205.73410" entity_id="338"/>
         </spawn>
-		<!-- Siege Mine (Object Normal lvl:3) -->
+		<!-- Siege Mine -->
         <spawn npc_id="831330">
             <spot x="680.12537" y="291.81180" z="225.66817" entity_id="366"/>
             <spot x="787.61670" y="362.55170" z="230.88277" entity_id="363"/>
             <spot x="688.16638" y="348.48398" z="228.66360" entity_id="364"/>
             <spot x="747.26013" y="352.09000" z="230.88277" entity_id="365"/>
         </spawn>
-		<!-- Inner Wall (Object Normal lvl:3) -->
+		<!-- Inner Wall -->
 		<spawn npc_id="233564">
 			<spot x="776.2572" y="379.83923" z="233.87485" entity_id="131"/>
 		</spawn>
-		<!-- Loose Wall (Object Normal lvl:3) -->
+		<!-- Loose Wall -->
 		<spawn npc_id="233565">
 			<spot x="783.83661" y="402.55899" z="234.45784" entity_id="304"/>
 		</spawn>
-		<!-- Rear Portcullis (Object Normal lvl:3) -->
+		<!-- Rear Portcullis -->
 		<spawn npc_id="233566">
 			<spot x="662.54413" y="221.62517" z="225.74001" entity_id="95"/>
 		</spawn>
-		<!-- Main Portcullis (Object Normal lvl:3) -->
+		<!-- Main Portcullis -->
 		<spawn npc_id="233567">
 			<spot x="569.57892" y="163.50827" z="220.0367" entity_id="169"/>
 		</spawn>
-		<!-- Right Gate (Object Normal lvl:3) -->
+		<!-- Right Gate -->
 		<spawn npc_id="233568">
 			<spot x="626.5907" y="324.78647" z="226.73689" entity_id="484"/>
 		</spawn>
-		<!-- Left Gate (Object Normal lvl:3) -->
+		<!-- Left Gate -->
 		<spawn npc_id="233569">
 			<spot x="724.21521" y="406.48102" z="231.92" entity_id="442"/>
 		</spawn>
